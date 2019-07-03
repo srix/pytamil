@@ -1,27 +1,27 @@
-dictionary ta.wikionary.com
+print ( தமிழ்.புணர்ச்சி('விருந்து', 'ஓம்பல்') )
+>விருந்தோம்பல்
 
-@ .tshrinivasan@gmail.com 9841795468
+print( தமிழ்.மெல்லினம் )
+>['ங்', 'ஞ்', 'ண்', 'ந்', 'ம்', 'ன்']
 
-http://tamilvu.org/coresite/html/cwannotate.htm
+print(தமிழ்.குறில் )
+>['அ', 'இ', 'உ', 'எ', 'ஒ']
 
-https://www.projectmadurai.org/pmworks.html
-Electronic versions of printed texts (abbreviated as Etexts) of ancient literary works are important pedagoic and scholarly resources. Stored in easily accessible archives, they permit preservation and wider distribution of ancient literary works around the globe through the means of internet. Etexts of literary works also allow quick search for phrases, words, and combinations of words in any literary work. There are many projects currently active world-wide that attempts to put in electronic form ancient literary works.
+print (தமிழ்.வட்டெழுத்து('வணக்கம்'))
+>
 
-https://freetamilebooks.com/about-the-project/
-மின்புத்தகங்களைப் படிப்பதற்கென்றே கையிலேயே வைத்துக் கொள்ளக்கூடிய பல கருவிகள் தற்போது சந்தையில் வந்துவிட்டன. Kindle, Nook, Android Tablets போன்றவை இவற்றில் பெரும்பங்கு வகிக்கின்றன. இத்தகைய கருவிகளின் மதிப்பு தற்போது 4000 முதல் 6000 ரூபாய் வரை குறைந்துள்ளன. எனவே பெரும்பான்மையான மக்கள் தற்போது இதனை வாங்கி வருகின்றனர்.
+print (தமிழ்.பிரம்மி('வணக்கம்'))
+>𑀯𑀡𑀓𑀓𑀫
 
-https://pprakash.me/tamil/2017/03/16/venpa/
+print (தமிழ்.பண்டைய_எழுத்து(வாக்கியம் = 'வணக்கம்', வருடம் = 300)
+>𑀯𑀡𑀓𑀓𑀫
 
-https://ta.wikipedia.org/wiki/%E0%AE%B5%E0%AF%86%E0%AE%A3%E0%AF%8D%E0%AE%AA%E0%AE%BE  / https://wikivisually.com/wiki/Venpa
+print (தமிழ்.பண்டைய_சொல் (வாக்கியம் = 'வணக்கம்', வருடம் = 300 )
 
-https://www.karky.in/karefo/
+print (தமிழ்.பண்டைய_வாக்கியம்_ஆக்கு(வாக்கியம் = 'வணக்கம்', வருடம் = 300 )
 
-https://github.com/thangamani-arun/Tamil-NLP-Resources
+print(தமிழ்.தனிமொழி_ஆக்கு(வாக்கியம் = 'விருந்தோம்பல்'))
+>['விருந்து', 'ஓம்பல்']
 
-Center for Tamil Natural Language Processing Research http://www.ctnlpr.com/about/
-
-https://tdil-dc.in
-
-## Tamil virtual university
-* literature can be grouped by category and by time aswell. 
-* liberal use of appropriate image or iconography can help people navigate the site even if they are not able to read fluently. Observed that some words are new and alien to many tamilians well versed in the language.
+print ( தமிழ்.தொடர்மொழி_ஆக்கு(['விருந்து', 'ஓம்பல்'] )
+>விருந்தோம்பல்
