@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import tamil
 import தமிழ்
 import t
