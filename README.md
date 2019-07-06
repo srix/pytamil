@@ -27,8 +27,10 @@ print(தமிழ்.தனிமொழி_ஆக்கு(வாக்கி�
 print ( தமிழ்.தொடர்மொழி_ஆக்கு(['விருந்து', 'ஓம்பல்'] )
 >விருந்தோம்பல்
 
-# Setup related
-By default, git will print non-ASCII file names in quoted octal notation, i.e. "\nnn\nnn...". This can be disabled with:
-'''
-git config --global core.quotepath off
-'''
+
+# TODO
+1. Get corpus of Tamil literature in open domain
+2. BNF notations for புணர்ச்சி விதிகள்
+3. return combined word when two words are given by applying புணர்ச்சி விதிகள்
+4. return original words when a combined word is presented by predictive deomposition using புணர்ச்சி விதிகள்
+5. 
