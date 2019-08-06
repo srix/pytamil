@@ -1,0 +1,19 @@
+## Pip
+astroid==2.2.5
+beautifulsoup4==4.7.1
+certifi==2019.6.16
+chardet==3.0.4
+idna==2.8
+isort==4.3.21
+lazy-object-proxy==1.4.1
+mccabe==0.6.1
+Open-Tamil==0.9
+pylint==2.3.1
+PyYAML==5.1.1
+requests==2.22.0
+six==1.12.0
+sly==0.3
+soupsieve==1.9.2
+typed-ast==1.4.0
+urllib3==1.25.3
+wrapt==1.11.2
