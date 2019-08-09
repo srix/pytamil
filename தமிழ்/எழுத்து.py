@@ -25,4 +25,4 @@ def load(filename):
     entries = yaml.load(fo,Loader=Loader)
     return entries
 
-எழுத்துகள் = load("தமிழ்/எழுத்து.yaml")
+எழுத்துக்கள் = load("தமிழ்/எழுத்து.yaml")
