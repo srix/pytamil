@@ -20,9 +20,26 @@ def உயிர்மெய்விரி(பதம்):
     expandedlist = tamilutf8.get_letters_elementary(பதம்)
     return "".join(expandedlist)
 
+def உயிர்மெய்தொகை(எழுத்துவரிசை):
+    பதம்=""
+   
+    i=0
+    while i < len(எழுத்துவரிசை):
+        if எழுத்துவரிசை[i] in எழுத்துக்கள்['மெய்'] and \
+             எழுத்துவரிசை[i+1] in எழுத்துக்கள்['உயிர்']:
+            பதம் = பதம் + tamilutf8.joinMeiUyir( எழுத்துவரிசை[i],  எழுத்துவரிசை[i+1])
+            i=i+2    
+        else:
+            பதம் = பதம் + எழுத்துவரிசை[i]
+            i=i+1    
+    
+    return பதம்
+        
+
 def load(filename):
     fo = open(filename, "r")
     entries = yaml.load(fo,Loader=Loader)
     return entries
 
+எழுத்துக்கள்={}
 எழுத்துக்கள் = load("தமிழ்/எழுத்து.yaml")

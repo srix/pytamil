@@ -2,25 +2,37 @@
 
 start
     =
-    expression 
+    expression {expressions}*
     ;
 
-
-expression
-    =
-    | expression ',' expression
-    | nilaimozhiexpression operator varumozhiexpression
+expressions
+    = 
+    ',' @:expression 
     ;
+
+expression =  nilaimozhiexpression operator varumozhiexpression;
+
 
 nilaimozhiexpression
     = 
-    'நிலைமொழி' {filters}*
+    nilaimozhi {filters}*
+    ;
+
+nilaimozhi
+    =
+    /[^|+]*/ # any character except '|' or '+'
     ;
 
 varumozhiexpression
     =
-    {filters}* 'வருமொழி'
+    {filters}* varumozhi
     ;
+
+varumozhi
+    =
+    /[^,]*/ # any character except '|'
+    ;
+
 
 filters
     = 
@@ -41,8 +53,8 @@ filtername = 'உடம்படுமெய்' | 'இரட்டுதல்'
 
 operator
     = 
-    | '+'
     | '+இயல்பு+'
+    | '+'
     ;
 
 
