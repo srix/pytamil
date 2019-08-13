@@ -19,7 +19,10 @@ class சான்று:
         val = re.findall(r'(.*)\+(.*)\=(.*)',txt)
         self.நிலைமொழி = val[0][0].strip()
         self.வருமொழி = val[0][1].strip()
-        self.தொடர்மொழி = val[0][2].strip()
+        பதங்கள் = val[0][2].strip().split(',')
+        self.தொடர்மொழி = []
+        self.தொடர்மொழி = [x.strip() for  x in பதங்கள்]
+        
 
 class புணர்ச்சிவிதி:
     def __init__(self, txt):
