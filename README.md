@@ -29,8 +29,33 @@ print ( தமிழ்.தொடர்மொழி_ஆக்கு(['விர�
 
 
 # TODO
-1. Get corpus of Tamil literature in open domain
-2. BNF notations for புணர்ச்சி விதிகள்
-3. return combined word when two words are given by applying புணர்ச்சி விதிகள்
-4. return original words when a combined word is presented by predictive deomposition using புணர்ச்சி விதிகள்
-5. 
+
+* return original words when a combined word is presented by predictive deomposition using புணர்ச்சி விதிகள்
+* built pip module
+
+
+# Getting started
+
+## Crete Virtual Environment (venv)
+python3.7 -m venv .venv
+pip3 install --no-cache-dir -r requirements.txt
+
+
+## Special care to be taken for handling extensive tamil characters
+### git
+By default, git will print non-ASCII file names in quoted octal notation, i.e. "\nnn\nnn...". This can be disabled with:
+
+>git config --global core.quotepath off
+
+
+### Terminal
+* on ubuntu 18.04 KDE konsole works well with tamil characters.
+* on ubuntu 19.04 Tilix works well when cell space set to 2.0 . Konsole renders bad
+
+### vscode
+The library was built using vscode. VScode Jedi didn't display tamil function names in outline window and intellisense. To fix this swicht to language server instead of Jedi (set "python.jediEnabled": false in your settings.json). I have raised a bug with Vscode  
+
+ [Function names with unicode (indic characters) are not displayed in Outline window #6454](https://github.com/microsoft/vscode-python/issues/6454)
+
+# How to use
+## unit tests

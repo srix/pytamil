@@ -1,5 +1,8 @@
 # -*- coding: utf-8 -*-
 
+import sys
+sys.path.append('../pytamil')
+
 import தமிழ்
 from தமிழ் import இலக்கணம் as இல
 from தமிழ் import புணர்ச்சி
