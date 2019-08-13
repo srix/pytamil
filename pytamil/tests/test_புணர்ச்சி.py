@@ -1,6 +1,6 @@
 import pytest
-import தமிழ்
-from தமிழ் import புணர்ச்சி
+import pytamil.தமிழ்
+from pytamil.தமிழ் import புணர்ச்சி
 
 @pytest.mark.parametrize("நிலைமொழி,வருமொழி,தொடர்மொழி", \
 						[ 

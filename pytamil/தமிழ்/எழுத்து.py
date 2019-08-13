@@ -42,4 +42,4 @@ def load(filename):
     return entries
 
 எழுத்துக்கள்={}
-எழுத்துக்கள் = load("தமிழ்/எழுத்து.yaml")
+எழுத்துக்கள் = load("pytamil/தமிழ்/எழுத்து.yaml")

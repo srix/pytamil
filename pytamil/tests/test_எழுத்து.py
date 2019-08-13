@@ -1,6 +1,5 @@
 import pytest
-import தமிழ்
-from தமிழ் import எழுத்து
+from pytamil.தமிழ் import எழுத்து
 from tamil import utf8 as tamilutf8
 
 

@@ -10,7 +10,7 @@ from tatsu.ast import AST
 import os
 import tamil.regexp
 from tamil import utf8 as tamilutf8
-from தமிழ் import எழுத்து
+from pytamil.தமிழ் import எழுத்து
 
 
 
@@ -294,7 +294,7 @@ def _get_regex_chars(charslist):
 # எழுத்துகள்=""
 parser=None
 
-entries = load("தமிழ்/புணர்ச்சிவிதிகள்.yaml")
+entries = load("pytamil/தமிழ்/புணர்ச்சிவிதிகள்.yaml")
 
 விதிகள் = getவிதிகள்(entries,விதிகள்)
 
