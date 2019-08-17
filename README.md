@@ -1,6 +1,6 @@
-# A Library that can do the following
-print ( தமிழ்.புணர்ச்சி('விருந்து', 'ஓம்பல்') )
->விருந்தோம்பல்
+# பைந்தமிழ் (pytamil) 
+## A Library that can do the following
+
 
 print( எழுத்து.எழுத்துக்கள்['மெல்லினம்'])
 >['ங்', 'ஞ்', 'ண்', 'ந்', 'ம்', 'ன்']
