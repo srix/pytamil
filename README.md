@@ -30,7 +30,7 @@ print (தமிழ்.பண்டைய_வாக்கியம்_ஆக்�
 
 
 # Why Pytamil
-Core philosophy of the library is to clearly separarte tamil language conepts from the programming language. Tamil புணர்ச்சி rules are captured in human readable text file in YAML format. This allows people with no prior knowledge in computer programming to contribute to the project and have more meaningful and natural discussion on the language concepts.
+Core philosophy of the library is to clearly separarte tamil language conepts from the programming language. For example, Tamil புணர்ச்சி rules are captured in human readable text file [புணர்ச்சிவிதிகள்.yaml](pytamil/தமிழ்/புணர்ச்சிவிதிகள்.yaml ) in YAML format. This allows people with no prior knowledge in computer programming to contribute to the project and have more meaningful and natural discussion on the language concepts.
 
 
 # TODO
