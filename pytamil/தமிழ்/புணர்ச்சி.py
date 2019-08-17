@@ -21,8 +21,7 @@ class சான்று:
         self.வருமொழி = val[0][1].strip()
         பதங்கள் = val[0][2].strip().split(',')
         self.தொடர்மொழி = []
-        self.தொடர்மொழி = [x.strip() for  x in பதங்கள்]
-        
+        self.தொடர்மொழி = [x.strip().replace(' ', '') for  x in பதங்கள்]  # 'சேயடி , சேவடி' => ['சேயடி' , 'சேவடி'] also remove space in betwwen string 'கண் மங்கியது' => 'கண்மங்கியது' 
 
 class புணர்ச்சிவிதி:
     def __init__(self, txt):
