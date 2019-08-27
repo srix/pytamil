@@ -128,18 +128,20 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-### VisualStudioCode ###
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
+
 
 ### VisualStudioCode Patch ###
 # Ignore all local history of files
 .history
 
 # End of https://www.gitignore.io/api/visualstudiocode,python
+
+# PyCharm
+/.idea/
+
+# VSCode
+.vscode/*
+
 
 .directory
 _personal
