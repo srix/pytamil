@@ -22,8 +22,9 @@ def load_parser(filename):
 
 parser = load_parser(os.path.join(os.path.dirname(__file__),'குறள் வெண்பா.ebnf'))
 # entry = 'இல்இல் இல்இல் இல்இல் இல்இல் இல்இல் இல்இல் இல்'
-entry = '''உடுக்கை இழந்தவன் கைபோல ஆங்கே
-இடுக்கண் களைவதாம் நட்பு'''
+entry = '''உடுக்கைஇழந்தவன்கைபோலஆங்கேஇடுக்கண்களைவதாம்நட்பு'''
 
-ast = parser.parse(entry, parseinfo=True, nameguard=False, trace = True, colorize =True)
-pprint(ast, width=20, indent=4)
+ast = parser.parse(entry, parseinfo=True, nameguard=False,  
+                    whitespace='\t ',
+                    trace = True, colorize =True)
+pprint(ast, width=20, indent=3 )
