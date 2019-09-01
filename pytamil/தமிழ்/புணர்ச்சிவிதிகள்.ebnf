@@ -1,0 +1,39 @@
+@@grammar::PUNARCHI
+
+start = expression {expressions}* ;
+
+expressions = ',' @:expression ;
+
+expression =  nilaimozhiexpression operator varumozhiexpression;
+
+
+nilaimozhiexpression = nilaimozhi {filters} ;
+
+(* # any character except '|' or '+' *)
+nilaimozhi = /[^|+]*/ ;
+    
+
+varumozhiexpression = {filters}* varumozhi ;
+
+(* # any character except '|' *)
+varumozhi = /[^,]*/ ;  
+    
+    
+filters 
+    = 
+    | '|' @:filter
+    | @:filter '|'
+    ;
+
+
+filter = filtername param | filtername ;
+
+param= '(' @:value ')' ;
+
+filtername = 'உடம்படுமெய்' | 'இரட்டுதல்' | 'திரிதல்' | 'சும்மா' ;
+
+operator =  '+இயல்பு+' | '+' ;
+
+(* # any character except ')' *)
+value = /[^)]*/; 
+
