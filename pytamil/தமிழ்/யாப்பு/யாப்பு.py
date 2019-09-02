@@ -93,24 +93,28 @@ def main():
     parser = load_parser(os.path.join(os.path.dirname(__file__),'குறள் வெண்பா.ebnf'))
 
     entry = [
-    '''உடுக்கை இழந்தவன் கைபோல ஆங்கே
-    இடுக்கண் களைவதாம் நட்பு''',
+            '''உடுக்கை இழந்தவன் கைபோல ஆங்கே 
+                இடுக்கண் களைவதாம் நட்பு''',
 
-    '''கற்றதனால் ஆய பயனென்கொல் வாலறிவன்
-    நற்றாள் தொழாஅர் எனின்''']
+            '''கற்றதனால் ஆய பயனென்கொல் வாலறிவன்
+                நற்றாள் தொழாஅர் எனின்''',
+            
+            '''உள்ளம் இலாதவர் எய்தார் உலகத்து
+                வள்ளியம் என்னுஞ் செருக்கு''' 
+            ]
 
 
-    text = entry[0]
+    text = entry[2]
     #text = regex.sub('\s+','',entry[0]) # remove spaces and newline
 
-    # ast = parser.parse(text, 
-    #                     parseinfo=True, nameguard=False,  
-    #                     trace = True, colorize =True)
+    ast = parser.parse(text, 
+                        parseinfo=True, nameguard=False,  
+                        trace = True, colorize =True)
 
-    ast = parser.parse(text, semantics = DrawGraph(),
-                        nameguard=False,
-                       # trace = True, colorize =True
-                        )
+    # ast = parser.parse(text, semantics = DrawGraph(),
+    #                     nameguard=False,parseinfo=True
+    #                    # , trace = True, colorize =True
+    #                     )
 
 
     pprint(ast, width=20, indent=4)
