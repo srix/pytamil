@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 
-from tamil import utf8 as tamilutf8
 
 வேற்றுமை_உருபுகள் = ['ஐ', 'ஆல்', 'கு',  'இன்', 'அது', 'கண்']
 நிறம் = []
@@ -18,5 +17,4 @@ from tamil import utf8 as tamilutf8
 # தமிழ்.மெல்லினம் = tamilutf8.mellinam_letters
 # print( தமிழ்.மெல்லினம் )
 
-def எழுத்தாக்கு(சொல்):
-    return tamilutf8.get_letters(சொல்)
+

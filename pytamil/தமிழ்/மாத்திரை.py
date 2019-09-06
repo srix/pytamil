@@ -4,11 +4,10 @@ import regex
 from codecs import open
 from pprint import pprint
 import os
-from tamil import utf8 as tamilutf8
 from pytamil.தமிழ் import எழுத்து
 
 def மாத்திரை_கொடு(தொடர்):
-    எழுத்துவரிசை =  tamilutf8.get_letters(தொடர்)
+    எழுத்துவரிசை =  எழுத்து.எழுத்தாக்கு(தொடர்)
     மாத்திரைவரிசை = []
 
     for எ in எழுத்துவரிசை:

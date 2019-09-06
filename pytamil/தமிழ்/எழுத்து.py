@@ -14,6 +14,12 @@ def முதலெழுத்து(சொல்):
 def உயிர்மெய்_ஆக்கு(எழுத்து1,எழுத்து2):
     return tamilutf8.joinMeiUyir(எழுத்து1,எழுத்து2)
 
+def எழுத்தாக்கு(சொல்):
+    return tamilutf8.get_letters(சொல்)
+
+def சொல்லாக்கு(எழுத்துவரிசை):
+    return tamilutf8.get_tamil_words(எழுத்துவரிசை)
+
 # def உயிர்மெய்_பிரி(எழுத்து):
 #     return tamilutf8.splitMeiUyir(எழுத்து)
 
