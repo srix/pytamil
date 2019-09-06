@@ -37,6 +37,7 @@ Core philosophy of the library is to clearly separarte tamil language conepts fr
 
 * return original words when a combined word is presented by predictive deomposition using புணர்ச்சி விதிகள்
 * built pip module
+* and many more
 
 
 # Getting started
