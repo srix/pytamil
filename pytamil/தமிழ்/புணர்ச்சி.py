@@ -237,8 +237,8 @@ def _convert_to_regex(pattern):
 
     # expand macros and convert to regex patterns
     for token in tokens:
-        if token in எழுத்து.எழுத்துக்கள்.keys():
-            expanded= எழுத்து.எழுத்துக்கள்[token] # macro expansion eg. expand "உயிர்" to "[அ, ஆ, இ, ஈ, உ, ஊ, எ, ஏ, ஐ, ஒ, ஓ, ஔ"
+        if token in எழுத்து._எழுத்துக்கள்.keys():
+            expanded= எழுத்து._எழுத்துக்கள்[token] # macro expansion eg. expand "உயிர்" to "[அ, ஆ, இ, ஈ, உ, ஊ, எ, ஏ, ஐ, ஒ, ஓ, ஔ"
             chars = _get_regex_chars(expanded)  # convert "அ, இ, உ, எ, ஒ" t0 "அ|இ|உ|எ|ஒ"
             regexpat = regexpat + "[" + chars + "]"
         elif token == "...":
