@@ -78,7 +78,14 @@ class DrawGraph(object):
         print ('நிரை')
         return ast   
     
+class அசைதொகுப்பு:
+    def நேர்(self, ast):
+        print ('நேர்')
+        return ast
 
+    def நிரை(self, ast):
+        print ('நிரை')
+        return ast
 
 
 def load_parser(filename):
@@ -90,7 +97,7 @@ def load_parser(filename):
 
 
 def main():
-    parser = load_parser(os.path.join(os.path.dirname(__file__),'குறள் வெண்பா.ebnf'))
+    parser = load_parser(os.path.join(os.path.dirname(__file__),'குறள் வெண்பா2.ebnf'))
 
     entry = [
             '''உடுக்கை இழந்தவன் கைபோல ஆங்கே 
@@ -107,9 +114,10 @@ def main():
     text = entry[2]
     #text = regex.sub('\s+','',entry[0]) # remove spaces and newline
 
-    ast = parser.parse(text, 
-                        parseinfo=True, nameguard=False,  
-                        trace = True, colorize =True)
+    ast = parser.parse(text, semantics =அசைதொகுப்பு(), 
+                        parseinfo=True, nameguard=False  
+                        # , trace = True, colorize =True
+                        )
 
     # ast = parser.parse(text, semantics = DrawGraph(),
     #                     nameguard=False,parseinfo=True
