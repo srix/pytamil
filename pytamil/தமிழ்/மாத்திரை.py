@@ -1,9 +1,4 @@
-import yaml
-from yaml import Loader, Dumper
 import regex
-from codecs import open
-from pprint import pprint
-import os
 from pytamil.தமிழ் import எழுத்து
 
 def மாத்திரை_கொடு(தொடர்):
