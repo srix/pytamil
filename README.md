@@ -1,5 +1,5 @@
 # பைந்தமிழ் (pytamil) 
-## A Library that can do the following
+**A Library that can do the following**
 
 ## தமிழ் எழுத்து மற்றும் புணர்ச்சி
 
