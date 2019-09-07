@@ -1,11 +1,12 @@
 # பைந்தமிழ் (pytamil) 
 ## A Library that can do the following
 
+## தமிழ் எழுத்து மற்றும் புணர்ச்சி
 
 print( எழுத்து.எழுத்துக்கள்['மெல்லினம்'])
 >['ங்', 'ஞ்', 'ண்', 'ந்', 'ம்', 'ன்']
 
-print( எழுத்து.எழுத்துக்கள்['குறில்'] )
+print( எழுத்து.குறில் )
 >['அ', 'இ', 'உ', 'எ', 'ஒ']
 
 print(புணர்ச்சி.தனிமொழி_ஆக்கு(வாக்கியம் = 'விருந்தோம்பல்'))
@@ -14,9 +15,25 @@ print(புணர்ச்சி.தனிமொழி_ஆக்கு(வா�
 print ( புணர்ச்சி.தொடர்மொழி_ஆக்கு('விருந்து', 'ஓம்பல்' ) )
 >விருந்தோம்பல்
 
-print (தமிழ்.வட்டெழுத்து('வணக்கம்'))
->
+## யாப்பு ஆராய்தல்
 
+**திருக்குறள் : பொருட்பால் : குறள் 467**
+```
+எண்ணித் துணிகக் கருமம் துணிந்தபின்
+எண்ணுவம் என்பது இழுக்கு
+```
+![kural_parse_tree](https://user-images.githubusercontent.com/5801636/64476812-27e13d00-d1b1-11e9-8cea-2ad9ae8f353e.png)
+
+**புகழேந்திப் புலவர் இயற்றிய நளவெண்பா : 1**
+```
+ஆதித் தனிக்கோல மானா னடியவற்காச்
+சோதித் திருத்தூணிற் றோன்றினான் வேதத்தின்
+முன்னின்றான் வேழம் முதலே யெனவழைப்ப
+என்னென்றா னெங்கட் கிறை
+```
+![nerisai_parse_tree](https://user-images.githubusercontent.com/5801636/64476995-a9d26580-d1b3-11e9-9407-942e1204cd7a.png)
+
+## தற்போதைய எழுத்துக்களை பண்டைய எழுத்துக்களாக மாற்றுதல்
 print (தமிழ்.பிரம்மி('வணக்கம்'))
 >𑀯𑀡𑀓𑀓𑀫
 
@@ -39,55 +56,6 @@ Core philosophy of the library is to clearly separarte tamil language conepts fr
 * built pip module
 * and many more
 
+# For Developers
+[Getting started](docs/setup.md)
 
-# Getting started
-
-## Create Virtual Environment (venv)
-```bash
-python3.7 -m venv .venv
-pip3 install --no-cache-dir -r requirements.txt
-```
-
-## Special care to be taken for handling extensive tamil characters
-### git
-By default, git will print non-ASCII file names in quoted octal notation, i.e. "\nnn\nnn...". This can be disabled with:
-
-```bash
-git config --global core.quotepath off
-```
-
-### Terminal
-* on ubuntu 18.04 KDE konsole works well with tamil characters.
-* on ubuntu 19.04 Tilix works well when cell space set to 2.0 . Konsole renders bad
-
-### vscode
-The library was built using vscode. VScode Jedi didn't display tamil function names in outline window and intellisense. To fix this switch to language server instead of Jedi (set "python.jediEnabled": false in your settings.json). I have raised a bug with Vscode  
-
- [Function names with unicode (indic characters) are not displayed in Outline window #6454](https://github.com/microsoft/vscode-python/issues/6454)
- 
-### pytest
-pytest escapes unicode strings while printing on stdout. I guess, Vscode uses the same output so the UI listing of test cases also has excaped unicode strings.
-
-> tests/test_1.py::test_தொடர்மொழி_ஆக்கு[\u0b9a\u0bc7-\u0b85\u0b9f\u0bbf-தொடர்மொழி0] PASSED                 [100%]
-
-![pytest unicode escaped vscode](https://user-images.githubusercontent.com/5801636/64475939-b2706f00-d1a6-11e9-8c74-e3834b2bcbd6.png)
-
-To fix this create set `disable_test_id_escaping_and_forfeit_all_rights_to_community_support = True` in `pytest.ini`. pytest authors warn this may [break](https://github.com/pytest-dev/pytest/issues/5286) something unexpected. But works fine for me. This also fixes the vscode UI escaping unicode characters in pytest extension.
-
->tests/test_1.py::test_தொடர்மொழி_ஆக்கு[சே-அடி-தொடர்மொழி0] PASSED                                          [100%]
-
-![pytest unicode vscode](https://user-images.githubusercontent.com/5801636/64476031-b2bd3a00-d1a7-11e9-89e5-3623709bee51.png)
-
-
-
-# How to use
-## unit tests
-cd in to top lelvel folder adn run pytest. Not all tests will pass as of now.
-```bash
-# runn all tests
-pytest
-# or run speific tests 
-pytest test_எழுத்து.py  
-pytest test_சான்று.py
-pytest test_புணர்ச்சி.py
-```
