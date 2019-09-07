@@ -2,7 +2,7 @@
 
 import yaml
 from yaml import Loader, Dumper
-import re as regex
+import regex as regex
 from codecs import open
 from pprint import pprint
 import tatsu
@@ -106,7 +106,7 @@ def சும்மா(பதம்): # dummy filter for testing
 
 def இரட்டுதல்(பதம்):
     பதம்.strip()
-    புதுப்பதம் = பதம் + கடையெழுத்து(பதம்)
+    புதுப்பதம் = பதம் + எழுத்து.கடையெழுத்து(பதம்)
     return புதுப்பதம்
 
 def உடம்படுமெய்(பதம், புது_எழுத்து):
@@ -164,8 +164,8 @@ def getmatchingவிதிகள்(நிலைமொழி, வருமொ�
     வருமொழிவிரி  = எழுத்து.உயிர்மெய்விரி(வருமொழி)
 
     for விதி in விதிகள்:
-        if regex.match(விதி.நிலைமொழி_regex, நிலைமொழிவிரி ) and \
-             regex.match(விதி.வருமொழி_regex, வருமொழிவிரி ):
+        if regex.fullmatch(விதி.நிலைமொழி_regex, நிலைமொழிவிரி ) and \
+             regex.fullmatch(விதி.வருமொழி_regex, வருமொழிவிரி ):
              தொடர்மொழி_விதிகள்.append(விதி)
     
     # print(தொடர்மொழி_விதிகள்)
@@ -248,19 +248,29 @@ def _convert_to_regex(pattern):
         if token in எழுத்து._எழுத்துக்கள்.keys():
             expanded= எழுத்து._எழுத்துக்கள்[token] # macro expansion eg. expand "உயிர்" to "[அ, ஆ, இ, ஈ, உ, ஊ, எ, ஏ, ஐ, ஒ, ஓ, ஔ"
             chars = _get_regex_chars(expanded)  # convert "அ, இ, உ, எ, ஒ" t0 "அ|இ|உ|எ|ஒ"
-            regexpat = regexpat + "[" + chars + "]"
+            regexpat = regexpat + "(" + chars + ")"
         elif token == "...":
             regexpat = regexpat + ".*"
         elif token == 'தனிக்குறில்':
-            regexpat = regexpat + ".[அ|இ|உ|எ|ஒ]"
+            regexpat = regexpat + "..(அ|இ|உ|எ|ஒ)"
         else :
             chars = _get_regex_chars(token.split(",")) 
-            regexpat = regexpat + "[" + chars + "]" # convert "அ, இ, உ, எ, ஒ" t0 "அ|இ|உ|எ|ஒ"
+            regexpat = regexpat + "(" + chars + ")" # convert "அ, இ, உ, எ, ஒ" t0 "அ|இ|உ|எ|ஒ"
 
-    regexpat = regexpat + '$'
+    # regexpat = regexpat + '$'
     # print(regexpat)
 
     return regexpat
+
+    ## convert "அ, இ, உ, எ, ஒ" t0 "அ|இ|உ|எ|ஒ"
+def _get_regex_chars(charslist):
+    p=''
+    for c in charslist:
+        p=p+c+'|'
+    
+    p = p[:-1] # remove trailing '|' symbol
+    return p
+
 
 # def matchவிதிகள்(pattern, பதம்):
 #     # tokenize
@@ -288,12 +298,6 @@ def _convert_to_regex(pattern):
 
 #     return matchval
 
-## convert "அ, இ, உ, எ, ஒ" t0 "அ|இ|உ|எ|ஒ"
-def _get_regex_chars(charslist):
-    p=''
-    for c in charslist:
-        p=p+c+'|'
-    return p
 
 
 
