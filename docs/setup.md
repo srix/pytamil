@@ -6,7 +6,7 @@ python3.7 -m venv .venv
 pip3 install --no-cache-dir -r requirements.txt
 ```
 
-## Special care to be taken for handling extensive tamil characters
+## Special care to be taken for handling unicode tamil characters
 ### git
 By default, git will print non-ASCII file names in quoted octal notation, i.e. "\nnn\nnn...". This can be disabled with:
 
