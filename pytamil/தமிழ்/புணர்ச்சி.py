@@ -266,7 +266,7 @@ def _convert_to_regex(pattern):
 def _get_regex_chars(charslist):
     p=''
     for c in charslist:
-        p=p+c+'|'
+        p=p + c.strip() +'|'
     
     p = p[:-1] # remove trailing '|' symbol
     return p
