@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import pytest
 import pytamil.தமிழ்
 from pytamil.தமிழ் import புணர்ச்சி

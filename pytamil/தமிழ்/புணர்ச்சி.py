@@ -2,7 +2,7 @@
 
 import yaml
 from yaml import Loader, Dumper
-import re
+import re as regex
 from codecs import open
 from pprint import pprint
 import tatsu
@@ -15,7 +15,7 @@ from pytamil.தமிழ் import எழுத்து
 
 class சான்று:
      def __init__(self, txt):
-        val = re.findall(r'(.*)\+(.*)\=(.*)',txt)
+        val = regex.findall(r'(.+?)\+(.+?)(?:>.*)*\=(.*)',txt)
         self.நிலைமொழி = val[0][0].strip()
         self.வருமொழி = val[0][1].strip()
         பதங்கள் = val[0][2].strip().split(',')
@@ -24,7 +24,7 @@ class சான்று:
 
 class புணர்ச்சிவிதி:
     def __init__(self, txt):
-        val = re.findall(r'(.*)\+(.*)\=(.*)',txt)
+        val = regex.findall(r'(.*)\+(.*)\=(.*)',txt)
         self.நிலைமொழி = val[0][0].strip()
         self.வருமொழி = val[0][1].strip()
         self.தொடர்மொழி = val[0][2].strip()
@@ -136,13 +136,8 @@ def தொடர்மொழி_ஆக்கு(நிலைமொழி, வர
         தொடர்மொழி_பதங்கள் (list):  
     """
     # get all matching விதி
-    தொடர்மொழி_விதிகள் =[]
-    for விதி in விதிகள்:
-        if re.match(விதி.நிலைமொழி_regex, எழுத்து.உயிர்மெய்விரி(நிலைமொழி)) and \
-             re.match(விதி.வருமொழி_regex, எழுத்து.உயிர்மெய்விரி(வருமொழி)):
-             தொடர்மொழி_விதிகள்.append(விதி)
+    தொடர்மொழி_விதிகள் = getmatchingவிதிகள்(நிலைமொழி, வருமொழி)
     
-    print(தொடர்மொழி_விதிகள்)
 
     பதங்கள் =[]
     for விதி in தொடர்மொழி_விதிகள்:
@@ -163,13 +158,27 @@ def தொடர்மொழி_ஆக்கு(நிலைமொழி, வர
             தொடர்மொழி_பதங்கள்.append(பதம்)
     return தொடர்மொழி_பதங்கள்
 
+def getmatchingவிதிகள்(நிலைமொழி, வருமொழி):
+    தொடர்மொழி_விதிகள் =[]
+    நிலைமொழிவிரி = எழுத்து.உயிர்மெய்விரி(நிலைமொழி)
+    வருமொழிவிரி  = எழுத்து.உயிர்மெய்விரி(வருமொழி)
+
+    for விதி in விதிகள்:
+        if regex.match(விதி.நிலைமொழி_regex, நிலைமொழிவிரி ) and \
+             regex.match(விதி.வருமொழி_regex, வருமொழிவிரி ):
+             தொடர்மொழி_விதிகள்.append(விதி)
+    
+    # print(தொடர்மொழி_விதிகள்)
+    return தொடர்மொழி_விதிகள்
+
 
 def புணர்ச்சிசெய்(entry):
     global parser
-    ast = parser.parse(entry, trace = True, colorize =True, semantics = PunarchiSemantics())
+    # ast = parser.parse(entry, trace = True, colorize =True, semantics = PunarchiSemantics())
+    ast = parser.parse(entry, semantics = PunarchiSemantics())
 
     print('# FACTORED SEMANTICS RESULT')
-    pprint(ast, width=20, indent=4)
+    # pprint(ast, width=20, indent=4)
 
     return ast
 
@@ -230,7 +239,7 @@ def getசான்றுகள்(entries,சான்றுகள்):
 
 def _convert_to_regex(pattern):
     # tokenize
-    tokens = re.findall(r'\((.*?)\)', pattern)
+    tokens = regex.findall(r'\((.*?)\)', pattern)
     # print(tokens)
     regexpat = ""
 
@@ -242,6 +251,8 @@ def _convert_to_regex(pattern):
             regexpat = regexpat + "[" + chars + "]"
         elif token == "...":
             regexpat = regexpat + ".*"
+        elif token == 'தனிக்குறில்':
+            regexpat = regexpat + ".[அ|இ|உ|எ|ஒ]"
         else :
             chars = _get_regex_chars(token.split(",")) 
             regexpat = regexpat + "[" + chars + "]" # convert "அ, இ, உ, எ, ஒ" t0 "அ|இ|உ|எ|ஒ"
