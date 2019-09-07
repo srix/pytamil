@@ -43,10 +43,23 @@
 ![nerisai_parse_tree](https://user-images.githubusercontent.com/5801636/64476995-a9d26580-d1b3-11e9-9407-942e1204cd7a.png)
 
 # Why Pytamil
-Core philosophy of the library is to clearly separarte tamil language conepts from the programming language. For example, Tamil புணர்ச்சி rules are captured in human readable text file [புணர்ச்சிவிதிகள்.yaml](pytamil/தமிழ்/புணர்ச்சிவிதிகள்.yaml ) in YAML format. This allows people with no prior knowledge in computer programming to contribute to the project and have more meaningful and natural discussion on the language concepts.
+பைந்தமிழ் (pytamil) library is intended to be used in analysis of tamil literary work. A wealth of knowledge is hidden in old literature. They are time machines to past. Ever wondered what is the popular color or food in tamil speaking world in 500AD. The answer is hidden in literature. With right computer tools it becomes possible for us to dig in to this wealth of knowledge. 
+
+Core philosophy of பைந்தமிழ் (pytamil) library is to clearly separarte tamil language conepts from the programming language. For example, Tamil புணர்ச்சி rules are captured in human readable text file [புணர்ச்சிவிதிகள்.yaml](pytamil/தமிழ்/புணர்ச்சிவிதிகள்.yaml ) in YAML format. This approach has two major benefits
+
+1. This allows people with no prior knowledge in computer programming to contribute to the project and have more meaningful and natural discussion on the language concepts.
+2. Similar approach can be used to implement libraries for other human languages like Sanskrit, Telugu, Kannada etc.
+2. Developers can euse the core tamil language files to port this library to other computer languages like Javascript, c# etc.
+
+**List of Core tamil language files**
+* [pytamil/தமிழ்/புணர்ச்சிவிதிகள்.yaml](pytamil/தமிழ்/புணர்ச்சிவிதிகள்.yaml)
+* [pytamil/தமிழ்/எழுத்து.yaml](pytamil/தமிழ்/எழுத்து.yaml)
+* [pytamil/தமிழ்/யாப்பு/வெண்பா.g4](pytamil/தமிழ்/யாப்பு/வெண்பா.g4)
+* [pytamil/தமிழ்/கணிதம்.yaml](pytamil/தமிழ்/கணிதம்.yaml)
 
 
 # TODO
+If you have a feature in mind, Please add a feature request [here](https://github.com/srix/pytamil/issues/new) with label as `enhancement`.
 
 * return original words when a combined word is presented by predictive deomposition using புணர்ச்சி விதிகள்
 * built pip module
