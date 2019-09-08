@@ -49,7 +49,7 @@ Core philosophy of பைந்தமிழ் (pytamil) library is to clearly s
 
 1. This allows people with no prior knowledge in computer programming to contribute to the project and have more meaningful and natural discussion on the language concepts.
 2. Similar approach can be used to implement libraries for other human languages like Sanskrit, Telugu, Kannada etc.
-2. Developers can euse the core tamil language files to port this library to other computer languages like Javascript, c# etc.
+2. Developers can use the core tamil language files to port this library to other computer languages like Javascript, c# etc.
 
 **List of Core tamil language files**
 * [pytamil/தமிழ்/புணர்ச்சிவிதிகள்.yaml](pytamil/தமிழ்/புணர்ச்சிவிதிகள்.yaml)
