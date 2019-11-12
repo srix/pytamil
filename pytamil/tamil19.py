@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 
 import sys
+
+#FIXME: use PYTHONPATH with module directory
 sys.path.append('../pytamil')
 
 from pytamil import தமிழ்
@@ -57,4 +59,4 @@ from தமிழ் import மாத்திரை
 
 # print(புணர்ச்சி.தொடர்மொழி_ஆக்கு( 'மணி' , 'அடித்தான்'))
 # print(புணர்ச்சி.தொடர்மொழி_ஆக்கு( 'மெய்', 'எழுத்து'))
-print(புணர்ச்சி.தொடர்மொழி_ஆக்கு( 'நிலா', 'ஒளி')) 
+print(புணர்ச்சி.தொடர்மொழி_ஆக்கு( 'நிலா', 'ஒளி'))

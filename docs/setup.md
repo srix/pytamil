@@ -22,7 +22,11 @@ git config --global core.quotepath off
 The library was built using vscode. VScode Jedi didn't display tamil function names in outline window and intellisense. To fix this switch to language server instead of Jedi (set "python.jediEnabled": false in your settings.json). I have raised a bug with Vscode  
 
  [Function names with unicode (indic characters) are not displayed in Outline window #6454](https://github.com/microsoft/vscode-python/issues/6454)
- 
+
+### python package installation
+இந்த நிரல் தொகுப்பை நிறுவவதற்கு இப்படி pip செயலியில் கட்டளை இடவேண்டும்.
+$ python3 -m pip install setup.py  --user
+
 ### pytest
 pytest escapes unicode strings while printing on stdout. I guess, Vscode uses the same output so the UI listing of test cases also has excaped unicode strings.
 
@@ -40,11 +44,11 @@ To fix this create set `disable_test_id_escaping_and_forfeit_all_rights_to_commu
 
 # How to use
 ## unit tests
-cd in to top lelvel folder and run pytest. 
+cd in to top lelvel folder and run pytest.
 ```bash
 # runn all tests
 pytest
-# or run speific tests 
+# or run speific tests
 pytest test_எழுத்து.py  
 pytest test_சான்று.py
 pytest test_புணர்ச்சி.py
