@@ -298,19 +298,15 @@ def _get_regex_chars(charslist):
 
 #     return matchval
 
-
-def புணர்ச்சி_விதிகள்_கோப்பு():
-    return os.path.join(CURRDIR,"புணர்ச்சிவிதிகள்.yaml")
-
 விதிகள் = []
 # எழுத்துகள்=""
 parser=None
 
-entries = load(புணர்ச்சி_விதிகள்_கோப்பு())
+entries = load(os.path.join(CURRDIR,"புணர்ச்சிவிதிகள்.yaml"))
 
 விதிகள் = getவிதிகள்(entries,விதிகள்)
 
-parser = load_parser(os.path.join(os.path.dirname(__file__),'புணர்ச்சிவிதிகள்.ebnf'))
+parser = load_parser(os.path.join(CURRDIR,'புணர்ச்சிவிதிகள்.ebnf'))
 
 
 # சான்றுகள் = []

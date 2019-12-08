@@ -1,9 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-#
-# (C) 2019 எழில் மொழி அறக்கட்டளை
-# பைந்தமிழ் நிரல் தொகுப்பிற்கு எங்களது பங்களிப்பு
-#
 
 from distutils.core import setup
 from codecs import open

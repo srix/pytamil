@@ -24,7 +24,8 @@ The library was built using vscode. VScode Jedi didn't display tamil function na
  [Function names with unicode (indic characters) are not displayed in Outline window #6454](https://github.com/microsoft/vscode-python/issues/6454)
 
 ### python package installation
-இந்த நிரல் தொகுப்பை நிறுவவதற்கு இப்படி pip செயலியில் கட்டளை இடவேண்டும்.
+To install this package use the pip application command as follows
+[இந்த நிரல் தொகுப்பை நிறுவவதற்கு இப்படி pip செயலியில் கட்டளை இடவேண்டும்.]
 $ python3 -m pip install setup.py  --user
 
 ### pytest
