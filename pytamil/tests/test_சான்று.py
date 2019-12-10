@@ -3,8 +3,7 @@
 import pytest
 from pytamil.தமிழ் import புணர்ச்சி
 
-
-entries = புணர்ச்சி.load("pytamil/தமிழ்/புணர்ச்சிவிதிகள்.yaml")
+entries = புணர்ச்சி.load( "pytamil/தமிழ்/புணர்ச்சிவிதிகள்.yaml" )
 சான்றுகள் = []
 சான்றுகள் = புணர்ச்சி.getசான்றுகள்(entries,சான்றுகள் )
 
