@@ -51,7 +51,7 @@ def load(filename):
     return entries
 
 _எழுத்துக்கள் = {}
-_எழுத்துக்கள் = load(os.path.join(CURRDIR,"எழுத்து.yaml"))
+_எழுத்துக்கள் = load(os.path.join(CURRDIR,"resources/எழுத்து.yaml"))
 
 
 உயிர் = _எழுத்துக்கள்['உயிர்']

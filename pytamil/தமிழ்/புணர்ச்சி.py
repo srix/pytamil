@@ -302,11 +302,11 @@ def _get_regex_chars(charslist):
 # எழுத்துகள்=""
 parser=None
 
-entries = load(os.path.join(CURRDIR,"புணர்ச்சிவிதிகள்.yaml"))
+entries = load(os.path.join(CURRDIR,"resources/புணர்ச்சிவிதிகள்.yaml"))
 
 விதிகள் = getவிதிகள்(entries,விதிகள்)
 
-parser = load_parser(os.path.join(CURRDIR,'புணர்ச்சிவிதிகள்.ebnf'))
+parser = load_parser(os.path.join(CURRDIR,'resources/புணர்ச்சிவிதிகள்.ebnf'))
 
 
 # சான்றுகள் = []
