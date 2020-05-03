@@ -58,9 +58,9 @@ import os
 # print(மாத்திரை.மாத்திரை_கொடு('புணர்ச்சிசெய்'))
 # print(மாத்திரை.மொத்தமாத்திரை('புணர்ச்சிசெய்'))
 # print(மாத்திரை.printtree("ஊக்கம்"))
-# print(மாத்திரை.மாத்திரைவரிசை_கொடு("ஊக்கம்"))
-outfilename = os.path.join(os.path.dirname(__file__),'மாத்திரைoutput.txt')
-மாத்திரை.printtree_tofile("ஊக்கம்", outfilename)
+print(மாத்திரை.மாத்திரைவரிசை_கொடு("ஊக்கம்"))
+# outfilename = os.path.join(os.path.dirname(__file__),'தமிழ்/resources/மாத்திரைoutput.txt')
+# மாத்திரை.printtree_tofile("ஊக்கம்", outfilename)
 
 
 # print(புணர்ச்சி.தொடர்மொழி_ஆக்கு( 'மணி' , 'அடித்தான்'))
