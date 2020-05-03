@@ -1,0 +1,127 @@
+# Generated from /home/srix/workspace/pytamil/pytamil/தமிழ்/மாத்திரை.g4 by ANTLR 4.7.1
+from antlr4 import *
+if __name__ is not None and "." in __name__:
+    from .மாத்திரைParser import மாத்திரைParser
+else:
+    from மாத்திரைParser import மாத்திரைParser
+
+# This class defines a complete listener for a parse tree produced by மாத்திரைParser.
+class மாத்திரைListener(ParseTreeListener):
+
+    # Enter a parse tree produced by மாத்திரைParser#மாத்திரை.
+    def enterமாத்திரை(self, ctx:மாத்திரைParser.மாத்திரைContext):
+        pass
+
+    # Exit a parse tree produced by மாத்திரைParser#மாத்திரை.
+    def exitமாத்திரை(self, ctx:மாத்திரைParser.மாத்திரைContext):
+        pass
+
+
+    # Enter a parse tree produced by மாத்திரைParser#மொழிமுதல்.
+    def enterமொழிமுதல்(self, ctx:மாத்திரைParser.மொழிமுதல்Context):
+        pass
+
+    # Exit a parse tree produced by மாத்திரைParser#மொழிமுதல்.
+    def exitமொழிமுதல்(self, ctx:மாத்திரைParser.மொழிமுதல்Context):
+        pass
+
+
+    # Enter a parse tree produced by மாத்திரைParser#மொழியிடை.
+    def enterமொழியிடை(self, ctx:மாத்திரைParser.மொழியிடைContext):
+        pass
+
+    # Exit a parse tree produced by மாத்திரைParser#மொழியிடை.
+    def exitமொழியிடை(self, ctx:மாத்திரைParser.மொழியிடைContext):
+        pass
+
+
+    # Enter a parse tree produced by மாத்திரைParser#மொழியிறுதி.
+    def enterமொழியிறுதி(self, ctx:மாத்திரைParser.மொழியிறுதிContext):
+        pass
+
+    # Exit a parse tree produced by மாத்திரைParser#மொழியிறுதி.
+    def exitமொழியிறுதி(self, ctx:மாத்திரைParser.மொழியிறுதிContext):
+        pass
+
+
+    # Enter a parse tree produced by மாத்திரைParser#குறிலிணை.
+    def enterகுறிலிணை(self, ctx:மாத்திரைParser.குறிலிணைContext):
+        pass
+
+    # Exit a parse tree produced by மாத்திரைParser#குறிலிணை.
+    def exitகுறிலிணை(self, ctx:மாத்திரைParser.குறிலிணைContext):
+        pass
+
+
+    # Enter a parse tree produced by மாத்திரைParser#உயிர்க்குறில்.
+    def enterஉயிர்க்குறில்(self, ctx:மாத்திரைParser.உயிர்க்குறில்Context):
+        pass
+
+    # Exit a parse tree produced by மாத்திரைParser#உயிர்க்குறில்.
+    def exitஉயிர்க்குறில்(self, ctx:மாத்திரைParser.உயிர்க்குறில்Context):
+        pass
+
+
+    # Enter a parse tree produced by மாத்திரைParser#உயிர்நெடில்.
+    def enterஉயிர்நெடில்(self, ctx:மாத்திரைParser.உயிர்நெடில்Context):
+        pass
+
+    # Exit a parse tree produced by மாத்திரைParser#உயிர்நெடில்.
+    def exitஉயிர்நெடில்(self, ctx:மாத்திரைParser.உயிர்நெடில்Context):
+        pass
+
+
+    # Enter a parse tree produced by மாத்திரைParser#மெய்.
+    def enterமெய்(self, ctx:மாத்திரைParser.மெய்Context):
+        pass
+
+    # Exit a parse tree produced by மாத்திரைParser#மெய்.
+    def exitமெய்(self, ctx:மாத்திரைParser.மெய்Context):
+        pass
+
+
+    # Enter a parse tree produced by மாத்திரைParser#ஆய்தம்.
+    def enterஆய்தம்(self, ctx:மாத்திரைParser.ஆய்தம்Context):
+        pass
+
+    # Exit a parse tree produced by மாத்திரைParser#ஆய்தம்.
+    def exitஆய்தம்(self, ctx:மாத்திரைParser.ஆய்தம்Context):
+        pass
+
+
+    # Enter a parse tree produced by மாத்திரைParser#உயிர்மெய்க்குறில்.
+    def enterஉயிர்மெய்க்குறில்(self, ctx:மாத்திரைParser.உயிர்மெய்க்குறில்Context):
+        pass
+
+    # Exit a parse tree produced by மாத்திரைParser#உயிர்மெய்க்குறில்.
+    def exitஉயிர்மெய்க்குறில்(self, ctx:மாத்திரைParser.உயிர்மெய்க்குறில்Context):
+        pass
+
+
+    # Enter a parse tree produced by மாத்திரைParser#உயிர்மெய்நெடில்.
+    def enterஉயிர்மெய்நெடில்(self, ctx:மாத்திரைParser.உயிர்மெய்நெடில்Context):
+        pass
+
+    # Exit a parse tree produced by மாத்திரைParser#உயிர்மெய்நெடில்.
+    def exitஉயிர்மெய்நெடில்(self, ctx:மாத்திரைParser.உயிர்மெய்நெடில்Context):
+        pass
+
+
+    # Enter a parse tree produced by மாத்திரைParser#உயிரளபெடை.
+    def enterஉயிரளபெடை(self, ctx:மாத்திரைParser.உயிரளபெடைContext):
+        pass
+
+    # Exit a parse tree produced by மாத்திரைParser#உயிரளபெடை.
+    def exitஉயிரளபெடை(self, ctx:மாத்திரைParser.உயிரளபெடைContext):
+        pass
+
+
+    # Enter a parse tree produced by மாத்திரைParser#ஒற்றளபெடை.
+    def enterஒற்றளபெடை(self, ctx:மாத்திரைParser.ஒற்றளபெடைContext):
+        pass
+
+    # Exit a parse tree produced by மாத்திரைParser#ஒற்றளபெடை.
+    def exitஒற்றளபெடை(self, ctx:மாத்திரைParser.ஒற்றளபெடைContext):
+        pass
+
+

@@ -2,6 +2,11 @@
 # Created by https://www.gitignore.io/api/visualstudiocode,python
 # Edit at https://www.gitignore.io/?templates=visualstudiocode,python
 
+### antlr4 ###
+.antlr/
+*input.txt
+*output.txt
+
 ### Python ###
 # Byte-compiled / optimized / DLL files
 __pycache__/

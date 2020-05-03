@@ -1,4 +1,4 @@
-# Generated from /home/srix/workspace/pytamil/pytamil/தமிழ்/யாப்பு/வெண்பா.g4 by ANTLR 4.7.2
+# Generated from /home/srix/workspace/pytamil/pytamil/தமிழ்/யாப்பு/வெண்பா.g4 by ANTLR 4.7.1
 from antlr4 import *
 if __name__ is not None and "." in __name__:
     from .வெண்பாParser import வெண்பாParser
@@ -14,6 +14,51 @@ class வெண்பாListener(ParseTreeListener):
 
     # Exit a parse tree produced by வெண்பாParser#வெண்பா.
     def exitவெண்பா(self, ctx:வெண்பாParser.வெண்பாContext):
+        pass
+
+
+    # Enter a parse tree produced by வெண்பாParser#குறள்_வெண்பா.
+    def enterகுறள்_வெண்பா(self, ctx:வெண்பாParser.குறள்_வெண்பாContext):
+        pass
+
+    # Exit a parse tree produced by வெண்பாParser#குறள்_வெண்பா.
+    def exitகுறள்_வெண்பா(self, ctx:வெண்பாParser.குறள்_வெண்பாContext):
+        pass
+
+
+    # Enter a parse tree produced by வெண்பாParser#சிந்தியல்_வெண்பா.
+    def enterசிந்தியல்_வெண்பா(self, ctx:வெண்பாParser.சிந்தியல்_வெண்பாContext):
+        pass
+
+    # Exit a parse tree produced by வெண்பாParser#சிந்தியல்_வெண்பா.
+    def exitசிந்தியல்_வெண்பா(self, ctx:வெண்பாParser.சிந்தியல்_வெண்பாContext):
+        pass
+
+
+    # Enter a parse tree produced by வெண்பாParser#நேரிசை_வெண்பா.
+    def enterநேரிசை_வெண்பா(self, ctx:வெண்பாParser.நேரிசை_வெண்பாContext):
+        pass
+
+    # Exit a parse tree produced by வெண்பாParser#நேரிசை_வெண்பா.
+    def exitநேரிசை_வெண்பா(self, ctx:வெண்பாParser.நேரிசை_வெண்பாContext):
+        pass
+
+
+    # Enter a parse tree produced by வெண்பாParser#பஃறொடை_வெண்பா.
+    def enterபஃறொடை_வெண்பா(self, ctx:வெண்பாParser.பஃறொடை_வெண்பாContext):
+        pass
+
+    # Exit a parse tree produced by வெண்பாParser#பஃறொடை_வெண்பா.
+    def exitபஃறொடை_வெண்பா(self, ctx:வெண்பாParser.பஃறொடை_வெண்பாContext):
+        pass
+
+
+    # Enter a parse tree produced by வெண்பாParser#கலி_வெண்பா.
+    def enterகலி_வெண்பா(self, ctx:வெண்பாParser.கலி_வெண்பாContext):
+        pass
+
+    # Exit a parse tree produced by வெண்பாParser#கலி_வெண்பா.
+    def exitகலி_வெண்பா(self, ctx:வெண்பாParser.கலி_வெண்பாContext):
         pass
 
 
