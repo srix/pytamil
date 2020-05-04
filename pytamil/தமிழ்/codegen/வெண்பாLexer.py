@@ -1,4 +1,4 @@
-# Generated from /home/srix/workspace/pytamil/pytamil/தமிழ்/யாப்பு/வெண்பா.g4 by ANTLR 4.7.1
+# Generated from /home/srix/workspace/pytamil/pytamil/தமிழ்/resources/வெண்பா.g4 by ANTLR 4.7.1
 from antlr4 import *
 from io import StringIO
 from typing.io import TextIO

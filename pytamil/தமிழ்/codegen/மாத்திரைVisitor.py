@@ -34,6 +34,11 @@ class மாத்திரைVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by மாத்திரைParser#உயிரளபெடை.
+    def visitஉயிரளபெடை(self, ctx:மாத்திரைParser.உயிரளபெடைContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by மாத்திரைParser#உயிர்க்குறில்.
     def visitஉயிர்க்குறில்(self, ctx:மாத்திரைParser.உயிர்க்குறில்Context):
         return self.visitChildren(ctx)
@@ -64,8 +69,8 @@ class மாத்திரைVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by மாத்திரைParser#உயிரளபெடை.
-    def visitஉயிரளபெடை(self, ctx:மாத்திரைParser.உயிரளபெடைContext):
+    # Visit a parse tree produced by மாத்திரைParser#உயிரளபெடை_எழுத்து.
+    def visitஉயிரளபெடை_எழுத்து(self, ctx:மாத்திரைParser.உயிரளபெடை_எழுத்துContext):
         return self.visitChildren(ctx)
 
 

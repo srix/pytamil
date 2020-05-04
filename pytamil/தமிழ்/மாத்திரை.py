@@ -63,6 +63,13 @@ class நம்மாத்திரைListener(மாத்திரைListener
             உயிர்மெய் = எழுத்து.உயிர்மெய்தொகை(எழுத்துவரிசை)
             self.seq.append([உயிர்மெய், ctx.parser.ruleNames[ctx.getRuleIndex()] , 2])
 
+    def enterஉயிரளபெடை(self, ctx:மாத்திரைParser.உயிரளபெடைContext):
+        if ctx.parentCtx.parentCtx.getRuleIndex() == ctx.parser.RULE_மாத்திரை:
+            எழுத்துவரிசை = எழுத்து.எழுத்தாக்கு(ctx.getText())
+            உயிர்மெய் = எழுத்து.உயிர்மெய்தொகை(எழுத்துவரிசை)
+            self.seq.append([உயிர்மெய், ctx.parser.ruleNames[ctx.getRuleIndex()] , 3])
+
+    
     # def enterமொழியிடை(self, ctx:மாத்திரைParser.மொழியிடைContext):
     #     self.seq.append([ctx.getText(), 1])
     #     a= ctx.getParent().getText()s

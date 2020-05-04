@@ -53,6 +53,15 @@ class மாத்திரைListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by மாத்திரைParser#உயிரளபெடை.
+    def enterஉயிரளபெடை(self, ctx:மாத்திரைParser.உயிரளபெடைContext):
+        pass
+
+    # Exit a parse tree produced by மாத்திரைParser#உயிரளபெடை.
+    def exitஉயிரளபெடை(self, ctx:மாத்திரைParser.உயிரளபெடைContext):
+        pass
+
+
     # Enter a parse tree produced by மாத்திரைParser#உயிர்க்குறில்.
     def enterஉயிர்க்குறில்(self, ctx:மாத்திரைParser.உயிர்க்குறில்Context):
         pass
@@ -107,12 +116,12 @@ class மாத்திரைListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by மாத்திரைParser#உயிரளபெடை.
-    def enterஉயிரளபெடை(self, ctx:மாத்திரைParser.உயிரளபெடைContext):
+    # Enter a parse tree produced by மாத்திரைParser#உயிரளபெடை_எழுத்து.
+    def enterஉயிரளபெடை_எழுத்து(self, ctx:மாத்திரைParser.உயிரளபெடை_எழுத்துContext):
         pass
 
-    # Exit a parse tree produced by மாத்திரைParser#உயிரளபெடை.
-    def exitஉயிரளபெடை(self, ctx:மாத்திரைParser.உயிரளபெடைContext):
+    # Exit a parse tree produced by மாத்திரைParser#உயிரளபெடை_எழுத்து.
+    def exitஉயிரளபெடை_எழுத்து(self, ctx:மாத்திரைParser.உயிரளபெடை_எழுத்துContext):
         pass
 
 
