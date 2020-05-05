@@ -44,23 +44,8 @@ class மாத்திரைVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by மாத்திரைParser#உயிர்க்குறில்.
-    def visitஉயிர்க்குறில்(self, ctx:மாத்திரைParser.உயிர்க்குறில்Context):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by மாத்திரைParser#உயிர்நெடில்.
-    def visitஉயிர்நெடில்(self, ctx:மாத்திரைParser.உயிர்நெடில்Context):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by மாத்திரைParser#மெய்.
-    def visitமெய்(self, ctx:மாத்திரைParser.மெய்Context):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by மாத்திரைParser#ஆய்தம்.
-    def visitஆய்தம்(self, ctx:மாத்திரைParser.ஆய்தம்Context):
+    # Visit a parse tree produced by மாத்திரைParser#ஔகாரக்குறுக்கம்.
+    def visitஔகாரக்குறுக்கம்(self, ctx:மாத்திரைParser.ஔகாரக்குறுக்கம்Context):
         return self.visitChildren(ctx)
 
 
@@ -71,6 +56,26 @@ class மாத்திரைVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by மாத்திரைParser#உயிர்மெய்நெடில்.
     def visitஉயிர்மெய்நெடில்(self, ctx:மாத்திரைParser.உயிர்மெய்நெடில்Context):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by மாத்திரைParser#உயிர்க்குறில்.
+    def visitஉயிர்க்குறில்(self, ctx:மாத்திரைParser.உயிர்க்குறில்Context):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by மாத்திரைParser#உயிர்நெடில்.
+    def visitஉயிர்நெடில்(self, ctx:மாத்திரைParser.உயிர்நெடில்Context):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by மாத்திரைParser#ஆய்தம்.
+    def visitஆய்தம்(self, ctx:மாத்திரைParser.ஆய்தம்Context):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by மாத்திரைParser#மெய்.
+    def visitமெய்(self, ctx:மாத்திரைParser.மெய்Context):
         return self.visitChildren(ctx)
 
 
