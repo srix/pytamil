@@ -54,12 +54,12 @@ def serializedATN():
         buf.write("I\u00c1\3\2\2\2K\u00c4\3\2\2\2M\u00c7\3\2\2\2O\u00ca\3")
         buf.write("\2\2\2Q\u00cf\3\2\2\2S\u00d4\3\2\2\2U\u00d9\3\2\2\2W\u00de")
         buf.write("\3\2\2\2Y\u00e3\3\2\2\2[\u00e8\3\2\2\2]\u00ed\3\2\2\2")
-        buf.write("_\u00f2\3\2\2\2a\u00f7\3\2\2\2c\u00fc\3\2\2\2ef\7\u0b96")
-        buf.write("\2\2f\4\3\2\2\2gh\7\u0b87\2\2h\6\3\2\2\2ij\7\u0b89\2\2")
-        buf.write("j\b\3\2\2\2kl\7\u0b8b\2\2l\n\3\2\2\2mn\7\u0b90\2\2n\f")
-        buf.write("\3\2\2\2op\7\u0b94\2\2p\16\3\2\2\2qr\7\u0b88\2\2r\20\3")
-        buf.write("\2\2\2st\7\u0b8a\2\2t\22\3\2\2\2uv\7\u0b8c\2\2v\24\3\2")
-        buf.write("\2\2wx\7\u0b91\2\2x\26\3\2\2\2yz\7\u0b92\2\2z\30\3\2\2")
+        buf.write("_\u00f2\3\2\2\2a\u00f7\3\2\2\2c\u00fc\3\2\2\2ef\7\u0b8b")
+        buf.write("\2\2f\4\3\2\2\2gh\7\u0b92\2\2h\6\3\2\2\2ij\7\u0b96\2\2")
+        buf.write("j\b\3\2\2\2kl\7\u0b87\2\2l\n\3\2\2\2mn\7\u0b89\2\2n\f")
+        buf.write("\3\2\2\2op\7\u0b90\2\2p\16\3\2\2\2qr\7\u0b94\2\2r\20\3")
+        buf.write("\2\2\2st\7\u0b88\2\2t\22\3\2\2\2uv\7\u0b8a\2\2v\24\3\2")
+        buf.write("\2\2wx\7\u0b8c\2\2x\26\3\2\2\2yz\7\u0b91\2\2z\30\3\2\2")
         buf.write("\2{|\7\u0b95\2\2|\32\3\2\2\2}~\7\u0b85\2\2~\34\3\2\2\2")
         buf.write("\177\u0080\7\u0b97\2\2\u0080\u0081\7\u0bcf\2\2\u0081\36")
         buf.write("\3\2\2\2\u0082\u0083\7\u0b9c\2\2\u0083\u0084\7\u0bcf\2")
@@ -176,9 +176,9 @@ class மாத்திரைLexer(Lexer):
     modeNames = [ "DEFAULT_MODE" ]
 
     literalNames = [ "<INVALID>",
-            "'\u0B94'", "'\u0B85'", "'\u0B87'", "'\u0B89'", "'\u0B8E'", 
-            "'\u0B92'", "'\u0B86'", "'\u0B88'", "'\u0B8A'", "'\u0B8F'", 
-            "'\u0B90'", "'\u0B93'", "'\u0B83'", "'\u0B95\u0BCD'", "'\u0B9A\u0BCD'", 
+            "'\u0B89'", "'\u0B90'", "'\u0B94'", "'\u0B85'", "'\u0B87'", 
+            "'\u0B8E'", "'\u0B92'", "'\u0B86'", "'\u0B88'", "'\u0B8A'", 
+            "'\u0B8F'", "'\u0B93'", "'\u0B83'", "'\u0B95\u0BCD'", "'\u0B9A\u0BCD'", 
             "'\u0B9F\u0BCD'", "'\u0BA4\u0BCD'", "'\u0BAA\u0BCD'", "'\u0BB1\u0BCD'", 
             "'\u0B9E\u0BCD'", "'\u0B99\u0BCD'", "'\u0BA3\u0BCD'", "'\u0BA8\u0BCD'", 
             "'\u0BAE\u0BCD'", "'\u0BA9\u0BCD'", "'\u0BAF\u0BCD'", "'\u0BB0\u0BCD'", 

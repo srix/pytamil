@@ -3,13 +3,14 @@
 import sys
 
 #FIXME: use PYTHONPATH with module directory
-sys.path.append('../pytamil')
+# sys.path.append('../pytamil')
 
+import pytamil
 from pytamil import தமிழ்
-from தமிழ் import இலக்கணம் as இல
-from தமிழ் import புணர்ச்சி
-from தமிழ் import எழுத்து
-from தமிழ் import மாத்திரை
+# from tamil1 import இலக்கணம் as இல
+from pytamil.தமிழ் import புணர்ச்சி
+from pytamil.தமிழ் import எழுத்து
+from pytamil.தமிழ்  import மாத்திரை
 import os
 
 
@@ -60,8 +61,11 @@ import os
 # print(மாத்திரை.printtree("ஊக்கம்"))
 # print(மாத்திரை.மாத்திரைவரிசை_கொடு("ஊக்கம்"))
 # print(மாத்திரை.மாத்திரைவரிசை_கொடு("குழூக்குறி"))
-print(மாத்திரை.மாத்திரைவரிசை_கொடு("ஔவையார்"))
-print(மாத்திரை.மாத்திரைவரிசை_கொடு("மௌவல்"))
+# print(மாத்திரை.மாத்திரைவரிசை_கொடு("ஔவையார்"))
+print(மாத்திரை.மாத்திரைவரிசை_கொடு("மழை"))
+print(மாத்திரை.மாத்திரைவரிசை_கொடு("தவளை"))
+print(மாத்திரை.மாத்திரைவரிசை_கொடு("பகைவர்"))
+
 
 # outfilename = os.path.join(os.path.dirname(__file__),'தமிழ்/resources/மாத்திரைoutput.txt')
 # மாத்திரை.printtree_tofile("ஊக்கம்", outfilename)
