@@ -145,7 +145,7 @@ dmypy.json
 /.idea/
 
 # VSCode
-.vscode/*
+.vscode/
 
 
 .directory

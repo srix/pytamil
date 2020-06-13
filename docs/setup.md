@@ -74,9 +74,19 @@ launch.json for Vscode
 settings.json
 ```
 {
-    "python.pythonPath": "/home/srix/workspace/pytamil/venv/bin/python3.8",
-    "python.jediEnabled": False
+    "python.pythonPath": "/home/srix/workspace/pytamil1/venv/bin/python3.8",
+    "python.jediEnabled": false,
+
+    "[antlr]": {},
+    "antlr4.generation": {
+        "mode": "external",
+        "language": "Python3",
+        "listeners": true,
+        "visitors": false,
+        "outputDir": "/home/srix/workspace/pytamil/pytamil/தமிழ்/codegen/"
+    },
 }
+
 ```
 
 # How to use
