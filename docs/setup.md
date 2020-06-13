@@ -42,6 +42,42 @@ To fix this create set `disable_test_id_escaping_and_forfeit_all_rights_to_commu
 ![pytest unicode vscode](https://user-images.githubusercontent.com/5801636/64476031-b2bd3a00-d1a7-11e9-89e5-3623709bee51.png)
 
 
+launch.json for Vscode
+```
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Python: Tamil19.py",
+            "type": "python",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "program": "${workspaceFolder}/pytamil/tamil19.py",
+            "console": "integratedTerminal",
+            "env": {"PYTHONPATH": "${workspaceFolder}"},
+
+        }
+    ]
+}
+```
+
+settings.json
+```
+{
+    "python.pythonPath": "/home/srix/workspace/pytamil/venv/bin/python3.8",
+    "python.jediEnabled": False
+}
+```
 
 # How to use
 ## unit tests
