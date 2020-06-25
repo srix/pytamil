@@ -1,9 +1,13 @@
-# Generated from /home/srix/workspace/pytamil/pytamil/தமிழ்/resources/மாத்திரை.g4 by ANTLR 4.7.1
+# Generated from /home/srix/workspace/pytamil/pytamil/தமிழ்/resources/மாத்திரை.g4 by ANTLR 4.8
 # encoding: utf-8
 from antlr4 import *
 from io import StringIO
-from typing.io import TextIO
 import sys
+if sys.version_info[1] > 5:
+	from typing import TextIO
+else:
+	from typing.io import TextIO
+
 
 def serializedATN():
     with StringIO() as buf:
@@ -157,9 +161,10 @@ class மாத்திரைParser ( Parser ):
 
     def __init__(self, input:TokenStream, output:TextIO = sys.stdout):
         super().__init__(input, output)
-        self.checkVersion("4.7.1")
+        self.checkVersion("4.8")
         self._interp = ParserATNSimulator(self, self.atn, self.decisionsToDFA, self.sharedContextCache)
         self._predicates = None
+
 
 
 
@@ -195,12 +200,6 @@ class மாத்திரைParser ( Parser ):
             if hasattr( listener, "exitமாத்திரை" ):
                 listener.exitமாத்திரை(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitமாத்திரை" ):
-                return visitor.visitமாத்திரை(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -232,6 +231,7 @@ class மாத்திரைParser ( Parser ):
         finally:
             self.exitRule()
         return localctx
+
 
     class மொழிமுதல்Context(ParserRuleContext):
 
@@ -273,12 +273,6 @@ class மாத்திரைParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitமொழிமுதல்" ):
                 listener.exitமொழிமுதல்(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitமொழிமுதல்" ):
-                return visitor.visitமொழிமுதல்(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -336,6 +330,7 @@ class மாத்திரைParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class மொழியிடைContext(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
@@ -380,12 +375,6 @@ class மாத்திரைParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitமொழியிடை" ):
                 listener.exitமொழியிடை(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitமொழியிடை" ):
-                return visitor.visitமொழியிடை(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -449,6 +438,7 @@ class மாத்திரைParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class மொழியிறுதிContext(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
@@ -485,12 +475,6 @@ class மாத்திரைParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitமொழியிறுதி" ):
                 listener.exitமொழியிறுதி(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitமொழியிறுதி" ):
-                return visitor.visitமொழியிறுதி(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -542,6 +526,7 @@ class மாத்திரைParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class குறிலிணைContext(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
@@ -569,12 +554,6 @@ class மாத்திரைParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitகுறிலிணை" ):
                 listener.exitகுறிலிணை(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitகுறிலிணை" ):
-                return visitor.visitகுறிலிணை(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -612,6 +591,7 @@ class மாத்திரைParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class உயிரளபெடைContext(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
@@ -637,12 +617,6 @@ class மாத்திரைParser ( Parser ):
             if hasattr( listener, "exitஉயிரளபெடை" ):
                 listener.exitஉயிரளபெடை(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitஉயிரளபெடை" ):
-                return visitor.visitஉயிரளபெடை(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -663,6 +637,7 @@ class மாத்திரைParser ( Parser ):
         finally:
             self.exitRule()
         return localctx
+
 
     class ஒற்றளபெடைContext(ParserRuleContext):
 
@@ -685,12 +660,6 @@ class மாத்திரைParser ( Parser ):
             if hasattr( listener, "exitஒற்றளபெடை" ):
                 listener.exitஒற்றளபெடை(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitஒற்றளபெடை" ):
-                return visitor.visitஒற்றளபெடை(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -709,6 +678,7 @@ class மாத்திரைParser ( Parser ):
         finally:
             self.exitRule()
         return localctx
+
 
     class குற்றியலுகரம்Context(ParserRuleContext):
 
@@ -731,12 +701,6 @@ class மாத்திரைParser ( Parser ):
             if hasattr( listener, "exitகுற்றியலுகரம்" ):
                 listener.exitகுற்றியலுகரம்(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitகுற்றியலுகரம்" ):
-                return visitor.visitகுற்றியலுகரம்(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -758,6 +722,7 @@ class மாத்திரைParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class ஐகாரக்குறுக்கம்Context(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
@@ -778,12 +743,6 @@ class மாத்திரைParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitஐகாரக்குறுக்கம்" ):
                 listener.exitஐகாரக்குறுக்கம்(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitஐகாரக்குறுக்கம்" ):
-                return visitor.visitஐகாரக்குறுக்கம்(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -819,6 +778,7 @@ class மாத்திரைParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class ஔகாரக்குறுக்கம்Context(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
@@ -839,12 +799,6 @@ class மாத்திரைParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitஔகாரக்குறுக்கம்" ):
                 listener.exitஔகாரக்குறுக்கம்(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitஔகாரக்குறுக்கம்" ):
-                return visitor.visitஔகாரக்குறுக்கம்(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -880,6 +834,7 @@ class மாத்திரைParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class உயிர்மெய்க்குறில்Context(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
@@ -905,12 +860,6 @@ class மாத்திரைParser ( Parser ):
             if hasattr( listener, "exitஉயிர்மெய்க்குறில்" ):
                 listener.exitஉயிர்மெய்க்குறில்(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitஉயிர்மெய்க்குறில்" ):
-                return visitor.visitஉயிர்மெய்க்குறில்(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -931,6 +880,7 @@ class மாத்திரைParser ( Parser ):
         finally:
             self.exitRule()
         return localctx
+
 
     class உயிர்மெய்நெடில்Context(ParserRuleContext):
 
@@ -957,12 +907,6 @@ class மாத்திரைParser ( Parser ):
             if hasattr( listener, "exitஉயிர்மெய்நெடில்" ):
                 listener.exitஉயிர்மெய்நெடில்(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitஉயிர்மெய்நெடில்" ):
-                return visitor.visitஉயிர்மெய்நெடில்(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -984,6 +928,7 @@ class மாத்திரைParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class உயிர்க்குறில்Context(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
@@ -1001,12 +946,6 @@ class மாத்திரைParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitஉயிர்க்குறில்" ):
                 listener.exitஉயிர்க்குறில்(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitஉயிர்க்குறில்" ):
-                return visitor.visitஉயிர்க்குறில்(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -1033,6 +972,7 @@ class மாத்திரைParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class உயிர்நெடில்Context(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
@@ -1050,12 +990,6 @@ class மாத்திரைParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitஉயிர்நெடில்" ):
                 listener.exitஉயிர்நெடில்(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitஉயிர்நெடில்" ):
-                return visitor.visitஉயிர்நெடில்(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -1082,6 +1016,7 @@ class மாத்திரைParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class ஆய்தம்Context(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
@@ -1099,12 +1034,6 @@ class மாத்திரைParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitஆய்தம்" ):
                 listener.exitஆய்தம்(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitஆய்தம்" ):
-                return visitor.visitஆய்தம்(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -1125,6 +1054,7 @@ class மாத்திரைParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class மெய்Context(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
@@ -1142,12 +1072,6 @@ class மாத்திரைParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitமெய்" ):
                 listener.exitமெய்(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitமெய்" ):
-                return visitor.visitமெய்(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -1174,6 +1098,7 @@ class மாத்திரைParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class வல்லினம்Context(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
@@ -1191,12 +1116,6 @@ class மாத்திரைParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitவல்லினம்" ):
                 listener.exitவல்லினம்(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitவல்லினம்" ):
-                return visitor.visitவல்லினம்(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -1223,6 +1142,7 @@ class மாத்திரைParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class உயிரளபெடை_எழுத்துContext(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
@@ -1240,12 +1160,6 @@ class மாத்திரைParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitஉயிரளபெடை_எழுத்து" ):
                 listener.exitஉயிரளபெடை_எழுத்து(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitஉயிரளபெடை_எழுத்து" ):
-                return visitor.visitஉயிரளபெடை_எழுத்து(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -1272,6 +1186,7 @@ class மாத்திரைParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class ஒற்றளபெடை_எழுத்துContext(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
@@ -1289,12 +1204,6 @@ class மாத்திரைParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitஒற்றளபெடை_எழுத்து" ):
                 listener.exitஒற்றளபெடை_எழுத்து(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitஒற்றளபெடை_எழுத்து" ):
-                return visitor.visitஒற்றளபெடை_எழுத்து(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 

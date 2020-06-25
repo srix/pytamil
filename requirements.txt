@@ -1,5 +1,5 @@
 ## Pip
-antlr4-python3-runtime==4.7.2
+antlr4-python3-runtime==4.8
 nltk==3.5
 Open-Tamil==0.9
 pylint==2.3.1

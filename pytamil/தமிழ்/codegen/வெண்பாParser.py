@@ -1,9 +1,13 @@
-# Generated from /home/srix/workspace/pytamil/pytamil/தமிழ்/resources/வெண்பா.g4 by ANTLR 4.7.1
+# Generated from /home/srix/workspace/pytamil/pytamil/தமிழ்/resources/வெண்பா.g4 by ANTLR 4.8
 # encoding: utf-8
 from antlr4 import *
 from io import StringIO
-from typing.io import TextIO
 import sys
+if sys.version_info[1] > 5:
+	from typing import TextIO
+else:
+	from typing.io import TextIO
+
 
 def serializedATN():
     with StringIO() as buf:
@@ -565,9 +569,10 @@ class வெண்பாParser ( Parser ):
 
     def __init__(self, input:TokenStream, output:TextIO = sys.stdout):
         super().__init__(input, output)
-        self.checkVersion("4.7.1")
+        self.checkVersion("4.8")
         self._interp = ParserATNSimulator(self, self.atn, self.decisionsToDFA, self.sharedContextCache)
         self._predicates = None
+
 
 
 
@@ -603,12 +608,6 @@ class வெண்பாParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitவெண்பா" ):
                 listener.exitவெண்பா(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitவெண்பா" ):
-                return visitor.visitவெண்பா(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -654,6 +653,7 @@ class வெண்பாParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class குறள்_வெண்பாContext(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
@@ -679,12 +679,6 @@ class வெண்பாParser ( Parser ):
             if hasattr( listener, "exitகுறள்_வெண்பா" ):
                 listener.exitகுறள்_வெண்பா(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitகுறள்_வெண்பா" ):
-                return visitor.visitகுறள்_வெண்பா(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -705,6 +699,7 @@ class வெண்பாParser ( Parser ):
         finally:
             self.exitRule()
         return localctx
+
 
     class சிந்தியல்_வெண்பாContext(ParserRuleContext):
 
@@ -734,12 +729,6 @@ class வெண்பாParser ( Parser ):
             if hasattr( listener, "exitசிந்தியல்_வெண்பா" ):
                 listener.exitசிந்தியல்_வெண்பா(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitசிந்தியல்_வெண்பா" ):
-                return visitor.visitசிந்தியல்_வெண்பா(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -762,6 +751,7 @@ class வெண்பாParser ( Parser ):
         finally:
             self.exitRule()
         return localctx
+
 
     class நேரிசை_வெண்பாContext(ParserRuleContext):
 
@@ -791,12 +781,6 @@ class வெண்பாParser ( Parser ):
             if hasattr( listener, "exitநேரிசை_வெண்பா" ):
                 listener.exitநேரிசை_வெண்பா(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitநேரிசை_வெண்பா" ):
-                return visitor.visitநேரிசை_வெண்பா(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -821,6 +805,7 @@ class வெண்பாParser ( Parser ):
         finally:
             self.exitRule()
         return localctx
+
 
     class பஃறொடை_வெண்பாContext(ParserRuleContext):
 
@@ -849,12 +834,6 @@ class வெண்பாParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitபஃறொடை_வெண்பா" ):
                 listener.exitபஃறொடை_வெண்பா(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitபஃறொடை_வெண்பா" ):
-                return visitor.visitபஃறொடை_வெண்பா(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -1044,6 +1023,7 @@ class வெண்பாParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class கலி_வெண்பாContext(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
@@ -1071,12 +1051,6 @@ class வெண்பாParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitகலி_வெண்பா" ):
                 listener.exitகலி_வெண்பா(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitகலி_வெண்பா" ):
-                return visitor.visitகலி_வெண்பா(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -1133,6 +1107,7 @@ class வெண்பாParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class அடிContext(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
@@ -1162,12 +1137,6 @@ class வெண்பாParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitஅடி" ):
                 listener.exitஅடி(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitஅடி" ):
-                return visitor.visitஅடி(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -1201,6 +1170,7 @@ class வெண்பாParser ( Parser ):
         finally:
             self.exitRule()
         return localctx
+
 
     class ஈற்றடிContext(ParserRuleContext):
 
@@ -1236,12 +1206,6 @@ class வெண்பாParser ( Parser ):
             if hasattr( listener, "exitஈற்றடி" ):
                 listener.exitஈற்றடி(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitஈற்றடி" ):
-                return visitor.visitஈற்றடி(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -1269,6 +1233,7 @@ class வெண்பாParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class சீர்Context(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
@@ -1293,12 +1258,6 @@ class வெண்பாParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitசீர்" ):
                 listener.exitசீர்(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitசீர்" ):
-                return visitor.visitசீர்(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -1332,6 +1291,7 @@ class வெண்பாParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class ஈற்றுச்சீர்Context(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
@@ -1364,12 +1324,6 @@ class வெண்பாParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitஈற்றுச்சீர்" ):
                 listener.exitஈற்றுச்சீர்(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitஈற்றுச்சீர்" ):
-                return visitor.visitஈற்றுச்சீர்(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -1415,6 +1369,7 @@ class வெண்பாParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class ஈரசைContext(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
@@ -1447,12 +1402,6 @@ class வெண்பாParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitஈரசை" ):
                 listener.exitஈரசை(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitஈரசை" ):
-                return visitor.visitஈரசை(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -1498,6 +1447,7 @@ class வெண்பாParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class மூவசைContext(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
@@ -1530,12 +1480,6 @@ class வெண்பாParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitமூவசை" ):
                 listener.exitமூவசை(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitமூவசை" ):
-                return visitor.visitமூவசை(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -1581,6 +1525,7 @@ class வெண்பாParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class தேமாContext(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
@@ -1605,12 +1550,6 @@ class வெண்பாParser ( Parser ):
             if hasattr( listener, "exitதேமா" ):
                 listener.exitதேமா(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitதேமா" ):
-                return visitor.visitதேமா(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -1631,6 +1570,7 @@ class வெண்பாParser ( Parser ):
         finally:
             self.exitRule()
         return localctx
+
 
     class புளிமாContext(ParserRuleContext):
 
@@ -1657,12 +1597,6 @@ class வெண்பாParser ( Parser ):
             if hasattr( listener, "exitபுளிமா" ):
                 listener.exitபுளிமா(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitபுளிமா" ):
-                return visitor.visitபுளிமா(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -1683,6 +1617,7 @@ class வெண்பாParser ( Parser ):
         finally:
             self.exitRule()
         return localctx
+
 
     class கருவிளம்Context(ParserRuleContext):
 
@@ -1708,12 +1643,6 @@ class வெண்பாParser ( Parser ):
             if hasattr( listener, "exitகருவிளம்" ):
                 listener.exitகருவிளம்(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitகருவிளம்" ):
-                return visitor.visitகருவிளம்(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -1734,6 +1663,7 @@ class வெண்பாParser ( Parser ):
         finally:
             self.exitRule()
         return localctx
+
 
     class கூவிளம்Context(ParserRuleContext):
 
@@ -1760,12 +1690,6 @@ class வெண்பாParser ( Parser ):
             if hasattr( listener, "exitகூவிளம்" ):
                 listener.exitகூவிளம்(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitகூவிளம்" ):
-                return visitor.visitகூவிளம்(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -1786,6 +1710,7 @@ class வெண்பாParser ( Parser ):
         finally:
             self.exitRule()
         return localctx
+
 
     class தேமாங்காய்Context(ParserRuleContext):
 
@@ -1812,12 +1737,6 @@ class வெண்பாParser ( Parser ):
             if hasattr( listener, "exitதேமாங்காய்" ):
                 listener.exitதேமாங்காய்(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitதேமாங்காய்" ):
-                return visitor.visitதேமாங்காய்(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -1838,6 +1757,7 @@ class வெண்பாParser ( Parser ):
         finally:
             self.exitRule()
         return localctx
+
 
     class புளிமாங்காய்Context(ParserRuleContext):
 
@@ -1864,12 +1784,6 @@ class வெண்பாParser ( Parser ):
             if hasattr( listener, "exitபுளிமாங்காய்" ):
                 listener.exitபுளிமாங்காய்(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitபுளிமாங்காய்" ):
-                return visitor.visitபுளிமாங்காய்(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -1890,6 +1804,7 @@ class வெண்பாParser ( Parser ):
         finally:
             self.exitRule()
         return localctx
+
 
     class கருவிளங்காய்Context(ParserRuleContext):
 
@@ -1916,12 +1831,6 @@ class வெண்பாParser ( Parser ):
             if hasattr( listener, "exitகருவிளங்காய்" ):
                 listener.exitகருவிளங்காய்(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitகருவிளங்காய்" ):
-                return visitor.visitகருவிளங்காய்(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -1942,6 +1851,7 @@ class வெண்பாParser ( Parser ):
         finally:
             self.exitRule()
         return localctx
+
 
     class கூவிளங்காய்Context(ParserRuleContext):
 
@@ -1968,12 +1878,6 @@ class வெண்பாParser ( Parser ):
             if hasattr( listener, "exitகூவிளங்காய்" ):
                 listener.exitகூவிளங்காய்(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitகூவிளங்காய்" ):
-                return visitor.visitகூவிளங்காய்(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -1994,6 +1898,7 @@ class வெண்பாParser ( Parser ):
         finally:
             self.exitRule()
         return localctx
+
 
     class நாள்Context(ParserRuleContext):
 
@@ -2016,12 +1921,6 @@ class வெண்பாParser ( Parser ):
             if hasattr( listener, "exitநாள்" ):
                 listener.exitநாள்(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitநாள்" ):
-                return visitor.visitநாள்(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -2040,6 +1939,7 @@ class வெண்பாParser ( Parser ):
         finally:
             self.exitRule()
         return localctx
+
 
     class மலர்Context(ParserRuleContext):
 
@@ -2062,12 +1962,6 @@ class வெண்பாParser ( Parser ):
             if hasattr( listener, "exitமலர்" ):
                 listener.exitமலர்(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitமலர்" ):
-                return visitor.visitமலர்(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -2086,6 +1980,7 @@ class வெண்பாParser ( Parser ):
         finally:
             self.exitRule()
         return localctx
+
 
     class காசுContext(ParserRuleContext):
 
@@ -2111,12 +2006,6 @@ class வெண்பாParser ( Parser ):
             if hasattr( listener, "exitகாசு" ):
                 listener.exitகாசு(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitகாசு" ):
-                return visitor.visitகாசு(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -2137,6 +2026,7 @@ class வெண்பாParser ( Parser ):
         finally:
             self.exitRule()
         return localctx
+
 
     class பிறப்புContext(ParserRuleContext):
 
@@ -2163,12 +2053,6 @@ class வெண்பாParser ( Parser ):
             if hasattr( listener, "exitபிறப்பு" ):
                 listener.exitபிறப்பு(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitபிறப்பு" ):
-                return visitor.visitபிறப்பு(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -2189,6 +2073,7 @@ class வெண்பாParser ( Parser ):
         finally:
             self.exitRule()
         return localctx
+
 
     class நேர்Context(ParserRuleContext):
 
@@ -2218,12 +2103,6 @@ class வெண்பாParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitநேர்" ):
                 listener.exitநேர்(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitநேர்" ):
-                return visitor.visitநேர்(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -2273,6 +2152,7 @@ class வெண்பாParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class நிரைContext(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
@@ -2304,12 +2184,6 @@ class வெண்பாParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitநிரை" ):
                 listener.exitநிரை(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitநிரை" ):
-                return visitor.visitநிரை(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -2367,6 +2241,7 @@ class வெண்பாParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class ஒற்றுContext(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
@@ -2384,12 +2259,6 @@ class வெண்பாParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitஒற்று" ):
                 listener.exitஒற்று(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitஒற்று" ):
-                return visitor.visitஒற்று(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -2416,6 +2285,7 @@ class வெண்பாParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class குறில்Context(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
@@ -2433,12 +2303,6 @@ class வெண்பாParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitகுறில்" ):
                 listener.exitகுறில்(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitகுறில்" ):
-                return visitor.visitகுறில்(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -2465,6 +2329,7 @@ class வெண்பாParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class நெடில்Context(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
@@ -2482,12 +2347,6 @@ class வெண்பாParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitநெடில்" ):
                 listener.exitநெடில்(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitநெடில்" ):
-                return visitor.visitநெடில்(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 

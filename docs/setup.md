@@ -51,6 +51,22 @@ launch.json for Vscode
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Debug மாத்திரை Grammar",
+            "type": "antlr-debug",
+            "request": "launch",
+            "grammar": "${workspaceFolder}/pytamil/தமிழ்/resources/மாத்திரை.g4",
+            "input": "${workspaceFolder}/pytamil/தமிழ்/resources/மாத்திரை-input.txt",
+            "visualParseTree": true
+        },
+        {
+            "name": "Debug வெண்பா Grammar",
+            "type": "antlr-debug",
+            "request": "launch",
+            "grammar": "${workspaceFolder}/pytamil/தமிழ்/resources/வெண்பா.g4",
+            "input": "${workspaceFolder}/pytamil/தமிழ்/resources/வெண்பா-input.txt",
+            "visualParseTree": true
+        },
+        {
             "name": "Python: Current File",
             "type": "python",
             "request": "launch",
@@ -74,7 +90,7 @@ launch.json for Vscode
 settings.json
 ```
 {
-    "python.pythonPath": "/home/srix/workspace/pytamil1/venv/bin/python3.8",
+    "python.pythonPath": ".venv/bin/python",
     "python.jediEnabled": false,
 
     "[antlr]": {},
