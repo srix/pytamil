@@ -106,6 +106,20 @@ settings.json
 ```
 
 # How to use
+
+## Howto Debug Grammars
+
+On VSCODE
+
+* make sure antlr extension is installed. The launch and settings files have entries like above. 
+* Create the following files
+    {workspaceFolder}/pytamil/தமிழ்/resources/வெண்பா-input.txt
+    {workspaceFolder}/pytamil/தமிழ்/resources/மாத்திரை-input.txt
+
+* Select the config from debug list and run. Antlr extension should be able to generate parse tree graph.
+* Make sure the entry in மாத்திரை-input.txt is in விரி form . That is to debug தவளை enter த்அவ்அள்ஐ
+
+
 ## unit tests
 cd in to top lelvel folder and run pytest.
 ```bash
