@@ -54,19 +54,19 @@ class நம்மாத்திரைListener(மாத்திரைListener
     def enterஉயிர்மெய்க்குறில்(self, ctx:மாத்திரைParser.உயிர்மெய்க்குறில்Context):
         if ctx.parentCtx.parentCtx.getRuleIndex() == ctx.parser.RULE_மாத்திரை:
             எழுத்துவரிசை = எழுத்து.எழுத்தாக்கு(ctx.getText())
-            உயிர்மெய் = எழுத்து.உயிர்மெய்தொகை(எழுத்துவரிசை)
+            உயிர்மெய் = எழுத்து.உயிர்மெய்சேர்(எழுத்துவரிசை)
             self.seq.append([உயிர்மெய், ctx.parser.ruleNames[ctx.getRuleIndex()] , 1])
 
     def enterஉயிர்மெய்நெடில்(self, ctx:மாத்திரைParser.உயிர்மெய்நெடில்Context):
         if ctx.parentCtx.parentCtx.getRuleIndex() == ctx.parser.RULE_மாத்திரை:
             எழுத்துவரிசை = எழுத்து.எழுத்தாக்கு(ctx.getText())
-            உயிர்மெய் = எழுத்து.உயிர்மெய்தொகை(எழுத்துவரிசை)
+            உயிர்மெய் = எழுத்து.உயிர்மெய்சேர்(எழுத்துவரிசை)
             self.seq.append([உயிர்மெய், ctx.parser.ruleNames[ctx.getRuleIndex()] , 2])
 
     def enterஉயிரளபெடை(self, ctx:மாத்திரைParser.உயிரளபெடைContext):
         if ctx.parentCtx.parentCtx.getRuleIndex() == ctx.parser.RULE_மாத்திரை:
             எழுத்துவரிசை = எழுத்து.எழுத்தாக்கு(ctx.getText())
-            உயிர்மெய் = எழுத்து.உயிர்மெய்தொகை(எழுத்துவரிசை)
+            உயிர்மெய் = எழுத்து.உயிர்மெய்சேர்(எழுத்துவரிசை)
             self.seq.append([உயிர்மெய், ctx.parser.ruleNames[ctx.getRuleIndex()] , 3])
 
     def enterஒற்றளபெடை(self, ctx:மாத்திரைParser.ஒற்றளபெடைContext):
@@ -76,19 +76,19 @@ class நம்மாத்திரைListener(மாத்திரைListener
     def enterஔகாரக்குறுக்கம்(self, ctx:மாத்திரைParser.ஔகாரக்குறுக்கம்Context):
         if ctx.parentCtx.parentCtx.getRuleIndex() == ctx.parser.RULE_மாத்திரை:
             எழுத்துவரிசை = எழுத்து.எழுத்தாக்கு(ctx.getText())
-            உயிர்மெய் = எழுத்து.உயிர்மெய்தொகை(எழுத்துவரிசை)
+            உயிர்மெய் = எழுத்து.உயிர்மெய்சேர்(எழுத்துவரிசை)
             self.seq.append([உயிர்மெய், ctx.parser.ruleNames[ctx.getRuleIndex()] , 1])
 
     def enterகுற்றியலுகரம்(self, ctx:மாத்திரைParser.குற்றியலுகரம்Context):
         if ctx.parentCtx.parentCtx.getRuleIndex() == ctx.parser.RULE_மாத்திரை:
             எழுத்துவரிசை = எழுத்து.எழுத்தாக்கு(ctx.getText())
-            உயிர்மெய் = எழுத்து.உயிர்மெய்தொகை(எழுத்துவரிசை)
+            உயிர்மெய் = எழுத்து.உயிர்மெய்சேர்(எழுத்துவரிசை)
             self.seq.append([உயிர்மெய், ctx.parser.ruleNames[ctx.getRuleIndex()] , 0.5])
 
     def enterஐகாரக்குறுக்கம்(self, ctx:மாத்திரைParser.ஐகாரக்குறுக்கம்Context):
         if ctx.parentCtx.parentCtx.getRuleIndex() == ctx.parser.RULE_மாத்திரை:
             எழுத்துவரிசை = எழுத்து.எழுத்தாக்கு(ctx.getText())
-            உயிர்மெய் = எழுத்து.உயிர்மெய்தொகை(எழுத்துவரிசை)
+            உயிர்மெய் = எழுத்து.உயிர்மெய்சேர்(எழுத்துவரிசை)
             self.seq.append([உயிர்மெய், ctx.parser.ruleNames[ctx.getRuleIndex()] , 1.5])
         
     

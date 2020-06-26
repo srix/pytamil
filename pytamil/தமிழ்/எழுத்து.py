@@ -28,7 +28,7 @@ def உயிர்மெய்விரி(பதம்):
     expandedlist = tamilutf8.get_letters_elementary(பதம்)
     return "".join(expandedlist)
 
-def உயிர்மெய்தொகை(எழுத்துவரிசை):
+def உயிர்மெய்சேர்(எழுத்துவரிசை):
     பதம்=""
 
     i=0
