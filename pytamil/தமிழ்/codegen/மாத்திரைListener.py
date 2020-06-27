@@ -17,6 +17,60 @@ class மாத்திரைListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by மாத்திரைParser#ஒர்_எழுத்து_ஒரு_மொழி.
+    def enterஒர்_எழுத்து_ஒரு_மொழி(self, ctx:மாத்திரைParser.ஒர்_எழுத்து_ஒரு_மொழிContext):
+        pass
+
+    # Exit a parse tree produced by மாத்திரைParser#ஒர்_எழுத்து_ஒரு_மொழி.
+    def exitஒர்_எழுத்து_ஒரு_மொழி(self, ctx:மாத்திரைParser.ஒர்_எழுத்து_ஒரு_மொழிContext):
+        pass
+
+
+    # Enter a parse tree produced by மாத்திரைParser#ஈர்_எழுத்து_ஒரு_மொழி.
+    def enterஈர்_எழுத்து_ஒரு_மொழி(self, ctx:மாத்திரைParser.ஈர்_எழுத்து_ஒரு_மொழிContext):
+        pass
+
+    # Exit a parse tree produced by மாத்திரைParser#ஈர்_எழுத்து_ஒரு_மொழி.
+    def exitஈர்_எழுத்து_ஒரு_மொழி(self, ctx:மாத்திரைParser.ஈர்_எழுத்து_ஒரு_மொழிContext):
+        pass
+
+
+    # Enter a parse tree produced by மாத்திரைParser#பொதுமொழி.
+    def enterபொதுமொழி(self, ctx:மாத்திரைParser.பொதுமொழிContext):
+        pass
+
+    # Exit a parse tree produced by மாத்திரைParser#பொதுமொழி.
+    def exitபொதுமொழி(self, ctx:மாத்திரைParser.பொதுமொழிContext):
+        pass
+
+
+    # Enter a parse tree produced by மாத்திரைParser#ஒரெழுத்து.
+    def enterஒரெழுத்து(self, ctx:மாத்திரைParser.ஒரெழுத்துContext):
+        pass
+
+    # Exit a parse tree produced by மாத்திரைParser#ஒரெழுத்து.
+    def exitஒரெழுத்து(self, ctx:மாத்திரைParser.ஒரெழுத்துContext):
+        pass
+
+
+    # Enter a parse tree produced by மாத்திரைParser#ஈர்_மொழிமுதல்.
+    def enterஈர்_மொழிமுதல்(self, ctx:மாத்திரைParser.ஈர்_மொழிமுதல்Context):
+        pass
+
+    # Exit a parse tree produced by மாத்திரைParser#ஈர்_மொழிமுதல்.
+    def exitஈர்_மொழிமுதல்(self, ctx:மாத்திரைParser.ஈர்_மொழிமுதல்Context):
+        pass
+
+
+    # Enter a parse tree produced by மாத்திரைParser#ஈர்_மொழியிறுதி.
+    def enterஈர்_மொழியிறுதி(self, ctx:மாத்திரைParser.ஈர்_மொழியிறுதிContext):
+        pass
+
+    # Exit a parse tree produced by மாத்திரைParser#ஈர்_மொழியிறுதி.
+    def exitஈர்_மொழியிறுதி(self, ctx:மாத்திரைParser.ஈர்_மொழியிறுதிContext):
+        pass
+
+
     # Enter a parse tree produced by மாத்திரைParser#மொழிமுதல்.
     def enterமொழிமுதல்(self, ctx:மாத்திரைParser.மொழிமுதல்Context):
         pass
