@@ -20,7 +20,7 @@ import os
 from pytamil.தமிழ்.codegen.மாத்திரைLexer import மாத்திரைLexer
 from pytamil.தமிழ்.codegen.மாத்திரைParser import மாத்திரைParser
 from pytamil.தமிழ்.codegen.மாத்திரைListener import மாத்திரைListener
-from pytamil.தமிழ்.codegen.மாத்திரைVisitor import மாத்திரைVisitor
+# from pytamil.தமிழ்.codegen.மாத்திரைVisitor import மாத்திரைVisitor
 
 
 from codecs import open
@@ -74,7 +74,10 @@ class நம்மாத்திரைListener(மாத்திரைListener
     def enterகுற்றியலுகரம்(self, ctx:மாத்திரைParser.குற்றியலுகரம்Context):
         self.மாத்திரை_கனக்கு(ctx)
 
-    def enterஐகாரக்குறுக்கம்(self, ctx:மாத்திரைParser.ஐகாரக்குறுக்கம்Context):
+    def enterஐகாரக்குறுக்கம்_முதல்(self, ctx:மாத்திரைParser.ஐகாரக்குறுக்கம்_முதல்Context):
+        self.மாத்திரை_கனக்கு(ctx)
+
+    def enterஐகாரக்குறுக்கம்_இடைகடை(self, ctx:மாத்திரைParser.ஐகாரக்குறுக்கம்_இடைகடைContext):
         self.மாத்திரை_கனக்கு(ctx)
 
     def மாத்திரை_கனக்கு(self, ctx):
