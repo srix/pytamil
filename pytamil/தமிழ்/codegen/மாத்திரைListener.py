@@ -161,6 +161,15 @@ class மாத்திரைListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by மாத்திரைParser#ஆய்தக்குறுக்கம்.
+    def enterஆய்தக்குறுக்கம்(self, ctx:மாத்திரைParser.ஆய்தக்குறுக்கம்Context):
+        pass
+
+    # Exit a parse tree produced by மாத்திரைParser#ஆய்தக்குறுக்கம்.
+    def exitஆய்தக்குறுக்கம்(self, ctx:மாத்திரைParser.ஆய்தக்குறுக்கம்Context):
+        pass
+
+
     # Enter a parse tree produced by மாத்திரைParser#மகரக்குறுக்கம்_தனிமொழி.
     def enterமகரக்குறுக்கம்_தனிமொழி(self, ctx:மாத்திரைParser.மகரக்குறுக்கம்_தனிமொழிContext):
         pass
