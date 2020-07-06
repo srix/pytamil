@@ -11,65 +11,67 @@ else:
 
 def serializedATN():
     with StringIO() as buf:
-        buf.write("\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\67")
-        buf.write("\u00a8\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7")
+        buf.write("\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\38")
+        buf.write("\u00ad\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7")
         buf.write("\4\b\t\b\4\t\t\t\4\n\t\n\4\13\t\13\4\f\t\f\4\r\t\r\4\16")
         buf.write("\t\16\4\17\t\17\4\20\t\20\4\21\t\21\4\22\t\22\4\23\t\23")
         buf.write("\4\24\t\24\4\25\t\25\4\26\t\26\4\27\t\27\4\30\t\30\4\31")
-        buf.write("\t\31\4\32\t\32\4\33\t\33\4\34\t\34\4\35\t\35\3\2\3\2")
-        buf.write("\3\2\5\2>\n\2\3\3\3\3\3\4\3\4\3\4\3\5\3\5\7\5G\n\5\f\5")
-        buf.write("\16\5J\13\5\3\5\3\5\3\6\3\6\3\6\3\6\5\6R\n\6\3\7\3\7\5")
-        buf.write("\7V\n\7\3\b\3\b\3\t\3\t\3\t\3\t\3\t\3\t\5\t`\n\t\3\n\3")
-        buf.write("\n\3\n\3\n\3\n\3\n\3\n\3\n\3\n\5\nk\n\n\3\13\3\13\3\13")
-        buf.write("\3\13\3\13\3\13\5\13s\n\13\3\f\3\f\3\f\3\f\3\f\3\f\5\f")
-        buf.write("{\n\f\3\r\3\r\3\r\3\16\3\16\3\17\3\17\3\17\3\20\3\20\3")
-        buf.write("\21\3\21\3\21\3\22\3\22\3\22\3\22\5\22\u008e\n\22\3\23")
-        buf.write("\3\23\3\24\3\24\3\25\3\25\3\25\3\26\3\26\3\26\3\27\3\27")
-        buf.write("\3\30\3\30\3\31\3\31\3\32\3\32\3\33\3\33\3\34\3\34\3\35")
-        buf.write("\3\35\3\35\3H\2\36\2\4\6\b\n\f\16\20\22\24\26\30\32\34")
-        buf.write("\36 \"$&(*,.\60\62\64\668\2\n\3\2\6\7\3\2\b\t\4\2\3\3")
-        buf.write("\n\r\4\2\4\5\16\22\3\2\24%\3\2\24\31\3\2&,\3\2-\67\2\u00a6")
-        buf.write("\2=\3\2\2\2\4?\3\2\2\2\6A\3\2\2\2\bD\3\2\2\2\nQ\3\2\2")
-        buf.write("\2\fU\3\2\2\2\16W\3\2\2\2\20_\3\2\2\2\22j\3\2\2\2\24r")
-        buf.write("\3\2\2\2\26z\3\2\2\2\30|\3\2\2\2\32\177\3\2\2\2\34\u0081")
-        buf.write("\3\2\2\2\36\u0084\3\2\2\2 \u0086\3\2\2\2\"\u008d\3\2\2")
-        buf.write("\2$\u008f\3\2\2\2&\u0091\3\2\2\2(\u0093\3\2\2\2*\u0096")
-        buf.write("\3\2\2\2,\u0099\3\2\2\2.\u009b\3\2\2\2\60\u009d\3\2\2")
-        buf.write("\2\62\u009f\3\2\2\2\64\u00a1\3\2\2\2\66\u00a3\3\2\2\2")
-        buf.write("8\u00a5\3\2\2\2:>\5\4\3\2;>\5\6\4\2<>\5\b\5\2=:\3\2\2")
-        buf.write("\2=;\3\2\2\2=<\3\2\2\2>\3\3\2\2\2?@\5\n\6\2@\5\3\2\2\2")
-        buf.write("AB\5\f\7\2BC\5\16\b\2C\7\3\2\2\2DH\5\20\t\2EG\5\22\n\2")
-        buf.write("FE\3\2\2\2GJ\3\2\2\2HI\3\2\2\2HF\3\2\2\2IK\3\2\2\2JH\3")
-        buf.write("\2\2\2KL\5\24\13\2L\t\3\2\2\2MR\5(\25\2NR\5*\26\2OR\5")
-        buf.write(",\27\2PR\5.\30\2QM\3\2\2\2QN\3\2\2\2QO\3\2\2\2QP\3\2\2")
-        buf.write("\2R\13\3\2\2\2SV\5(\25\2TV\5,\27\2US\3\2\2\2UT\3\2\2\2")
-        buf.write("V\r\3\2\2\2WX\5(\25\2X\17\3\2\2\2Y`\5\"\22\2Z`\5\36\20")
-        buf.write("\2[`\5(\25\2\\`\5*\26\2]`\5,\27\2^`\5.\30\2_Y\3\2\2\2")
-        buf.write("_Z\3\2\2\2_[\3\2\2\2_\\\3\2\2\2_]\3\2\2\2_^\3\2\2\2`\21")
-        buf.write("\3\2\2\2ak\5$\23\2bk\5 \21\2ck\5&\24\2dk\5\30\r\2ek\5")
-        buf.write("\32\16\2fk\5\62\32\2gk\5(\25\2hk\5*\26\2ik\5\60\31\2j")
-        buf.write("a\3\2\2\2jb\3\2\2\2jc\3\2\2\2jd\3\2\2\2je\3\2\2\2jf\3")
-        buf.write("\2\2\2jg\3\2\2\2jh\3\2\2\2ji\3\2\2\2k\23\3\2\2\2ls\5\30")
-        buf.write("\r\2ms\5&\24\2ns\5 \21\2os\5\34\17\2ps\5(\25\2qs\5\62")
-        buf.write("\32\2rl\3\2\2\2rm\3\2\2\2rn\3\2\2\2ro\3\2\2\2rp\3\2\2")
-        buf.write("\2rq\3\2\2\2s\25\3\2\2\2tu\5,\27\2uv\5(\25\2v{\3\2\2\2")
-        buf.write("wx\5(\25\2xy\5(\25\2y{\3\2\2\2zt\3\2\2\2zw\3\2\2\2{\27")
-        buf.write("\3\2\2\2|}\5\62\32\2}~\5\66\34\2~\31\3\2\2\2\177\u0080")
-        buf.write("\58\35\2\u0080\33\3\2\2\2\u0081\u0082\5\64\33\2\u0082")
-        buf.write("\u0083\7\3\2\2\u0083\35\3\2\2\2\u0084\u0085\7\4\2\2\u0085")
-        buf.write("\37\3\2\2\2\u0086\u0087\5\62\32\2\u0087\u0088\7\4\2\2")
-        buf.write("\u0088!\3\2\2\2\u0089\u008e\7\5\2\2\u008a\u008b\5\62\32")
-        buf.write("\2\u008b\u008c\7\5\2\2\u008c\u008e\3\2\2\2\u008d\u0089")
-        buf.write("\3\2\2\2\u008d\u008a\3\2\2\2\u008e#\3\2\2\2\u008f\u0090")
-        buf.write("\t\2\2\2\u0090%\3\2\2\2\u0091\u0092\t\3\2\2\u0092\'\3")
-        buf.write("\2\2\2\u0093\u0094\5\62\32\2\u0094\u0095\5,\27\2\u0095")
-        buf.write(")\3\2\2\2\u0096\u0097\5\62\32\2\u0097\u0098\5.\30\2\u0098")
-        buf.write("+\3\2\2\2\u0099\u009a\t\4\2\2\u009a-\3\2\2\2\u009b\u009c")
-        buf.write("\t\5\2\2\u009c/\3\2\2\2\u009d\u009e\7\23\2\2\u009e\61")
-        buf.write("\3\2\2\2\u009f\u00a0\t\6\2\2\u00a0\63\3\2\2\2\u00a1\u00a2")
-        buf.write("\t\7\2\2\u00a2\65\3\2\2\2\u00a3\u00a4\t\b\2\2\u00a4\67")
-        buf.write("\3\2\2\2\u00a5\u00a6\t\t\2\2\u00a69\3\2\2\2\13=HQU_jr")
-        buf.write("z\u008d")
+        buf.write("\t\31\4\32\t\32\4\33\t\33\4\34\t\34\4\35\t\35\4\36\t\36")
+        buf.write("\3\2\3\2\3\2\5\2@\n\2\3\3\3\3\3\4\3\4\3\4\3\5\3\5\7\5")
+        buf.write("I\n\5\f\5\16\5L\13\5\3\5\3\5\3\6\3\6\3\6\3\6\5\6T\n\6")
+        buf.write("\3\7\3\7\5\7X\n\7\3\b\3\b\3\t\3\t\3\t\3\t\3\t\3\t\5\t")
+        buf.write("b\n\t\3\n\3\n\3\n\3\n\3\n\3\n\3\n\3\n\3\n\3\n\5\nn\n\n")
+        buf.write("\3\13\3\13\3\13\3\13\3\13\3\13\5\13v\n\13\3\f\3\f\3\f")
+        buf.write("\3\f\3\f\3\f\5\f~\n\f\3\r\3\r\3\r\3\16\3\16\3\17\3\17")
+        buf.write("\3\17\3\20\3\20\3\21\3\21\3\21\3\22\3\22\3\22\3\22\5\22")
+        buf.write("\u0091\n\22\3\23\3\23\3\24\3\24\3\25\3\25\3\26\3\26\3")
+        buf.write("\26\3\27\3\27\3\27\3\30\3\30\3\31\3\31\3\32\3\32\3\33")
+        buf.write("\3\33\3\34\3\34\3\35\3\35\3\36\3\36\3\36\3J\2\37\2\4\6")
+        buf.write("\b\n\f\16\20\22\24\26\30\32\34\36 \"$&(*,.\60\62\64\66")
+        buf.write("8:\2\n\3\2\6\7\3\2\b\t\4\2\3\3\13\16\4\2\4\5\17\23\3\2")
+        buf.write("\25&\3\2\25\32\3\2\'-\3\2.8\2\u00ab\2?\3\2\2\2\4A\3\2")
+        buf.write("\2\2\6C\3\2\2\2\bF\3\2\2\2\nS\3\2\2\2\fW\3\2\2\2\16Y\3")
+        buf.write("\2\2\2\20a\3\2\2\2\22m\3\2\2\2\24u\3\2\2\2\26}\3\2\2\2")
+        buf.write("\30\177\3\2\2\2\32\u0082\3\2\2\2\34\u0084\3\2\2\2\36\u0087")
+        buf.write("\3\2\2\2 \u0089\3\2\2\2\"\u0090\3\2\2\2$\u0092\3\2\2\2")
+        buf.write("&\u0094\3\2\2\2(\u0096\3\2\2\2*\u0098\3\2\2\2,\u009b\3")
+        buf.write("\2\2\2.\u009e\3\2\2\2\60\u00a0\3\2\2\2\62\u00a2\3\2\2")
+        buf.write("\2\64\u00a4\3\2\2\2\66\u00a6\3\2\2\28\u00a8\3\2\2\2:\u00aa")
+        buf.write("\3\2\2\2<@\5\4\3\2=@\5\6\4\2>@\5\b\5\2?<\3\2\2\2?=\3\2")
+        buf.write("\2\2?>\3\2\2\2@\3\3\2\2\2AB\5\n\6\2B\5\3\2\2\2CD\5\f\7")
+        buf.write("\2DE\5\16\b\2E\7\3\2\2\2FJ\5\20\t\2GI\5\22\n\2HG\3\2\2")
+        buf.write("\2IL\3\2\2\2JK\3\2\2\2JH\3\2\2\2KM\3\2\2\2LJ\3\2\2\2M")
+        buf.write("N\5\24\13\2N\t\3\2\2\2OT\5*\26\2PT\5,\27\2QT\5.\30\2R")
+        buf.write("T\5\60\31\2SO\3\2\2\2SP\3\2\2\2SQ\3\2\2\2SR\3\2\2\2T\13")
+        buf.write("\3\2\2\2UX\5*\26\2VX\5.\30\2WU\3\2\2\2WV\3\2\2\2X\r\3")
+        buf.write("\2\2\2YZ\5*\26\2Z\17\3\2\2\2[b\5\"\22\2\\b\5\36\20\2]")
+        buf.write("b\5*\26\2^b\5,\27\2_b\5.\30\2`b\5\60\31\2a[\3\2\2\2a\\")
+        buf.write("\3\2\2\2a]\3\2\2\2a^\3\2\2\2a_\3\2\2\2a`\3\2\2\2b\21\3")
+        buf.write("\2\2\2cn\5$\23\2dn\5 \21\2en\5(\25\2fn\5&\24\2gn\5\30")
+        buf.write("\r\2hn\5\32\16\2in\5\64\33\2jn\5*\26\2kn\5,\27\2ln\5\62")
+        buf.write("\32\2mc\3\2\2\2md\3\2\2\2me\3\2\2\2mf\3\2\2\2mg\3\2\2")
+        buf.write("\2mh\3\2\2\2mi\3\2\2\2mj\3\2\2\2mk\3\2\2\2ml\3\2\2\2n")
+        buf.write("\23\3\2\2\2ov\5\30\r\2pv\5&\24\2qv\5 \21\2rv\5\34\17\2")
+        buf.write("sv\5*\26\2tv\5\64\33\2uo\3\2\2\2up\3\2\2\2uq\3\2\2\2u")
+        buf.write("r\3\2\2\2us\3\2\2\2ut\3\2\2\2v\25\3\2\2\2wx\5.\30\2xy")
+        buf.write("\5*\26\2y~\3\2\2\2z{\5*\26\2{|\5*\26\2|~\3\2\2\2}w\3\2")
+        buf.write("\2\2}z\3\2\2\2~\27\3\2\2\2\177\u0080\5\64\33\2\u0080\u0081")
+        buf.write("\58\35\2\u0081\31\3\2\2\2\u0082\u0083\5:\36\2\u0083\33")
+        buf.write("\3\2\2\2\u0084\u0085\5\66\34\2\u0085\u0086\7\3\2\2\u0086")
+        buf.write("\35\3\2\2\2\u0087\u0088\7\4\2\2\u0088\37\3\2\2\2\u0089")
+        buf.write("\u008a\5\64\33\2\u008a\u008b\7\4\2\2\u008b!\3\2\2\2\u008c")
+        buf.write("\u0091\7\5\2\2\u008d\u008e\5\64\33\2\u008e\u008f\7\5\2")
+        buf.write("\2\u008f\u0091\3\2\2\2\u0090\u008c\3\2\2\2\u0090\u008d")
+        buf.write("\3\2\2\2\u0091#\3\2\2\2\u0092\u0093\t\2\2\2\u0093%\3\2")
+        buf.write("\2\2\u0094\u0095\t\3\2\2\u0095\'\3\2\2\2\u0096\u0097\7")
+        buf.write("\n\2\2\u0097)\3\2\2\2\u0098\u0099\5\64\33\2\u0099\u009a")
+        buf.write("\5.\30\2\u009a+\3\2\2\2\u009b\u009c\5\64\33\2\u009c\u009d")
+        buf.write("\5\60\31\2\u009d-\3\2\2\2\u009e\u009f\t\4\2\2\u009f/\3")
+        buf.write("\2\2\2\u00a0\u00a1\t\5\2\2\u00a1\61\3\2\2\2\u00a2\u00a3")
+        buf.write("\7\24\2\2\u00a3\63\3\2\2\2\u00a4\u00a5\t\6\2\2\u00a5\65")
+        buf.write("\3\2\2\2\u00a6\u00a7\t\7\2\2\u00a7\67\3\2\2\2\u00a8\u00a9")
+        buf.write("\t\b\2\2\u00a99\3\2\2\2\u00aa\u00ab\t\t\2\2\u00ab;\3\2")
+        buf.write("\2\2\13?JSWamu}\u0090")
         return buf.getvalue()
 
 
@@ -85,18 +87,18 @@ class மாத்திரைParser ( Parser ):
 
     literalNames = [ "<INVALID>", "'\u0B89'", "'\u0B90'", "'\u0B94'", "'\u0B83\u0BB1\u0BCD\u0B87'", 
                      "'\u0B83\u0B9F\u0BCD\u0B88'", "'\u0BA3\u0BCD\u0BAE\u0BCD'", 
-                     "'\u0BA9\u0BCD\u0BAE\u0BCD'", "'\u0B85'", "'\u0B87'", 
-                     "'\u0B8E'", "'\u0B92'", "'\u0B86'", "'\u0B88'", "'\u0B8A'", 
-                     "'\u0B8F'", "'\u0B93'", "'\u0B83'", "'\u0B95\u0BCD'", 
-                     "'\u0B9A\u0BCD'", "'\u0B9F\u0BCD'", "'\u0BA4\u0BCD'", 
-                     "'\u0BAA\u0BCD'", "'\u0BB1\u0BCD'", "'\u0B9E\u0BCD'", 
-                     "'\u0B99\u0BCD'", "'\u0BA3\u0BCD'", "'\u0BA8\u0BCD'", 
-                     "'\u0BAE\u0BCD'", "'\u0BA9\u0BCD'", "'\u0BAF\u0BCD'", 
-                     "'\u0BB0\u0BCD'", "'\u0BB2\u0BCD'", "'\u0BB5\u0BCD'", 
-                     "'\u0BB4\u0BCD'", "'\u0BB3\u0BCD'", "'\u0B86\u0B85'", 
-                     "'\u0B88\u0B87'", "'\u0B8A\u0B89'", "'\u0B8F\u0B8E'", 
-                     "'\u0B90\u0B87'", "'\u0B93\u0B92'", "'\u0B94\u0B89'", 
-                     "'\u0B99\u0BCD\u0B99\u0BCD'", "'\u0B9E\u0BCD\u0B9E\u0BCD'", 
+                     "'\u0BA9\u0BCD\u0BAE\u0BCD'", "'\u0BAE\u0BCD\u0BB5\u0BCD\u0B85'", 
+                     "'\u0B85'", "'\u0B87'", "'\u0B8E'", "'\u0B92'", "'\u0B86'", 
+                     "'\u0B88'", "'\u0B8A'", "'\u0B8F'", "'\u0B93'", "'\u0B83'", 
+                     "'\u0B95\u0BCD'", "'\u0B9A\u0BCD'", "'\u0B9F\u0BCD'", 
+                     "'\u0BA4\u0BCD'", "'\u0BAA\u0BCD'", "'\u0BB1\u0BCD'", 
+                     "'\u0B9E\u0BCD'", "'\u0B99\u0BCD'", "'\u0BA3\u0BCD'", 
+                     "'\u0BA8\u0BCD'", "'\u0BAE\u0BCD'", "'\u0BA9\u0BCD'", 
+                     "'\u0BAF\u0BCD'", "'\u0BB0\u0BCD'", "'\u0BB2\u0BCD'", 
+                     "'\u0BB5\u0BCD'", "'\u0BB4\u0BCD'", "'\u0BB3\u0BCD'", 
+                     "'\u0B86\u0B85'", "'\u0B88\u0B87'", "'\u0B8A\u0B89'", 
+                     "'\u0B8F\u0B8E'", "'\u0B90\u0B87'", "'\u0B93\u0B92'", 
+                     "'\u0B94\u0B89'", "'\u0B99\u0BCD\u0B99\u0BCD'", "'\u0B9E\u0BCD\u0B9E\u0BCD'", 
                      "'\u0BA3\u0BCD\u0BA3\u0BCD'", "'\u0BA8\u0BCD\u0BA8\u0BCD'", 
                      "'\u0BAE\u0BCD\u0BAE\u0BCD'", "'\u0BAF\u0BCD\u0BAF\u0BCD'", 
                      "'\u0BB2\u0BCD\u0BB2\u0BCD'", "'\u0BB5\u0BCD\u0BB5\u0BCD'", 
@@ -124,24 +126,26 @@ class மாத்திரைParser ( Parser ):
     RULE_ஔகாரக்குறுக்கம் = 16
     RULE_ஆய்தக்குறுக்கம் = 17
     RULE_மகரக்குறுக்கம்_தனிமொழி = 18
-    RULE_உயிர்மெய்க்குறில் = 19
-    RULE_உயிர்மெய்நெடில் = 20
-    RULE_உயிர்க்குறில் = 21
-    RULE_உயிர்நெடில் = 22
-    RULE_ஆய்தம் = 23
-    RULE_மெய் = 24
-    RULE_வல்லினம் = 25
-    RULE_உயிரளபெடை_எழுத்து = 26
-    RULE_ஒற்றளபெடை_எழுத்து = 27
+    RULE_மகரக்குறுக்கம்_புணர்மொழி = 19
+    RULE_உயிர்மெய்க்குறில் = 20
+    RULE_உயிர்மெய்நெடில் = 21
+    RULE_உயிர்க்குறில் = 22
+    RULE_உயிர்நெடில் = 23
+    RULE_ஆய்தம் = 24
+    RULE_மெய் = 25
+    RULE_வல்லினம் = 26
+    RULE_உயிரளபெடை_எழுத்து = 27
+    RULE_ஒற்றளபெடை_எழுத்து = 28
 
     ruleNames =  [ "மாத்திரை", "ஒர்_எழுத்து_ஒரு_மொழி", "ஈர்_எழுத்து_ஒரு_மொழி", 
                    "பொதுமொழி", "ஒரெழுத்து", "ஈர்_மொழிமுதல்", "ஈர்_மொழியிறுதி", 
                    "மொழிமுதல்", "மொழியிடை", "மொழியிறுதி", "குறிலிணை", "உயிரளபெடை", 
                    "ஒற்றளபெடை", "குற்றியலுகரம்", "ஐகாரக்குறுக்கம்_முதல்", 
                    "ஐகாரக்குறுக்கம்_இடைகடை", "ஔகாரக்குறுக்கம்", "ஆய்தக்குறுக்கம்", 
-                   "மகரக்குறுக்கம்_தனிமொழி", "உயிர்மெய்க்குறில்", "உயிர்மெய்நெடில்", 
-                   "உயிர்க்குறில்", "உயிர்நெடில்", "ஆய்தம்", "மெய்", "வல்லினம்", 
-                   "உயிரளபெடை_எழுத்து", "ஒற்றளபெடை_எழுத்து" ]
+                   "மகரக்குறுக்கம்_தனிமொழி", "மகரக்குறுக்கம்_புணர்மொழி", 
+                   "உயிர்மெய்க்குறில்", "உயிர்மெய்நெடில்", "உயிர்க்குறில்", 
+                   "உயிர்நெடில்", "ஆய்தம்", "மெய்", "வல்லினம்", "உயிரளபெடை_எழுத்து", 
+                   "ஒற்றளபெடை_எழுத்து" ]
 
     EOF = Token.EOF
     T__0=1
@@ -197,6 +201,7 @@ class மாத்திரைParser ( Parser ):
     T__50=51
     T__51=52
     T__52=53
+    T__53=54
 
     def __init__(self, input:TokenStream, output:TextIO = sys.stdout):
         super().__init__(input, output)
@@ -244,24 +249,24 @@ class மாத்திரைParser ( Parser ):
         localctx = மாத்திரைParser.மாத்திரைContext(self, self._ctx, self.state)
         self.enterRule(localctx, 0, self.RULE_மாத்திரை)
         try:
-            self.state = 59
+            self.state = 61
             self._errHandler.sync(self)
             la_ = self._interp.adaptivePredict(self._input,0,self._ctx)
             if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 56
+                self.state = 58
                 self.ஒர்_எழுத்து_ஒரு_மொழி()
                 pass
 
             elif la_ == 2:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 57
+                self.state = 59
                 self.ஈர்_எழுத்து_ஒரு_மொழி()
                 pass
 
             elif la_ == 3:
                 self.enterOuterAlt(localctx, 3)
-                self.state = 58
+                self.state = 60
                 self.பொதுமொழி()
                 pass
 
@@ -305,7 +310,7 @@ class மாத்திரைParser ( Parser ):
         self.enterRule(localctx, 2, self.RULE_ஒர்_எழுத்து_ஒரு_மொழி)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 61
+            self.state = 63
             self.ஒரெழுத்து()
         except RecognitionException as re:
             localctx.exception = re
@@ -350,9 +355,9 @@ class மாத்திரைParser ( Parser ):
         self.enterRule(localctx, 4, self.RULE_ஈர்_எழுத்து_ஒரு_மொழி)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 63
+            self.state = 65
             self.ஈர்_மொழிமுதல்()
-            self.state = 64
+            self.state = 66
             self.ஈர்_மொழியிறுதி()
         except RecognitionException as re:
             localctx.exception = re
@@ -404,20 +409,20 @@ class மாத்திரைParser ( Parser ):
         self.enterRule(localctx, 6, self.RULE_பொதுமொழி)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 66
+            self.state = 68
             self.மொழிமுதல்()
-            self.state = 70
+            self.state = 72
             self._errHandler.sync(self)
             _alt = self._interp.adaptivePredict(self._input,1,self._ctx)
             while _alt!=1 and _alt!=ATN.INVALID_ALT_NUMBER:
                 if _alt==1+1:
-                    self.state = 67
+                    self.state = 69
                     self.மொழியிடை() 
-                self.state = 72
+                self.state = 74
                 self._errHandler.sync(self)
                 _alt = self._interp.adaptivePredict(self._input,1,self._ctx)
 
-            self.state = 73
+            self.state = 75
             self.மொழியிறுதி()
         except RecognitionException as re:
             localctx.exception = re
@@ -469,30 +474,30 @@ class மாத்திரைParser ( Parser ):
         localctx = மாத்திரைParser.ஒரெழுத்துContext(self, self._ctx, self.state)
         self.enterRule(localctx, 8, self.RULE_ஒரெழுத்து)
         try:
-            self.state = 79
+            self.state = 81
             self._errHandler.sync(self)
             la_ = self._interp.adaptivePredict(self._input,2,self._ctx)
             if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 75
+                self.state = 77
                 self.உயிர்மெய்க்குறில்()
                 pass
 
             elif la_ == 2:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 76
+                self.state = 78
                 self.உயிர்மெய்நெடில்()
                 pass
 
             elif la_ == 3:
                 self.enterOuterAlt(localctx, 3)
-                self.state = 77
+                self.state = 79
                 self.உயிர்க்குறில்()
                 pass
 
             elif la_ == 4:
                 self.enterOuterAlt(localctx, 4)
-                self.state = 78
+                self.state = 80
                 self.உயிர்நெடில்()
                 pass
 
@@ -539,17 +544,17 @@ class மாத்திரைParser ( Parser ):
         localctx = மாத்திரைParser.ஈர்_மொழிமுதல்Context(self, self._ctx, self.state)
         self.enterRule(localctx, 10, self.RULE_ஈர்_மொழிமுதல்)
         try:
-            self.state = 83
+            self.state = 85
             self._errHandler.sync(self)
             token = self._input.LA(1)
-            if token in [மாத்திரைParser.T__17, மாத்திரைParser.T__18, மாத்திரைParser.T__19, மாத்திரைParser.T__20, மாத்திரைParser.T__21, மாத்திரைParser.T__22, மாத்திரைParser.T__23, மாத்திரைParser.T__24, மாத்திரைParser.T__25, மாத்திரைParser.T__26, மாத்திரைParser.T__27, மாத்திரைParser.T__28, மாத்திரைParser.T__29, மாத்திரைParser.T__30, மாத்திரைParser.T__31, மாத்திரைParser.T__32, மாத்திரைParser.T__33, மாத்திரைParser.T__34]:
+            if token in [மாத்திரைParser.T__18, மாத்திரைParser.T__19, மாத்திரைParser.T__20, மாத்திரைParser.T__21, மாத்திரைParser.T__22, மாத்திரைParser.T__23, மாத்திரைParser.T__24, மாத்திரைParser.T__25, மாத்திரைParser.T__26, மாத்திரைParser.T__27, மாத்திரைParser.T__28, மாத்திரைParser.T__29, மாத்திரைParser.T__30, மாத்திரைParser.T__31, மாத்திரைParser.T__32, மாத்திரைParser.T__33, மாத்திரைParser.T__34, மாத்திரைParser.T__35]:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 81
+                self.state = 83
                 self.உயிர்மெய்க்குறில்()
                 pass
-            elif token in [மாத்திரைParser.T__0, மாத்திரைParser.T__7, மாத்திரைParser.T__8, மாத்திரைParser.T__9, மாத்திரைParser.T__10]:
+            elif token in [மாத்திரைParser.T__0, மாத்திரைParser.T__8, மாத்திரைParser.T__9, மாத்திரைParser.T__10, மாத்திரைParser.T__11]:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 82
+                self.state = 84
                 self.உயிர்க்குறில்()
                 pass
             else:
@@ -594,7 +599,7 @@ class மாத்திரைParser ( Parser ):
         self.enterRule(localctx, 12, self.RULE_ஈர்_மொழியிறுதி)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 85
+            self.state = 87
             self.உயிர்மெய்க்குறில்()
         except RecognitionException as re:
             localctx.exception = re
@@ -654,42 +659,42 @@ class மாத்திரைParser ( Parser ):
         localctx = மாத்திரைParser.மொழிமுதல்Context(self, self._ctx, self.state)
         self.enterRule(localctx, 14, self.RULE_மொழிமுதல்)
         try:
-            self.state = 93
+            self.state = 95
             self._errHandler.sync(self)
             la_ = self._interp.adaptivePredict(self._input,4,self._ctx)
             if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 87
+                self.state = 89
                 self.ஔகாரக்குறுக்கம்()
                 pass
 
             elif la_ == 2:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 88
+                self.state = 90
                 self.ஐகாரக்குறுக்கம்_முதல்()
                 pass
 
             elif la_ == 3:
                 self.enterOuterAlt(localctx, 3)
-                self.state = 89
+                self.state = 91
                 self.உயிர்மெய்க்குறில்()
                 pass
 
             elif la_ == 4:
                 self.enterOuterAlt(localctx, 4)
-                self.state = 90
+                self.state = 92
                 self.உயிர்மெய்நெடில்()
                 pass
 
             elif la_ == 5:
                 self.enterOuterAlt(localctx, 5)
-                self.state = 91
+                self.state = 93
                 self.உயிர்க்குறில்()
                 pass
 
             elif la_ == 6:
                 self.enterOuterAlt(localctx, 6)
-                self.state = 92
+                self.state = 94
                 self.உயிர்நெடில்()
                 pass
 
@@ -715,6 +720,10 @@ class மாத்திரைParser ( Parser ):
 
         def ஐகாரக்குறுக்கம்_இடைகடை(self):
             return self.getTypedRuleContext(மாத்திரைParser.ஐகாரக்குறுக்கம்_இடைகடைContext,0)
+
+
+        def மகரக்குறுக்கம்_புணர்மொழி(self):
+            return self.getTypedRuleContext(மாத்திரைParser.மகரக்குறுக்கம்_புணர்மொழிContext,0)
 
 
         def மகரக்குறுக்கம்_தனிமொழி(self):
@@ -764,60 +773,66 @@ class மாத்திரைParser ( Parser ):
         localctx = மாத்திரைParser.மொழியிடைContext(self, self._ctx, self.state)
         self.enterRule(localctx, 16, self.RULE_மொழியிடை)
         try:
-            self.state = 104
+            self.state = 107
             self._errHandler.sync(self)
             la_ = self._interp.adaptivePredict(self._input,5,self._ctx)
             if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 95
+                self.state = 97
                 self.ஆய்தக்குறுக்கம்()
                 pass
 
             elif la_ == 2:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 96
+                self.state = 98
                 self.ஐகாரக்குறுக்கம்_இடைகடை()
                 pass
 
             elif la_ == 3:
                 self.enterOuterAlt(localctx, 3)
-                self.state = 97
-                self.மகரக்குறுக்கம்_தனிமொழி()
+                self.state = 99
+                self.மகரக்குறுக்கம்_புணர்மொழி()
                 pass
 
             elif la_ == 4:
                 self.enterOuterAlt(localctx, 4)
-                self.state = 98
-                self.உயிரளபெடை()
+                self.state = 100
+                self.மகரக்குறுக்கம்_தனிமொழி()
                 pass
 
             elif la_ == 5:
                 self.enterOuterAlt(localctx, 5)
-                self.state = 99
-                self.ஒற்றளபெடை()
+                self.state = 101
+                self.உயிரளபெடை()
                 pass
 
             elif la_ == 6:
                 self.enterOuterAlt(localctx, 6)
-                self.state = 100
-                self.மெய்()
+                self.state = 102
+                self.ஒற்றளபெடை()
                 pass
 
             elif la_ == 7:
                 self.enterOuterAlt(localctx, 7)
-                self.state = 101
-                self.உயிர்மெய்க்குறில்()
+                self.state = 103
+                self.மெய்()
                 pass
 
             elif la_ == 8:
                 self.enterOuterAlt(localctx, 8)
-                self.state = 102
-                self.உயிர்மெய்நெடில்()
+                self.state = 104
+                self.உயிர்மெய்க்குறில்()
                 pass
 
             elif la_ == 9:
                 self.enterOuterAlt(localctx, 9)
-                self.state = 103
+                self.state = 105
+                self.உயிர்மெய்நெடில்()
+                pass
+
+            elif la_ == 10:
+                self.enterOuterAlt(localctx, 10)
+                self.state = 106
                 self.ஆய்தம்()
                 pass
 
@@ -880,42 +895,42 @@ class மாத்திரைParser ( Parser ):
         localctx = மாத்திரைParser.மொழியிறுதிContext(self, self._ctx, self.state)
         self.enterRule(localctx, 18, self.RULE_மொழியிறுதி)
         try:
-            self.state = 112
+            self.state = 115
             self._errHandler.sync(self)
             la_ = self._interp.adaptivePredict(self._input,6,self._ctx)
             if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 106
+                self.state = 109
                 self.உயிரளபெடை()
                 pass
 
             elif la_ == 2:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 107
+                self.state = 110
                 self.மகரக்குறுக்கம்_தனிமொழி()
                 pass
 
             elif la_ == 3:
                 self.enterOuterAlt(localctx, 3)
-                self.state = 108
+                self.state = 111
                 self.ஐகாரக்குறுக்கம்_இடைகடை()
                 pass
 
             elif la_ == 4:
                 self.enterOuterAlt(localctx, 4)
-                self.state = 109
+                self.state = 112
                 self.குற்றியலுகரம்()
                 pass
 
             elif la_ == 5:
                 self.enterOuterAlt(localctx, 5)
-                self.state = 110
+                self.state = 113
                 self.உயிர்மெய்க்குறில்()
                 pass
 
             elif la_ == 6:
                 self.enterOuterAlt(localctx, 6)
-                self.state = 111
+                self.state = 114
                 self.மெய்()
                 pass
 
@@ -965,21 +980,21 @@ class மாத்திரைParser ( Parser ):
         localctx = மாத்திரைParser.குறிலிணைContext(self, self._ctx, self.state)
         self.enterRule(localctx, 20, self.RULE_குறிலிணை)
         try:
-            self.state = 120
+            self.state = 123
             self._errHandler.sync(self)
             token = self._input.LA(1)
-            if token in [மாத்திரைParser.T__0, மாத்திரைParser.T__7, மாத்திரைParser.T__8, மாத்திரைParser.T__9, மாத்திரைParser.T__10]:
+            if token in [மாத்திரைParser.T__0, மாத்திரைParser.T__8, மாத்திரைParser.T__9, மாத்திரைParser.T__10, மாத்திரைParser.T__11]:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 114
+                self.state = 117
                 self.உயிர்க்குறில்()
-                self.state = 115
+                self.state = 118
                 self.உயிர்மெய்க்குறில்()
                 pass
-            elif token in [மாத்திரைParser.T__17, மாத்திரைParser.T__18, மாத்திரைParser.T__19, மாத்திரைParser.T__20, மாத்திரைParser.T__21, மாத்திரைParser.T__22, மாத்திரைParser.T__23, மாத்திரைParser.T__24, மாத்திரைParser.T__25, மாத்திரைParser.T__26, மாத்திரைParser.T__27, மாத்திரைParser.T__28, மாத்திரைParser.T__29, மாத்திரைParser.T__30, மாத்திரைParser.T__31, மாத்திரைParser.T__32, மாத்திரைParser.T__33, மாத்திரைParser.T__34]:
+            elif token in [மாத்திரைParser.T__18, மாத்திரைParser.T__19, மாத்திரைParser.T__20, மாத்திரைParser.T__21, மாத்திரைParser.T__22, மாத்திரைParser.T__23, மாத்திரைParser.T__24, மாத்திரைParser.T__25, மாத்திரைParser.T__26, மாத்திரைParser.T__27, மாத்திரைParser.T__28, மாத்திரைParser.T__29, மாத்திரைParser.T__30, மாத்திரைParser.T__31, மாத்திரைParser.T__32, மாத்திரைParser.T__33, மாத்திரைParser.T__34, மாத்திரைParser.T__35]:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 117
+                self.state = 120
                 self.உயிர்மெய்க்குறில்()
-                self.state = 118
+                self.state = 121
                 self.உயிர்மெய்க்குறில்()
                 pass
             else:
@@ -1028,9 +1043,9 @@ class மாத்திரைParser ( Parser ):
         self.enterRule(localctx, 22, self.RULE_உயிரளபெடை)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 122
+            self.state = 125
             self.மெய்()
-            self.state = 123
+            self.state = 126
             self.உயிரளபெடை_எழுத்து()
         except RecognitionException as re:
             localctx.exception = re
@@ -1071,7 +1086,7 @@ class மாத்திரைParser ( Parser ):
         self.enterRule(localctx, 24, self.RULE_ஒற்றளபெடை)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 125
+            self.state = 128
             self.ஒற்றளபெடை_எழுத்து()
         except RecognitionException as re:
             localctx.exception = re
@@ -1112,9 +1127,9 @@ class மாத்திரைParser ( Parser ):
         self.enterRule(localctx, 26, self.RULE_குற்றியலுகரம்)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 127
+            self.state = 130
             self.வல்லினம்()
-            self.state = 128
+            self.state = 131
             self.match(மாத்திரைParser.T__0)
         except RecognitionException as re:
             localctx.exception = re
@@ -1152,7 +1167,7 @@ class மாத்திரைParser ( Parser ):
         self.enterRule(localctx, 28, self.RULE_ஐகாரக்குறுக்கம்_முதல்)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 130
+            self.state = 133
             self.match(மாத்திரைParser.T__1)
         except RecognitionException as re:
             localctx.exception = re
@@ -1193,9 +1208,9 @@ class மாத்திரைParser ( Parser ):
         self.enterRule(localctx, 30, self.RULE_ஐகாரக்குறுக்கம்_இடைகடை)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 132
+            self.state = 135
             self.மெய்()
-            self.state = 133
+            self.state = 136
             self.match(மாத்திரைParser.T__1)
         except RecognitionException as re:
             localctx.exception = re
@@ -1235,19 +1250,19 @@ class மாத்திரைParser ( Parser ):
         localctx = மாத்திரைParser.ஔகாரக்குறுக்கம்Context(self, self._ctx, self.state)
         self.enterRule(localctx, 32, self.RULE_ஔகாரக்குறுக்கம்)
         try:
-            self.state = 139
+            self.state = 142
             self._errHandler.sync(self)
             token = self._input.LA(1)
             if token in [மாத்திரைParser.T__2]:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 135
+                self.state = 138
                 self.match(மாத்திரைParser.T__2)
                 pass
-            elif token in [மாத்திரைParser.T__17, மாத்திரைParser.T__18, மாத்திரைParser.T__19, மாத்திரைParser.T__20, மாத்திரைParser.T__21, மாத்திரைParser.T__22, மாத்திரைParser.T__23, மாத்திரைParser.T__24, மாத்திரைParser.T__25, மாத்திரைParser.T__26, மாத்திரைParser.T__27, மாத்திரைParser.T__28, மாத்திரைParser.T__29, மாத்திரைParser.T__30, மாத்திரைParser.T__31, மாத்திரைParser.T__32, மாத்திரைParser.T__33, மாத்திரைParser.T__34]:
+            elif token in [மாத்திரைParser.T__18, மாத்திரைParser.T__19, மாத்திரைParser.T__20, மாத்திரைParser.T__21, மாத்திரைParser.T__22, மாத்திரைParser.T__23, மாத்திரைParser.T__24, மாத்திரைParser.T__25, மாத்திரைParser.T__26, மாத்திரைParser.T__27, மாத்திரைParser.T__28, மாத்திரைParser.T__29, மாத்திரைParser.T__30, மாத்திரைParser.T__31, மாத்திரைParser.T__32, மாத்திரைParser.T__33, மாத்திரைParser.T__34, மாத்திரைParser.T__35]:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 136
+                self.state = 139
                 self.மெய்()
-                self.state = 137
+                self.state = 140
                 self.match(மாத்திரைParser.T__2)
                 pass
             else:
@@ -1290,7 +1305,7 @@ class மாத்திரைParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 141
+            self.state = 144
             _la = self._input.LA(1)
             if not(_la==மாத்திரைParser.T__3 or _la==மாத்திரைParser.T__4):
                 self._errHandler.recoverInline(self)
@@ -1334,13 +1349,51 @@ class மாத்திரைParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 143
+            self.state = 146
             _la = self._input.LA(1)
             if not(_la==மாத்திரைParser.T__5 or _la==மாத்திரைParser.T__6):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
                 self.consume()
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class மகரக்குறுக்கம்_புணர்மொழிContext(ParserRuleContext):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+
+
+        def getRuleIndex(self):
+            return மாத்திரைParser.RULE_மகரக்குறுக்கம்_புணர்மொழி
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterமகரக்குறுக்கம்_புணர்மொழி" ):
+                listener.enterமகரக்குறுக்கம்_புணர்மொழி(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitமகரக்குறுக்கம்_புணர்மொழி" ):
+                listener.exitமகரக்குறுக்கம்_புணர்மொழி(self)
+
+
+
+
+    def மகரக்குறுக்கம்_புணர்மொழி(self):
+
+        localctx = மாத்திரைParser.மகரக்குறுக்கம்_புணர்மொழிContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 38, self.RULE_மகரக்குறுக்கம்_புணர்மொழி)
+        try:
+            self.enterOuterAlt(localctx, 1)
+            self.state = 148
+            self.match(மாத்திரைParser.T__7)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -1381,12 +1434,12 @@ class மாத்திரைParser ( Parser ):
     def உயிர்மெய்க்குறில்(self):
 
         localctx = மாத்திரைParser.உயிர்மெய்க்குறில்Context(self, self._ctx, self.state)
-        self.enterRule(localctx, 38, self.RULE_உயிர்மெய்க்குறில்)
+        self.enterRule(localctx, 40, self.RULE_உயிர்மெய்க்குறில்)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 145
+            self.state = 150
             self.மெய்()
-            self.state = 146
+            self.state = 151
             self.உயிர்க்குறில்()
         except RecognitionException as re:
             localctx.exception = re
@@ -1428,12 +1481,12 @@ class மாத்திரைParser ( Parser ):
     def உயிர்மெய்நெடில்(self):
 
         localctx = மாத்திரைParser.உயிர்மெய்நெடில்Context(self, self._ctx, self.state)
-        self.enterRule(localctx, 40, self.RULE_உயிர்மெய்நெடில்)
+        self.enterRule(localctx, 42, self.RULE_உயிர்மெய்நெடில்)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 148
+            self.state = 153
             self.மெய்()
-            self.state = 149
+            self.state = 154
             self.உயிர்நெடில்()
         except RecognitionException as re:
             localctx.exception = re
@@ -1468,13 +1521,13 @@ class மாத்திரைParser ( Parser ):
     def உயிர்க்குறில்(self):
 
         localctx = மாத்திரைParser.உயிர்க்குறில்Context(self, self._ctx, self.state)
-        self.enterRule(localctx, 42, self.RULE_உயிர்க்குறில்)
+        self.enterRule(localctx, 44, self.RULE_உயிர்க்குறில்)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 151
+            self.state = 156
             _la = self._input.LA(1)
-            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << மாத்திரைParser.T__0) | (1 << மாத்திரைParser.T__7) | (1 << மாத்திரைParser.T__8) | (1 << மாத்திரைParser.T__9) | (1 << மாத்திரைParser.T__10))) != 0)):
+            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << மாத்திரைParser.T__0) | (1 << மாத்திரைParser.T__8) | (1 << மாத்திரைParser.T__9) | (1 << மாத்திரைParser.T__10) | (1 << மாத்திரைParser.T__11))) != 0)):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
@@ -1512,13 +1565,13 @@ class மாத்திரைParser ( Parser ):
     def உயிர்நெடில்(self):
 
         localctx = மாத்திரைParser.உயிர்நெடில்Context(self, self._ctx, self.state)
-        self.enterRule(localctx, 44, self.RULE_உயிர்நெடில்)
+        self.enterRule(localctx, 46, self.RULE_உயிர்நெடில்)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 153
+            self.state = 158
             _la = self._input.LA(1)
-            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << மாத்திரைParser.T__1) | (1 << மாத்திரைParser.T__2) | (1 << மாத்திரைParser.T__11) | (1 << மாத்திரைParser.T__12) | (1 << மாத்திரைParser.T__13) | (1 << மாத்திரைParser.T__14) | (1 << மாத்திரைParser.T__15))) != 0)):
+            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << மாத்திரைParser.T__1) | (1 << மாத்திரைParser.T__2) | (1 << மாத்திரைParser.T__12) | (1 << மாத்திரைParser.T__13) | (1 << மாத்திரைParser.T__14) | (1 << மாத்திரைParser.T__15) | (1 << மாத்திரைParser.T__16))) != 0)):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
@@ -1556,11 +1609,11 @@ class மாத்திரைParser ( Parser ):
     def ஆய்தம்(self):
 
         localctx = மாத்திரைParser.ஆய்தம்Context(self, self._ctx, self.state)
-        self.enterRule(localctx, 46, self.RULE_ஆய்தம்)
+        self.enterRule(localctx, 48, self.RULE_ஆய்தம்)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 155
-            self.match(மாத்திரைParser.T__16)
+            self.state = 160
+            self.match(மாத்திரைParser.T__17)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -1594,13 +1647,13 @@ class மாத்திரைParser ( Parser ):
     def மெய்(self):
 
         localctx = மாத்திரைParser.மெய்Context(self, self._ctx, self.state)
-        self.enterRule(localctx, 48, self.RULE_மெய்)
+        self.enterRule(localctx, 50, self.RULE_மெய்)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 157
+            self.state = 162
             _la = self._input.LA(1)
-            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << மாத்திரைParser.T__17) | (1 << மாத்திரைParser.T__18) | (1 << மாத்திரைParser.T__19) | (1 << மாத்திரைParser.T__20) | (1 << மாத்திரைParser.T__21) | (1 << மாத்திரைParser.T__22) | (1 << மாத்திரைParser.T__23) | (1 << மாத்திரைParser.T__24) | (1 << மாத்திரைParser.T__25) | (1 << மாத்திரைParser.T__26) | (1 << மாத்திரைParser.T__27) | (1 << மாத்திரைParser.T__28) | (1 << மாத்திரைParser.T__29) | (1 << மாத்திரைParser.T__30) | (1 << மாத்திரைParser.T__31) | (1 << மாத்திரைParser.T__32) | (1 << மாத்திரைParser.T__33) | (1 << மாத்திரைParser.T__34))) != 0)):
+            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << மாத்திரைParser.T__18) | (1 << மாத்திரைParser.T__19) | (1 << மாத்திரைParser.T__20) | (1 << மாத்திரைParser.T__21) | (1 << மாத்திரைParser.T__22) | (1 << மாத்திரைParser.T__23) | (1 << மாத்திரைParser.T__24) | (1 << மாத்திரைParser.T__25) | (1 << மாத்திரைParser.T__26) | (1 << மாத்திரைParser.T__27) | (1 << மாத்திரைParser.T__28) | (1 << மாத்திரைParser.T__29) | (1 << மாத்திரைParser.T__30) | (1 << மாத்திரைParser.T__31) | (1 << மாத்திரைParser.T__32) | (1 << மாத்திரைParser.T__33) | (1 << மாத்திரைParser.T__34) | (1 << மாத்திரைParser.T__35))) != 0)):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
@@ -1638,13 +1691,13 @@ class மாத்திரைParser ( Parser ):
     def வல்லினம்(self):
 
         localctx = மாத்திரைParser.வல்லினம்Context(self, self._ctx, self.state)
-        self.enterRule(localctx, 50, self.RULE_வல்லினம்)
+        self.enterRule(localctx, 52, self.RULE_வல்லினம்)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 159
+            self.state = 164
             _la = self._input.LA(1)
-            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << மாத்திரைParser.T__17) | (1 << மாத்திரைParser.T__18) | (1 << மாத்திரைParser.T__19) | (1 << மாத்திரைParser.T__20) | (1 << மாத்திரைParser.T__21) | (1 << மாத்திரைParser.T__22))) != 0)):
+            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << மாத்திரைParser.T__18) | (1 << மாத்திரைParser.T__19) | (1 << மாத்திரைParser.T__20) | (1 << மாத்திரைParser.T__21) | (1 << மாத்திரைParser.T__22) | (1 << மாத்திரைParser.T__23))) != 0)):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
@@ -1682,13 +1735,13 @@ class மாத்திரைParser ( Parser ):
     def உயிரளபெடை_எழுத்து(self):
 
         localctx = மாத்திரைParser.உயிரளபெடை_எழுத்துContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 52, self.RULE_உயிரளபெடை_எழுத்து)
+        self.enterRule(localctx, 54, self.RULE_உயிரளபெடை_எழுத்து)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 161
+            self.state = 166
             _la = self._input.LA(1)
-            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << மாத்திரைParser.T__35) | (1 << மாத்திரைParser.T__36) | (1 << மாத்திரைParser.T__37) | (1 << மாத்திரைParser.T__38) | (1 << மாத்திரைParser.T__39) | (1 << மாத்திரைParser.T__40) | (1 << மாத்திரைParser.T__41))) != 0)):
+            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << மாத்திரைParser.T__36) | (1 << மாத்திரைParser.T__37) | (1 << மாத்திரைParser.T__38) | (1 << மாத்திரைParser.T__39) | (1 << மாத்திரைParser.T__40) | (1 << மாத்திரைParser.T__41) | (1 << மாத்திரைParser.T__42))) != 0)):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
@@ -1726,13 +1779,13 @@ class மாத்திரைParser ( Parser ):
     def ஒற்றளபெடை_எழுத்து(self):
 
         localctx = மாத்திரைParser.ஒற்றளபெடை_எழுத்துContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 54, self.RULE_ஒற்றளபெடை_எழுத்து)
+        self.enterRule(localctx, 56, self.RULE_ஒற்றளபெடை_எழுத்து)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 163
+            self.state = 168
             _la = self._input.LA(1)
-            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << மாத்திரைParser.T__42) | (1 << மாத்திரைParser.T__43) | (1 << மாத்திரைParser.T__44) | (1 << மாத்திரைParser.T__45) | (1 << மாத்திரைParser.T__46) | (1 << மாத்திரைParser.T__47) | (1 << மாத்திரைParser.T__48) | (1 << மாத்திரைParser.T__49) | (1 << மாத்திரைParser.T__50) | (1 << மாத்திரைParser.T__51) | (1 << மாத்திரைParser.T__52))) != 0)):
+            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << மாத்திரைParser.T__43) | (1 << மாத்திரைParser.T__44) | (1 << மாத்திரைParser.T__45) | (1 << மாத்திரைParser.T__46) | (1 << மாத்திரைParser.T__47) | (1 << மாத்திரைParser.T__48) | (1 << மாத்திரைParser.T__49) | (1 << மாத்திரைParser.T__50) | (1 << மாத்திரைParser.T__51) | (1 << மாத்திரைParser.T__52) | (1 << மாத்திரைParser.T__53))) != 0)):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
