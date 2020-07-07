@@ -170,6 +170,15 @@ class மாத்திரைListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by மாத்திரைParser#குற்றியலிகரம்_தனிமொழி.
+    def enterகுற்றியலிகரம்_தனிமொழி(self, ctx:மாத்திரைParser.குற்றியலிகரம்_தனிமொழிContext):
+        pass
+
+    # Exit a parse tree produced by மாத்திரைParser#குற்றியலிகரம்_தனிமொழி.
+    def exitகுற்றியலிகரம்_தனிமொழி(self, ctx:மாத்திரைParser.குற்றியலிகரம்_தனிமொழிContext):
+        pass
+
+
     # Enter a parse tree produced by மாத்திரைParser#மகரக்குறுக்கம்_தனிமொழி.
     def enterமகரக்குறுக்கம்_தனிமொழி(self, ctx:மாத்திரைParser.மகரக்குறுக்கம்_தனிமொழிContext):
         pass
