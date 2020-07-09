@@ -27,6 +27,15 @@ from codecs import open
 from nltk import Tree as nltkTree
 from nltk.treeprettyprinter import TreePrettyPrinter
 
+class சான்று:
+     def __init__(self, txt):
+        val = regex.findall(r'(.+?)(?:>.*)*\=(.*)',txt)
+        self.பதம் = val[0][0].strip()
+        self.மாத்திரைவரிசை = val[0][1].strip()
+      
+
+
+
 #                      மாத்திரை                                           
 #       __________________|_________________________________________       
 #      |         |                   மொழியிடை                    |     
@@ -128,9 +137,9 @@ class நம்மாத்திரைListener(மாத்திரைListener
         உயிர்மெய் = எழுத்து.உயிர்மெய்சேர்(ய_எழுத்துவரிசை)
         எழுத்துவகை = None
         if ய_எழுத்துவரிசை[1] in எழுத்து.உயிர்க்குறில்:
-            எழுத்துவகை =  'உயிர்க்குறில்'
+            எழுத்துவகை =  'உயிர்மெய்க்குறில்'
         else:
-            எழுத்துவகை =  'உயிர்நெடில்'
+            எழுத்துவகை =  'உயிர்மெய்நெடில்'
         self.seq.append([உயிர்மெய், எழுத்துவகை , மாத்திரை_பட்டியல்[எழுத்துவகை] ])   
 
 
@@ -185,7 +194,6 @@ def printtree_tofile(தொடர், outfilename):
     with open(outfilename, 'w', encoding='utf8') as f:
         f.write( treestr)
 
-
 def மாத்திரைவரிசை_கொடு(தொடர்):
     விரிதொடர் = எழுத்து.உயிர்மெய்விரி(தொடர்)
     input_stream = antlr4.InputStream(விரிதொடர்)
@@ -204,10 +212,6 @@ def மாத்திரைவரிசை_கொடு(தொடர்):
 
     return நம்listener.seq
 
-
-
-
-
 def மொத்தமாத்திரை(தொடர்):
     மாத்திரைவரிசை = மாத்திரை_கொடு(தொடர்)
     மாத்திரை=0
@@ -216,11 +220,30 @@ def மொத்தமாத்திரை(தொடர்):
     
     return மாத்திரை
 
+def getசான்றுகள்(entries,சான்றுகள்):
+    for key in entries:
+        value = entries[key]
+        if type(value) is dict:
+            சான்றுகள் = getசான்றுகள்(value,சான்றுகள்)
+        elif type(value) is list:
+            for item in value:
+                if "சான்று" in item.keys():
+                    for txt in  item["சான்று"]:
+                        சா = சான்று(txt)
+                        சான்றுகள்.append(சா)
 
+    return சான்றுகள்
 
 def load(filename):
     fo = open(filename, "r")
-    entries = yaml.load(fo,Loader=Loader)
+    மாத்திரைyaml = yaml.load_all(fo,Loader=Loader)
+    docs = list(மாத்திரைyaml)
+    entries = docs[0]
+
+    entries2 = docs[1]
+    சான்றுகள் = []
+    சான்றுகள் = getசான்றுகள்(entries2,சான்றுகள் )
+
     return entries
 
 மாத்திரைகள் = {}
