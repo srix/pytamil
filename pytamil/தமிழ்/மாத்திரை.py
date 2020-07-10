@@ -14,6 +14,8 @@ import sys
 import antlr4
 from antlr4 import *
 from antlr4.tree.Trees import Trees
+from antlr4.error.ErrorListener import ErrorListener
+
 import os
 
 # from codegen import codegen
@@ -164,6 +166,25 @@ class நம்மாத்திரைListener(மாத்திரைListener
 #         self.seq.append([ctx.getText(), 1])
 #         return self.visitChildren(ctx)
  
+
+class MyErrorListener( ErrorListener ):
+
+    def __init__(self):
+        super(MyErrorListener, self).__init__()
+
+    def syntaxError(self, recognizer, offendingSymbol, line, column, msg, e):
+        raise Exception("Oh no!!")
+
+    # def reportAmbiguity(self, recognizer, dfa, startIndex, stopIndex, exact, ambigAlts, configs):
+    #     raise Exception("Oh no!!")
+
+    # def reportAttemptingFullContext(self, recognizer, dfa, startIndex, stopIndex, conflictingAlts, configs):
+    #     raise Exception("Oh no!!")
+
+    # def reportContextSensitivity(self, recognizer, dfa, startIndex, stopIndex, prediction, configs):
+    #     raise Exception("Oh no!!")
+
+
 def printtree(தொடர்):
     # infilename = os.path.join(os.path.dirname(__file__),'யாப்பு/வெண்பாinput.txt')
     # outfilename = os.path.join(os.path.dirname(__file__),'யாப்பு/வெண்பாoutput.txt')
@@ -201,6 +222,7 @@ def மாத்திரைவரிசை_கொடு(தொடர்):
     lexer = மாத்திரைLexer(input_stream)
     stream = CommonTokenStream(lexer)
     parser = மாத்திரைParser(stream)
+    # parser.addErrorListener( MyErrorListener() ) # custom exception class
     tree = parser.மாத்திரை()
 
     நம்listener = நம்மாத்திரைListener(மாத்திரை_பட்டியல்)
