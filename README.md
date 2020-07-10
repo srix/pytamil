@@ -52,10 +52,12 @@ Core philosophy of பைந்தமிழ் (pytamil) library is to clearly s
 2. Developers can use the core tamil language files to port this library to other computer languages like Javascript, c# etc.
 
 **List of Core tamil language files**
-* [pytamil/தமிழ்/புணர்ச்சிவிதிகள்.yaml](pytamil/தமிழ்/புணர்ச்சிவிதிகள்.yaml)
-* [pytamil/தமிழ்/எழுத்து.yaml](pytamil/தமிழ்/எழுத்து.yaml)
-* [pytamil/தமிழ்/யாப்பு/வெண்பா.g4](pytamil/தமிழ்/யாப்பு/வெண்பா.g4)
-* [pytamil/தமிழ்/கணிதம்.yaml](pytamil/தமிழ்/கணிதம்.yaml)
+* [pytamil/தமிழ்/resources/மாத்திரை.yaml](pytamil/தமிழ்/resources/மாத்திரை.yaml)
+* [pytamil/தமிழ்/resources/மாத்திரை.g4](pytamil/தமிழ்/resources/மாத்திரை.g4)
+* [pytamil/தமிழ்/resources/புணர்ச்சிவிதிகள்.yaml](pytamil/தமிழ்/resources/புணர்ச்சிவிதிகள்.yaml)
+* [pytamil/தமிழ்/resources/எழுத்து.yaml](pytamil/தமிழ்/resources/எழுத்து.yaml)
+* [pytamil/தமிழ்/resources/வெண்பா.g4](pytamil/தமிழ்/resources/வெண்பா.g4)
+* [pytamil/தமிழ்/resources/கணிதம்.yaml](pytamil/தமிழ்/resources/கணிதம்.yaml)
 
 
 # TODO
