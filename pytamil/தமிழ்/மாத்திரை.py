@@ -234,6 +234,13 @@ def getசான்றுகள்(entries,சான்றுகள்):
 
     return சான்றுகள்
 
+def format(மாத்திரைவரிசை):
+    textstr=''
+    for எ in மாத்திரைவரிசை:
+        textstr = textstr +எ[0] + ':' + எ[1] + ':' + str(எ[2]) + ' '
+
+    return textstr
+
 def load(filename):
     fo = open(filename, "r")
     மாத்திரைyaml = yaml.load_all(fo,Loader=Loader)

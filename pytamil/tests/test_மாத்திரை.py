@@ -32,9 +32,7 @@ from yaml import Loader, Dumper
 						])
 def test_மாத்திரைவரிசை_கொடு(தொடர், மாத்திரைவரிசை):
     வரிசை = மாத்திரை.மாத்திரைவரிசை_கொடு(தொடர்)
-    textstr=""
-    for எ in வரிசை:
-        textstr= textstr +எ[0] + ':' + எ[1] + ':' + str(எ[2]) + ' '
+    textstr=மாத்திரை.format(வரிசை)
 
     assert textstr.strip() == மாத்திரைவரிசை
 	
