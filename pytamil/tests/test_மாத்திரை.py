@@ -52,8 +52,6 @@ for சான்று in சான்றுகள்:
 @pytest.mark.parametrize("பதம், மாத்திரைவரிசை", params)
 def test_சான்று_மாத்திரைவரிசை_கொடு(பதம், மாத்திரைவரிசை):
     வரிசை = மாத்திரை.மாத்திரைவரிசை_கொடு(பதம்)
-    textstr=""
-    for எ in வரிசை:
-        textstr= textstr +எ[0] + ':' + எ[1] + ' '
+    textstr=மாத்திரை.formatsimple(வரிசை)
 
     assert textstr.strip() == மாத்திரைவரிசை
