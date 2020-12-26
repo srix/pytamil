@@ -8,6 +8,7 @@ import csv
 import os
 import re
 
+# TODO add pytest for திருக்குறள்
 
 குறள் = ['''அகர முதல எழுத்தெல்லாம் ஆதி
            பகவன் முதற்றே உலகு.''',
@@ -69,7 +70,7 @@ def குறள்_மாத்திரைஎண்கள்_கொடு(ம�
 
 def convert_திருக்குறள்(filepath):
     inpath = filepath
-    outpath = os.path.join(os.path.dirname(filepath),"திருக்குறள்-output")
+    outpath = os.path.join(os.path.dirname(filepath),"திருக்குறள்-output.csv")
     with open(inpath, "r") as infile, open(outpath, "w") as outfile:
         reader = csv.reader(infile, delimiter=',')
         next(reader, None)  # skip the headers
@@ -108,5 +109,5 @@ def convert_திருக்குறள்(filepath):
 #     print(மாத்திரை.format(மாத்திரைவரிசை))
 
 
-convert_திருக்குறள்("pytamil/தமிழ்/resources/திருக்குறள்-input.csv")
+convert_திருக்குறள்("pytamil/தமிழ்/debug/திருக்குறள்-input.csv")
 
