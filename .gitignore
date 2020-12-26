@@ -4,8 +4,9 @@
 
 ### antlr4 ###
 .antlr/
-*input.txt
-*output.txt
+pytamil/தமிழ்/debug/*.csv
+pytamil/தமிழ்/debug/*.txt
+
 
 ### Python ###
 # Byte-compiled / optimized / DLL files
