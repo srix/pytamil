@@ -4,8 +4,8 @@
 
 ### antlr4 ###
 .antlr/
-pytamil/தமிழ்/debug/*.csv
-pytamil/தமிழ்/debug/*.txt
+pytamil/debug/*.csv
+pytamil/debug/*.txt
 
 
 ### Python ###
