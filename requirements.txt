@@ -3,7 +3,7 @@ antlr4-python3-runtime==4.8
 nltk==3.5
 Open-Tamil==0.9
 pylint==2.3.1
-PyYAML==5.1.1
+PyYAML>=5.4
 pytest==5.0.1
 regex==2019.8.19
 TatSu==4.4.0
