@@ -21,8 +21,8 @@ import svgling
 
  
 def main():
-    infilename = os.path.join(os.path.dirname(__file__),'debug/வெண்பா-input.txt')
-    outfilename = os.path.join(os.path.dirname(__file__),'debug/வெண்பா-output')
+    infilename = os.path.join(os.path.dirname(__file__),'../debug/வெண்பா-input.txt')
+    outfilename = os.path.join(os.path.dirname(__file__),'../debug/வெண்பா-output')
     data = open(infilename).read()   
     input_stream = antlr4.InputStream(data)
     lexer = வெண்பாLexer(input_stream)

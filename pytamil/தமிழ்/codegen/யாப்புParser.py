@@ -1,4 +1,4 @@
-# Generated from /home/srix/workspace/pytamil/pytamil/தமிழ்/resources/யாப்பு.g4 by ANTLR 4.8
+# Generated from /home/srix/workspace/pytamil/pytamil/தமிழ்/resources/யாப்பு.g4 by ANTLR 4.9.2
 # encoding: utf-8
 from antlr4 import *
 from io import StringIO
@@ -539,7 +539,7 @@ class யாப்புParser ( Parser ):
 
     def __init__(self, input:TokenStream, output:TextIO = sys.stdout):
         super().__init__(input, output)
-        self.checkVersion("4.8")
+        self.checkVersion("4.9.2")
         self._interp = ParserATNSimulator(self, self.atn, self.decisionsToDFA, self.sharedContextCache)
         self._predicates = None
 
@@ -547,6 +547,7 @@ class யாப்புParser ( Parser ):
 
 
     class வஞ்சிச்_சீர்Context(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -625,6 +626,7 @@ class யாப்புParser ( Parser ):
 
 
     class இயற்சீர்Context(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -703,6 +705,7 @@ class யாப்புParser ( Parser ):
 
 
     class மாச்சீர்Context(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -761,6 +764,7 @@ class யாப்புParser ( Parser ):
 
 
     class விளச்சீர்Context(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -819,6 +823,7 @@ class யாப்புParser ( Parser ):
 
 
     class வெண்சீர்Context(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -897,6 +902,7 @@ class யாப்புParser ( Parser ):
 
 
     class தேமாந்தண்பூContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -944,6 +950,7 @@ class யாப்புParser ( Parser ):
 
 
     class தேமாந்தண்ணிழல்Context(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -991,6 +998,7 @@ class யாப்புParser ( Parser ):
 
 
     class தேமாநறும்பூContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -1038,6 +1046,7 @@ class யாப்புParser ( Parser ):
 
 
     class தேமாநறுநிழல்Context(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -1085,6 +1094,7 @@ class யாப்புParser ( Parser ):
 
 
     class புளிமாந்தண்பூContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -1132,6 +1142,7 @@ class யாப்புParser ( Parser ):
 
 
     class புளிமாந்தண்ணிழல்Context(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -1179,6 +1190,7 @@ class யாப்புParser ( Parser ):
 
 
     class புளிமாநறும்பூContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -1226,6 +1238,7 @@ class யாப்புParser ( Parser ):
 
 
     class புளிமாநறுநிழல்Context(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -1273,6 +1286,7 @@ class யாப்புParser ( Parser ):
 
 
     class கருவிளந்தண்பூContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -1320,6 +1334,7 @@ class யாப்புParser ( Parser ):
 
 
     class கருவிளந்தண்ணிழல்Context(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -1367,6 +1382,7 @@ class யாப்புParser ( Parser ):
 
 
     class கருவிளநறும்பூContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -1414,6 +1430,7 @@ class யாப்புParser ( Parser ):
 
 
     class கருவிளநறுநிழல்Context(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -1461,6 +1478,7 @@ class யாப்புParser ( Parser ):
 
 
     class கூவிளந்தண்பூContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -1508,6 +1526,7 @@ class யாப்புParser ( Parser ):
 
 
     class கூவிளந்தண்ணிழல்Context(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -1555,6 +1574,7 @@ class யாப்புParser ( Parser ):
 
 
     class கூவிளநறும்பூContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -1602,6 +1622,7 @@ class யாப்புParser ( Parser ):
 
 
     class கூவிளநறுநிழல்Context(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -1649,6 +1670,7 @@ class யாப்புParser ( Parser ):
 
 
     class தேமாங்காய்Context(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -1696,6 +1718,7 @@ class யாப்புParser ( Parser ):
 
 
     class தேமாங்கனிContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -1743,6 +1766,7 @@ class யாப்புParser ( Parser ):
 
 
     class புளிமாங்காய்Context(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -1790,6 +1814,7 @@ class யாப்புParser ( Parser ):
 
 
     class புளிமாங்கனிContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -1837,6 +1862,7 @@ class யாப்புParser ( Parser ):
 
 
     class கருவிளங்காய்Context(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -1884,6 +1910,7 @@ class யாப்புParser ( Parser ):
 
 
     class கருவிளங்கனிContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -1931,6 +1958,7 @@ class யாப்புParser ( Parser ):
 
 
     class கூவிளங்காய்Context(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -1978,6 +2006,7 @@ class யாப்புParser ( Parser ):
 
 
     class கூவிளங்கனிContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -2025,6 +2054,7 @@ class யாப்புParser ( Parser ):
 
 
     class தேமாContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -2071,6 +2101,7 @@ class யாப்புParser ( Parser ):
 
 
     class புளிமாContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -2118,6 +2149,7 @@ class யாப்புParser ( Parser ):
 
 
     class கருவிளம்Context(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -2164,6 +2196,7 @@ class யாப்புParser ( Parser ):
 
 
     class கூவிளம்Context(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -2211,6 +2244,7 @@ class யாப்புParser ( Parser ):
 
 
     class நேர்Context(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -2289,6 +2323,7 @@ class யாப்புParser ( Parser ):
 
 
     class நிரைContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -2378,6 +2413,7 @@ class யாப்புParser ( Parser ):
 
 
     class ஒற்றுContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -2422,6 +2458,7 @@ class யாப்புParser ( Parser ):
 
 
     class குறில்Context(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -2466,6 +2503,7 @@ class யாப்புParser ( Parser ):
 
 
     class நெடில்Context(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)

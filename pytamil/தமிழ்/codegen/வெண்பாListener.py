@@ -1,4 +1,4 @@
-# Generated from /home/srix/workspace/pytamil/pytamil/தமிழ்/resources/வெண்பா.g4 by ANTLR 4.8
+# Generated from /home/srix/workspace/pytamil/pytamil/தமிழ்/resources/வெண்பா.g4 by ANTLR 4.9.2
 from antlr4 import *
 if __name__ is not None and "." in __name__:
     from .வெண்பாParser import வெண்பாParser
