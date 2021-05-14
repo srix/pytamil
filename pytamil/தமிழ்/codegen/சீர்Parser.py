@@ -1,4 +1,4 @@
-# Generated from /home/srix/workspace/pytamil/pytamil/தமிழ்/resources/யாப்பு.g4 by ANTLR 4.9.2
+# Generated from /home/srix/workspace/pytamil/pytamil/தமிழ்/resources/சீர்.g4 by ANTLR 4.9.2
 # encoding: utf-8
 from antlr4 import *
 from io import StringIO
@@ -90,9 +90,9 @@ def serializedATN():
         return buf.getvalue()
 
 
-class யாப்புParser ( Parser ):
+class சீர்Parser ( Parser ):
 
-    grammarFileName = "யாப்பு.g4"
+    grammarFileName = "சீர்.g4"
 
     atn = ATNDeserializer().deserialize(serializedATN())
 
@@ -554,23 +554,23 @@ class யாப்புParser ( Parser ):
             self.parser = parser
 
         def தேமாங்கனி(self):
-            return self.getTypedRuleContext(யாப்புParser.தேமாங்கனிContext,0)
+            return self.getTypedRuleContext(சீர்Parser.தேமாங்கனிContext,0)
 
 
         def புளிமாங்கனி(self):
-            return self.getTypedRuleContext(யாப்புParser.புளிமாங்கனிContext,0)
+            return self.getTypedRuleContext(சீர்Parser.புளிமாங்கனிContext,0)
 
 
         def கருவிளங்கனி(self):
-            return self.getTypedRuleContext(யாப்புParser.கருவிளங்கனிContext,0)
+            return self.getTypedRuleContext(சீர்Parser.கருவிளங்கனிContext,0)
 
 
         def கூவிளங்கனி(self):
-            return self.getTypedRuleContext(யாப்புParser.கூவிளங்கனிContext,0)
+            return self.getTypedRuleContext(சீர்Parser.கூவிளங்கனிContext,0)
 
 
         def getRuleIndex(self):
-            return யாப்புParser.RULE_வஞ்சிச்_சீர்
+            return சீர்Parser.RULE_வஞ்சிச்_சீர்
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterவஞ்சிச்_சீர்" ):
@@ -585,7 +585,7 @@ class யாப்புParser ( Parser ):
 
     def வஞ்சிச்_சீர்(self):
 
-        localctx = யாப்புParser.வஞ்சிச்_சீர்Context(self, self._ctx, self.state)
+        localctx = சீர்Parser.வஞ்சிச்_சீர்Context(self, self._ctx, self.state)
         self.enterRule(localctx, 0, self.RULE_வஞ்சிச்_சீர்)
         try:
             self.state = 80
@@ -633,23 +633,23 @@ class யாப்புParser ( Parser ):
             self.parser = parser
 
         def தேமா(self):
-            return self.getTypedRuleContext(யாப்புParser.தேமாContext,0)
+            return self.getTypedRuleContext(சீர்Parser.தேமாContext,0)
 
 
         def புளிமா(self):
-            return self.getTypedRuleContext(யாப்புParser.புளிமாContext,0)
+            return self.getTypedRuleContext(சீர்Parser.புளிமாContext,0)
 
 
         def கருவிளம்(self):
-            return self.getTypedRuleContext(யாப்புParser.கருவிளம்Context,0)
+            return self.getTypedRuleContext(சீர்Parser.கருவிளம்Context,0)
 
 
         def கூவிளம்(self):
-            return self.getTypedRuleContext(யாப்புParser.கூவிளம்Context,0)
+            return self.getTypedRuleContext(சீர்Parser.கூவிளம்Context,0)
 
 
         def getRuleIndex(self):
-            return யாப்புParser.RULE_இயற்சீர்
+            return சீர்Parser.RULE_இயற்சீர்
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterஇயற்சீர்" ):
@@ -664,7 +664,7 @@ class யாப்புParser ( Parser ):
 
     def இயற்சீர்(self):
 
-        localctx = யாப்புParser.இயற்சீர்Context(self, self._ctx, self.state)
+        localctx = சீர்Parser.இயற்சீர்Context(self, self._ctx, self.state)
         self.enterRule(localctx, 2, self.RULE_இயற்சீர்)
         try:
             self.state = 86
@@ -712,15 +712,15 @@ class யாப்புParser ( Parser ):
             self.parser = parser
 
         def தேமா(self):
-            return self.getTypedRuleContext(யாப்புParser.தேமாContext,0)
+            return self.getTypedRuleContext(சீர்Parser.தேமாContext,0)
 
 
         def புளிமா(self):
-            return self.getTypedRuleContext(யாப்புParser.புளிமாContext,0)
+            return self.getTypedRuleContext(சீர்Parser.புளிமாContext,0)
 
 
         def getRuleIndex(self):
-            return யாப்புParser.RULE_மாச்சீர்
+            return சீர்Parser.RULE_மாச்சீர்
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterமாச்சீர்" ):
@@ -735,7 +735,7 @@ class யாப்புParser ( Parser ):
 
     def மாச்சீர்(self):
 
-        localctx = யாப்புParser.மாச்சீர்Context(self, self._ctx, self.state)
+        localctx = சீர்Parser.மாச்சீர்Context(self, self._ctx, self.state)
         self.enterRule(localctx, 4, self.RULE_மாச்சீர்)
         try:
             self.state = 90
@@ -771,15 +771,15 @@ class யாப்புParser ( Parser ):
             self.parser = parser
 
         def கருவிளம்(self):
-            return self.getTypedRuleContext(யாப்புParser.கருவிளம்Context,0)
+            return self.getTypedRuleContext(சீர்Parser.கருவிளம்Context,0)
 
 
         def கூவிளம்(self):
-            return self.getTypedRuleContext(யாப்புParser.கூவிளம்Context,0)
+            return self.getTypedRuleContext(சீர்Parser.கூவிளம்Context,0)
 
 
         def getRuleIndex(self):
-            return யாப்புParser.RULE_விளச்சீர்
+            return சீர்Parser.RULE_விளச்சீர்
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterவிளச்சீர்" ):
@@ -794,7 +794,7 @@ class யாப்புParser ( Parser ):
 
     def விளச்சீர்(self):
 
-        localctx = யாப்புParser.விளச்சீர்Context(self, self._ctx, self.state)
+        localctx = சீர்Parser.விளச்சீர்Context(self, self._ctx, self.state)
         self.enterRule(localctx, 6, self.RULE_விளச்சீர்)
         try:
             self.state = 94
@@ -830,23 +830,23 @@ class யாப்புParser ( Parser ):
             self.parser = parser
 
         def தேமாங்காய்(self):
-            return self.getTypedRuleContext(யாப்புParser.தேமாங்காய்Context,0)
+            return self.getTypedRuleContext(சீர்Parser.தேமாங்காய்Context,0)
 
 
         def புளிமாங்காய்(self):
-            return self.getTypedRuleContext(யாப்புParser.புளிமாங்காய்Context,0)
+            return self.getTypedRuleContext(சீர்Parser.புளிமாங்காய்Context,0)
 
 
         def கருவிளங்காய்(self):
-            return self.getTypedRuleContext(யாப்புParser.கருவிளங்காய்Context,0)
+            return self.getTypedRuleContext(சீர்Parser.கருவிளங்காய்Context,0)
 
 
         def கூவிளங்காய்(self):
-            return self.getTypedRuleContext(யாப்புParser.கூவிளங்காய்Context,0)
+            return self.getTypedRuleContext(சீர்Parser.கூவிளங்காய்Context,0)
 
 
         def getRuleIndex(self):
-            return யாப்புParser.RULE_வெண்சீர்
+            return சீர்Parser.RULE_வெண்சீர்
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterவெண்சீர்" ):
@@ -861,7 +861,7 @@ class யாப்புParser ( Parser ):
 
     def வெண்சீர்(self):
 
-        localctx = யாப்புParser.வெண்சீர்Context(self, self._ctx, self.state)
+        localctx = சீர்Parser.வெண்சீர்Context(self, self._ctx, self.state)
         self.enterRule(localctx, 8, self.RULE_வெண்சீர்)
         try:
             self.state = 100
@@ -909,15 +909,15 @@ class யாப்புParser ( Parser ):
             self.parser = parser
 
         def தேமாங்காய்(self):
-            return self.getTypedRuleContext(யாப்புParser.தேமாங்காய்Context,0)
+            return self.getTypedRuleContext(சீர்Parser.தேமாங்காய்Context,0)
 
 
         def நேர்(self):
-            return self.getTypedRuleContext(யாப்புParser.நேர்Context,0)
+            return self.getTypedRuleContext(சீர்Parser.நேர்Context,0)
 
 
         def getRuleIndex(self):
-            return யாப்புParser.RULE_தேமாந்தண்பூ
+            return சீர்Parser.RULE_தேமாந்தண்பூ
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterதேமாந்தண்பூ" ):
@@ -932,7 +932,7 @@ class யாப்புParser ( Parser ):
 
     def தேமாந்தண்பூ(self):
 
-        localctx = யாப்புParser.தேமாந்தண்பூContext(self, self._ctx, self.state)
+        localctx = சீர்Parser.தேமாந்தண்பூContext(self, self._ctx, self.state)
         self.enterRule(localctx, 10, self.RULE_தேமாந்தண்பூ)
         try:
             self.enterOuterAlt(localctx, 1)
@@ -957,15 +957,15 @@ class யாப்புParser ( Parser ):
             self.parser = parser
 
         def தேமாங்காய்(self):
-            return self.getTypedRuleContext(யாப்புParser.தேமாங்காய்Context,0)
+            return self.getTypedRuleContext(சீர்Parser.தேமாங்காய்Context,0)
 
 
         def நிரை(self):
-            return self.getTypedRuleContext(யாப்புParser.நிரைContext,0)
+            return self.getTypedRuleContext(சீர்Parser.நிரைContext,0)
 
 
         def getRuleIndex(self):
-            return யாப்புParser.RULE_தேமாந்தண்ணிழல்
+            return சீர்Parser.RULE_தேமாந்தண்ணிழல்
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterதேமாந்தண்ணிழல்" ):
@@ -980,7 +980,7 @@ class யாப்புParser ( Parser ):
 
     def தேமாந்தண்ணிழல்(self):
 
-        localctx = யாப்புParser.தேமாந்தண்ணிழல்Context(self, self._ctx, self.state)
+        localctx = சீர்Parser.தேமாந்தண்ணிழல்Context(self, self._ctx, self.state)
         self.enterRule(localctx, 12, self.RULE_தேமாந்தண்ணிழல்)
         try:
             self.enterOuterAlt(localctx, 1)
@@ -1005,15 +1005,15 @@ class யாப்புParser ( Parser ):
             self.parser = parser
 
         def தேமாங்கனி(self):
-            return self.getTypedRuleContext(யாப்புParser.தேமாங்கனிContext,0)
+            return self.getTypedRuleContext(சீர்Parser.தேமாங்கனிContext,0)
 
 
         def நேர்(self):
-            return self.getTypedRuleContext(யாப்புParser.நேர்Context,0)
+            return self.getTypedRuleContext(சீர்Parser.நேர்Context,0)
 
 
         def getRuleIndex(self):
-            return யாப்புParser.RULE_தேமாநறும்பூ
+            return சீர்Parser.RULE_தேமாநறும்பூ
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterதேமாநறும்பூ" ):
@@ -1028,7 +1028,7 @@ class யாப்புParser ( Parser ):
 
     def தேமாநறும்பூ(self):
 
-        localctx = யாப்புParser.தேமாநறும்பூContext(self, self._ctx, self.state)
+        localctx = சீர்Parser.தேமாநறும்பூContext(self, self._ctx, self.state)
         self.enterRule(localctx, 14, self.RULE_தேமாநறும்பூ)
         try:
             self.enterOuterAlt(localctx, 1)
@@ -1053,15 +1053,15 @@ class யாப்புParser ( Parser ):
             self.parser = parser
 
         def தேமாங்கனி(self):
-            return self.getTypedRuleContext(யாப்புParser.தேமாங்கனிContext,0)
+            return self.getTypedRuleContext(சீர்Parser.தேமாங்கனிContext,0)
 
 
         def நிரை(self):
-            return self.getTypedRuleContext(யாப்புParser.நிரைContext,0)
+            return self.getTypedRuleContext(சீர்Parser.நிரைContext,0)
 
 
         def getRuleIndex(self):
-            return யாப்புParser.RULE_தேமாநறுநிழல்
+            return சீர்Parser.RULE_தேமாநறுநிழல்
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterதேமாநறுநிழல்" ):
@@ -1076,7 +1076,7 @@ class யாப்புParser ( Parser ):
 
     def தேமாநறுநிழல்(self):
 
-        localctx = யாப்புParser.தேமாநறுநிழல்Context(self, self._ctx, self.state)
+        localctx = சீர்Parser.தேமாநறுநிழல்Context(self, self._ctx, self.state)
         self.enterRule(localctx, 16, self.RULE_தேமாநறுநிழல்)
         try:
             self.enterOuterAlt(localctx, 1)
@@ -1101,15 +1101,15 @@ class யாப்புParser ( Parser ):
             self.parser = parser
 
         def புளிமாங்காய்(self):
-            return self.getTypedRuleContext(யாப்புParser.புளிமாங்காய்Context,0)
+            return self.getTypedRuleContext(சீர்Parser.புளிமாங்காய்Context,0)
 
 
         def நேர்(self):
-            return self.getTypedRuleContext(யாப்புParser.நேர்Context,0)
+            return self.getTypedRuleContext(சீர்Parser.நேர்Context,0)
 
 
         def getRuleIndex(self):
-            return யாப்புParser.RULE_புளிமாந்தண்பூ
+            return சீர்Parser.RULE_புளிமாந்தண்பூ
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterபுளிமாந்தண்பூ" ):
@@ -1124,7 +1124,7 @@ class யாப்புParser ( Parser ):
 
     def புளிமாந்தண்பூ(self):
 
-        localctx = யாப்புParser.புளிமாந்தண்பூContext(self, self._ctx, self.state)
+        localctx = சீர்Parser.புளிமாந்தண்பூContext(self, self._ctx, self.state)
         self.enterRule(localctx, 18, self.RULE_புளிமாந்தண்பூ)
         try:
             self.enterOuterAlt(localctx, 1)
@@ -1149,15 +1149,15 @@ class யாப்புParser ( Parser ):
             self.parser = parser
 
         def புளிமாங்காய்(self):
-            return self.getTypedRuleContext(யாப்புParser.புளிமாங்காய்Context,0)
+            return self.getTypedRuleContext(சீர்Parser.புளிமாங்காய்Context,0)
 
 
         def நிரை(self):
-            return self.getTypedRuleContext(யாப்புParser.நிரைContext,0)
+            return self.getTypedRuleContext(சீர்Parser.நிரைContext,0)
 
 
         def getRuleIndex(self):
-            return யாப்புParser.RULE_புளிமாந்தண்ணிழல்
+            return சீர்Parser.RULE_புளிமாந்தண்ணிழல்
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterபுளிமாந்தண்ணிழல்" ):
@@ -1172,7 +1172,7 @@ class யாப்புParser ( Parser ):
 
     def புளிமாந்தண்ணிழல்(self):
 
-        localctx = யாப்புParser.புளிமாந்தண்ணிழல்Context(self, self._ctx, self.state)
+        localctx = சீர்Parser.புளிமாந்தண்ணிழல்Context(self, self._ctx, self.state)
         self.enterRule(localctx, 20, self.RULE_புளிமாந்தண்ணிழல்)
         try:
             self.enterOuterAlt(localctx, 1)
@@ -1197,15 +1197,15 @@ class யாப்புParser ( Parser ):
             self.parser = parser
 
         def புளிமாங்கனி(self):
-            return self.getTypedRuleContext(யாப்புParser.புளிமாங்கனிContext,0)
+            return self.getTypedRuleContext(சீர்Parser.புளிமாங்கனிContext,0)
 
 
         def நேர்(self):
-            return self.getTypedRuleContext(யாப்புParser.நேர்Context,0)
+            return self.getTypedRuleContext(சீர்Parser.நேர்Context,0)
 
 
         def getRuleIndex(self):
-            return யாப்புParser.RULE_புளிமாநறும்பூ
+            return சீர்Parser.RULE_புளிமாநறும்பூ
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterபுளிமாநறும்பூ" ):
@@ -1220,7 +1220,7 @@ class யாப்புParser ( Parser ):
 
     def புளிமாநறும்பூ(self):
 
-        localctx = யாப்புParser.புளிமாநறும்பூContext(self, self._ctx, self.state)
+        localctx = சீர்Parser.புளிமாநறும்பூContext(self, self._ctx, self.state)
         self.enterRule(localctx, 22, self.RULE_புளிமாநறும்பூ)
         try:
             self.enterOuterAlt(localctx, 1)
@@ -1245,15 +1245,15 @@ class யாப்புParser ( Parser ):
             self.parser = parser
 
         def புளிமாங்கனி(self):
-            return self.getTypedRuleContext(யாப்புParser.புளிமாங்கனிContext,0)
+            return self.getTypedRuleContext(சீர்Parser.புளிமாங்கனிContext,0)
 
 
         def நிரை(self):
-            return self.getTypedRuleContext(யாப்புParser.நிரைContext,0)
+            return self.getTypedRuleContext(சீர்Parser.நிரைContext,0)
 
 
         def getRuleIndex(self):
-            return யாப்புParser.RULE_புளிமாநறுநிழல்
+            return சீர்Parser.RULE_புளிமாநறுநிழல்
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterபுளிமாநறுநிழல்" ):
@@ -1268,7 +1268,7 @@ class யாப்புParser ( Parser ):
 
     def புளிமாநறுநிழல்(self):
 
-        localctx = யாப்புParser.புளிமாநறுநிழல்Context(self, self._ctx, self.state)
+        localctx = சீர்Parser.புளிமாநறுநிழல்Context(self, self._ctx, self.state)
         self.enterRule(localctx, 24, self.RULE_புளிமாநறுநிழல்)
         try:
             self.enterOuterAlt(localctx, 1)
@@ -1293,15 +1293,15 @@ class யாப்புParser ( Parser ):
             self.parser = parser
 
         def கருவிளங்காய்(self):
-            return self.getTypedRuleContext(யாப்புParser.கருவிளங்காய்Context,0)
+            return self.getTypedRuleContext(சீர்Parser.கருவிளங்காய்Context,0)
 
 
         def நேர்(self):
-            return self.getTypedRuleContext(யாப்புParser.நேர்Context,0)
+            return self.getTypedRuleContext(சீர்Parser.நேர்Context,0)
 
 
         def getRuleIndex(self):
-            return யாப்புParser.RULE_கருவிளந்தண்பூ
+            return சீர்Parser.RULE_கருவிளந்தண்பூ
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterகருவிளந்தண்பூ" ):
@@ -1316,7 +1316,7 @@ class யாப்புParser ( Parser ):
 
     def கருவிளந்தண்பூ(self):
 
-        localctx = யாப்புParser.கருவிளந்தண்பூContext(self, self._ctx, self.state)
+        localctx = சீர்Parser.கருவிளந்தண்பூContext(self, self._ctx, self.state)
         self.enterRule(localctx, 26, self.RULE_கருவிளந்தண்பூ)
         try:
             self.enterOuterAlt(localctx, 1)
@@ -1341,15 +1341,15 @@ class யாப்புParser ( Parser ):
             self.parser = parser
 
         def கருவிளங்காய்(self):
-            return self.getTypedRuleContext(யாப்புParser.கருவிளங்காய்Context,0)
+            return self.getTypedRuleContext(சீர்Parser.கருவிளங்காய்Context,0)
 
 
         def நிரை(self):
-            return self.getTypedRuleContext(யாப்புParser.நிரைContext,0)
+            return self.getTypedRuleContext(சீர்Parser.நிரைContext,0)
 
 
         def getRuleIndex(self):
-            return யாப்புParser.RULE_கருவிளந்தண்ணிழல்
+            return சீர்Parser.RULE_கருவிளந்தண்ணிழல்
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterகருவிளந்தண்ணிழல்" ):
@@ -1364,7 +1364,7 @@ class யாப்புParser ( Parser ):
 
     def கருவிளந்தண்ணிழல்(self):
 
-        localctx = யாப்புParser.கருவிளந்தண்ணிழல்Context(self, self._ctx, self.state)
+        localctx = சீர்Parser.கருவிளந்தண்ணிழல்Context(self, self._ctx, self.state)
         self.enterRule(localctx, 28, self.RULE_கருவிளந்தண்ணிழல்)
         try:
             self.enterOuterAlt(localctx, 1)
@@ -1389,15 +1389,15 @@ class யாப்புParser ( Parser ):
             self.parser = parser
 
         def கருவிளங்கனி(self):
-            return self.getTypedRuleContext(யாப்புParser.கருவிளங்கனிContext,0)
+            return self.getTypedRuleContext(சீர்Parser.கருவிளங்கனிContext,0)
 
 
         def நேர்(self):
-            return self.getTypedRuleContext(யாப்புParser.நேர்Context,0)
+            return self.getTypedRuleContext(சீர்Parser.நேர்Context,0)
 
 
         def getRuleIndex(self):
-            return யாப்புParser.RULE_கருவிளநறும்பூ
+            return சீர்Parser.RULE_கருவிளநறும்பூ
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterகருவிளநறும்பூ" ):
@@ -1412,7 +1412,7 @@ class யாப்புParser ( Parser ):
 
     def கருவிளநறும்பூ(self):
 
-        localctx = யாப்புParser.கருவிளநறும்பூContext(self, self._ctx, self.state)
+        localctx = சீர்Parser.கருவிளநறும்பூContext(self, self._ctx, self.state)
         self.enterRule(localctx, 30, self.RULE_கருவிளநறும்பூ)
         try:
             self.enterOuterAlt(localctx, 1)
@@ -1437,15 +1437,15 @@ class யாப்புParser ( Parser ):
             self.parser = parser
 
         def கருவிளங்கனி(self):
-            return self.getTypedRuleContext(யாப்புParser.கருவிளங்கனிContext,0)
+            return self.getTypedRuleContext(சீர்Parser.கருவிளங்கனிContext,0)
 
 
         def நிரை(self):
-            return self.getTypedRuleContext(யாப்புParser.நிரைContext,0)
+            return self.getTypedRuleContext(சீர்Parser.நிரைContext,0)
 
 
         def getRuleIndex(self):
-            return யாப்புParser.RULE_கருவிளநறுநிழல்
+            return சீர்Parser.RULE_கருவிளநறுநிழல்
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterகருவிளநறுநிழல்" ):
@@ -1460,7 +1460,7 @@ class யாப்புParser ( Parser ):
 
     def கருவிளநறுநிழல்(self):
 
-        localctx = யாப்புParser.கருவிளநறுநிழல்Context(self, self._ctx, self.state)
+        localctx = சீர்Parser.கருவிளநறுநிழல்Context(self, self._ctx, self.state)
         self.enterRule(localctx, 32, self.RULE_கருவிளநறுநிழல்)
         try:
             self.enterOuterAlt(localctx, 1)
@@ -1485,15 +1485,15 @@ class யாப்புParser ( Parser ):
             self.parser = parser
 
         def கூவிளங்காய்(self):
-            return self.getTypedRuleContext(யாப்புParser.கூவிளங்காய்Context,0)
+            return self.getTypedRuleContext(சீர்Parser.கூவிளங்காய்Context,0)
 
 
         def நேர்(self):
-            return self.getTypedRuleContext(யாப்புParser.நேர்Context,0)
+            return self.getTypedRuleContext(சீர்Parser.நேர்Context,0)
 
 
         def getRuleIndex(self):
-            return யாப்புParser.RULE_கூவிளந்தண்பூ
+            return சீர்Parser.RULE_கூவிளந்தண்பூ
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterகூவிளந்தண்பூ" ):
@@ -1508,7 +1508,7 @@ class யாப்புParser ( Parser ):
 
     def கூவிளந்தண்பூ(self):
 
-        localctx = யாப்புParser.கூவிளந்தண்பூContext(self, self._ctx, self.state)
+        localctx = சீர்Parser.கூவிளந்தண்பூContext(self, self._ctx, self.state)
         self.enterRule(localctx, 34, self.RULE_கூவிளந்தண்பூ)
         try:
             self.enterOuterAlt(localctx, 1)
@@ -1533,15 +1533,15 @@ class யாப்புParser ( Parser ):
             self.parser = parser
 
         def கூவிளங்காய்(self):
-            return self.getTypedRuleContext(யாப்புParser.கூவிளங்காய்Context,0)
+            return self.getTypedRuleContext(சீர்Parser.கூவிளங்காய்Context,0)
 
 
         def நிரை(self):
-            return self.getTypedRuleContext(யாப்புParser.நிரைContext,0)
+            return self.getTypedRuleContext(சீர்Parser.நிரைContext,0)
 
 
         def getRuleIndex(self):
-            return யாப்புParser.RULE_கூவிளந்தண்ணிழல்
+            return சீர்Parser.RULE_கூவிளந்தண்ணிழல்
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterகூவிளந்தண்ணிழல்" ):
@@ -1556,7 +1556,7 @@ class யாப்புParser ( Parser ):
 
     def கூவிளந்தண்ணிழல்(self):
 
-        localctx = யாப்புParser.கூவிளந்தண்ணிழல்Context(self, self._ctx, self.state)
+        localctx = சீர்Parser.கூவிளந்தண்ணிழல்Context(self, self._ctx, self.state)
         self.enterRule(localctx, 36, self.RULE_கூவிளந்தண்ணிழல்)
         try:
             self.enterOuterAlt(localctx, 1)
@@ -1581,15 +1581,15 @@ class யாப்புParser ( Parser ):
             self.parser = parser
 
         def கூவிளங்கனி(self):
-            return self.getTypedRuleContext(யாப்புParser.கூவிளங்கனிContext,0)
+            return self.getTypedRuleContext(சீர்Parser.கூவிளங்கனிContext,0)
 
 
         def நேர்(self):
-            return self.getTypedRuleContext(யாப்புParser.நேர்Context,0)
+            return self.getTypedRuleContext(சீர்Parser.நேர்Context,0)
 
 
         def getRuleIndex(self):
-            return யாப்புParser.RULE_கூவிளநறும்பூ
+            return சீர்Parser.RULE_கூவிளநறும்பூ
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterகூவிளநறும்பூ" ):
@@ -1604,7 +1604,7 @@ class யாப்புParser ( Parser ):
 
     def கூவிளநறும்பூ(self):
 
-        localctx = யாப்புParser.கூவிளநறும்பூContext(self, self._ctx, self.state)
+        localctx = சீர்Parser.கூவிளநறும்பூContext(self, self._ctx, self.state)
         self.enterRule(localctx, 38, self.RULE_கூவிளநறும்பூ)
         try:
             self.enterOuterAlt(localctx, 1)
@@ -1629,15 +1629,15 @@ class யாப்புParser ( Parser ):
             self.parser = parser
 
         def கூவிளங்கனி(self):
-            return self.getTypedRuleContext(யாப்புParser.கூவிளங்கனிContext,0)
+            return self.getTypedRuleContext(சீர்Parser.கூவிளங்கனிContext,0)
 
 
         def நிரை(self):
-            return self.getTypedRuleContext(யாப்புParser.நிரைContext,0)
+            return self.getTypedRuleContext(சீர்Parser.நிரைContext,0)
 
 
         def getRuleIndex(self):
-            return யாப்புParser.RULE_கூவிளநறுநிழல்
+            return சீர்Parser.RULE_கூவிளநறுநிழல்
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterகூவிளநறுநிழல்" ):
@@ -1652,7 +1652,7 @@ class யாப்புParser ( Parser ):
 
     def கூவிளநறுநிழல்(self):
 
-        localctx = யாப்புParser.கூவிளநறுநிழல்Context(self, self._ctx, self.state)
+        localctx = சீர்Parser.கூவிளநறுநிழல்Context(self, self._ctx, self.state)
         self.enterRule(localctx, 40, self.RULE_கூவிளநறுநிழல்)
         try:
             self.enterOuterAlt(localctx, 1)
@@ -1677,15 +1677,15 @@ class யாப்புParser ( Parser ):
             self.parser = parser
 
         def தேமா(self):
-            return self.getTypedRuleContext(யாப்புParser.தேமாContext,0)
+            return self.getTypedRuleContext(சீர்Parser.தேமாContext,0)
 
 
         def நேர்(self):
-            return self.getTypedRuleContext(யாப்புParser.நேர்Context,0)
+            return self.getTypedRuleContext(சீர்Parser.நேர்Context,0)
 
 
         def getRuleIndex(self):
-            return யாப்புParser.RULE_தேமாங்காய்
+            return சீர்Parser.RULE_தேமாங்காய்
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterதேமாங்காய்" ):
@@ -1700,7 +1700,7 @@ class யாப்புParser ( Parser ):
 
     def தேமாங்காய்(self):
 
-        localctx = யாப்புParser.தேமாங்காய்Context(self, self._ctx, self.state)
+        localctx = சீர்Parser.தேமாங்காய்Context(self, self._ctx, self.state)
         self.enterRule(localctx, 42, self.RULE_தேமாங்காய்)
         try:
             self.enterOuterAlt(localctx, 1)
@@ -1725,15 +1725,15 @@ class யாப்புParser ( Parser ):
             self.parser = parser
 
         def தேமா(self):
-            return self.getTypedRuleContext(யாப்புParser.தேமாContext,0)
+            return self.getTypedRuleContext(சீர்Parser.தேமாContext,0)
 
 
         def நிரை(self):
-            return self.getTypedRuleContext(யாப்புParser.நிரைContext,0)
+            return self.getTypedRuleContext(சீர்Parser.நிரைContext,0)
 
 
         def getRuleIndex(self):
-            return யாப்புParser.RULE_தேமாங்கனி
+            return சீர்Parser.RULE_தேமாங்கனி
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterதேமாங்கனி" ):
@@ -1748,7 +1748,7 @@ class யாப்புParser ( Parser ):
 
     def தேமாங்கனி(self):
 
-        localctx = யாப்புParser.தேமாங்கனிContext(self, self._ctx, self.state)
+        localctx = சீர்Parser.தேமாங்கனிContext(self, self._ctx, self.state)
         self.enterRule(localctx, 44, self.RULE_தேமாங்கனி)
         try:
             self.enterOuterAlt(localctx, 1)
@@ -1773,15 +1773,15 @@ class யாப்புParser ( Parser ):
             self.parser = parser
 
         def புளிமா(self):
-            return self.getTypedRuleContext(யாப்புParser.புளிமாContext,0)
+            return self.getTypedRuleContext(சீர்Parser.புளிமாContext,0)
 
 
         def நேர்(self):
-            return self.getTypedRuleContext(யாப்புParser.நேர்Context,0)
+            return self.getTypedRuleContext(சீர்Parser.நேர்Context,0)
 
 
         def getRuleIndex(self):
-            return யாப்புParser.RULE_புளிமாங்காய்
+            return சீர்Parser.RULE_புளிமாங்காய்
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterபுளிமாங்காய்" ):
@@ -1796,7 +1796,7 @@ class யாப்புParser ( Parser ):
 
     def புளிமாங்காய்(self):
 
-        localctx = யாப்புParser.புளிமாங்காய்Context(self, self._ctx, self.state)
+        localctx = சீர்Parser.புளிமாங்காய்Context(self, self._ctx, self.state)
         self.enterRule(localctx, 46, self.RULE_புளிமாங்காய்)
         try:
             self.enterOuterAlt(localctx, 1)
@@ -1821,15 +1821,15 @@ class யாப்புParser ( Parser ):
             self.parser = parser
 
         def புளிமா(self):
-            return self.getTypedRuleContext(யாப்புParser.புளிமாContext,0)
+            return self.getTypedRuleContext(சீர்Parser.புளிமாContext,0)
 
 
         def நிரை(self):
-            return self.getTypedRuleContext(யாப்புParser.நிரைContext,0)
+            return self.getTypedRuleContext(சீர்Parser.நிரைContext,0)
 
 
         def getRuleIndex(self):
-            return யாப்புParser.RULE_புளிமாங்கனி
+            return சீர்Parser.RULE_புளிமாங்கனி
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterபுளிமாங்கனி" ):
@@ -1844,7 +1844,7 @@ class யாப்புParser ( Parser ):
 
     def புளிமாங்கனி(self):
 
-        localctx = யாப்புParser.புளிமாங்கனிContext(self, self._ctx, self.state)
+        localctx = சீர்Parser.புளிமாங்கனிContext(self, self._ctx, self.state)
         self.enterRule(localctx, 48, self.RULE_புளிமாங்கனி)
         try:
             self.enterOuterAlt(localctx, 1)
@@ -1869,15 +1869,15 @@ class யாப்புParser ( Parser ):
             self.parser = parser
 
         def கருவிளம்(self):
-            return self.getTypedRuleContext(யாப்புParser.கருவிளம்Context,0)
+            return self.getTypedRuleContext(சீர்Parser.கருவிளம்Context,0)
 
 
         def நேர்(self):
-            return self.getTypedRuleContext(யாப்புParser.நேர்Context,0)
+            return self.getTypedRuleContext(சீர்Parser.நேர்Context,0)
 
 
         def getRuleIndex(self):
-            return யாப்புParser.RULE_கருவிளங்காய்
+            return சீர்Parser.RULE_கருவிளங்காய்
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterகருவிளங்காய்" ):
@@ -1892,7 +1892,7 @@ class யாப்புParser ( Parser ):
 
     def கருவிளங்காய்(self):
 
-        localctx = யாப்புParser.கருவிளங்காய்Context(self, self._ctx, self.state)
+        localctx = சீர்Parser.கருவிளங்காய்Context(self, self._ctx, self.state)
         self.enterRule(localctx, 50, self.RULE_கருவிளங்காய்)
         try:
             self.enterOuterAlt(localctx, 1)
@@ -1917,15 +1917,15 @@ class யாப்புParser ( Parser ):
             self.parser = parser
 
         def கருவிளம்(self):
-            return self.getTypedRuleContext(யாப்புParser.கருவிளம்Context,0)
+            return self.getTypedRuleContext(சீர்Parser.கருவிளம்Context,0)
 
 
         def நிரை(self):
-            return self.getTypedRuleContext(யாப்புParser.நிரைContext,0)
+            return self.getTypedRuleContext(சீர்Parser.நிரைContext,0)
 
 
         def getRuleIndex(self):
-            return யாப்புParser.RULE_கருவிளங்கனி
+            return சீர்Parser.RULE_கருவிளங்கனி
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterகருவிளங்கனி" ):
@@ -1940,7 +1940,7 @@ class யாப்புParser ( Parser ):
 
     def கருவிளங்கனி(self):
 
-        localctx = யாப்புParser.கருவிளங்கனிContext(self, self._ctx, self.state)
+        localctx = சீர்Parser.கருவிளங்கனிContext(self, self._ctx, self.state)
         self.enterRule(localctx, 52, self.RULE_கருவிளங்கனி)
         try:
             self.enterOuterAlt(localctx, 1)
@@ -1965,15 +1965,15 @@ class யாப்புParser ( Parser ):
             self.parser = parser
 
         def கூவிளம்(self):
-            return self.getTypedRuleContext(யாப்புParser.கூவிளம்Context,0)
+            return self.getTypedRuleContext(சீர்Parser.கூவிளம்Context,0)
 
 
         def நேர்(self):
-            return self.getTypedRuleContext(யாப்புParser.நேர்Context,0)
+            return self.getTypedRuleContext(சீர்Parser.நேர்Context,0)
 
 
         def getRuleIndex(self):
-            return யாப்புParser.RULE_கூவிளங்காய்
+            return சீர்Parser.RULE_கூவிளங்காய்
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterகூவிளங்காய்" ):
@@ -1988,7 +1988,7 @@ class யாப்புParser ( Parser ):
 
     def கூவிளங்காய்(self):
 
-        localctx = யாப்புParser.கூவிளங்காய்Context(self, self._ctx, self.state)
+        localctx = சீர்Parser.கூவிளங்காய்Context(self, self._ctx, self.state)
         self.enterRule(localctx, 54, self.RULE_கூவிளங்காய்)
         try:
             self.enterOuterAlt(localctx, 1)
@@ -2013,15 +2013,15 @@ class யாப்புParser ( Parser ):
             self.parser = parser
 
         def கூவிளம்(self):
-            return self.getTypedRuleContext(யாப்புParser.கூவிளம்Context,0)
+            return self.getTypedRuleContext(சீர்Parser.கூவிளம்Context,0)
 
 
         def நிரை(self):
-            return self.getTypedRuleContext(யாப்புParser.நிரைContext,0)
+            return self.getTypedRuleContext(சீர்Parser.நிரைContext,0)
 
 
         def getRuleIndex(self):
-            return யாப்புParser.RULE_கூவிளங்கனி
+            return சீர்Parser.RULE_கூவிளங்கனி
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterகூவிளங்கனி" ):
@@ -2036,7 +2036,7 @@ class யாப்புParser ( Parser ):
 
     def கூவிளங்கனி(self):
 
-        localctx = யாப்புParser.கூவிளங்கனிContext(self, self._ctx, self.state)
+        localctx = சீர்Parser.கூவிளங்கனிContext(self, self._ctx, self.state)
         self.enterRule(localctx, 56, self.RULE_கூவிளங்கனி)
         try:
             self.enterOuterAlt(localctx, 1)
@@ -2062,13 +2062,13 @@ class யாப்புParser ( Parser ):
 
         def நேர்(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(யாப்புParser.நேர்Context)
+                return self.getTypedRuleContexts(சீர்Parser.நேர்Context)
             else:
-                return self.getTypedRuleContext(யாப்புParser.நேர்Context,i)
+                return self.getTypedRuleContext(சீர்Parser.நேர்Context,i)
 
 
         def getRuleIndex(self):
-            return யாப்புParser.RULE_தேமா
+            return சீர்Parser.RULE_தேமா
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterதேமா" ):
@@ -2083,7 +2083,7 @@ class யாப்புParser ( Parser ):
 
     def தேமா(self):
 
-        localctx = யாப்புParser.தேமாContext(self, self._ctx, self.state)
+        localctx = சீர்Parser.தேமாContext(self, self._ctx, self.state)
         self.enterRule(localctx, 58, self.RULE_தேமா)
         try:
             self.enterOuterAlt(localctx, 1)
@@ -2108,15 +2108,15 @@ class யாப்புParser ( Parser ):
             self.parser = parser
 
         def நிரை(self):
-            return self.getTypedRuleContext(யாப்புParser.நிரைContext,0)
+            return self.getTypedRuleContext(சீர்Parser.நிரைContext,0)
 
 
         def நேர்(self):
-            return self.getTypedRuleContext(யாப்புParser.நேர்Context,0)
+            return self.getTypedRuleContext(சீர்Parser.நேர்Context,0)
 
 
         def getRuleIndex(self):
-            return யாப்புParser.RULE_புளிமா
+            return சீர்Parser.RULE_புளிமா
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterபுளிமா" ):
@@ -2131,7 +2131,7 @@ class யாப்புParser ( Parser ):
 
     def புளிமா(self):
 
-        localctx = யாப்புParser.புளிமாContext(self, self._ctx, self.state)
+        localctx = சீர்Parser.புளிமாContext(self, self._ctx, self.state)
         self.enterRule(localctx, 60, self.RULE_புளிமா)
         try:
             self.enterOuterAlt(localctx, 1)
@@ -2157,13 +2157,13 @@ class யாப்புParser ( Parser ):
 
         def நிரை(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(யாப்புParser.நிரைContext)
+                return self.getTypedRuleContexts(சீர்Parser.நிரைContext)
             else:
-                return self.getTypedRuleContext(யாப்புParser.நிரைContext,i)
+                return self.getTypedRuleContext(சீர்Parser.நிரைContext,i)
 
 
         def getRuleIndex(self):
-            return யாப்புParser.RULE_கருவிளம்
+            return சீர்Parser.RULE_கருவிளம்
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterகருவிளம்" ):
@@ -2178,7 +2178,7 @@ class யாப்புParser ( Parser ):
 
     def கருவிளம்(self):
 
-        localctx = யாப்புParser.கருவிளம்Context(self, self._ctx, self.state)
+        localctx = சீர்Parser.கருவிளம்Context(self, self._ctx, self.state)
         self.enterRule(localctx, 62, self.RULE_கருவிளம்)
         try:
             self.enterOuterAlt(localctx, 1)
@@ -2203,15 +2203,15 @@ class யாப்புParser ( Parser ):
             self.parser = parser
 
         def நேர்(self):
-            return self.getTypedRuleContext(யாப்புParser.நேர்Context,0)
+            return self.getTypedRuleContext(சீர்Parser.நேர்Context,0)
 
 
         def நிரை(self):
-            return self.getTypedRuleContext(யாப்புParser.நிரைContext,0)
+            return self.getTypedRuleContext(சீர்Parser.நிரைContext,0)
 
 
         def getRuleIndex(self):
-            return யாப்புParser.RULE_கூவிளம்
+            return சீர்Parser.RULE_கூவிளம்
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterகூவிளம்" ):
@@ -2226,7 +2226,7 @@ class யாப்புParser ( Parser ):
 
     def கூவிளம்(self):
 
-        localctx = யாப்புParser.கூவிளம்Context(self, self._ctx, self.state)
+        localctx = சீர்Parser.கூவிளம்Context(self, self._ctx, self.state)
         self.enterRule(localctx, 64, self.RULE_கூவிளம்)
         try:
             self.enterOuterAlt(localctx, 1)
@@ -2251,19 +2251,19 @@ class யாப்புParser ( Parser ):
             self.parser = parser
 
         def குறில்(self):
-            return self.getTypedRuleContext(யாப்புParser.குறில்Context,0)
+            return self.getTypedRuleContext(சீர்Parser.குறில்Context,0)
 
 
         def நெடில்(self):
-            return self.getTypedRuleContext(யாப்புParser.நெடில்Context,0)
+            return self.getTypedRuleContext(சீர்Parser.நெடில்Context,0)
 
 
         def ஒற்று(self):
-            return self.getTypedRuleContext(யாப்புParser.ஒற்றுContext,0)
+            return self.getTypedRuleContext(சீர்Parser.ஒற்றுContext,0)
 
 
         def getRuleIndex(self):
-            return யாப்புParser.RULE_நேர்
+            return சீர்Parser.RULE_நேர்
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterநேர்" ):
@@ -2278,7 +2278,7 @@ class யாப்புParser ( Parser ):
 
     def நேர்(self):
 
-        localctx = யாப்புParser.நேர்Context(self, self._ctx, self.state)
+        localctx = சீர்Parser.நேர்Context(self, self._ctx, self.state)
         self.enterRule(localctx, 66, self.RULE_நேர்)
         try:
             self.state = 194
@@ -2331,21 +2331,21 @@ class யாப்புParser ( Parser ):
 
         def குறில்(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(யாப்புParser.குறில்Context)
+                return self.getTypedRuleContexts(சீர்Parser.குறில்Context)
             else:
-                return self.getTypedRuleContext(யாப்புParser.குறில்Context,i)
+                return self.getTypedRuleContext(சீர்Parser.குறில்Context,i)
 
 
         def நெடில்(self):
-            return self.getTypedRuleContext(யாப்புParser.நெடில்Context,0)
+            return self.getTypedRuleContext(சீர்Parser.நெடில்Context,0)
 
 
         def ஒற்று(self):
-            return self.getTypedRuleContext(யாப்புParser.ஒற்றுContext,0)
+            return self.getTypedRuleContext(சீர்Parser.ஒற்றுContext,0)
 
 
         def getRuleIndex(self):
-            return யாப்புParser.RULE_நிரை
+            return சீர்Parser.RULE_நிரை
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterநிரை" ):
@@ -2360,7 +2360,7 @@ class யாப்புParser ( Parser ):
 
     def நிரை(self):
 
-        localctx = யாப்புParser.நிரைContext(self, self._ctx, self.state)
+        localctx = சீர்Parser.நிரைContext(self, self._ctx, self.state)
         self.enterRule(localctx, 68, self.RULE_நிரை)
         try:
             self.state = 210
@@ -2421,7 +2421,7 @@ class யாப்புParser ( Parser ):
 
 
         def getRuleIndex(self):
-            return யாப்புParser.RULE_ஒற்று
+            return சீர்Parser.RULE_ஒற்று
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterஒற்று" ):
@@ -2436,14 +2436,14 @@ class யாப்புParser ( Parser ):
 
     def ஒற்று(self):
 
-        localctx = யாப்புParser.ஒற்றுContext(self, self._ctx, self.state)
+        localctx = சீர்Parser.ஒற்றுContext(self, self._ctx, self.state)
         self.enterRule(localctx, 70, self.RULE_ஒற்று)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 212
             _la = self._input.LA(1)
-            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << யாப்புParser.T__0) | (1 << யாப்புParser.T__1) | (1 << யாப்புParser.T__2) | (1 << யாப்புParser.T__3) | (1 << யாப்புParser.T__4) | (1 << யாப்புParser.T__5) | (1 << யாப்புParser.T__6) | (1 << யாப்புParser.T__7) | (1 << யாப்புParser.T__8) | (1 << யாப்புParser.T__9) | (1 << யாப்புParser.T__10) | (1 << யாப்புParser.T__11) | (1 << யாப்புParser.T__12) | (1 << யாப்புParser.T__13) | (1 << யாப்புParser.T__14) | (1 << யாப்புParser.T__15) | (1 << யாப்புParser.T__16) | (1 << யாப்புParser.T__17))) != 0)):
+            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << சீர்Parser.T__0) | (1 << சீர்Parser.T__1) | (1 << சீர்Parser.T__2) | (1 << சீர்Parser.T__3) | (1 << சீர்Parser.T__4) | (1 << சீர்Parser.T__5) | (1 << சீர்Parser.T__6) | (1 << சீர்Parser.T__7) | (1 << சீர்Parser.T__8) | (1 << சீர்Parser.T__9) | (1 << சீர்Parser.T__10) | (1 << சீர்Parser.T__11) | (1 << சீர்Parser.T__12) | (1 << சீர்Parser.T__13) | (1 << சீர்Parser.T__14) | (1 << சீர்Parser.T__15) | (1 << சீர்Parser.T__16) | (1 << சீர்Parser.T__17))) != 0)):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
@@ -2466,7 +2466,7 @@ class யாப்புParser ( Parser ):
 
 
         def getRuleIndex(self):
-            return யாப்புParser.RULE_குறில்
+            return சீர்Parser.RULE_குறில்
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterகுறில்" ):
@@ -2481,14 +2481,14 @@ class யாப்புParser ( Parser ):
 
     def குறில்(self):
 
-        localctx = யாப்புParser.குறில்Context(self, self._ctx, self.state)
+        localctx = சீர்Parser.குறில்Context(self, self._ctx, self.state)
         self.enterRule(localctx, 72, self.RULE_குறில்)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 214
             _la = self._input.LA(1)
-            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << யாப்புParser.T__18) | (1 << யாப்புParser.T__19) | (1 << யாப்புParser.T__20) | (1 << யாப்புParser.T__21) | (1 << யாப்புParser.T__22) | (1 << யாப்புParser.T__23) | (1 << யாப்புParser.T__24) | (1 << யாப்புParser.T__25) | (1 << யாப்புParser.T__26) | (1 << யாப்புParser.T__27) | (1 << யாப்புParser.T__28) | (1 << யாப்புParser.T__29) | (1 << யாப்புParser.T__30) | (1 << யாப்புParser.T__31) | (1 << யாப்புParser.T__32) | (1 << யாப்புParser.T__33) | (1 << யாப்புParser.T__34) | (1 << யாப்புParser.T__35) | (1 << யாப்புParser.T__36) | (1 << யாப்புParser.T__37) | (1 << யாப்புParser.T__38) | (1 << யாப்புParser.T__39) | (1 << யாப்புParser.T__40) | (1 << யாப்புParser.T__41) | (1 << யாப்புParser.T__42) | (1 << யாப்புParser.T__43) | (1 << யாப்புParser.T__44) | (1 << யாப்புParser.T__45) | (1 << யாப்புParser.T__46) | (1 << யாப்புParser.T__47) | (1 << யாப்புParser.T__48) | (1 << யாப்புParser.T__49) | (1 << யாப்புParser.T__50) | (1 << யாப்புParser.T__51) | (1 << யாப்புParser.T__52) | (1 << யாப்புParser.T__53) | (1 << யாப்புParser.T__54) | (1 << யாப்புParser.T__55) | (1 << யாப்புParser.T__56) | (1 << யாப்புParser.T__57) | (1 << யாப்புParser.T__58) | (1 << யாப்புParser.T__59) | (1 << யாப்புParser.T__60) | (1 << யாப்புParser.T__61) | (1 << யாப்புParser.T__62))) != 0) or ((((_la - 64)) & ~0x3f) == 0 and ((1 << (_la - 64)) & ((1 << (யாப்புParser.T__63 - 64)) | (1 << (யாப்புParser.T__64 - 64)) | (1 << (யாப்புParser.T__65 - 64)) | (1 << (யாப்புParser.T__66 - 64)) | (1 << (யாப்புParser.T__67 - 64)) | (1 << (யாப்புParser.T__68 - 64)) | (1 << (யாப்புParser.T__69 - 64)) | (1 << (யாப்புParser.T__70 - 64)) | (1 << (யாப்புParser.T__71 - 64)) | (1 << (யாப்புParser.T__72 - 64)) | (1 << (யாப்புParser.T__73 - 64)) | (1 << (யாப்புParser.T__74 - 64)) | (1 << (யாப்புParser.T__75 - 64)) | (1 << (யாப்புParser.T__76 - 64)) | (1 << (யாப்புParser.T__77 - 64)) | (1 << (யாப்புParser.T__78 - 64)) | (1 << (யாப்புParser.T__79 - 64)) | (1 << (யாப்புParser.T__80 - 64)) | (1 << (யாப்புParser.T__81 - 64)) | (1 << (யாப்புParser.T__82 - 64)) | (1 << (யாப்புParser.T__83 - 64)) | (1 << (யாப்புParser.T__84 - 64)) | (1 << (யாப்புParser.T__85 - 64)) | (1 << (யாப்புParser.T__86 - 64)) | (1 << (யாப்புParser.T__87 - 64)) | (1 << (யாப்புParser.T__88 - 64)) | (1 << (யாப்புParser.T__89 - 64)) | (1 << (யாப்புParser.T__90 - 64)) | (1 << (யாப்புParser.T__91 - 64)) | (1 << (யாப்புParser.T__92 - 64)) | (1 << (யாப்புParser.T__93 - 64)) | (1 << (யாப்புParser.T__94 - 64)) | (1 << (யாப்புParser.T__95 - 64)) | (1 << (யாப்புParser.T__96 - 64)) | (1 << (யாப்புParser.T__97 - 64)) | (1 << (யாப்புParser.T__98 - 64)) | (1 << (யாப்புParser.T__99 - 64)) | (1 << (யாப்புParser.T__100 - 64)) | (1 << (யாப்புParser.T__101 - 64)) | (1 << (யாப்புParser.T__102 - 64)) | (1 << (யாப்புParser.T__103 - 64)) | (1 << (யாப்புParser.T__104 - 64)) | (1 << (யாப்புParser.T__105 - 64)) | (1 << (யாப்புParser.T__106 - 64)) | (1 << (யாப்புParser.T__107 - 64)) | (1 << (யாப்புParser.T__108 - 64)) | (1 << (யாப்புParser.T__109 - 64)) | (1 << (யாப்புParser.T__110 - 64)) | (1 << (யாப்புParser.T__111 - 64)) | (1 << (யாப்புParser.T__112 - 64)))) != 0)):
+            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << சீர்Parser.T__18) | (1 << சீர்Parser.T__19) | (1 << சீர்Parser.T__20) | (1 << சீர்Parser.T__21) | (1 << சீர்Parser.T__22) | (1 << சீர்Parser.T__23) | (1 << சீர்Parser.T__24) | (1 << சீர்Parser.T__25) | (1 << சீர்Parser.T__26) | (1 << சீர்Parser.T__27) | (1 << சீர்Parser.T__28) | (1 << சீர்Parser.T__29) | (1 << சீர்Parser.T__30) | (1 << சீர்Parser.T__31) | (1 << சீர்Parser.T__32) | (1 << சீர்Parser.T__33) | (1 << சீர்Parser.T__34) | (1 << சீர்Parser.T__35) | (1 << சீர்Parser.T__36) | (1 << சீர்Parser.T__37) | (1 << சீர்Parser.T__38) | (1 << சீர்Parser.T__39) | (1 << சீர்Parser.T__40) | (1 << சீர்Parser.T__41) | (1 << சீர்Parser.T__42) | (1 << சீர்Parser.T__43) | (1 << சீர்Parser.T__44) | (1 << சீர்Parser.T__45) | (1 << சீர்Parser.T__46) | (1 << சீர்Parser.T__47) | (1 << சீர்Parser.T__48) | (1 << சீர்Parser.T__49) | (1 << சீர்Parser.T__50) | (1 << சீர்Parser.T__51) | (1 << சீர்Parser.T__52) | (1 << சீர்Parser.T__53) | (1 << சீர்Parser.T__54) | (1 << சீர்Parser.T__55) | (1 << சீர்Parser.T__56) | (1 << சீர்Parser.T__57) | (1 << சீர்Parser.T__58) | (1 << சீர்Parser.T__59) | (1 << சீர்Parser.T__60) | (1 << சீர்Parser.T__61) | (1 << சீர்Parser.T__62))) != 0) or ((((_la - 64)) & ~0x3f) == 0 and ((1 << (_la - 64)) & ((1 << (சீர்Parser.T__63 - 64)) | (1 << (சீர்Parser.T__64 - 64)) | (1 << (சீர்Parser.T__65 - 64)) | (1 << (சீர்Parser.T__66 - 64)) | (1 << (சீர்Parser.T__67 - 64)) | (1 << (சீர்Parser.T__68 - 64)) | (1 << (சீர்Parser.T__69 - 64)) | (1 << (சீர்Parser.T__70 - 64)) | (1 << (சீர்Parser.T__71 - 64)) | (1 << (சீர்Parser.T__72 - 64)) | (1 << (சீர்Parser.T__73 - 64)) | (1 << (சீர்Parser.T__74 - 64)) | (1 << (சீர்Parser.T__75 - 64)) | (1 << (சீர்Parser.T__76 - 64)) | (1 << (சீர்Parser.T__77 - 64)) | (1 << (சீர்Parser.T__78 - 64)) | (1 << (சீர்Parser.T__79 - 64)) | (1 << (சீர்Parser.T__80 - 64)) | (1 << (சீர்Parser.T__81 - 64)) | (1 << (சீர்Parser.T__82 - 64)) | (1 << (சீர்Parser.T__83 - 64)) | (1 << (சீர்Parser.T__84 - 64)) | (1 << (சீர்Parser.T__85 - 64)) | (1 << (சீர்Parser.T__86 - 64)) | (1 << (சீர்Parser.T__87 - 64)) | (1 << (சீர்Parser.T__88 - 64)) | (1 << (சீர்Parser.T__89 - 64)) | (1 << (சீர்Parser.T__90 - 64)) | (1 << (சீர்Parser.T__91 - 64)) | (1 << (சீர்Parser.T__92 - 64)) | (1 << (சீர்Parser.T__93 - 64)) | (1 << (சீர்Parser.T__94 - 64)) | (1 << (சீர்Parser.T__95 - 64)) | (1 << (சீர்Parser.T__96 - 64)) | (1 << (சீர்Parser.T__97 - 64)) | (1 << (சீர்Parser.T__98 - 64)) | (1 << (சீர்Parser.T__99 - 64)) | (1 << (சீர்Parser.T__100 - 64)) | (1 << (சீர்Parser.T__101 - 64)) | (1 << (சீர்Parser.T__102 - 64)) | (1 << (சீர்Parser.T__103 - 64)) | (1 << (சீர்Parser.T__104 - 64)) | (1 << (சீர்Parser.T__105 - 64)) | (1 << (சீர்Parser.T__106 - 64)) | (1 << (சீர்Parser.T__107 - 64)) | (1 << (சீர்Parser.T__108 - 64)) | (1 << (சீர்Parser.T__109 - 64)) | (1 << (சீர்Parser.T__110 - 64)) | (1 << (சீர்Parser.T__111 - 64)) | (1 << (சீர்Parser.T__112 - 64)))) != 0)):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
@@ -2511,7 +2511,7 @@ class யாப்புParser ( Parser ):
 
 
         def getRuleIndex(self):
-            return யாப்புParser.RULE_நெடில்
+            return சீர்Parser.RULE_நெடில்
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterநெடில்" ):
@@ -2526,14 +2526,14 @@ class யாப்புParser ( Parser ):
 
     def நெடில்(self):
 
-        localctx = யாப்புParser.நெடில்Context(self, self._ctx, self.state)
+        localctx = சீர்Parser.நெடில்Context(self, self._ctx, self.state)
         self.enterRule(localctx, 74, self.RULE_நெடில்)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 216
             _la = self._input.LA(1)
-            if not(((((_la - 114)) & ~0x3f) == 0 and ((1 << (_la - 114)) & ((1 << (யாப்புParser.T__113 - 114)) | (1 << (யாப்புParser.T__114 - 114)) | (1 << (யாப்புParser.T__115 - 114)) | (1 << (யாப்புParser.T__116 - 114)) | (1 << (யாப்புParser.T__117 - 114)) | (1 << (யாப்புParser.T__118 - 114)) | (1 << (யாப்புParser.T__119 - 114)) | (1 << (யாப்புParser.T__120 - 114)) | (1 << (யாப்புParser.T__121 - 114)) | (1 << (யாப்புParser.T__122 - 114)) | (1 << (யாப்புParser.T__123 - 114)) | (1 << (யாப்புParser.T__124 - 114)) | (1 << (யாப்புParser.T__125 - 114)) | (1 << (யாப்புParser.T__126 - 114)) | (1 << (யாப்புParser.T__127 - 114)) | (1 << (யாப்புParser.T__128 - 114)) | (1 << (யாப்புParser.T__129 - 114)) | (1 << (யாப்புParser.T__130 - 114)) | (1 << (யாப்புParser.T__131 - 114)) | (1 << (யாப்புParser.T__132 - 114)) | (1 << (யாப்புParser.T__133 - 114)) | (1 << (யாப்புParser.T__134 - 114)) | (1 << (யாப்புParser.T__135 - 114)) | (1 << (யாப்புParser.T__136 - 114)) | (1 << (யாப்புParser.T__137 - 114)) | (1 << (யாப்புParser.T__138 - 114)) | (1 << (யாப்புParser.T__139 - 114)) | (1 << (யாப்புParser.T__140 - 114)) | (1 << (யாப்புParser.T__141 - 114)) | (1 << (யாப்புParser.T__142 - 114)) | (1 << (யாப்புParser.T__143 - 114)) | (1 << (யாப்புParser.T__144 - 114)) | (1 << (யாப்புParser.T__145 - 114)) | (1 << (யாப்புParser.T__146 - 114)) | (1 << (யாப்புParser.T__147 - 114)) | (1 << (யாப்புParser.T__148 - 114)) | (1 << (யாப்புParser.T__149 - 114)) | (1 << (யாப்புParser.T__150 - 114)) | (1 << (யாப்புParser.T__151 - 114)) | (1 << (யாப்புParser.T__152 - 114)) | (1 << (யாப்புParser.T__153 - 114)) | (1 << (யாப்புParser.T__154 - 114)) | (1 << (யாப்புParser.T__155 - 114)) | (1 << (யாப்புParser.T__156 - 114)) | (1 << (யாப்புParser.T__157 - 114)) | (1 << (யாப்புParser.T__158 - 114)) | (1 << (யாப்புParser.T__159 - 114)) | (1 << (யாப்புParser.T__160 - 114)) | (1 << (யாப்புParser.T__161 - 114)) | (1 << (யாப்புParser.T__162 - 114)) | (1 << (யாப்புParser.T__163 - 114)) | (1 << (யாப்புParser.T__164 - 114)) | (1 << (யாப்புParser.T__165 - 114)) | (1 << (யாப்புParser.T__166 - 114)) | (1 << (யாப்புParser.T__167 - 114)) | (1 << (யாப்புParser.T__168 - 114)) | (1 << (யாப்புParser.T__169 - 114)) | (1 << (யாப்புParser.T__170 - 114)) | (1 << (யாப்புParser.T__171 - 114)) | (1 << (யாப்புParser.T__172 - 114)) | (1 << (யாப்புParser.T__173 - 114)) | (1 << (யாப்புParser.T__174 - 114)) | (1 << (யாப்புParser.T__175 - 114)) | (1 << (யாப்புParser.T__176 - 114)))) != 0) or ((((_la - 178)) & ~0x3f) == 0 and ((1 << (_la - 178)) & ((1 << (யாப்புParser.T__177 - 178)) | (1 << (யாப்புParser.T__178 - 178)) | (1 << (யாப்புParser.T__179 - 178)) | (1 << (யாப்புParser.T__180 - 178)) | (1 << (யாப்புParser.T__181 - 178)) | (1 << (யாப்புParser.T__182 - 178)) | (1 << (யாப்புParser.T__183 - 178)) | (1 << (யாப்புParser.T__184 - 178)) | (1 << (யாப்புParser.T__185 - 178)) | (1 << (யாப்புParser.T__186 - 178)) | (1 << (யாப்புParser.T__187 - 178)) | (1 << (யாப்புParser.T__188 - 178)) | (1 << (யாப்புParser.T__189 - 178)) | (1 << (யாப்புParser.T__190 - 178)) | (1 << (யாப்புParser.T__191 - 178)) | (1 << (யாப்புParser.T__192 - 178)) | (1 << (யாப்புParser.T__193 - 178)) | (1 << (யாப்புParser.T__194 - 178)) | (1 << (யாப்புParser.T__195 - 178)) | (1 << (யாப்புParser.T__196 - 178)) | (1 << (யாப்புParser.T__197 - 178)) | (1 << (யாப்புParser.T__198 - 178)) | (1 << (யாப்புParser.T__199 - 178)) | (1 << (யாப்புParser.T__200 - 178)) | (1 << (யாப்புParser.T__201 - 178)) | (1 << (யாப்புParser.T__202 - 178)) | (1 << (யாப்புParser.T__203 - 178)) | (1 << (யாப்புParser.T__204 - 178)) | (1 << (யாப்புParser.T__205 - 178)) | (1 << (யாப்புParser.T__206 - 178)) | (1 << (யாப்புParser.T__207 - 178)) | (1 << (யாப்புParser.T__208 - 178)) | (1 << (யாப்புParser.T__209 - 178)) | (1 << (யாப்புParser.T__210 - 178)) | (1 << (யாப்புParser.T__211 - 178)) | (1 << (யாப்புParser.T__212 - 178)) | (1 << (யாப்புParser.T__213 - 178)) | (1 << (யாப்புParser.T__214 - 178)) | (1 << (யாப்புParser.T__215 - 178)) | (1 << (யாப்புParser.T__216 - 178)) | (1 << (யாப்புParser.T__217 - 178)) | (1 << (யாப்புParser.T__218 - 178)) | (1 << (யாப்புParser.T__219 - 178)) | (1 << (யாப்புParser.T__220 - 178)) | (1 << (யாப்புParser.T__221 - 178)) | (1 << (யாப்புParser.T__222 - 178)) | (1 << (யாப்புParser.T__223 - 178)) | (1 << (யாப்புParser.T__224 - 178)) | (1 << (யாப்புParser.T__225 - 178)) | (1 << (யாப்புParser.T__226 - 178)) | (1 << (யாப்புParser.T__227 - 178)) | (1 << (யாப்புParser.T__228 - 178)) | (1 << (யாப்புParser.T__229 - 178)) | (1 << (யாப்புParser.T__230 - 178)) | (1 << (யாப்புParser.T__231 - 178)) | (1 << (யாப்புParser.T__232 - 178)) | (1 << (யாப்புParser.T__233 - 178)) | (1 << (யாப்புParser.T__234 - 178)) | (1 << (யாப்புParser.T__235 - 178)) | (1 << (யாப்புParser.T__236 - 178)) | (1 << (யாப்புParser.T__237 - 178)) | (1 << (யாப்புParser.T__238 - 178)) | (1 << (யாப்புParser.T__239 - 178)) | (1 << (யாப்புParser.T__240 - 178)))) != 0) or ((((_la - 242)) & ~0x3f) == 0 and ((1 << (_la - 242)) & ((1 << (யாப்புParser.T__241 - 242)) | (1 << (யாப்புParser.T__242 - 242)) | (1 << (யாப்புParser.T__243 - 242)) | (1 << (யாப்புParser.T__244 - 242)) | (1 << (யாப்புParser.T__245 - 242)))) != 0)):
+            if not(((((_la - 114)) & ~0x3f) == 0 and ((1 << (_la - 114)) & ((1 << (சீர்Parser.T__113 - 114)) | (1 << (சீர்Parser.T__114 - 114)) | (1 << (சீர்Parser.T__115 - 114)) | (1 << (சீர்Parser.T__116 - 114)) | (1 << (சீர்Parser.T__117 - 114)) | (1 << (சீர்Parser.T__118 - 114)) | (1 << (சீர்Parser.T__119 - 114)) | (1 << (சீர்Parser.T__120 - 114)) | (1 << (சீர்Parser.T__121 - 114)) | (1 << (சீர்Parser.T__122 - 114)) | (1 << (சீர்Parser.T__123 - 114)) | (1 << (சீர்Parser.T__124 - 114)) | (1 << (சீர்Parser.T__125 - 114)) | (1 << (சீர்Parser.T__126 - 114)) | (1 << (சீர்Parser.T__127 - 114)) | (1 << (சீர்Parser.T__128 - 114)) | (1 << (சீர்Parser.T__129 - 114)) | (1 << (சீர்Parser.T__130 - 114)) | (1 << (சீர்Parser.T__131 - 114)) | (1 << (சீர்Parser.T__132 - 114)) | (1 << (சீர்Parser.T__133 - 114)) | (1 << (சீர்Parser.T__134 - 114)) | (1 << (சீர்Parser.T__135 - 114)) | (1 << (சீர்Parser.T__136 - 114)) | (1 << (சீர்Parser.T__137 - 114)) | (1 << (சீர்Parser.T__138 - 114)) | (1 << (சீர்Parser.T__139 - 114)) | (1 << (சீர்Parser.T__140 - 114)) | (1 << (சீர்Parser.T__141 - 114)) | (1 << (சீர்Parser.T__142 - 114)) | (1 << (சீர்Parser.T__143 - 114)) | (1 << (சீர்Parser.T__144 - 114)) | (1 << (சீர்Parser.T__145 - 114)) | (1 << (சீர்Parser.T__146 - 114)) | (1 << (சீர்Parser.T__147 - 114)) | (1 << (சீர்Parser.T__148 - 114)) | (1 << (சீர்Parser.T__149 - 114)) | (1 << (சீர்Parser.T__150 - 114)) | (1 << (சீர்Parser.T__151 - 114)) | (1 << (சீர்Parser.T__152 - 114)) | (1 << (சீர்Parser.T__153 - 114)) | (1 << (சீர்Parser.T__154 - 114)) | (1 << (சீர்Parser.T__155 - 114)) | (1 << (சீர்Parser.T__156 - 114)) | (1 << (சீர்Parser.T__157 - 114)) | (1 << (சீர்Parser.T__158 - 114)) | (1 << (சீர்Parser.T__159 - 114)) | (1 << (சீர்Parser.T__160 - 114)) | (1 << (சீர்Parser.T__161 - 114)) | (1 << (சீர்Parser.T__162 - 114)) | (1 << (சீர்Parser.T__163 - 114)) | (1 << (சீர்Parser.T__164 - 114)) | (1 << (சீர்Parser.T__165 - 114)) | (1 << (சீர்Parser.T__166 - 114)) | (1 << (சீர்Parser.T__167 - 114)) | (1 << (சீர்Parser.T__168 - 114)) | (1 << (சீர்Parser.T__169 - 114)) | (1 << (சீர்Parser.T__170 - 114)) | (1 << (சீர்Parser.T__171 - 114)) | (1 << (சீர்Parser.T__172 - 114)) | (1 << (சீர்Parser.T__173 - 114)) | (1 << (சீர்Parser.T__174 - 114)) | (1 << (சீர்Parser.T__175 - 114)) | (1 << (சீர்Parser.T__176 - 114)))) != 0) or ((((_la - 178)) & ~0x3f) == 0 and ((1 << (_la - 178)) & ((1 << (சீர்Parser.T__177 - 178)) | (1 << (சீர்Parser.T__178 - 178)) | (1 << (சீர்Parser.T__179 - 178)) | (1 << (சீர்Parser.T__180 - 178)) | (1 << (சீர்Parser.T__181 - 178)) | (1 << (சீர்Parser.T__182 - 178)) | (1 << (சீர்Parser.T__183 - 178)) | (1 << (சீர்Parser.T__184 - 178)) | (1 << (சீர்Parser.T__185 - 178)) | (1 << (சீர்Parser.T__186 - 178)) | (1 << (சீர்Parser.T__187 - 178)) | (1 << (சீர்Parser.T__188 - 178)) | (1 << (சீர்Parser.T__189 - 178)) | (1 << (சீர்Parser.T__190 - 178)) | (1 << (சீர்Parser.T__191 - 178)) | (1 << (சீர்Parser.T__192 - 178)) | (1 << (சீர்Parser.T__193 - 178)) | (1 << (சீர்Parser.T__194 - 178)) | (1 << (சீர்Parser.T__195 - 178)) | (1 << (சீர்Parser.T__196 - 178)) | (1 << (சீர்Parser.T__197 - 178)) | (1 << (சீர்Parser.T__198 - 178)) | (1 << (சீர்Parser.T__199 - 178)) | (1 << (சீர்Parser.T__200 - 178)) | (1 << (சீர்Parser.T__201 - 178)) | (1 << (சீர்Parser.T__202 - 178)) | (1 << (சீர்Parser.T__203 - 178)) | (1 << (சீர்Parser.T__204 - 178)) | (1 << (சீர்Parser.T__205 - 178)) | (1 << (சீர்Parser.T__206 - 178)) | (1 << (சீர்Parser.T__207 - 178)) | (1 << (சீர்Parser.T__208 - 178)) | (1 << (சீர்Parser.T__209 - 178)) | (1 << (சீர்Parser.T__210 - 178)) | (1 << (சீர்Parser.T__211 - 178)) | (1 << (சீர்Parser.T__212 - 178)) | (1 << (சீர்Parser.T__213 - 178)) | (1 << (சீர்Parser.T__214 - 178)) | (1 << (சீர்Parser.T__215 - 178)) | (1 << (சீர்Parser.T__216 - 178)) | (1 << (சீர்Parser.T__217 - 178)) | (1 << (சீர்Parser.T__218 - 178)) | (1 << (சீர்Parser.T__219 - 178)) | (1 << (சீர்Parser.T__220 - 178)) | (1 << (சீர்Parser.T__221 - 178)) | (1 << (சீர்Parser.T__222 - 178)) | (1 << (சீர்Parser.T__223 - 178)) | (1 << (சீர்Parser.T__224 - 178)) | (1 << (சீர்Parser.T__225 - 178)) | (1 << (சீர்Parser.T__226 - 178)) | (1 << (சீர்Parser.T__227 - 178)) | (1 << (சீர்Parser.T__228 - 178)) | (1 << (சீர்Parser.T__229 - 178)) | (1 << (சீர்Parser.T__230 - 178)) | (1 << (சீர்Parser.T__231 - 178)) | (1 << (சீர்Parser.T__232 - 178)) | (1 << (சீர்Parser.T__233 - 178)) | (1 << (சீர்Parser.T__234 - 178)) | (1 << (சீர்Parser.T__235 - 178)) | (1 << (சீர்Parser.T__236 - 178)) | (1 << (சீர்Parser.T__237 - 178)) | (1 << (சீர்Parser.T__238 - 178)) | (1 << (சீர்Parser.T__239 - 178)) | (1 << (சீர்Parser.T__240 - 178)))) != 0) or ((((_la - 242)) & ~0x3f) == 0 and ((1 << (_la - 242)) & ((1 << (சீர்Parser.T__241 - 242)) | (1 << (சீர்Parser.T__242 - 242)) | (1 << (சீர்Parser.T__243 - 242)) | (1 << (சீர்Parser.T__244 - 242)) | (1 << (சீர்Parser.T__245 - 242)))) != 0)):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)

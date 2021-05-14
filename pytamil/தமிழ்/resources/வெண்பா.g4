@@ -1,5 +1,5 @@
 grammar வெண்பா;
-import யாப்பு;
+import சீர்;
 
 // start: வெண்பா ;
 

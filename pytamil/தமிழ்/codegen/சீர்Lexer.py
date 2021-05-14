@@ -1,4 +1,4 @@
-# Generated from /home/srix/workspace/pytamil/pytamil/தமிழ்/resources/யாப்பு.g4 by ANTLR 4.9.2
+# Generated from /home/srix/workspace/pytamil/pytamil/தமிழ்/resources/சீர்.g4 by ANTLR 4.9.2
 from antlr4 import *
 from io import StringIO
 import sys
@@ -617,7 +617,7 @@ def serializedATN():
         return buf.getvalue()
 
 
-class யாப்புLexer(Lexer):
+class சீர்Lexer(Lexer):
 
     atn = ATNDeserializer().deserialize(serializedATN())
 
@@ -984,7 +984,7 @@ class யாப்புLexer(Lexer):
                   "T__236", "T__237", "T__238", "T__239", "T__240", "T__241", 
                   "T__242", "T__243", "T__244", "T__245", "I" ]
 
-    grammarFileName = "யாப்பு.g4"
+    grammarFileName = "சீர்.g4"
 
     def __init__(self, input=None, output:TextIO = sys.stdout):
         super().__init__(input, output)
