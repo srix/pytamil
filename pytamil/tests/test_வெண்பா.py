@@ -26,17 +26,16 @@ from pytamil.தமிழ் import வெண்பா
 ])
 def test_சீர்கொடு(பத்தி):   
     
+    # extract வெண்பா lines only
     பாடல்_அடிகள் =  [ அடி.strip() for i,அடி in enumerate(பத்தி.splitlines()) if not i%2 ]
     பாடல் =  "\n".join(பாடல்_அடிகள்)
 
-    வரிசை = வெண்பா.சீர்கொடு(பாடல்)
-    சீர்அடிகள் = ["= "+" ".join(அடி) for அடி in வரிசை]
+    அடிவரிசை = வெண்பா.சீர்கொடு(பாடல்)
+    சீர்அடிகள் = ["= "+" ".join(அடி) for அடி in அடிவரிசை]
     
+    # recreate interleaved format of வெண்பா lines and சீர் lines
     புதுபத்தி_அடிகள் = [val for pair in zip(பாடல்_அடிகள், சீர்அடிகள்) for val in pair]
     புதுபத்தி = "\n".join(புதுபத்தி_அடிகள்) 
-
-    print(பத்தி)
-    print(புதுபத்தி)
 
     assert பத்தி == புதுபத்தி
     
