@@ -1,0 +1,52 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug மாத்திரை Grammar",
+            "type": "antlr-debug",
+            "request": "launch",
+            "grammar": "${workspaceFolder}/pytamil/தமிழ்/resources/மாத்திரை.g4",
+            "input": "${workspaceFolder}/pytamil/தமிழ்/மாத்திரை-input.txt",
+            "printParseTree": true,
+            "visualParseTree": true
+        },
+        {
+            "name": "Debug வெண்பா Grammar",
+            "type": "antlr-debug",
+            "request": "launch",
+            "grammar": "${workspaceFolder}/pytamil/தமிழ்/resources/வெண்பா.g4",
+            "input": "${workspaceFolder}/pytamil/debug/வெண்பா-input.txt",
+            "printParseTree": true,
+            "visualParseTree": true
+        },
+        {
+            "name": "Debug ஆசிரியப்பா Grammar",
+            "type": "antlr-debug",
+            "request": "launch",
+            "grammar": "${workspaceFolder}/pytamil/தமிழ்/resources/ஆசிரியப்பா.g4",
+            "input": "${workspaceFolder}/pytamil/debug/ஆசிரியப்பா-input.txt",
+            "printParseTree": true,
+            "visualParseTree": true
+        },
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Python: Tamil19.py",
+            "type": "python",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "program": "${workspaceFolder}/pytamil/tamil19.py",
+            "console": "integratedTerminal",
+            "env": {"PYTHONPATH": "${workspaceFolder}"},
+
+        }
+    ]
+}
