@@ -12,85 +12,118 @@ else:
 def serializedATN():
     with StringIO() as buf:
         buf.write("\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\u00f9")
-        buf.write("\u00e1\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7")
+        buf.write("\u0118\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7")
         buf.write("\4\b\t\b\4\t\t\t\4\n\t\n\4\13\t\13\4\f\t\f\4\r\t\r\4\16")
         buf.write("\t\16\4\17\t\17\4\20\t\20\4\21\t\21\4\22\t\22\4\23\t\23")
         buf.write("\4\24\t\24\4\25\t\25\4\26\t\26\4\27\t\27\4\30\t\30\4\31")
         buf.write("\t\31\4\32\t\32\4\33\t\33\4\34\t\34\4\35\t\35\4\36\t\36")
         buf.write("\4\37\t\37\4 \t \4!\t!\4\"\t\"\4#\t#\4$\t$\4%\t%\4&\t")
-        buf.write("&\4\'\t\'\3\2\3\2\3\2\3\2\5\2S\n\2\3\3\3\3\3\3\3\3\5\3")
-        buf.write("Y\n\3\3\4\3\4\5\4]\n\4\3\5\3\5\5\5a\n\5\3\6\3\6\3\6\3")
-        buf.write("\6\5\6g\n\6\3\7\3\7\3\7\3\b\3\b\3\b\3\t\3\t\3\t\3\n\3")
-        buf.write("\n\3\n\3\13\3\13\3\13\3\f\3\f\3\f\3\r\3\r\3\r\3\16\3\16")
-        buf.write("\3\16\3\17\3\17\3\17\3\20\3\20\3\20\3\21\3\21\3\21\3\22")
-        buf.write("\3\22\3\22\3\23\3\23\3\23\3\24\3\24\3\24\3\25\3\25\3\25")
-        buf.write("\3\26\3\26\3\26\3\27\3\27\3\27\3\30\3\30\3\30\3\31\3\31")
-        buf.write("\3\31\3\32\3\32\3\32\3\33\3\33\3\33\3\34\3\34\3\34\3\35")
-        buf.write("\3\35\3\35\3\36\3\36\3\36\3\37\3\37\3\37\3 \3 \3 \3!\3")
-        buf.write("!\3!\3\"\3\"\3\"\3#\3#\3#\3#\5#\u00c1\n#\3#\3#\5#\u00c5")
-        buf.write("\n#\5#\u00c7\n#\3$\3$\3$\3$\3$\3$\3$\3$\3$\5$\u00d2\n")
-        buf.write("$\3$\3$\3$\5$\u00d7\n$\5$\u00d9\n$\3%\3%\3&\3&\3\'\3\'")
-        buf.write("\3\'\2\2(\2\4\6\b\n\f\16\20\22\24\26\30\32\34\36 \"$&")
-        buf.write("(*,.\60\62\64\668:<>@BDFHJL\2\5\3\2\3\24\3\2\25s\3\2t")
-        buf.write("\u00f8\2\u00cf\2R\3\2\2\2\4X\3\2\2\2\6\\\3\2\2\2\b`\3")
-        buf.write("\2\2\2\nf\3\2\2\2\fh\3\2\2\2\16k\3\2\2\2\20n\3\2\2\2\22")
-        buf.write("q\3\2\2\2\24t\3\2\2\2\26w\3\2\2\2\30z\3\2\2\2\32}\3\2")
-        buf.write("\2\2\34\u0080\3\2\2\2\36\u0083\3\2\2\2 \u0086\3\2\2\2")
-        buf.write("\"\u0089\3\2\2\2$\u008c\3\2\2\2&\u008f\3\2\2\2(\u0092")
-        buf.write("\3\2\2\2*\u0095\3\2\2\2,\u0098\3\2\2\2.\u009b\3\2\2\2")
-        buf.write("\60\u009e\3\2\2\2\62\u00a1\3\2\2\2\64\u00a4\3\2\2\2\66")
-        buf.write("\u00a7\3\2\2\28\u00aa\3\2\2\2:\u00ad\3\2\2\2<\u00b0\3")
-        buf.write("\2\2\2>\u00b3\3\2\2\2@\u00b6\3\2\2\2B\u00b9\3\2\2\2D\u00c6")
-        buf.write("\3\2\2\2F\u00d8\3\2\2\2H\u00da\3\2\2\2J\u00dc\3\2\2\2")
-        buf.write("L\u00de\3\2\2\2NS\5.\30\2OS\5\62\32\2PS\5\66\34\2QS\5")
-        buf.write(":\36\2RN\3\2\2\2RO\3\2\2\2RP\3\2\2\2RQ\3\2\2\2S\3\3\2")
-        buf.write("\2\2TY\5<\37\2UY\5> \2VY\5@!\2WY\5B\"\2XT\3\2\2\2XU\3")
-        buf.write("\2\2\2XV\3\2\2\2XW\3\2\2\2Y\5\3\2\2\2Z]\5<\37\2[]\5> ")
-        buf.write("\2\\Z\3\2\2\2\\[\3\2\2\2]\7\3\2\2\2^a\5@!\2_a\5B\"\2`")
-        buf.write("^\3\2\2\2`_\3\2\2\2a\t\3\2\2\2bg\5,\27\2cg\5\60\31\2d")
-        buf.write("g\5\64\33\2eg\58\35\2fb\3\2\2\2fc\3\2\2\2fd\3\2\2\2fe")
-        buf.write("\3\2\2\2g\13\3\2\2\2hi\5,\27\2ij\5D#\2j\r\3\2\2\2kl\5")
-        buf.write(",\27\2lm\5F$\2m\17\3\2\2\2no\5.\30\2op\5D#\2p\21\3\2\2")
-        buf.write("\2qr\5.\30\2rs\5F$\2s\23\3\2\2\2tu\5\60\31\2uv\5D#\2v")
-        buf.write("\25\3\2\2\2wx\5\60\31\2xy\5F$\2y\27\3\2\2\2z{\5\62\32")
-        buf.write("\2{|\5D#\2|\31\3\2\2\2}~\5\62\32\2~\177\5F$\2\177\33\3")
-        buf.write("\2\2\2\u0080\u0081\5\64\33\2\u0081\u0082\5D#\2\u0082\35")
-        buf.write("\3\2\2\2\u0083\u0084\5\64\33\2\u0084\u0085\5F$\2\u0085")
-        buf.write("\37\3\2\2\2\u0086\u0087\5\66\34\2\u0087\u0088\5D#\2\u0088")
-        buf.write("!\3\2\2\2\u0089\u008a\5\66\34\2\u008a\u008b\5F$\2\u008b")
-        buf.write("#\3\2\2\2\u008c\u008d\58\35\2\u008d\u008e\5D#\2\u008e")
-        buf.write("%\3\2\2\2\u008f\u0090\58\35\2\u0090\u0091\5F$\2\u0091")
-        buf.write("\'\3\2\2\2\u0092\u0093\5:\36\2\u0093\u0094\5D#\2\u0094")
-        buf.write(")\3\2\2\2\u0095\u0096\5:\36\2\u0096\u0097\5F$\2\u0097")
-        buf.write("+\3\2\2\2\u0098\u0099\5<\37\2\u0099\u009a\5D#\2\u009a")
-        buf.write("-\3\2\2\2\u009b\u009c\5<\37\2\u009c\u009d\5F$\2\u009d")
-        buf.write("/\3\2\2\2\u009e\u009f\5> \2\u009f\u00a0\5D#\2\u00a0\61")
-        buf.write("\3\2\2\2\u00a1\u00a2\5> \2\u00a2\u00a3\5F$\2\u00a3\63")
-        buf.write("\3\2\2\2\u00a4\u00a5\5@!\2\u00a5\u00a6\5D#\2\u00a6\65")
-        buf.write("\3\2\2\2\u00a7\u00a8\5@!\2\u00a8\u00a9\5F$\2\u00a9\67")
-        buf.write("\3\2\2\2\u00aa\u00ab\5B\"\2\u00ab\u00ac\5D#\2\u00ac9\3")
-        buf.write("\2\2\2\u00ad\u00ae\5B\"\2\u00ae\u00af\5F$\2\u00af;\3\2")
-        buf.write("\2\2\u00b0\u00b1\5D#\2\u00b1\u00b2\5D#\2\u00b2=\3\2\2")
-        buf.write("\2\u00b3\u00b4\5F$\2\u00b4\u00b5\5D#\2\u00b5?\3\2\2\2")
-        buf.write("\u00b6\u00b7\5F$\2\u00b7\u00b8\5F$\2\u00b8A\3\2\2\2\u00b9")
-        buf.write("\u00ba\5D#\2\u00ba\u00bb\5F$\2\u00bbC\3\2\2\2\u00bc\u00c7")
-        buf.write("\5J&\2\u00bd\u00c7\5L\'\2\u00be\u00c0\5J&\2\u00bf\u00c1")
-        buf.write("\5H%\2\u00c0\u00bf\3\2\2\2\u00c0\u00c1\3\2\2\2\u00c1\u00c7")
-        buf.write("\3\2\2\2\u00c2\u00c4\5L\'\2\u00c3\u00c5\5H%\2\u00c4\u00c3")
-        buf.write("\3\2\2\2\u00c4\u00c5\3\2\2\2\u00c5\u00c7\3\2\2\2\u00c6")
-        buf.write("\u00bc\3\2\2\2\u00c6\u00bd\3\2\2\2\u00c6\u00be\3\2\2\2")
-        buf.write("\u00c6\u00c2\3\2\2\2\u00c7E\3\2\2\2\u00c8\u00c9\5J&\2")
-        buf.write("\u00c9\u00ca\5J&\2\u00ca\u00d9\3\2\2\2\u00cb\u00cc\5J")
-        buf.write("&\2\u00cc\u00cd\5L\'\2\u00cd\u00d9\3\2\2\2\u00ce\u00cf")
-        buf.write("\5J&\2\u00cf\u00d1\5J&\2\u00d0\u00d2\5H%\2\u00d1\u00d0")
-        buf.write("\3\2\2\2\u00d1\u00d2\3\2\2\2\u00d2\u00d9\3\2\2\2\u00d3")
-        buf.write("\u00d4\5J&\2\u00d4\u00d6\5L\'\2\u00d5\u00d7\5H%\2\u00d6")
-        buf.write("\u00d5\3\2\2\2\u00d6\u00d7\3\2\2\2\u00d7\u00d9\3\2\2\2")
-        buf.write("\u00d8\u00c8\3\2\2\2\u00d8\u00cb\3\2\2\2\u00d8\u00ce\3")
-        buf.write("\2\2\2\u00d8\u00d3\3\2\2\2\u00d9G\3\2\2\2\u00da\u00db")
-        buf.write("\t\2\2\2\u00dbI\3\2\2\2\u00dc\u00dd\t\3\2\2\u00ddK\3\2")
-        buf.write("\2\2\u00de\u00df\t\4\2\2\u00dfM\3\2\2\2\rRX\\`f\u00c0")
-        buf.write("\u00c4\u00c6\u00d1\u00d6\u00d8")
+        buf.write("&\4\'\t\'\4(\t(\4)\t)\4*\t*\4+\t+\3\2\3\2\3\2\5\2Z\n\2")
+        buf.write("\3\3\3\3\3\3\3\3\5\3`\n\3\3\4\3\4\3\4\3\4\5\4f\n\4\3\5")
+        buf.write("\3\5\5\5j\n\5\3\6\3\6\5\6n\n\6\3\7\3\7\3\7\3\7\5\7t\n")
+        buf.write("\7\3\b\3\b\3\b\3\b\3\b\3\b\3\b\3\b\3\b\3\b\3\b\3\b\3\b")
+        buf.write("\3\b\3\b\3\b\5\b\u0086\n\b\3\t\3\t\3\t\3\t\3\t\3\t\3\t")
+        buf.write("\3\t\5\t\u0090\n\t\3\n\3\n\3\n\3\n\5\n\u0096\n\n\3\13")
+        buf.write("\3\13\3\13\3\f\3\f\3\f\3\r\3\r\3\r\3\16\3\16\3\16\3\17")
+        buf.write("\3\17\3\17\3\20\3\20\3\20\3\21\3\21\3\21\3\22\3\22\3\22")
+        buf.write("\3\23\3\23\3\23\3\24\3\24\3\24\3\25\3\25\3\25\3\26\3\26")
+        buf.write("\3\26\3\27\3\27\3\27\3\30\3\30\3\30\3\31\3\31\3\31\3\32")
+        buf.write("\3\32\3\32\3\33\3\33\3\33\3\34\3\34\3\34\3\35\3\35\3\35")
+        buf.write("\3\36\3\36\3\36\3\37\3\37\3\37\3 \3 \3 \3!\3!\3!\3\"\3")
+        buf.write("\"\3\"\3#\3#\3#\3$\3$\3$\3%\3%\3%\3&\3&\3&\3\'\3\'\3\'")
+        buf.write("\3\'\6\'\u00f0\n\'\r\'\16\'\u00f1\3\'\3\'\6\'\u00f6\n")
+        buf.write("\'\r\'\16\'\u00f7\5\'\u00fa\n\'\3(\3(\3(\3(\3(\3(\3(\3")
+        buf.write("(\3(\6(\u0105\n(\r(\16(\u0106\3(\3(\3(\6(\u010c\n(\r(")
+        buf.write("\16(\u010d\5(\u0110\n(\3)\3)\3*\3*\3+\3+\3+\2\2,\2\4\6")
+        buf.write("\b\n\f\16\20\22\24\26\30\32\34\36 \"$&(*,.\60\62\64\66")
+        buf.write("8:<>@BDFHJLNPRT\2\5\3\2\3\24\3\2\25s\3\2t\u00f8\2\u011d")
+        buf.write("\2Y\3\2\2\2\4_\3\2\2\2\6e\3\2\2\2\bi\3\2\2\2\nm\3\2\2")
+        buf.write("\2\fs\3\2\2\2\16\u0085\3\2\2\2\20\u008f\3\2\2\2\22\u0095")
+        buf.write("\3\2\2\2\24\u0097\3\2\2\2\26\u009a\3\2\2\2\30\u009d\3")
+        buf.write("\2\2\2\32\u00a0\3\2\2\2\34\u00a3\3\2\2\2\36\u00a6\3\2")
+        buf.write("\2\2 \u00a9\3\2\2\2\"\u00ac\3\2\2\2$\u00af\3\2\2\2&\u00b2")
+        buf.write("\3\2\2\2(\u00b5\3\2\2\2*\u00b8\3\2\2\2,\u00bb\3\2\2\2")
+        buf.write(".\u00be\3\2\2\2\60\u00c1\3\2\2\2\62\u00c4\3\2\2\2\64\u00c7")
+        buf.write("\3\2\2\2\66\u00ca\3\2\2\28\u00cd\3\2\2\2:\u00d0\3\2\2")
+        buf.write("\2<\u00d3\3\2\2\2>\u00d6\3\2\2\2@\u00d9\3\2\2\2B\u00dc")
+        buf.write("\3\2\2\2D\u00df\3\2\2\2F\u00e2\3\2\2\2H\u00e5\3\2\2\2")
+        buf.write("J\u00e8\3\2\2\2L\u00f9\3\2\2\2N\u010f\3\2\2\2P\u0111\3")
+        buf.write("\2\2\2R\u0113\3\2\2\2T\u0115\3\2\2\2VZ\5\22\n\2WZ\5\20")
+        buf.write("\t\2XZ\5\16\b\2YV\3\2\2\2YW\3\2\2\2YX\3\2\2\2Z\3\3\2\2")
+        buf.write("\2[`\5\66\34\2\\`\5:\36\2]`\5> \2^`\5B\"\2_[\3\2\2\2_")
+        buf.write("\\\3\2\2\2_]\3\2\2\2_^\3\2\2\2`\5\3\2\2\2af\5D#\2bf\5")
+        buf.write("F$\2cf\5H%\2df\5J&\2ea\3\2\2\2eb\3\2\2\2ec\3\2\2\2ed\3")
+        buf.write("\2\2\2f\7\3\2\2\2gj\5D#\2hj\5F$\2ig\3\2\2\2ih\3\2\2\2")
+        buf.write("j\t\3\2\2\2kn\5H%\2ln\5J&\2mk\3\2\2\2ml\3\2\2\2n\13\3")
+        buf.write("\2\2\2ot\5\64\33\2pt\58\35\2qt\5<\37\2rt\5@!\2so\3\2\2")
+        buf.write("\2sp\3\2\2\2sq\3\2\2\2sr\3\2\2\2t\r\3\2\2\2u\u0086\5\24")
+        buf.write("\13\2v\u0086\5\26\f\2w\u0086\5\30\r\2x\u0086\5\32\16\2")
+        buf.write("y\u0086\5\34\17\2z\u0086\5\36\20\2{\u0086\5 \21\2|\u0086")
+        buf.write("\5\"\22\2}\u0086\5$\23\2~\u0086\5&\24\2\177\u0086\5(\25")
+        buf.write("\2\u0080\u0086\5*\26\2\u0081\u0086\5,\27\2\u0082\u0086")
+        buf.write("\5.\30\2\u0083\u0086\5\60\31\2\u0084\u0086\5\62\32\2\u0085")
+        buf.write("u\3\2\2\2\u0085v\3\2\2\2\u0085w\3\2\2\2\u0085x\3\2\2\2")
+        buf.write("\u0085y\3\2\2\2\u0085z\3\2\2\2\u0085{\3\2\2\2\u0085|\3")
+        buf.write("\2\2\2\u0085}\3\2\2\2\u0085~\3\2\2\2\u0085\177\3\2\2\2")
+        buf.write("\u0085\u0080\3\2\2\2\u0085\u0081\3\2\2\2\u0085\u0082\3")
+        buf.write("\2\2\2\u0085\u0083\3\2\2\2\u0085\u0084\3\2\2\2\u0086\17")
+        buf.write("\3\2\2\2\u0087\u0090\5\64\33\2\u0088\u0090\5\66\34\2\u0089")
+        buf.write("\u0090\58\35\2\u008a\u0090\5:\36\2\u008b\u0090\5<\37\2")
+        buf.write("\u008c\u0090\5> \2\u008d\u0090\5@!\2\u008e\u0090\5B\"")
+        buf.write("\2\u008f\u0087\3\2\2\2\u008f\u0088\3\2\2\2\u008f\u0089")
+        buf.write("\3\2\2\2\u008f\u008a\3\2\2\2\u008f\u008b\3\2\2\2\u008f")
+        buf.write("\u008c\3\2\2\2\u008f\u008d\3\2\2\2\u008f\u008e\3\2\2\2")
+        buf.write("\u0090\21\3\2\2\2\u0091\u0096\5D#\2\u0092\u0096\5F$\2")
+        buf.write("\u0093\u0096\5H%\2\u0094\u0096\5J&\2\u0095\u0091\3\2\2")
+        buf.write("\2\u0095\u0092\3\2\2\2\u0095\u0093\3\2\2\2\u0095\u0094")
+        buf.write("\3\2\2\2\u0096\23\3\2\2\2\u0097\u0098\5\64\33\2\u0098")
+        buf.write("\u0099\5L\'\2\u0099\25\3\2\2\2\u009a\u009b\5\64\33\2\u009b")
+        buf.write("\u009c\5N(\2\u009c\27\3\2\2\2\u009d\u009e\5\66\34\2\u009e")
+        buf.write("\u009f\5L\'\2\u009f\31\3\2\2\2\u00a0\u00a1\5\66\34\2\u00a1")
+        buf.write("\u00a2\5N(\2\u00a2\33\3\2\2\2\u00a3\u00a4\58\35\2\u00a4")
+        buf.write("\u00a5\5L\'\2\u00a5\35\3\2\2\2\u00a6\u00a7\58\35\2\u00a7")
+        buf.write("\u00a8\5N(\2\u00a8\37\3\2\2\2\u00a9\u00aa\5:\36\2\u00aa")
+        buf.write("\u00ab\5L\'\2\u00ab!\3\2\2\2\u00ac\u00ad\5:\36\2\u00ad")
+        buf.write("\u00ae\5N(\2\u00ae#\3\2\2\2\u00af\u00b0\5<\37\2\u00b0")
+        buf.write("\u00b1\5L\'\2\u00b1%\3\2\2\2\u00b2\u00b3\5<\37\2\u00b3")
+        buf.write("\u00b4\5N(\2\u00b4\'\3\2\2\2\u00b5\u00b6\5> \2\u00b6\u00b7")
+        buf.write("\5L\'\2\u00b7)\3\2\2\2\u00b8\u00b9\5> \2\u00b9\u00ba\5")
+        buf.write("N(\2\u00ba+\3\2\2\2\u00bb\u00bc\5@!\2\u00bc\u00bd\5L\'")
+        buf.write("\2\u00bd-\3\2\2\2\u00be\u00bf\5@!\2\u00bf\u00c0\5N(\2")
+        buf.write("\u00c0/\3\2\2\2\u00c1\u00c2\5B\"\2\u00c2\u00c3\5L\'\2")
+        buf.write("\u00c3\61\3\2\2\2\u00c4\u00c5\5B\"\2\u00c5\u00c6\5N(\2")
+        buf.write("\u00c6\63\3\2\2\2\u00c7\u00c8\5D#\2\u00c8\u00c9\5L\'\2")
+        buf.write("\u00c9\65\3\2\2\2\u00ca\u00cb\5D#\2\u00cb\u00cc\5N(\2")
+        buf.write("\u00cc\67\3\2\2\2\u00cd\u00ce\5F$\2\u00ce\u00cf\5L\'\2")
+        buf.write("\u00cf9\3\2\2\2\u00d0\u00d1\5F$\2\u00d1\u00d2\5N(\2\u00d2")
+        buf.write(";\3\2\2\2\u00d3\u00d4\5H%\2\u00d4\u00d5\5L\'\2\u00d5=")
+        buf.write("\3\2\2\2\u00d6\u00d7\5H%\2\u00d7\u00d8\5N(\2\u00d8?\3")
+        buf.write("\2\2\2\u00d9\u00da\5J&\2\u00da\u00db\5L\'\2\u00dbA\3\2")
+        buf.write("\2\2\u00dc\u00dd\5J&\2\u00dd\u00de\5N(\2\u00deC\3\2\2")
+        buf.write("\2\u00df\u00e0\5L\'\2\u00e0\u00e1\5L\'\2\u00e1E\3\2\2")
+        buf.write("\2\u00e2\u00e3\5N(\2\u00e3\u00e4\5L\'\2\u00e4G\3\2\2\2")
+        buf.write("\u00e5\u00e6\5N(\2\u00e6\u00e7\5N(\2\u00e7I\3\2\2\2\u00e8")
+        buf.write("\u00e9\5L\'\2\u00e9\u00ea\5N(\2\u00eaK\3\2\2\2\u00eb\u00fa")
+        buf.write("\5R*\2\u00ec\u00fa\5T+\2\u00ed\u00ef\5R*\2\u00ee\u00f0")
+        buf.write("\5P)\2\u00ef\u00ee\3\2\2\2\u00f0\u00f1\3\2\2\2\u00f1\u00ef")
+        buf.write("\3\2\2\2\u00f1\u00f2\3\2\2\2\u00f2\u00fa\3\2\2\2\u00f3")
+        buf.write("\u00f5\5T+\2\u00f4\u00f6\5P)\2\u00f5\u00f4\3\2\2\2\u00f6")
+        buf.write("\u00f7\3\2\2\2\u00f7\u00f5\3\2\2\2\u00f7\u00f8\3\2\2\2")
+        buf.write("\u00f8\u00fa\3\2\2\2\u00f9\u00eb\3\2\2\2\u00f9\u00ec\3")
+        buf.write("\2\2\2\u00f9\u00ed\3\2\2\2\u00f9\u00f3\3\2\2\2\u00faM")
+        buf.write("\3\2\2\2\u00fb\u00fc\5R*\2\u00fc\u00fd\5R*\2\u00fd\u0110")
+        buf.write("\3\2\2\2\u00fe\u00ff\5R*\2\u00ff\u0100\5T+\2\u0100\u0110")
+        buf.write("\3\2\2\2\u0101\u0102\5R*\2\u0102\u0104\5R*\2\u0103\u0105")
+        buf.write("\5P)\2\u0104\u0103\3\2\2\2\u0105\u0106\3\2\2\2\u0106\u0104")
+        buf.write("\3\2\2\2\u0106\u0107\3\2\2\2\u0107\u0110\3\2\2\2\u0108")
+        buf.write("\u0109\5R*\2\u0109\u010b\5T+\2\u010a\u010c\5P)\2\u010b")
+        buf.write("\u010a\3\2\2\2\u010c\u010d\3\2\2\2\u010d\u010b\3\2\2\2")
+        buf.write("\u010d\u010e\3\2\2\2\u010e\u0110\3\2\2\2\u010f\u00fb\3")
+        buf.write("\2\2\2\u010f\u00fe\3\2\2\2\u010f\u0101\3\2\2\2\u010f\u0108")
+        buf.write("\3\2\2\2\u0110O\3\2\2\2\u0111\u0112\t\2\2\2\u0112Q\3\2")
+        buf.write("\2\2\u0113\u0114\t\3\2\2\u0114S\3\2\2\2\u0115\u0116\t")
+        buf.write("\4\2\2\u0116U\3\2\2\2\21Y_eims\u0085\u008f\u0095\u00f1")
+        buf.write("\u00f7\u00f9\u0106\u010d\u010f")
         return buf.getvalue()
 
 
@@ -243,50 +276,55 @@ class சீர்Parser ( Parser ):
                       "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
                       "<INVALID>", "<INVALID>", "<INVALID>", "I" ]
 
-    RULE_வஞ்சிச்_சீர் = 0
-    RULE_இயற்சீர் = 1
-    RULE_மாச்சீர் = 2
-    RULE_விளச்சீர் = 3
-    RULE_வெண்சீர் = 4
-    RULE_தேமாந்தண்பூ = 5
-    RULE_தேமாந்தண்ணிழல் = 6
-    RULE_தேமாநறும்பூ = 7
-    RULE_தேமாநறுநிழல் = 8
-    RULE_புளிமாந்தண்பூ = 9
-    RULE_புளிமாந்தண்ணிழல் = 10
-    RULE_புளிமாநறும்பூ = 11
-    RULE_புளிமாநறுநிழல் = 12
-    RULE_கருவிளந்தண்பூ = 13
-    RULE_கருவிளந்தண்ணிழல் = 14
-    RULE_கருவிளநறும்பூ = 15
-    RULE_கருவிளநறுநிழல் = 16
-    RULE_கூவிளந்தண்பூ = 17
-    RULE_கூவிளந்தண்ணிழல் = 18
-    RULE_கூவிளநறும்பூ = 19
-    RULE_கூவிளநறுநிழல் = 20
-    RULE_தேமாங்காய் = 21
-    RULE_தேமாங்கனி = 22
-    RULE_புளிமாங்காய் = 23
-    RULE_புளிமாங்கனி = 24
-    RULE_கருவிளங்காய் = 25
-    RULE_கருவிளங்கனி = 26
-    RULE_கூவிளங்காய் = 27
-    RULE_கூவிளங்கனி = 28
-    RULE_தேமா = 29
-    RULE_புளிமா = 30
-    RULE_கருவிளம் = 31
-    RULE_கூவிளம் = 32
-    RULE_நேர் = 33
-    RULE_நிரை = 34
-    RULE_ஒற்று = 35
-    RULE_குறில் = 36
-    RULE_நெடில் = 37
+    RULE_சீர் = 0
+    RULE_வஞ்சிச்_சீர் = 1
+    RULE_இயற்சீர் = 2
+    RULE_மாச்சீர் = 3
+    RULE_விளச்சீர் = 4
+    RULE_வெண்சீர் = 5
+    RULE_நாலசை = 6
+    RULE_மூவசை = 7
+    RULE_ஈரசை = 8
+    RULE_தேமாந்தண்பூ = 9
+    RULE_தேமாந்தண்ணிழல் = 10
+    RULE_தேமாநறும்பூ = 11
+    RULE_தேமாநறுநிழல் = 12
+    RULE_புளிமாந்தண்பூ = 13
+    RULE_புளிமாந்தண்ணிழல் = 14
+    RULE_புளிமாநறும்பூ = 15
+    RULE_புளிமாநறுநிழல் = 16
+    RULE_கருவிளந்தண்பூ = 17
+    RULE_கருவிளந்தண்ணிழல் = 18
+    RULE_கருவிளநறும்பூ = 19
+    RULE_கருவிளநறுநிழல் = 20
+    RULE_கூவிளந்தண்பூ = 21
+    RULE_கூவிளந்தண்ணிழல் = 22
+    RULE_கூவிளநறும்பூ = 23
+    RULE_கூவிளநறுநிழல் = 24
+    RULE_தேமாங்காய் = 25
+    RULE_தேமாங்கனி = 26
+    RULE_புளிமாங்காய் = 27
+    RULE_புளிமாங்கனி = 28
+    RULE_கருவிளங்காய் = 29
+    RULE_கருவிளங்கனி = 30
+    RULE_கூவிளங்காய் = 31
+    RULE_கூவிளங்கனி = 32
+    RULE_தேமா = 33
+    RULE_புளிமா = 34
+    RULE_கருவிளம் = 35
+    RULE_கூவிளம் = 36
+    RULE_நேர் = 37
+    RULE_நிரை = 38
+    RULE_ஒற்று = 39
+    RULE_குறில் = 40
+    RULE_நெடில் = 41
 
-    ruleNames =  [ "வஞ்சிச்_சீர்", "இயற்சீர்", "மாச்சீர்", "விளச்சீர்", 
-                   "வெண்சீர்", "தேமாந்தண்பூ", "தேமாந்தண்ணிழல்", "தேமாநறும்பூ", 
-                   "தேமாநறுநிழல்", "புளிமாந்தண்பூ", "புளிமாந்தண்ணிழல்", 
-                   "புளிமாநறும்பூ", "புளிமாநறுநிழல்", "கருவிளந்தண்பூ", "கருவிளந்தண்ணிழல்", 
-                   "கருவிளநறும்பூ", "கருவிளநறுநிழல்", "கூவிளந்தண்பூ", "கூவிளந்தண்ணிழல்", 
+    ruleNames =  [ "சீர்", "வஞ்சிச்_சீர்", "இயற்சீர்", "மாச்சீர்", "விளச்சீர்", 
+                   "வெண்சீர்", "நாலசை", "மூவசை", "ஈரசை", "தேமாந்தண்பூ", 
+                   "தேமாந்தண்ணிழல்", "தேமாநறும்பூ", "தேமாநறுநிழல்", "புளிமாந்தண்பூ", 
+                   "புளிமாந்தண்ணிழல்", "புளிமாநறும்பூ", "புளிமாநறுநிழல்", 
+                   "கருவிளந்தண்பூ", "கருவிளந்தண்ணிழல்", "கருவிளநறும்பூ", 
+                   "கருவிளநறுநிழல்", "கூவிளந்தண்பூ", "கூவிளந்தண்ணிழல்", 
                    "கூவிளநறும்பூ", "கூவிளநறுநிழல்", "தேமாங்காய்", "தேமாங்கனி", 
                    "புளிமாங்காய்", "புளிமாங்கனி", "கருவிளங்காய்", "கருவிளங்கனி", 
                    "கூவிளங்காய்", "கூவிளங்கனி", "தேமா", "புளிமா", "கருவிளம்", 
@@ -550,6 +588,75 @@ class சீர்Parser ( Parser ):
 
 
 
+    class சீர்Context(ParserRuleContext):
+        __slots__ = 'parser'
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+
+        def ஈரசை(self):
+            return self.getTypedRuleContext(சீர்Parser.ஈரசைContext,0)
+
+
+        def மூவசை(self):
+            return self.getTypedRuleContext(சீர்Parser.மூவசைContext,0)
+
+
+        def நாலசை(self):
+            return self.getTypedRuleContext(சீர்Parser.நாலசைContext,0)
+
+
+        def getRuleIndex(self):
+            return சீர்Parser.RULE_சீர்
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterசீர்" ):
+                listener.enterசீர்(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitசீர்" ):
+                listener.exitசீர்(self)
+
+
+
+
+    def சீர்(self):
+
+        localctx = சீர்Parser.சீர்Context(self, self._ctx, self.state)
+        self.enterRule(localctx, 0, self.RULE_சீர்)
+        try:
+            self.state = 87
+            self._errHandler.sync(self)
+            la_ = self._interp.adaptivePredict(self._input,0,self._ctx)
+            if la_ == 1:
+                self.enterOuterAlt(localctx, 1)
+                self.state = 84
+                self.ஈரசை()
+                pass
+
+            elif la_ == 2:
+                self.enterOuterAlt(localctx, 2)
+                self.state = 85
+                self.மூவசை()
+                pass
+
+            elif la_ == 3:
+                self.enterOuterAlt(localctx, 3)
+                self.state = 86
+                self.நாலசை()
+                pass
+
+
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
     class வஞ்சிச்_சீர்Context(ParserRuleContext):
         __slots__ = 'parser'
 
@@ -590,32 +697,32 @@ class சீர்Parser ( Parser ):
     def வஞ்சிச்_சீர்(self):
 
         localctx = சீர்Parser.வஞ்சிச்_சீர்Context(self, self._ctx, self.state)
-        self.enterRule(localctx, 0, self.RULE_வஞ்சிச்_சீர்)
+        self.enterRule(localctx, 2, self.RULE_வஞ்சிச்_சீர்)
         try:
-            self.state = 80
+            self.state = 93
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input,0,self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,1,self._ctx)
             if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 76
+                self.state = 89
                 self.தேமாங்கனி()
                 pass
 
             elif la_ == 2:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 77
+                self.state = 90
                 self.புளிமாங்கனி()
                 pass
 
             elif la_ == 3:
                 self.enterOuterAlt(localctx, 3)
-                self.state = 78
+                self.state = 91
                 self.கருவிளங்கனி()
                 pass
 
             elif la_ == 4:
                 self.enterOuterAlt(localctx, 4)
-                self.state = 79
+                self.state = 92
                 self.கூவிளங்கனி()
                 pass
 
@@ -669,32 +776,32 @@ class சீர்Parser ( Parser ):
     def இயற்சீர்(self):
 
         localctx = சீர்Parser.இயற்சீர்Context(self, self._ctx, self.state)
-        self.enterRule(localctx, 2, self.RULE_இயற்சீர்)
+        self.enterRule(localctx, 4, self.RULE_இயற்சீர்)
         try:
-            self.state = 86
+            self.state = 99
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input,1,self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,2,self._ctx)
             if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 82
+                self.state = 95
                 self.தேமா()
                 pass
 
             elif la_ == 2:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 83
+                self.state = 96
                 self.புளிமா()
                 pass
 
             elif la_ == 3:
                 self.enterOuterAlt(localctx, 3)
-                self.state = 84
+                self.state = 97
                 self.கருவிளம்()
                 pass
 
             elif la_ == 4:
                 self.enterOuterAlt(localctx, 4)
-                self.state = 85
+                self.state = 98
                 self.கூவிளம்()
                 pass
 
@@ -740,20 +847,20 @@ class சீர்Parser ( Parser ):
     def மாச்சீர்(self):
 
         localctx = சீர்Parser.மாச்சீர்Context(self, self._ctx, self.state)
-        self.enterRule(localctx, 4, self.RULE_மாச்சீர்)
+        self.enterRule(localctx, 6, self.RULE_மாச்சீர்)
         try:
-            self.state = 90
+            self.state = 103
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input,2,self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,3,self._ctx)
             if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 88
+                self.state = 101
                 self.தேமா()
                 pass
 
             elif la_ == 2:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 89
+                self.state = 102
                 self.புளிமா()
                 pass
 
@@ -799,20 +906,20 @@ class சீர்Parser ( Parser ):
     def விளச்சீர்(self):
 
         localctx = சீர்Parser.விளச்சீர்Context(self, self._ctx, self.state)
-        self.enterRule(localctx, 6, self.RULE_விளச்சீர்)
+        self.enterRule(localctx, 8, self.RULE_விளச்சீர்)
         try:
-            self.state = 94
+            self.state = 107
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input,3,self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,4,self._ctx)
             if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 92
+                self.state = 105
                 self.கருவிளம்()
                 pass
 
             elif la_ == 2:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 93
+                self.state = 106
                 self.கூவிளம்()
                 pass
 
@@ -866,33 +973,430 @@ class சீர்Parser ( Parser ):
     def வெண்சீர்(self):
 
         localctx = சீர்Parser.வெண்சீர்Context(self, self._ctx, self.state)
-        self.enterRule(localctx, 8, self.RULE_வெண்சீர்)
+        self.enterRule(localctx, 10, self.RULE_வெண்சீர்)
         try:
-            self.state = 100
+            self.state = 113
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input,4,self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,5,self._ctx)
             if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 96
+                self.state = 109
                 self.தேமாங்காய்()
                 pass
 
             elif la_ == 2:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 97
+                self.state = 110
                 self.புளிமாங்காய்()
                 pass
 
             elif la_ == 3:
                 self.enterOuterAlt(localctx, 3)
-                self.state = 98
+                self.state = 111
                 self.கருவிளங்காய்()
                 pass
 
             elif la_ == 4:
                 self.enterOuterAlt(localctx, 4)
-                self.state = 99
+                self.state = 112
                 self.கூவிளங்காய்()
+                pass
+
+
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class நாலசைContext(ParserRuleContext):
+        __slots__ = 'parser'
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+
+        def தேமாந்தண்பூ(self):
+            return self.getTypedRuleContext(சீர்Parser.தேமாந்தண்பூContext,0)
+
+
+        def தேமாந்தண்ணிழல்(self):
+            return self.getTypedRuleContext(சீர்Parser.தேமாந்தண்ணிழல்Context,0)
+
+
+        def தேமாநறும்பூ(self):
+            return self.getTypedRuleContext(சீர்Parser.தேமாநறும்பூContext,0)
+
+
+        def தேமாநறுநிழல்(self):
+            return self.getTypedRuleContext(சீர்Parser.தேமாநறுநிழல்Context,0)
+
+
+        def புளிமாந்தண்பூ(self):
+            return self.getTypedRuleContext(சீர்Parser.புளிமாந்தண்பூContext,0)
+
+
+        def புளிமாந்தண்ணிழல்(self):
+            return self.getTypedRuleContext(சீர்Parser.புளிமாந்தண்ணிழல்Context,0)
+
+
+        def புளிமாநறும்பூ(self):
+            return self.getTypedRuleContext(சீர்Parser.புளிமாநறும்பூContext,0)
+
+
+        def புளிமாநறுநிழல்(self):
+            return self.getTypedRuleContext(சீர்Parser.புளிமாநறுநிழல்Context,0)
+
+
+        def கருவிளந்தண்பூ(self):
+            return self.getTypedRuleContext(சீர்Parser.கருவிளந்தண்பூContext,0)
+
+
+        def கருவிளந்தண்ணிழல்(self):
+            return self.getTypedRuleContext(சீர்Parser.கருவிளந்தண்ணிழல்Context,0)
+
+
+        def கருவிளநறும்பூ(self):
+            return self.getTypedRuleContext(சீர்Parser.கருவிளநறும்பூContext,0)
+
+
+        def கருவிளநறுநிழல்(self):
+            return self.getTypedRuleContext(சீர்Parser.கருவிளநறுநிழல்Context,0)
+
+
+        def கூவிளந்தண்பூ(self):
+            return self.getTypedRuleContext(சீர்Parser.கூவிளந்தண்பூContext,0)
+
+
+        def கூவிளந்தண்ணிழல்(self):
+            return self.getTypedRuleContext(சீர்Parser.கூவிளந்தண்ணிழல்Context,0)
+
+
+        def கூவிளநறும்பூ(self):
+            return self.getTypedRuleContext(சீர்Parser.கூவிளநறும்பூContext,0)
+
+
+        def கூவிளநறுநிழல்(self):
+            return self.getTypedRuleContext(சீர்Parser.கூவிளநறுநிழல்Context,0)
+
+
+        def getRuleIndex(self):
+            return சீர்Parser.RULE_நாலசை
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterநாலசை" ):
+                listener.enterநாலசை(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitநாலசை" ):
+                listener.exitநாலசை(self)
+
+
+
+
+    def நாலசை(self):
+
+        localctx = சீர்Parser.நாலசைContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 12, self.RULE_நாலசை)
+        try:
+            self.state = 131
+            self._errHandler.sync(self)
+            la_ = self._interp.adaptivePredict(self._input,6,self._ctx)
+            if la_ == 1:
+                self.enterOuterAlt(localctx, 1)
+                self.state = 115
+                self.தேமாந்தண்பூ()
+                pass
+
+            elif la_ == 2:
+                self.enterOuterAlt(localctx, 2)
+                self.state = 116
+                self.தேமாந்தண்ணிழல்()
+                pass
+
+            elif la_ == 3:
+                self.enterOuterAlt(localctx, 3)
+                self.state = 117
+                self.தேமாநறும்பூ()
+                pass
+
+            elif la_ == 4:
+                self.enterOuterAlt(localctx, 4)
+                self.state = 118
+                self.தேமாநறுநிழல்()
+                pass
+
+            elif la_ == 5:
+                self.enterOuterAlt(localctx, 5)
+                self.state = 119
+                self.புளிமாந்தண்பூ()
+                pass
+
+            elif la_ == 6:
+                self.enterOuterAlt(localctx, 6)
+                self.state = 120
+                self.புளிமாந்தண்ணிழல்()
+                pass
+
+            elif la_ == 7:
+                self.enterOuterAlt(localctx, 7)
+                self.state = 121
+                self.புளிமாநறும்பூ()
+                pass
+
+            elif la_ == 8:
+                self.enterOuterAlt(localctx, 8)
+                self.state = 122
+                self.புளிமாநறுநிழல்()
+                pass
+
+            elif la_ == 9:
+                self.enterOuterAlt(localctx, 9)
+                self.state = 123
+                self.கருவிளந்தண்பூ()
+                pass
+
+            elif la_ == 10:
+                self.enterOuterAlt(localctx, 10)
+                self.state = 124
+                self.கருவிளந்தண்ணிழல்()
+                pass
+
+            elif la_ == 11:
+                self.enterOuterAlt(localctx, 11)
+                self.state = 125
+                self.கருவிளநறும்பூ()
+                pass
+
+            elif la_ == 12:
+                self.enterOuterAlt(localctx, 12)
+                self.state = 126
+                self.கருவிளநறுநிழல்()
+                pass
+
+            elif la_ == 13:
+                self.enterOuterAlt(localctx, 13)
+                self.state = 127
+                self.கூவிளந்தண்பூ()
+                pass
+
+            elif la_ == 14:
+                self.enterOuterAlt(localctx, 14)
+                self.state = 128
+                self.கூவிளந்தண்ணிழல்()
+                pass
+
+            elif la_ == 15:
+                self.enterOuterAlt(localctx, 15)
+                self.state = 129
+                self.கூவிளநறும்பூ()
+                pass
+
+            elif la_ == 16:
+                self.enterOuterAlt(localctx, 16)
+                self.state = 130
+                self.கூவிளநறுநிழல்()
+                pass
+
+
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class மூவசைContext(ParserRuleContext):
+        __slots__ = 'parser'
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+
+        def தேமாங்காய்(self):
+            return self.getTypedRuleContext(சீர்Parser.தேமாங்காய்Context,0)
+
+
+        def தேமாங்கனி(self):
+            return self.getTypedRuleContext(சீர்Parser.தேமாங்கனிContext,0)
+
+
+        def புளிமாங்காய்(self):
+            return self.getTypedRuleContext(சீர்Parser.புளிமாங்காய்Context,0)
+
+
+        def புளிமாங்கனி(self):
+            return self.getTypedRuleContext(சீர்Parser.புளிமாங்கனிContext,0)
+
+
+        def கருவிளங்காய்(self):
+            return self.getTypedRuleContext(சீர்Parser.கருவிளங்காய்Context,0)
+
+
+        def கருவிளங்கனி(self):
+            return self.getTypedRuleContext(சீர்Parser.கருவிளங்கனிContext,0)
+
+
+        def கூவிளங்காய்(self):
+            return self.getTypedRuleContext(சீர்Parser.கூவிளங்காய்Context,0)
+
+
+        def கூவிளங்கனி(self):
+            return self.getTypedRuleContext(சீர்Parser.கூவிளங்கனிContext,0)
+
+
+        def getRuleIndex(self):
+            return சீர்Parser.RULE_மூவசை
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterமூவசை" ):
+                listener.enterமூவசை(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitமூவசை" ):
+                listener.exitமூவசை(self)
+
+
+
+
+    def மூவசை(self):
+
+        localctx = சீர்Parser.மூவசைContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 14, self.RULE_மூவசை)
+        try:
+            self.state = 141
+            self._errHandler.sync(self)
+            la_ = self._interp.adaptivePredict(self._input,7,self._ctx)
+            if la_ == 1:
+                self.enterOuterAlt(localctx, 1)
+                self.state = 133
+                self.தேமாங்காய்()
+                pass
+
+            elif la_ == 2:
+                self.enterOuterAlt(localctx, 2)
+                self.state = 134
+                self.தேமாங்கனி()
+                pass
+
+            elif la_ == 3:
+                self.enterOuterAlt(localctx, 3)
+                self.state = 135
+                self.புளிமாங்காய்()
+                pass
+
+            elif la_ == 4:
+                self.enterOuterAlt(localctx, 4)
+                self.state = 136
+                self.புளிமாங்கனி()
+                pass
+
+            elif la_ == 5:
+                self.enterOuterAlt(localctx, 5)
+                self.state = 137
+                self.கருவிளங்காய்()
+                pass
+
+            elif la_ == 6:
+                self.enterOuterAlt(localctx, 6)
+                self.state = 138
+                self.கருவிளங்கனி()
+                pass
+
+            elif la_ == 7:
+                self.enterOuterAlt(localctx, 7)
+                self.state = 139
+                self.கூவிளங்காய்()
+                pass
+
+            elif la_ == 8:
+                self.enterOuterAlt(localctx, 8)
+                self.state = 140
+                self.கூவிளங்கனி()
+                pass
+
+
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class ஈரசைContext(ParserRuleContext):
+        __slots__ = 'parser'
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+
+        def தேமா(self):
+            return self.getTypedRuleContext(சீர்Parser.தேமாContext,0)
+
+
+        def புளிமா(self):
+            return self.getTypedRuleContext(சீர்Parser.புளிமாContext,0)
+
+
+        def கருவிளம்(self):
+            return self.getTypedRuleContext(சீர்Parser.கருவிளம்Context,0)
+
+
+        def கூவிளம்(self):
+            return self.getTypedRuleContext(சீர்Parser.கூவிளம்Context,0)
+
+
+        def getRuleIndex(self):
+            return சீர்Parser.RULE_ஈரசை
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterஈரசை" ):
+                listener.enterஈரசை(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitஈரசை" ):
+                listener.exitஈரசை(self)
+
+
+
+
+    def ஈரசை(self):
+
+        localctx = சீர்Parser.ஈரசைContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 16, self.RULE_ஈரசை)
+        try:
+            self.state = 147
+            self._errHandler.sync(self)
+            la_ = self._interp.adaptivePredict(self._input,8,self._ctx)
+            if la_ == 1:
+                self.enterOuterAlt(localctx, 1)
+                self.state = 143
+                self.தேமா()
+                pass
+
+            elif la_ == 2:
+                self.enterOuterAlt(localctx, 2)
+                self.state = 144
+                self.புளிமா()
+                pass
+
+            elif la_ == 3:
+                self.enterOuterAlt(localctx, 3)
+                self.state = 145
+                self.கருவிளம்()
+                pass
+
+            elif la_ == 4:
+                self.enterOuterAlt(localctx, 4)
+                self.state = 146
+                self.கூவிளம்()
                 pass
 
 
@@ -937,12 +1441,12 @@ class சீர்Parser ( Parser ):
     def தேமாந்தண்பூ(self):
 
         localctx = சீர்Parser.தேமாந்தண்பூContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 10, self.RULE_தேமாந்தண்பூ)
+        self.enterRule(localctx, 18, self.RULE_தேமாந்தண்பூ)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 102
+            self.state = 149
             self.தேமாங்காய்()
-            self.state = 103
+            self.state = 150
             self.நேர்()
         except RecognitionException as re:
             localctx.exception = re
@@ -985,12 +1489,12 @@ class சீர்Parser ( Parser ):
     def தேமாந்தண்ணிழல்(self):
 
         localctx = சீர்Parser.தேமாந்தண்ணிழல்Context(self, self._ctx, self.state)
-        self.enterRule(localctx, 12, self.RULE_தேமாந்தண்ணிழல்)
+        self.enterRule(localctx, 20, self.RULE_தேமாந்தண்ணிழல்)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 105
+            self.state = 152
             self.தேமாங்காய்()
-            self.state = 106
+            self.state = 153
             self.நிரை()
         except RecognitionException as re:
             localctx.exception = re
@@ -1033,12 +1537,12 @@ class சீர்Parser ( Parser ):
     def தேமாநறும்பூ(self):
 
         localctx = சீர்Parser.தேமாநறும்பூContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 14, self.RULE_தேமாநறும்பூ)
+        self.enterRule(localctx, 22, self.RULE_தேமாநறும்பூ)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 108
+            self.state = 155
             self.தேமாங்கனி()
-            self.state = 109
+            self.state = 156
             self.நேர்()
         except RecognitionException as re:
             localctx.exception = re
@@ -1081,12 +1585,12 @@ class சீர்Parser ( Parser ):
     def தேமாநறுநிழல்(self):
 
         localctx = சீர்Parser.தேமாநறுநிழல்Context(self, self._ctx, self.state)
-        self.enterRule(localctx, 16, self.RULE_தேமாநறுநிழல்)
+        self.enterRule(localctx, 24, self.RULE_தேமாநறுநிழல்)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 111
+            self.state = 158
             self.தேமாங்கனி()
-            self.state = 112
+            self.state = 159
             self.நிரை()
         except RecognitionException as re:
             localctx.exception = re
@@ -1129,12 +1633,12 @@ class சீர்Parser ( Parser ):
     def புளிமாந்தண்பூ(self):
 
         localctx = சீர்Parser.புளிமாந்தண்பூContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 18, self.RULE_புளிமாந்தண்பூ)
+        self.enterRule(localctx, 26, self.RULE_புளிமாந்தண்பூ)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 114
+            self.state = 161
             self.புளிமாங்காய்()
-            self.state = 115
+            self.state = 162
             self.நேர்()
         except RecognitionException as re:
             localctx.exception = re
@@ -1177,12 +1681,12 @@ class சீர்Parser ( Parser ):
     def புளிமாந்தண்ணிழல்(self):
 
         localctx = சீர்Parser.புளிமாந்தண்ணிழல்Context(self, self._ctx, self.state)
-        self.enterRule(localctx, 20, self.RULE_புளிமாந்தண்ணிழல்)
+        self.enterRule(localctx, 28, self.RULE_புளிமாந்தண்ணிழல்)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 117
+            self.state = 164
             self.புளிமாங்காய்()
-            self.state = 118
+            self.state = 165
             self.நிரை()
         except RecognitionException as re:
             localctx.exception = re
@@ -1225,12 +1729,12 @@ class சீர்Parser ( Parser ):
     def புளிமாநறும்பூ(self):
 
         localctx = சீர்Parser.புளிமாநறும்பூContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 22, self.RULE_புளிமாநறும்பூ)
+        self.enterRule(localctx, 30, self.RULE_புளிமாநறும்பூ)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 120
+            self.state = 167
             self.புளிமாங்கனி()
-            self.state = 121
+            self.state = 168
             self.நேர்()
         except RecognitionException as re:
             localctx.exception = re
@@ -1273,12 +1777,12 @@ class சீர்Parser ( Parser ):
     def புளிமாநறுநிழல்(self):
 
         localctx = சீர்Parser.புளிமாநறுநிழல்Context(self, self._ctx, self.state)
-        self.enterRule(localctx, 24, self.RULE_புளிமாநறுநிழல்)
+        self.enterRule(localctx, 32, self.RULE_புளிமாநறுநிழல்)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 123
+            self.state = 170
             self.புளிமாங்கனி()
-            self.state = 124
+            self.state = 171
             self.நிரை()
         except RecognitionException as re:
             localctx.exception = re
@@ -1321,12 +1825,12 @@ class சீர்Parser ( Parser ):
     def கருவிளந்தண்பூ(self):
 
         localctx = சீர்Parser.கருவிளந்தண்பூContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 26, self.RULE_கருவிளந்தண்பூ)
+        self.enterRule(localctx, 34, self.RULE_கருவிளந்தண்பூ)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 126
+            self.state = 173
             self.கருவிளங்காய்()
-            self.state = 127
+            self.state = 174
             self.நேர்()
         except RecognitionException as re:
             localctx.exception = re
@@ -1369,12 +1873,12 @@ class சீர்Parser ( Parser ):
     def கருவிளந்தண்ணிழல்(self):
 
         localctx = சீர்Parser.கருவிளந்தண்ணிழல்Context(self, self._ctx, self.state)
-        self.enterRule(localctx, 28, self.RULE_கருவிளந்தண்ணிழல்)
+        self.enterRule(localctx, 36, self.RULE_கருவிளந்தண்ணிழல்)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 129
+            self.state = 176
             self.கருவிளங்காய்()
-            self.state = 130
+            self.state = 177
             self.நிரை()
         except RecognitionException as re:
             localctx.exception = re
@@ -1417,12 +1921,12 @@ class சீர்Parser ( Parser ):
     def கருவிளநறும்பூ(self):
 
         localctx = சீர்Parser.கருவிளநறும்பூContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 30, self.RULE_கருவிளநறும்பூ)
+        self.enterRule(localctx, 38, self.RULE_கருவிளநறும்பூ)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 132
+            self.state = 179
             self.கருவிளங்கனி()
-            self.state = 133
+            self.state = 180
             self.நேர்()
         except RecognitionException as re:
             localctx.exception = re
@@ -1465,12 +1969,12 @@ class சீர்Parser ( Parser ):
     def கருவிளநறுநிழல்(self):
 
         localctx = சீர்Parser.கருவிளநறுநிழல்Context(self, self._ctx, self.state)
-        self.enterRule(localctx, 32, self.RULE_கருவிளநறுநிழல்)
+        self.enterRule(localctx, 40, self.RULE_கருவிளநறுநிழல்)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 135
+            self.state = 182
             self.கருவிளங்கனி()
-            self.state = 136
+            self.state = 183
             self.நிரை()
         except RecognitionException as re:
             localctx.exception = re
@@ -1513,12 +2017,12 @@ class சீர்Parser ( Parser ):
     def கூவிளந்தண்பூ(self):
 
         localctx = சீர்Parser.கூவிளந்தண்பூContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 34, self.RULE_கூவிளந்தண்பூ)
+        self.enterRule(localctx, 42, self.RULE_கூவிளந்தண்பூ)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 138
+            self.state = 185
             self.கூவிளங்காய்()
-            self.state = 139
+            self.state = 186
             self.நேர்()
         except RecognitionException as re:
             localctx.exception = re
@@ -1561,12 +2065,12 @@ class சீர்Parser ( Parser ):
     def கூவிளந்தண்ணிழல்(self):
 
         localctx = சீர்Parser.கூவிளந்தண்ணிழல்Context(self, self._ctx, self.state)
-        self.enterRule(localctx, 36, self.RULE_கூவிளந்தண்ணிழல்)
+        self.enterRule(localctx, 44, self.RULE_கூவிளந்தண்ணிழல்)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 141
+            self.state = 188
             self.கூவிளங்காய்()
-            self.state = 142
+            self.state = 189
             self.நிரை()
         except RecognitionException as re:
             localctx.exception = re
@@ -1609,12 +2113,12 @@ class சீர்Parser ( Parser ):
     def கூவிளநறும்பூ(self):
 
         localctx = சீர்Parser.கூவிளநறும்பூContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 38, self.RULE_கூவிளநறும்பூ)
+        self.enterRule(localctx, 46, self.RULE_கூவிளநறும்பூ)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 144
+            self.state = 191
             self.கூவிளங்கனி()
-            self.state = 145
+            self.state = 192
             self.நேர்()
         except RecognitionException as re:
             localctx.exception = re
@@ -1657,12 +2161,12 @@ class சீர்Parser ( Parser ):
     def கூவிளநறுநிழல்(self):
 
         localctx = சீர்Parser.கூவிளநறுநிழல்Context(self, self._ctx, self.state)
-        self.enterRule(localctx, 40, self.RULE_கூவிளநறுநிழல்)
+        self.enterRule(localctx, 48, self.RULE_கூவிளநறுநிழல்)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 147
+            self.state = 194
             self.கூவிளங்கனி()
-            self.state = 148
+            self.state = 195
             self.நிரை()
         except RecognitionException as re:
             localctx.exception = re
@@ -1705,12 +2209,12 @@ class சீர்Parser ( Parser ):
     def தேமாங்காய்(self):
 
         localctx = சீர்Parser.தேமாங்காய்Context(self, self._ctx, self.state)
-        self.enterRule(localctx, 42, self.RULE_தேமாங்காய்)
+        self.enterRule(localctx, 50, self.RULE_தேமாங்காய்)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 150
+            self.state = 197
             self.தேமா()
-            self.state = 151
+            self.state = 198
             self.நேர்()
         except RecognitionException as re:
             localctx.exception = re
@@ -1753,12 +2257,12 @@ class சீர்Parser ( Parser ):
     def தேமாங்கனி(self):
 
         localctx = சீர்Parser.தேமாங்கனிContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 44, self.RULE_தேமாங்கனி)
+        self.enterRule(localctx, 52, self.RULE_தேமாங்கனி)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 153
+            self.state = 200
             self.தேமா()
-            self.state = 154
+            self.state = 201
             self.நிரை()
         except RecognitionException as re:
             localctx.exception = re
@@ -1801,12 +2305,12 @@ class சீர்Parser ( Parser ):
     def புளிமாங்காய்(self):
 
         localctx = சீர்Parser.புளிமாங்காய்Context(self, self._ctx, self.state)
-        self.enterRule(localctx, 46, self.RULE_புளிமாங்காய்)
+        self.enterRule(localctx, 54, self.RULE_புளிமாங்காய்)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 156
+            self.state = 203
             self.புளிமா()
-            self.state = 157
+            self.state = 204
             self.நேர்()
         except RecognitionException as re:
             localctx.exception = re
@@ -1849,12 +2353,12 @@ class சீர்Parser ( Parser ):
     def புளிமாங்கனி(self):
 
         localctx = சீர்Parser.புளிமாங்கனிContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 48, self.RULE_புளிமாங்கனி)
+        self.enterRule(localctx, 56, self.RULE_புளிமாங்கனி)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 159
+            self.state = 206
             self.புளிமா()
-            self.state = 160
+            self.state = 207
             self.நிரை()
         except RecognitionException as re:
             localctx.exception = re
@@ -1897,12 +2401,12 @@ class சீர்Parser ( Parser ):
     def கருவிளங்காய்(self):
 
         localctx = சீர்Parser.கருவிளங்காய்Context(self, self._ctx, self.state)
-        self.enterRule(localctx, 50, self.RULE_கருவிளங்காய்)
+        self.enterRule(localctx, 58, self.RULE_கருவிளங்காய்)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 162
+            self.state = 209
             self.கருவிளம்()
-            self.state = 163
+            self.state = 210
             self.நேர்()
         except RecognitionException as re:
             localctx.exception = re
@@ -1945,12 +2449,12 @@ class சீர்Parser ( Parser ):
     def கருவிளங்கனி(self):
 
         localctx = சீர்Parser.கருவிளங்கனிContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 52, self.RULE_கருவிளங்கனி)
+        self.enterRule(localctx, 60, self.RULE_கருவிளங்கனி)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 165
+            self.state = 212
             self.கருவிளம்()
-            self.state = 166
+            self.state = 213
             self.நிரை()
         except RecognitionException as re:
             localctx.exception = re
@@ -1993,12 +2497,12 @@ class சீர்Parser ( Parser ):
     def கூவிளங்காய்(self):
 
         localctx = சீர்Parser.கூவிளங்காய்Context(self, self._ctx, self.state)
-        self.enterRule(localctx, 54, self.RULE_கூவிளங்காய்)
+        self.enterRule(localctx, 62, self.RULE_கூவிளங்காய்)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 168
+            self.state = 215
             self.கூவிளம்()
-            self.state = 169
+            self.state = 216
             self.நேர்()
         except RecognitionException as re:
             localctx.exception = re
@@ -2041,12 +2545,12 @@ class சீர்Parser ( Parser ):
     def கூவிளங்கனி(self):
 
         localctx = சீர்Parser.கூவிளங்கனிContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 56, self.RULE_கூவிளங்கனி)
+        self.enterRule(localctx, 64, self.RULE_கூவிளங்கனி)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 171
+            self.state = 218
             self.கூவிளம்()
-            self.state = 172
+            self.state = 219
             self.நிரை()
         except RecognitionException as re:
             localctx.exception = re
@@ -2088,12 +2592,12 @@ class சீர்Parser ( Parser ):
     def தேமா(self):
 
         localctx = சீர்Parser.தேமாContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 58, self.RULE_தேமா)
+        self.enterRule(localctx, 66, self.RULE_தேமா)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 174
+            self.state = 221
             self.நேர்()
-            self.state = 175
+            self.state = 222
             self.நேர்()
         except RecognitionException as re:
             localctx.exception = re
@@ -2136,12 +2640,12 @@ class சீர்Parser ( Parser ):
     def புளிமா(self):
 
         localctx = சீர்Parser.புளிமாContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 60, self.RULE_புளிமா)
+        self.enterRule(localctx, 68, self.RULE_புளிமா)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 177
+            self.state = 224
             self.நிரை()
-            self.state = 178
+            self.state = 225
             self.நேர்()
         except RecognitionException as re:
             localctx.exception = re
@@ -2183,12 +2687,12 @@ class சீர்Parser ( Parser ):
     def கருவிளம்(self):
 
         localctx = சீர்Parser.கருவிளம்Context(self, self._ctx, self.state)
-        self.enterRule(localctx, 62, self.RULE_கருவிளம்)
+        self.enterRule(localctx, 70, self.RULE_கருவிளம்)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 180
+            self.state = 227
             self.நிரை()
-            self.state = 181
+            self.state = 228
             self.நிரை()
         except RecognitionException as re:
             localctx.exception = re
@@ -2231,12 +2735,12 @@ class சீர்Parser ( Parser ):
     def கூவிளம்(self):
 
         localctx = சீர்Parser.கூவிளம்Context(self, self._ctx, self.state)
-        self.enterRule(localctx, 64, self.RULE_கூவிளம்)
+        self.enterRule(localctx, 72, self.RULE_கூவிளம்)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 183
+            self.state = 230
             self.நேர்()
-            self.state = 184
+            self.state = 231
             self.நிரை()
         except RecognitionException as re:
             localctx.exception = re
@@ -2262,8 +2766,11 @@ class சீர்Parser ( Parser ):
             return self.getTypedRuleContext(சீர்Parser.நெடில்Context,0)
 
 
-        def ஒற்று(self):
-            return self.getTypedRuleContext(சீர்Parser.ஒற்றுContext,0)
+        def ஒற்று(self, i:int=None):
+            if i is None:
+                return self.getTypedRuleContexts(சீர்Parser.ஒற்றுContext)
+            else:
+                return self.getTypedRuleContext(சீர்Parser.ஒற்றுContext,i)
 
 
         def getRuleIndex(self):
@@ -2283,49 +2790,57 @@ class சீர்Parser ( Parser ):
     def நேர்(self):
 
         localctx = சீர்Parser.நேர்Context(self, self._ctx, self.state)
-        self.enterRule(localctx, 66, self.RULE_நேர்)
+        self.enterRule(localctx, 74, self.RULE_நேர்)
         self._la = 0 # Token type
         try:
-            self.state = 196
+            self.state = 247
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input,7,self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,11,self._ctx)
             if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 186
+                self.state = 233
                 self.குறில்()
                 pass
 
             elif la_ == 2:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 187
+                self.state = 234
                 self.நெடில்()
                 pass
 
             elif la_ == 3:
                 self.enterOuterAlt(localctx, 3)
-                self.state = 188
+                self.state = 235
                 self.குறில்()
-                self.state = 190
+                self.state = 237 
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                if (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << சீர்Parser.T__0) | (1 << சீர்Parser.T__1) | (1 << சீர்Parser.T__2) | (1 << சீர்Parser.T__3) | (1 << சீர்Parser.T__4) | (1 << சீர்Parser.T__5) | (1 << சீர்Parser.T__6) | (1 << சீர்Parser.T__7) | (1 << சீர்Parser.T__8) | (1 << சீர்Parser.T__9) | (1 << சீர்Parser.T__10) | (1 << சீர்Parser.T__11) | (1 << சீர்Parser.T__12) | (1 << சீர்Parser.T__13) | (1 << சீர்Parser.T__14) | (1 << சீர்Parser.T__15) | (1 << சீர்Parser.T__16) | (1 << சீர்Parser.T__17))) != 0):
-                    self.state = 189
+                while True:
+                    self.state = 236
                     self.ஒற்று()
-
+                    self.state = 239 
+                    self._errHandler.sync(self)
+                    _la = self._input.LA(1)
+                    if not ((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << சீர்Parser.T__0) | (1 << சீர்Parser.T__1) | (1 << சீர்Parser.T__2) | (1 << சீர்Parser.T__3) | (1 << சீர்Parser.T__4) | (1 << சீர்Parser.T__5) | (1 << சீர்Parser.T__6) | (1 << சீர்Parser.T__7) | (1 << சீர்Parser.T__8) | (1 << சீர்Parser.T__9) | (1 << சீர்Parser.T__10) | (1 << சீர்Parser.T__11) | (1 << சீர்Parser.T__12) | (1 << சீர்Parser.T__13) | (1 << சீர்Parser.T__14) | (1 << சீர்Parser.T__15) | (1 << சீர்Parser.T__16) | (1 << சீர்Parser.T__17))) != 0)):
+                        break
 
                 pass
 
             elif la_ == 4:
                 self.enterOuterAlt(localctx, 4)
-                self.state = 192
+                self.state = 241
                 self.நெடில்()
-                self.state = 194
+                self.state = 243 
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                if (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << சீர்Parser.T__0) | (1 << சீர்Parser.T__1) | (1 << சீர்Parser.T__2) | (1 << சீர்Parser.T__3) | (1 << சீர்Parser.T__4) | (1 << சீர்Parser.T__5) | (1 << சீர்Parser.T__6) | (1 << சீர்Parser.T__7) | (1 << சீர்Parser.T__8) | (1 << சீர்Parser.T__9) | (1 << சீர்Parser.T__10) | (1 << சீர்Parser.T__11) | (1 << சீர்Parser.T__12) | (1 << சீர்Parser.T__13) | (1 << சீர்Parser.T__14) | (1 << சீர்Parser.T__15) | (1 << சீர்Parser.T__16) | (1 << சீர்Parser.T__17))) != 0):
-                    self.state = 193
+                while True:
+                    self.state = 242
                     self.ஒற்று()
-
+                    self.state = 245 
+                    self._errHandler.sync(self)
+                    _la = self._input.LA(1)
+                    if not ((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << சீர்Parser.T__0) | (1 << சீர்Parser.T__1) | (1 << சீர்Parser.T__2) | (1 << சீர்Parser.T__3) | (1 << சீர்Parser.T__4) | (1 << சீர்Parser.T__5) | (1 << சீர்Parser.T__6) | (1 << சீர்Parser.T__7) | (1 << சீர்Parser.T__8) | (1 << சீர்Parser.T__9) | (1 << சீர்Parser.T__10) | (1 << சீர்Parser.T__11) | (1 << சீர்Parser.T__12) | (1 << சீர்Parser.T__13) | (1 << சீர்Parser.T__14) | (1 << சீர்Parser.T__15) | (1 << சீர்Parser.T__16) | (1 << சீர்Parser.T__17))) != 0)):
+                        break
 
                 pass
 
@@ -2357,8 +2872,11 @@ class சீர்Parser ( Parser ):
             return self.getTypedRuleContext(சீர்Parser.நெடில்Context,0)
 
 
-        def ஒற்று(self):
-            return self.getTypedRuleContext(சீர்Parser.ஒற்றுContext,0)
+        def ஒற்று(self, i:int=None):
+            if i is None:
+                return self.getTypedRuleContexts(சீர்Parser.ஒற்றுContext)
+            else:
+                return self.getTypedRuleContext(சீர்Parser.ஒற்றுContext,i)
 
 
         def getRuleIndex(self):
@@ -2378,57 +2896,65 @@ class சீர்Parser ( Parser ):
     def நிரை(self):
 
         localctx = சீர்Parser.நிரைContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 68, self.RULE_நிரை)
+        self.enterRule(localctx, 76, self.RULE_நிரை)
         self._la = 0 # Token type
         try:
-            self.state = 214
+            self.state = 269
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input,10,self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,14,self._ctx)
             if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 198
+                self.state = 249
                 self.குறில்()
-                self.state = 199
+                self.state = 250
                 self.குறில்()
                 pass
 
             elif la_ == 2:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 201
+                self.state = 252
                 self.குறில்()
-                self.state = 202
+                self.state = 253
                 self.நெடில்()
                 pass
 
             elif la_ == 3:
                 self.enterOuterAlt(localctx, 3)
-                self.state = 204
+                self.state = 255
                 self.குறில்()
-                self.state = 205
+                self.state = 256
                 self.குறில்()
-                self.state = 207
+                self.state = 258 
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                if (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << சீர்Parser.T__0) | (1 << சீர்Parser.T__1) | (1 << சீர்Parser.T__2) | (1 << சீர்Parser.T__3) | (1 << சீர்Parser.T__4) | (1 << சீர்Parser.T__5) | (1 << சீர்Parser.T__6) | (1 << சீர்Parser.T__7) | (1 << சீர்Parser.T__8) | (1 << சீர்Parser.T__9) | (1 << சீர்Parser.T__10) | (1 << சீர்Parser.T__11) | (1 << சீர்Parser.T__12) | (1 << சீர்Parser.T__13) | (1 << சீர்Parser.T__14) | (1 << சீர்Parser.T__15) | (1 << சீர்Parser.T__16) | (1 << சீர்Parser.T__17))) != 0):
-                    self.state = 206
+                while True:
+                    self.state = 257
                     self.ஒற்று()
-
+                    self.state = 260 
+                    self._errHandler.sync(self)
+                    _la = self._input.LA(1)
+                    if not ((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << சீர்Parser.T__0) | (1 << சீர்Parser.T__1) | (1 << சீர்Parser.T__2) | (1 << சீர்Parser.T__3) | (1 << சீர்Parser.T__4) | (1 << சீர்Parser.T__5) | (1 << சீர்Parser.T__6) | (1 << சீர்Parser.T__7) | (1 << சீர்Parser.T__8) | (1 << சீர்Parser.T__9) | (1 << சீர்Parser.T__10) | (1 << சீர்Parser.T__11) | (1 << சீர்Parser.T__12) | (1 << சீர்Parser.T__13) | (1 << சீர்Parser.T__14) | (1 << சீர்Parser.T__15) | (1 << சீர்Parser.T__16) | (1 << சீர்Parser.T__17))) != 0)):
+                        break
 
                 pass
 
             elif la_ == 4:
                 self.enterOuterAlt(localctx, 4)
-                self.state = 209
+                self.state = 262
                 self.குறில்()
-                self.state = 210
+                self.state = 263
                 self.நெடில்()
-                self.state = 212
+                self.state = 265 
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                if (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << சீர்Parser.T__0) | (1 << சீர்Parser.T__1) | (1 << சீர்Parser.T__2) | (1 << சீர்Parser.T__3) | (1 << சீர்Parser.T__4) | (1 << சீர்Parser.T__5) | (1 << சீர்Parser.T__6) | (1 << சீர்Parser.T__7) | (1 << சீர்Parser.T__8) | (1 << சீர்Parser.T__9) | (1 << சீர்Parser.T__10) | (1 << சீர்Parser.T__11) | (1 << சீர்Parser.T__12) | (1 << சீர்Parser.T__13) | (1 << சீர்Parser.T__14) | (1 << சீர்Parser.T__15) | (1 << சீர்Parser.T__16) | (1 << சீர்Parser.T__17))) != 0):
-                    self.state = 211
+                while True:
+                    self.state = 264
                     self.ஒற்று()
-
+                    self.state = 267 
+                    self._errHandler.sync(self)
+                    _la = self._input.LA(1)
+                    if not ((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << சீர்Parser.T__0) | (1 << சீர்Parser.T__1) | (1 << சீர்Parser.T__2) | (1 << சீர்Parser.T__3) | (1 << சீர்Parser.T__4) | (1 << சீர்Parser.T__5) | (1 << சீர்Parser.T__6) | (1 << சீர்Parser.T__7) | (1 << சீர்Parser.T__8) | (1 << சீர்Parser.T__9) | (1 << சீர்Parser.T__10) | (1 << சீர்Parser.T__11) | (1 << சீர்Parser.T__12) | (1 << சீர்Parser.T__13) | (1 << சீர்Parser.T__14) | (1 << சீர்Parser.T__15) | (1 << சீர்Parser.T__16) | (1 << சீர்Parser.T__17))) != 0)):
+                        break
 
                 pass
 
@@ -2467,11 +2993,11 @@ class சீர்Parser ( Parser ):
     def ஒற்று(self):
 
         localctx = சீர்Parser.ஒற்றுContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 70, self.RULE_ஒற்று)
+        self.enterRule(localctx, 78, self.RULE_ஒற்று)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 216
+            self.state = 271
             _la = self._input.LA(1)
             if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << சீர்Parser.T__0) | (1 << சீர்Parser.T__1) | (1 << சீர்Parser.T__2) | (1 << சீர்Parser.T__3) | (1 << சீர்Parser.T__4) | (1 << சீர்Parser.T__5) | (1 << சீர்Parser.T__6) | (1 << சீர்Parser.T__7) | (1 << சீர்Parser.T__8) | (1 << சீர்Parser.T__9) | (1 << சீர்Parser.T__10) | (1 << சீர்Parser.T__11) | (1 << சீர்Parser.T__12) | (1 << சீர்Parser.T__13) | (1 << சீர்Parser.T__14) | (1 << சீர்Parser.T__15) | (1 << சீர்Parser.T__16) | (1 << சீர்Parser.T__17))) != 0)):
                 self._errHandler.recoverInline(self)
@@ -2512,11 +3038,11 @@ class சீர்Parser ( Parser ):
     def குறில்(self):
 
         localctx = சீர்Parser.குறில்Context(self, self._ctx, self.state)
-        self.enterRule(localctx, 72, self.RULE_குறில்)
+        self.enterRule(localctx, 80, self.RULE_குறில்)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 218
+            self.state = 273
             _la = self._input.LA(1)
             if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << சீர்Parser.T__18) | (1 << சீர்Parser.T__19) | (1 << சீர்Parser.T__20) | (1 << சீர்Parser.T__21) | (1 << சீர்Parser.T__22) | (1 << சீர்Parser.T__23) | (1 << சீர்Parser.T__24) | (1 << சீர்Parser.T__25) | (1 << சீர்Parser.T__26) | (1 << சீர்Parser.T__27) | (1 << சீர்Parser.T__28) | (1 << சீர்Parser.T__29) | (1 << சீர்Parser.T__30) | (1 << சீர்Parser.T__31) | (1 << சீர்Parser.T__32) | (1 << சீர்Parser.T__33) | (1 << சீர்Parser.T__34) | (1 << சீர்Parser.T__35) | (1 << சீர்Parser.T__36) | (1 << சீர்Parser.T__37) | (1 << சீர்Parser.T__38) | (1 << சீர்Parser.T__39) | (1 << சீர்Parser.T__40) | (1 << சீர்Parser.T__41) | (1 << சீர்Parser.T__42) | (1 << சீர்Parser.T__43) | (1 << சீர்Parser.T__44) | (1 << சீர்Parser.T__45) | (1 << சீர்Parser.T__46) | (1 << சீர்Parser.T__47) | (1 << சீர்Parser.T__48) | (1 << சீர்Parser.T__49) | (1 << சீர்Parser.T__50) | (1 << சீர்Parser.T__51) | (1 << சீர்Parser.T__52) | (1 << சீர்Parser.T__53) | (1 << சீர்Parser.T__54) | (1 << சீர்Parser.T__55) | (1 << சீர்Parser.T__56) | (1 << சீர்Parser.T__57) | (1 << சீர்Parser.T__58) | (1 << சீர்Parser.T__59) | (1 << சீர்Parser.T__60) | (1 << சீர்Parser.T__61) | (1 << சீர்Parser.T__62))) != 0) or ((((_la - 64)) & ~0x3f) == 0 and ((1 << (_la - 64)) & ((1 << (சீர்Parser.T__63 - 64)) | (1 << (சீர்Parser.T__64 - 64)) | (1 << (சீர்Parser.T__65 - 64)) | (1 << (சீர்Parser.T__66 - 64)) | (1 << (சீர்Parser.T__67 - 64)) | (1 << (சீர்Parser.T__68 - 64)) | (1 << (சீர்Parser.T__69 - 64)) | (1 << (சீர்Parser.T__70 - 64)) | (1 << (சீர்Parser.T__71 - 64)) | (1 << (சீர்Parser.T__72 - 64)) | (1 << (சீர்Parser.T__73 - 64)) | (1 << (சீர்Parser.T__74 - 64)) | (1 << (சீர்Parser.T__75 - 64)) | (1 << (சீர்Parser.T__76 - 64)) | (1 << (சீர்Parser.T__77 - 64)) | (1 << (சீர்Parser.T__78 - 64)) | (1 << (சீர்Parser.T__79 - 64)) | (1 << (சீர்Parser.T__80 - 64)) | (1 << (சீர்Parser.T__81 - 64)) | (1 << (சீர்Parser.T__82 - 64)) | (1 << (சீர்Parser.T__83 - 64)) | (1 << (சீர்Parser.T__84 - 64)) | (1 << (சீர்Parser.T__85 - 64)) | (1 << (சீர்Parser.T__86 - 64)) | (1 << (சீர்Parser.T__87 - 64)) | (1 << (சீர்Parser.T__88 - 64)) | (1 << (சீர்Parser.T__89 - 64)) | (1 << (சீர்Parser.T__90 - 64)) | (1 << (சீர்Parser.T__91 - 64)) | (1 << (சீர்Parser.T__92 - 64)) | (1 << (சீர்Parser.T__93 - 64)) | (1 << (சீர்Parser.T__94 - 64)) | (1 << (சீர்Parser.T__95 - 64)) | (1 << (சீர்Parser.T__96 - 64)) | (1 << (சீர்Parser.T__97 - 64)) | (1 << (சீர்Parser.T__98 - 64)) | (1 << (சீர்Parser.T__99 - 64)) | (1 << (சீர்Parser.T__100 - 64)) | (1 << (சீர்Parser.T__101 - 64)) | (1 << (சீர்Parser.T__102 - 64)) | (1 << (சீர்Parser.T__103 - 64)) | (1 << (சீர்Parser.T__104 - 64)) | (1 << (சீர்Parser.T__105 - 64)) | (1 << (சீர்Parser.T__106 - 64)) | (1 << (சீர்Parser.T__107 - 64)) | (1 << (சீர்Parser.T__108 - 64)) | (1 << (சீர்Parser.T__109 - 64)) | (1 << (சீர்Parser.T__110 - 64)) | (1 << (சீர்Parser.T__111 - 64)) | (1 << (சீர்Parser.T__112 - 64)))) != 0)):
                 self._errHandler.recoverInline(self)
@@ -2557,11 +3083,11 @@ class சீர்Parser ( Parser ):
     def நெடில்(self):
 
         localctx = சீர்Parser.நெடில்Context(self, self._ctx, self.state)
-        self.enterRule(localctx, 74, self.RULE_நெடில்)
+        self.enterRule(localctx, 82, self.RULE_நெடில்)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 220
+            self.state = 275
             _la = self._input.LA(1)
             if not(((((_la - 114)) & ~0x3f) == 0 and ((1 << (_la - 114)) & ((1 << (சீர்Parser.T__113 - 114)) | (1 << (சீர்Parser.T__114 - 114)) | (1 << (சீர்Parser.T__115 - 114)) | (1 << (சீர்Parser.T__116 - 114)) | (1 << (சீர்Parser.T__117 - 114)) | (1 << (சீர்Parser.T__118 - 114)) | (1 << (சீர்Parser.T__119 - 114)) | (1 << (சீர்Parser.T__120 - 114)) | (1 << (சீர்Parser.T__121 - 114)) | (1 << (சீர்Parser.T__122 - 114)) | (1 << (சீர்Parser.T__123 - 114)) | (1 << (சீர்Parser.T__124 - 114)) | (1 << (சீர்Parser.T__125 - 114)) | (1 << (சீர்Parser.T__126 - 114)) | (1 << (சீர்Parser.T__127 - 114)) | (1 << (சீர்Parser.T__128 - 114)) | (1 << (சீர்Parser.T__129 - 114)) | (1 << (சீர்Parser.T__130 - 114)) | (1 << (சீர்Parser.T__131 - 114)) | (1 << (சீர்Parser.T__132 - 114)) | (1 << (சீர்Parser.T__133 - 114)) | (1 << (சீர்Parser.T__134 - 114)) | (1 << (சீர்Parser.T__135 - 114)) | (1 << (சீர்Parser.T__136 - 114)) | (1 << (சீர்Parser.T__137 - 114)) | (1 << (சீர்Parser.T__138 - 114)) | (1 << (சீர்Parser.T__139 - 114)) | (1 << (சீர்Parser.T__140 - 114)) | (1 << (சீர்Parser.T__141 - 114)) | (1 << (சீர்Parser.T__142 - 114)) | (1 << (சீர்Parser.T__143 - 114)) | (1 << (சீர்Parser.T__144 - 114)) | (1 << (சீர்Parser.T__145 - 114)) | (1 << (சீர்Parser.T__146 - 114)) | (1 << (சீர்Parser.T__147 - 114)) | (1 << (சீர்Parser.T__148 - 114)) | (1 << (சீர்Parser.T__149 - 114)) | (1 << (சீர்Parser.T__150 - 114)) | (1 << (சீர்Parser.T__151 - 114)) | (1 << (சீர்Parser.T__152 - 114)) | (1 << (சீர்Parser.T__153 - 114)) | (1 << (சீர்Parser.T__154 - 114)) | (1 << (சீர்Parser.T__155 - 114)) | (1 << (சீர்Parser.T__156 - 114)) | (1 << (சீர்Parser.T__157 - 114)) | (1 << (சீர்Parser.T__158 - 114)) | (1 << (சீர்Parser.T__159 - 114)) | (1 << (சீர்Parser.T__160 - 114)) | (1 << (சீர்Parser.T__161 - 114)) | (1 << (சீர்Parser.T__162 - 114)) | (1 << (சீர்Parser.T__163 - 114)) | (1 << (சீர்Parser.T__164 - 114)) | (1 << (சீர்Parser.T__165 - 114)) | (1 << (சீர்Parser.T__166 - 114)) | (1 << (சீர்Parser.T__167 - 114)) | (1 << (சீர்Parser.T__168 - 114)) | (1 << (சீர்Parser.T__169 - 114)) | (1 << (சீர்Parser.T__170 - 114)) | (1 << (சீர்Parser.T__171 - 114)) | (1 << (சீர்Parser.T__172 - 114)) | (1 << (சீர்Parser.T__173 - 114)) | (1 << (சீர்Parser.T__174 - 114)) | (1 << (சீர்Parser.T__175 - 114)) | (1 << (சீர்Parser.T__176 - 114)))) != 0) or ((((_la - 178)) & ~0x3f) == 0 and ((1 << (_la - 178)) & ((1 << (சீர்Parser.T__177 - 178)) | (1 << (சீர்Parser.T__178 - 178)) | (1 << (சீர்Parser.T__179 - 178)) | (1 << (சீர்Parser.T__180 - 178)) | (1 << (சீர்Parser.T__181 - 178)) | (1 << (சீர்Parser.T__182 - 178)) | (1 << (சீர்Parser.T__183 - 178)) | (1 << (சீர்Parser.T__184 - 178)) | (1 << (சீர்Parser.T__185 - 178)) | (1 << (சீர்Parser.T__186 - 178)) | (1 << (சீர்Parser.T__187 - 178)) | (1 << (சீர்Parser.T__188 - 178)) | (1 << (சீர்Parser.T__189 - 178)) | (1 << (சீர்Parser.T__190 - 178)) | (1 << (சீர்Parser.T__191 - 178)) | (1 << (சீர்Parser.T__192 - 178)) | (1 << (சீர்Parser.T__193 - 178)) | (1 << (சீர்Parser.T__194 - 178)) | (1 << (சீர்Parser.T__195 - 178)) | (1 << (சீர்Parser.T__196 - 178)) | (1 << (சீர்Parser.T__197 - 178)) | (1 << (சீர்Parser.T__198 - 178)) | (1 << (சீர்Parser.T__199 - 178)) | (1 << (சீர்Parser.T__200 - 178)) | (1 << (சீர்Parser.T__201 - 178)) | (1 << (சீர்Parser.T__202 - 178)) | (1 << (சீர்Parser.T__203 - 178)) | (1 << (சீர்Parser.T__204 - 178)) | (1 << (சீர்Parser.T__205 - 178)) | (1 << (சீர்Parser.T__206 - 178)) | (1 << (சீர்Parser.T__207 - 178)) | (1 << (சீர்Parser.T__208 - 178)) | (1 << (சீர்Parser.T__209 - 178)) | (1 << (சீர்Parser.T__210 - 178)) | (1 << (சீர்Parser.T__211 - 178)) | (1 << (சீர்Parser.T__212 - 178)) | (1 << (சீர்Parser.T__213 - 178)) | (1 << (சீர்Parser.T__214 - 178)) | (1 << (சீர்Parser.T__215 - 178)) | (1 << (சீர்Parser.T__216 - 178)) | (1 << (சீர்Parser.T__217 - 178)) | (1 << (சீர்Parser.T__218 - 178)) | (1 << (சீர்Parser.T__219 - 178)) | (1 << (சீர்Parser.T__220 - 178)) | (1 << (சீர்Parser.T__221 - 178)) | (1 << (சீர்Parser.T__222 - 178)) | (1 << (சீர்Parser.T__223 - 178)) | (1 << (சீர்Parser.T__224 - 178)) | (1 << (சீர்Parser.T__225 - 178)) | (1 << (சீர்Parser.T__226 - 178)) | (1 << (சீர்Parser.T__227 - 178)) | (1 << (சீர்Parser.T__228 - 178)) | (1 << (சீர்Parser.T__229 - 178)) | (1 << (சீர்Parser.T__230 - 178)) | (1 << (சீர்Parser.T__231 - 178)) | (1 << (சீர்Parser.T__232 - 178)) | (1 << (சீர்Parser.T__233 - 178)) | (1 << (சீர்Parser.T__234 - 178)) | (1 << (சீர்Parser.T__235 - 178)) | (1 << (சீர்Parser.T__236 - 178)) | (1 << (சீர்Parser.T__237 - 178)) | (1 << (சீர்Parser.T__238 - 178)) | (1 << (சீர்Parser.T__239 - 178)) | (1 << (சீர்Parser.T__240 - 178)))) != 0) or ((((_la - 242)) & ~0x3f) == 0 and ((1 << (_la - 242)) & ((1 << (சீர்Parser.T__241 - 242)) | (1 << (சீர்Parser.T__242 - 242)) | (1 << (சீர்Parser.T__243 - 242)) | (1 << (சீர்Parser.T__244 - 242)) | (1 << (சீர்Parser.T__245 - 242)))) != 0)):
                 self._errHandler.recoverInline(self)

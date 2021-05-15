@@ -15,7 +15,7 @@ GRAMMAR_FILE="$WORKSPACE/pytamil/தமிழ்/resources/$CURRENT_FILE_BASENAM
 # TEMPDIR="$WORKSPACE/tools/tempdir/"
 TEMPDIR=$(mktemp -d -t showtree-$(date +%Y-%m-%d-%H-%M-%S)-XXXXXXXXXX)
 GRAMMAR=$3
-INPUT_TEXT="$WORKSPACE/pytamil/debug/வெண்பா-input.txt"
+INPUT_TEXT="$WORKSPACE/pytamil/debug/$GRAMMAR-input.txt"
 
 
 export CLASSPATH=".:$ANTLR4_PATH:$CLASSPATH"

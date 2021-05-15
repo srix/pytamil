@@ -8,6 +8,15 @@ else:
 # This class defines a complete listener for a parse tree produced by சீர்Parser.
 class சீர்Listener(ParseTreeListener):
 
+    # Enter a parse tree produced by சீர்Parser#சீர்.
+    def enterசீர்(self, ctx:சீர்Parser.சீர்Context):
+        pass
+
+    # Exit a parse tree produced by சீர்Parser#சீர்.
+    def exitசீர்(self, ctx:சீர்Parser.சீர்Context):
+        pass
+
+
     # Enter a parse tree produced by சீர்Parser#வஞ்சிச்_சீர்.
     def enterவஞ்சிச்_சீர்(self, ctx:சீர்Parser.வஞ்சிச்_சீர்Context):
         pass
@@ -50,6 +59,33 @@ class சீர்Listener(ParseTreeListener):
 
     # Exit a parse tree produced by சீர்Parser#வெண்சீர்.
     def exitவெண்சீர்(self, ctx:சீர்Parser.வெண்சீர்Context):
+        pass
+
+
+    # Enter a parse tree produced by சீர்Parser#நாலசை.
+    def enterநாலசை(self, ctx:சீர்Parser.நாலசைContext):
+        pass
+
+    # Exit a parse tree produced by சீர்Parser#நாலசை.
+    def exitநாலசை(self, ctx:சீர்Parser.நாலசைContext):
+        pass
+
+
+    # Enter a parse tree produced by சீர்Parser#மூவசை.
+    def enterமூவசை(self, ctx:சீர்Parser.மூவசைContext):
+        pass
+
+    # Exit a parse tree produced by சீர்Parser#மூவசை.
+    def exitமூவசை(self, ctx:சீர்Parser.மூவசைContext):
+        pass
+
+
+    # Enter a parse tree produced by சீர்Parser#ஈரசை.
+    def enterஈரசை(self, ctx:சீர்Parser.ஈரசைContext):
+        pass
+
+    # Exit a parse tree produced by சீர்Parser#ஈரசை.
+    def exitஈரசை(self, ctx:சீர்Parser.ஈரசைContext):
         pass
 
 

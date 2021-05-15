@@ -26,30 +26,12 @@ class ஆசிரியப்பாListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by ஆசிரியப்பாParser#அடிகள்.
-    def enterஅடிகள்(self, ctx:ஆசிரியப்பாParser.அடிகள்Context):
-        pass
-
-    # Exit a parse tree produced by ஆசிரியப்பாParser#அடிகள்.
-    def exitஅடிகள்(self, ctx:ஆசிரியப்பாParser.அடிகள்Context):
-        pass
-
-
     # Enter a parse tree produced by ஆசிரியப்பாParser#ஈற்றயலடி.
     def enterஈற்றயலடி(self, ctx:ஆசிரியப்பாParser.ஈற்றயலடிContext):
         pass
 
     # Exit a parse tree produced by ஆசிரியப்பாParser#ஈற்றயலடி.
     def exitஈற்றயலடி(self, ctx:ஆசிரியப்பாParser.ஈற்றயலடிContext):
-        pass
-
-
-    # Enter a parse tree produced by ஆசிரியப்பாParser#ஈற்றடி.
-    def enterஈற்றடி(self, ctx:ஆசிரியப்பாParser.ஈற்றடிContext):
-        pass
-
-    # Exit a parse tree produced by ஆசிரியப்பாParser#ஈற்றடி.
-    def exitஈற்றடி(self, ctx:ஆசிரியப்பாParser.ஈற்றடிContext):
         pass
 
 
@@ -131,6 +113,33 @@ class ஆசிரியப்பாListener(ParseTreeListener):
 
     # Exit a parse tree produced by ஆசிரியப்பாParser#வெண்சீர்.
     def exitவெண்சீர்(self, ctx:ஆசிரியப்பாParser.வெண்சீர்Context):
+        pass
+
+
+    # Enter a parse tree produced by ஆசிரியப்பாParser#நாலசை.
+    def enterநாலசை(self, ctx:ஆசிரியப்பாParser.நாலசைContext):
+        pass
+
+    # Exit a parse tree produced by ஆசிரியப்பாParser#நாலசை.
+    def exitநாலசை(self, ctx:ஆசிரியப்பாParser.நாலசைContext):
+        pass
+
+
+    # Enter a parse tree produced by ஆசிரியப்பாParser#மூவசை.
+    def enterமூவசை(self, ctx:ஆசிரியப்பாParser.மூவசைContext):
+        pass
+
+    # Exit a parse tree produced by ஆசிரியப்பாParser#மூவசை.
+    def exitமூவசை(self, ctx:ஆசிரியப்பாParser.மூவசைContext):
+        pass
+
+
+    # Enter a parse tree produced by ஆசிரியப்பாParser#ஈரசை.
+    def enterஈரசை(self, ctx:ஆசிரியப்பாParser.ஈரசைContext):
+        pass
+
+    # Exit a parse tree produced by ஆசிரியப்பாParser#ஈரசை.
+    def exitஈரசை(self, ctx:ஆசிரியப்பாParser.ஈரசைContext):
         pass
 
 
