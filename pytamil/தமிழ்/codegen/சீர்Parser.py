@@ -12,7 +12,7 @@ else:
 def serializedATN():
     with StringIO() as buf:
         buf.write("\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\u00f9")
-        buf.write("\u00dd\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7")
+        buf.write("\u00e1\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7")
         buf.write("\4\b\t\b\4\t\t\t\4\n\t\n\4\13\t\13\4\f\t\f\4\r\t\r\4\16")
         buf.write("\t\16\4\17\t\17\4\20\t\20\4\21\t\21\4\22\t\22\4\23\t\23")
         buf.write("\4\24\t\24\4\25\t\25\4\26\t\26\4\27\t\27\4\30\t\30\4\31")
@@ -27,66 +27,70 @@ def serializedATN():
         buf.write("\3\26\3\26\3\26\3\27\3\27\3\27\3\30\3\30\3\30\3\31\3\31")
         buf.write("\3\31\3\32\3\32\3\32\3\33\3\33\3\33\3\34\3\34\3\34\3\35")
         buf.write("\3\35\3\35\3\36\3\36\3\36\3\37\3\37\3\37\3 \3 \3 \3!\3")
-        buf.write("!\3!\3\"\3\"\3\"\3#\3#\3#\3#\3#\3#\3#\3#\5#\u00c5\n#\3")
-        buf.write("$\3$\3$\3$\3$\3$\3$\3$\3$\3$\3$\3$\3$\3$\5$\u00d5\n$\3")
-        buf.write("%\3%\3&\3&\3\'\3\'\3\'\2\2(\2\4\6\b\n\f\16\20\22\24\26")
-        buf.write("\30\32\34\36 \"$&(*,.\60\62\64\668:<>@BDFHJL\2\5\3\2\3")
-        buf.write("\24\3\2\25s\3\2t\u00f8\2\u00c7\2R\3\2\2\2\4X\3\2\2\2\6")
-        buf.write("\\\3\2\2\2\b`\3\2\2\2\nf\3\2\2\2\fh\3\2\2\2\16k\3\2\2")
-        buf.write("\2\20n\3\2\2\2\22q\3\2\2\2\24t\3\2\2\2\26w\3\2\2\2\30")
-        buf.write("z\3\2\2\2\32}\3\2\2\2\34\u0080\3\2\2\2\36\u0083\3\2\2")
-        buf.write("\2 \u0086\3\2\2\2\"\u0089\3\2\2\2$\u008c\3\2\2\2&\u008f")
-        buf.write("\3\2\2\2(\u0092\3\2\2\2*\u0095\3\2\2\2,\u0098\3\2\2\2")
-        buf.write(".\u009b\3\2\2\2\60\u009e\3\2\2\2\62\u00a1\3\2\2\2\64\u00a4")
-        buf.write("\3\2\2\2\66\u00a7\3\2\2\28\u00aa\3\2\2\2:\u00ad\3\2\2")
-        buf.write("\2<\u00b0\3\2\2\2>\u00b3\3\2\2\2@\u00b6\3\2\2\2B\u00b9")
-        buf.write("\3\2\2\2D\u00c4\3\2\2\2F\u00d4\3\2\2\2H\u00d6\3\2\2\2")
-        buf.write("J\u00d8\3\2\2\2L\u00da\3\2\2\2NS\5.\30\2OS\5\62\32\2P")
-        buf.write("S\5\66\34\2QS\5:\36\2RN\3\2\2\2RO\3\2\2\2RP\3\2\2\2RQ")
-        buf.write("\3\2\2\2S\3\3\2\2\2TY\5<\37\2UY\5> \2VY\5@!\2WY\5B\"\2")
-        buf.write("XT\3\2\2\2XU\3\2\2\2XV\3\2\2\2XW\3\2\2\2Y\5\3\2\2\2Z]")
-        buf.write("\5<\37\2[]\5> \2\\Z\3\2\2\2\\[\3\2\2\2]\7\3\2\2\2^a\5")
-        buf.write("@!\2_a\5B\"\2`^\3\2\2\2`_\3\2\2\2a\t\3\2\2\2bg\5,\27\2")
-        buf.write("cg\5\60\31\2dg\5\64\33\2eg\58\35\2fb\3\2\2\2fc\3\2\2\2")
-        buf.write("fd\3\2\2\2fe\3\2\2\2g\13\3\2\2\2hi\5,\27\2ij\5D#\2j\r")
-        buf.write("\3\2\2\2kl\5,\27\2lm\5F$\2m\17\3\2\2\2no\5.\30\2op\5D")
-        buf.write("#\2p\21\3\2\2\2qr\5.\30\2rs\5F$\2s\23\3\2\2\2tu\5\60\31")
-        buf.write("\2uv\5D#\2v\25\3\2\2\2wx\5\60\31\2xy\5F$\2y\27\3\2\2\2")
-        buf.write("z{\5\62\32\2{|\5D#\2|\31\3\2\2\2}~\5\62\32\2~\177\5F$")
-        buf.write("\2\177\33\3\2\2\2\u0080\u0081\5\64\33\2\u0081\u0082\5")
-        buf.write("D#\2\u0082\35\3\2\2\2\u0083\u0084\5\64\33\2\u0084\u0085")
-        buf.write("\5F$\2\u0085\37\3\2\2\2\u0086\u0087\5\66\34\2\u0087\u0088")
-        buf.write("\5D#\2\u0088!\3\2\2\2\u0089\u008a\5\66\34\2\u008a\u008b")
-        buf.write("\5F$\2\u008b#\3\2\2\2\u008c\u008d\58\35\2\u008d\u008e")
-        buf.write("\5D#\2\u008e%\3\2\2\2\u008f\u0090\58\35\2\u0090\u0091")
-        buf.write("\5F$\2\u0091\'\3\2\2\2\u0092\u0093\5:\36\2\u0093\u0094")
-        buf.write("\5D#\2\u0094)\3\2\2\2\u0095\u0096\5:\36\2\u0096\u0097")
-        buf.write("\5F$\2\u0097+\3\2\2\2\u0098\u0099\5<\37\2\u0099\u009a")
-        buf.write("\5D#\2\u009a-\3\2\2\2\u009b\u009c\5<\37\2\u009c\u009d")
-        buf.write("\5F$\2\u009d/\3\2\2\2\u009e\u009f\5> \2\u009f\u00a0\5")
-        buf.write("D#\2\u00a0\61\3\2\2\2\u00a1\u00a2\5> \2\u00a2\u00a3\5")
-        buf.write("F$\2\u00a3\63\3\2\2\2\u00a4\u00a5\5@!\2\u00a5\u00a6\5")
-        buf.write("D#\2\u00a6\65\3\2\2\2\u00a7\u00a8\5@!\2\u00a8\u00a9\5")
-        buf.write("F$\2\u00a9\67\3\2\2\2\u00aa\u00ab\5B\"\2\u00ab\u00ac\5")
-        buf.write("D#\2\u00ac9\3\2\2\2\u00ad\u00ae\5B\"\2\u00ae\u00af\5F")
-        buf.write("$\2\u00af;\3\2\2\2\u00b0\u00b1\5D#\2\u00b1\u00b2\5D#\2")
-        buf.write("\u00b2=\3\2\2\2\u00b3\u00b4\5F$\2\u00b4\u00b5\5D#\2\u00b5")
-        buf.write("?\3\2\2\2\u00b6\u00b7\5F$\2\u00b7\u00b8\5F$\2\u00b8A\3")
-        buf.write("\2\2\2\u00b9\u00ba\5D#\2\u00ba\u00bb\5F$\2\u00bbC\3\2")
-        buf.write("\2\2\u00bc\u00c5\5J&\2\u00bd\u00c5\5L\'\2\u00be\u00bf")
-        buf.write("\5J&\2\u00bf\u00c0\5H%\2\u00c0\u00c5\3\2\2\2\u00c1\u00c2")
-        buf.write("\5L\'\2\u00c2\u00c3\5H%\2\u00c3\u00c5\3\2\2\2\u00c4\u00bc")
-        buf.write("\3\2\2\2\u00c4\u00bd\3\2\2\2\u00c4\u00be\3\2\2\2\u00c4")
-        buf.write("\u00c1\3\2\2\2\u00c5E\3\2\2\2\u00c6\u00c7\5J&\2\u00c7")
-        buf.write("\u00c8\5J&\2\u00c8\u00d5\3\2\2\2\u00c9\u00ca\5J&\2\u00ca")
-        buf.write("\u00cb\5L\'\2\u00cb\u00d5\3\2\2\2\u00cc\u00cd\5J&\2\u00cd")
-        buf.write("\u00ce\5J&\2\u00ce\u00cf\5H%\2\u00cf\u00d5\3\2\2\2\u00d0")
-        buf.write("\u00d1\5J&\2\u00d1\u00d2\5L\'\2\u00d2\u00d3\5H%\2\u00d3")
-        buf.write("\u00d5\3\2\2\2\u00d4\u00c6\3\2\2\2\u00d4\u00c9\3\2\2\2")
-        buf.write("\u00d4\u00cc\3\2\2\2\u00d4\u00d0\3\2\2\2\u00d5G\3\2\2")
-        buf.write("\2\u00d6\u00d7\t\2\2\2\u00d7I\3\2\2\2\u00d8\u00d9\t\3")
-        buf.write("\2\2\u00d9K\3\2\2\2\u00da\u00db\t\4\2\2\u00dbM\3\2\2\2")
-        buf.write("\tRX\\`f\u00c4\u00d4")
+        buf.write("!\3!\3\"\3\"\3\"\3#\3#\3#\3#\5#\u00c1\n#\3#\3#\5#\u00c5")
+        buf.write("\n#\5#\u00c7\n#\3$\3$\3$\3$\3$\3$\3$\3$\3$\5$\u00d2\n")
+        buf.write("$\3$\3$\3$\5$\u00d7\n$\5$\u00d9\n$\3%\3%\3&\3&\3\'\3\'")
+        buf.write("\3\'\2\2(\2\4\6\b\n\f\16\20\22\24\26\30\32\34\36 \"$&")
+        buf.write("(*,.\60\62\64\668:<>@BDFHJL\2\5\3\2\3\24\3\2\25s\3\2t")
+        buf.write("\u00f8\2\u00cf\2R\3\2\2\2\4X\3\2\2\2\6\\\3\2\2\2\b`\3")
+        buf.write("\2\2\2\nf\3\2\2\2\fh\3\2\2\2\16k\3\2\2\2\20n\3\2\2\2\22")
+        buf.write("q\3\2\2\2\24t\3\2\2\2\26w\3\2\2\2\30z\3\2\2\2\32}\3\2")
+        buf.write("\2\2\34\u0080\3\2\2\2\36\u0083\3\2\2\2 \u0086\3\2\2\2")
+        buf.write("\"\u0089\3\2\2\2$\u008c\3\2\2\2&\u008f\3\2\2\2(\u0092")
+        buf.write("\3\2\2\2*\u0095\3\2\2\2,\u0098\3\2\2\2.\u009b\3\2\2\2")
+        buf.write("\60\u009e\3\2\2\2\62\u00a1\3\2\2\2\64\u00a4\3\2\2\2\66")
+        buf.write("\u00a7\3\2\2\28\u00aa\3\2\2\2:\u00ad\3\2\2\2<\u00b0\3")
+        buf.write("\2\2\2>\u00b3\3\2\2\2@\u00b6\3\2\2\2B\u00b9\3\2\2\2D\u00c6")
+        buf.write("\3\2\2\2F\u00d8\3\2\2\2H\u00da\3\2\2\2J\u00dc\3\2\2\2")
+        buf.write("L\u00de\3\2\2\2NS\5.\30\2OS\5\62\32\2PS\5\66\34\2QS\5")
+        buf.write(":\36\2RN\3\2\2\2RO\3\2\2\2RP\3\2\2\2RQ\3\2\2\2S\3\3\2")
+        buf.write("\2\2TY\5<\37\2UY\5> \2VY\5@!\2WY\5B\"\2XT\3\2\2\2XU\3")
+        buf.write("\2\2\2XV\3\2\2\2XW\3\2\2\2Y\5\3\2\2\2Z]\5<\37\2[]\5> ")
+        buf.write("\2\\Z\3\2\2\2\\[\3\2\2\2]\7\3\2\2\2^a\5@!\2_a\5B\"\2`")
+        buf.write("^\3\2\2\2`_\3\2\2\2a\t\3\2\2\2bg\5,\27\2cg\5\60\31\2d")
+        buf.write("g\5\64\33\2eg\58\35\2fb\3\2\2\2fc\3\2\2\2fd\3\2\2\2fe")
+        buf.write("\3\2\2\2g\13\3\2\2\2hi\5,\27\2ij\5D#\2j\r\3\2\2\2kl\5")
+        buf.write(",\27\2lm\5F$\2m\17\3\2\2\2no\5.\30\2op\5D#\2p\21\3\2\2")
+        buf.write("\2qr\5.\30\2rs\5F$\2s\23\3\2\2\2tu\5\60\31\2uv\5D#\2v")
+        buf.write("\25\3\2\2\2wx\5\60\31\2xy\5F$\2y\27\3\2\2\2z{\5\62\32")
+        buf.write("\2{|\5D#\2|\31\3\2\2\2}~\5\62\32\2~\177\5F$\2\177\33\3")
+        buf.write("\2\2\2\u0080\u0081\5\64\33\2\u0081\u0082\5D#\2\u0082\35")
+        buf.write("\3\2\2\2\u0083\u0084\5\64\33\2\u0084\u0085\5F$\2\u0085")
+        buf.write("\37\3\2\2\2\u0086\u0087\5\66\34\2\u0087\u0088\5D#\2\u0088")
+        buf.write("!\3\2\2\2\u0089\u008a\5\66\34\2\u008a\u008b\5F$\2\u008b")
+        buf.write("#\3\2\2\2\u008c\u008d\58\35\2\u008d\u008e\5D#\2\u008e")
+        buf.write("%\3\2\2\2\u008f\u0090\58\35\2\u0090\u0091\5F$\2\u0091")
+        buf.write("\'\3\2\2\2\u0092\u0093\5:\36\2\u0093\u0094\5D#\2\u0094")
+        buf.write(")\3\2\2\2\u0095\u0096\5:\36\2\u0096\u0097\5F$\2\u0097")
+        buf.write("+\3\2\2\2\u0098\u0099\5<\37\2\u0099\u009a\5D#\2\u009a")
+        buf.write("-\3\2\2\2\u009b\u009c\5<\37\2\u009c\u009d\5F$\2\u009d")
+        buf.write("/\3\2\2\2\u009e\u009f\5> \2\u009f\u00a0\5D#\2\u00a0\61")
+        buf.write("\3\2\2\2\u00a1\u00a2\5> \2\u00a2\u00a3\5F$\2\u00a3\63")
+        buf.write("\3\2\2\2\u00a4\u00a5\5@!\2\u00a5\u00a6\5D#\2\u00a6\65")
+        buf.write("\3\2\2\2\u00a7\u00a8\5@!\2\u00a8\u00a9\5F$\2\u00a9\67")
+        buf.write("\3\2\2\2\u00aa\u00ab\5B\"\2\u00ab\u00ac\5D#\2\u00ac9\3")
+        buf.write("\2\2\2\u00ad\u00ae\5B\"\2\u00ae\u00af\5F$\2\u00af;\3\2")
+        buf.write("\2\2\u00b0\u00b1\5D#\2\u00b1\u00b2\5D#\2\u00b2=\3\2\2")
+        buf.write("\2\u00b3\u00b4\5F$\2\u00b4\u00b5\5D#\2\u00b5?\3\2\2\2")
+        buf.write("\u00b6\u00b7\5F$\2\u00b7\u00b8\5F$\2\u00b8A\3\2\2\2\u00b9")
+        buf.write("\u00ba\5D#\2\u00ba\u00bb\5F$\2\u00bbC\3\2\2\2\u00bc\u00c7")
+        buf.write("\5J&\2\u00bd\u00c7\5L\'\2\u00be\u00c0\5J&\2\u00bf\u00c1")
+        buf.write("\5H%\2\u00c0\u00bf\3\2\2\2\u00c0\u00c1\3\2\2\2\u00c1\u00c7")
+        buf.write("\3\2\2\2\u00c2\u00c4\5L\'\2\u00c3\u00c5\5H%\2\u00c4\u00c3")
+        buf.write("\3\2\2\2\u00c4\u00c5\3\2\2\2\u00c5\u00c7\3\2\2\2\u00c6")
+        buf.write("\u00bc\3\2\2\2\u00c6\u00bd\3\2\2\2\u00c6\u00be\3\2\2\2")
+        buf.write("\u00c6\u00c2\3\2\2\2\u00c7E\3\2\2\2\u00c8\u00c9\5J&\2")
+        buf.write("\u00c9\u00ca\5J&\2\u00ca\u00d9\3\2\2\2\u00cb\u00cc\5J")
+        buf.write("&\2\u00cc\u00cd\5L\'\2\u00cd\u00d9\3\2\2\2\u00ce\u00cf")
+        buf.write("\5J&\2\u00cf\u00d1\5J&\2\u00d0\u00d2\5H%\2\u00d1\u00d0")
+        buf.write("\3\2\2\2\u00d1\u00d2\3\2\2\2\u00d2\u00d9\3\2\2\2\u00d3")
+        buf.write("\u00d4\5J&\2\u00d4\u00d6\5L\'\2\u00d5\u00d7\5H%\2\u00d6")
+        buf.write("\u00d5\3\2\2\2\u00d6\u00d7\3\2\2\2\u00d7\u00d9\3\2\2\2")
+        buf.write("\u00d8\u00c8\3\2\2\2\u00d8\u00cb\3\2\2\2\u00d8\u00ce\3")
+        buf.write("\2\2\2\u00d8\u00d3\3\2\2\2\u00d9G\3\2\2\2\u00da\u00db")
+        buf.write("\t\2\2\2\u00dbI\3\2\2\2\u00dc\u00dd\t\3\2\2\u00ddK\3\2")
+        buf.write("\2\2\u00de\u00df\t\4\2\2\u00dfM\3\2\2\2\rRX\\`f\u00c0")
+        buf.write("\u00c4\u00c6\u00d1\u00d6\u00d8")
         return buf.getvalue()
 
 
@@ -2280,10 +2284,11 @@ class சீர்Parser ( Parser ):
 
         localctx = சீர்Parser.நேர்Context(self, self._ctx, self.state)
         self.enterRule(localctx, 66, self.RULE_நேர்)
+        self._la = 0 # Token type
         try:
-            self.state = 194
+            self.state = 196
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input,5,self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,7,self._ctx)
             if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
                 self.state = 186
@@ -2300,16 +2305,28 @@ class சீர்Parser ( Parser ):
                 self.enterOuterAlt(localctx, 3)
                 self.state = 188
                 self.குறில்()
-                self.state = 189
-                self.ஒற்று()
+                self.state = 190
+                self._errHandler.sync(self)
+                _la = self._input.LA(1)
+                if (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << சீர்Parser.T__0) | (1 << சீர்Parser.T__1) | (1 << சீர்Parser.T__2) | (1 << சீர்Parser.T__3) | (1 << சீர்Parser.T__4) | (1 << சீர்Parser.T__5) | (1 << சீர்Parser.T__6) | (1 << சீர்Parser.T__7) | (1 << சீர்Parser.T__8) | (1 << சீர்Parser.T__9) | (1 << சீர்Parser.T__10) | (1 << சீர்Parser.T__11) | (1 << சீர்Parser.T__12) | (1 << சீர்Parser.T__13) | (1 << சீர்Parser.T__14) | (1 << சீர்Parser.T__15) | (1 << சீர்Parser.T__16) | (1 << சீர்Parser.T__17))) != 0):
+                    self.state = 189
+                    self.ஒற்று()
+
+
                 pass
 
             elif la_ == 4:
                 self.enterOuterAlt(localctx, 4)
-                self.state = 191
-                self.நெடில்()
                 self.state = 192
-                self.ஒற்று()
+                self.நெடில்()
+                self.state = 194
+                self._errHandler.sync(self)
+                _la = self._input.LA(1)
+                if (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << சீர்Parser.T__0) | (1 << சீர்Parser.T__1) | (1 << சீர்Parser.T__2) | (1 << சீர்Parser.T__3) | (1 << சீர்Parser.T__4) | (1 << சீர்Parser.T__5) | (1 << சீர்Parser.T__6) | (1 << சீர்Parser.T__7) | (1 << சீர்Parser.T__8) | (1 << சீர்Parser.T__9) | (1 << சீர்Parser.T__10) | (1 << சீர்Parser.T__11) | (1 << சீர்Parser.T__12) | (1 << சீர்Parser.T__13) | (1 << சீர்Parser.T__14) | (1 << சீர்Parser.T__15) | (1 << சீர்Parser.T__16) | (1 << சீர்Parser.T__17))) != 0):
+                    self.state = 193
+                    self.ஒற்று()
+
+
                 pass
 
 
@@ -2362,44 +2379,57 @@ class சீர்Parser ( Parser ):
 
         localctx = சீர்Parser.நிரைContext(self, self._ctx, self.state)
         self.enterRule(localctx, 68, self.RULE_நிரை)
+        self._la = 0 # Token type
         try:
-            self.state = 210
+            self.state = 214
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input,6,self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,10,self._ctx)
             if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 196
+                self.state = 198
                 self.குறில்()
-                self.state = 197
+                self.state = 199
                 self.குறில்()
                 pass
 
             elif la_ == 2:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 199
+                self.state = 201
                 self.குறில்()
-                self.state = 200
+                self.state = 202
                 self.நெடில்()
                 pass
 
             elif la_ == 3:
                 self.enterOuterAlt(localctx, 3)
-                self.state = 202
-                self.குறில்()
-                self.state = 203
-                self.குறில்()
                 self.state = 204
-                self.ஒற்று()
+                self.குறில்()
+                self.state = 205
+                self.குறில்()
+                self.state = 207
+                self._errHandler.sync(self)
+                _la = self._input.LA(1)
+                if (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << சீர்Parser.T__0) | (1 << சீர்Parser.T__1) | (1 << சீர்Parser.T__2) | (1 << சீர்Parser.T__3) | (1 << சீர்Parser.T__4) | (1 << சீர்Parser.T__5) | (1 << சீர்Parser.T__6) | (1 << சீர்Parser.T__7) | (1 << சீர்Parser.T__8) | (1 << சீர்Parser.T__9) | (1 << சீர்Parser.T__10) | (1 << சீர்Parser.T__11) | (1 << சீர்Parser.T__12) | (1 << சீர்Parser.T__13) | (1 << சீர்Parser.T__14) | (1 << சீர்Parser.T__15) | (1 << சீர்Parser.T__16) | (1 << சீர்Parser.T__17))) != 0):
+                    self.state = 206
+                    self.ஒற்று()
+
+
                 pass
 
             elif la_ == 4:
                 self.enterOuterAlt(localctx, 4)
-                self.state = 206
+                self.state = 209
                 self.குறில்()
-                self.state = 207
+                self.state = 210
                 self.நெடில்()
-                self.state = 208
-                self.ஒற்று()
+                self.state = 212
+                self._errHandler.sync(self)
+                _la = self._input.LA(1)
+                if (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << சீர்Parser.T__0) | (1 << சீர்Parser.T__1) | (1 << சீர்Parser.T__2) | (1 << சீர்Parser.T__3) | (1 << சீர்Parser.T__4) | (1 << சீர்Parser.T__5) | (1 << சீர்Parser.T__6) | (1 << சீர்Parser.T__7) | (1 << சீர்Parser.T__8) | (1 << சீர்Parser.T__9) | (1 << சீர்Parser.T__10) | (1 << சீர்Parser.T__11) | (1 << சீர்Parser.T__12) | (1 << சீர்Parser.T__13) | (1 << சீர்Parser.T__14) | (1 << சீர்Parser.T__15) | (1 << சீர்Parser.T__16) | (1 << சீர்Parser.T__17))) != 0):
+                    self.state = 211
+                    self.ஒற்று()
+
+
                 pass
 
 
@@ -2441,7 +2471,7 @@ class சீர்Parser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 212
+            self.state = 216
             _la = self._input.LA(1)
             if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << சீர்Parser.T__0) | (1 << சீர்Parser.T__1) | (1 << சீர்Parser.T__2) | (1 << சீர்Parser.T__3) | (1 << சீர்Parser.T__4) | (1 << சீர்Parser.T__5) | (1 << சீர்Parser.T__6) | (1 << சீர்Parser.T__7) | (1 << சீர்Parser.T__8) | (1 << சீர்Parser.T__9) | (1 << சீர்Parser.T__10) | (1 << சீர்Parser.T__11) | (1 << சீர்Parser.T__12) | (1 << சீர்Parser.T__13) | (1 << சீர்Parser.T__14) | (1 << சீர்Parser.T__15) | (1 << சீர்Parser.T__16) | (1 << சீர்Parser.T__17))) != 0)):
                 self._errHandler.recoverInline(self)
@@ -2486,7 +2516,7 @@ class சீர்Parser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 214
+            self.state = 218
             _la = self._input.LA(1)
             if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << சீர்Parser.T__18) | (1 << சீர்Parser.T__19) | (1 << சீர்Parser.T__20) | (1 << சீர்Parser.T__21) | (1 << சீர்Parser.T__22) | (1 << சீர்Parser.T__23) | (1 << சீர்Parser.T__24) | (1 << சீர்Parser.T__25) | (1 << சீர்Parser.T__26) | (1 << சீர்Parser.T__27) | (1 << சீர்Parser.T__28) | (1 << சீர்Parser.T__29) | (1 << சீர்Parser.T__30) | (1 << சீர்Parser.T__31) | (1 << சீர்Parser.T__32) | (1 << சீர்Parser.T__33) | (1 << சீர்Parser.T__34) | (1 << சீர்Parser.T__35) | (1 << சீர்Parser.T__36) | (1 << சீர்Parser.T__37) | (1 << சீர்Parser.T__38) | (1 << சீர்Parser.T__39) | (1 << சீர்Parser.T__40) | (1 << சீர்Parser.T__41) | (1 << சீர்Parser.T__42) | (1 << சீர்Parser.T__43) | (1 << சீர்Parser.T__44) | (1 << சீர்Parser.T__45) | (1 << சீர்Parser.T__46) | (1 << சீர்Parser.T__47) | (1 << சீர்Parser.T__48) | (1 << சீர்Parser.T__49) | (1 << சீர்Parser.T__50) | (1 << சீர்Parser.T__51) | (1 << சீர்Parser.T__52) | (1 << சீர்Parser.T__53) | (1 << சீர்Parser.T__54) | (1 << சீர்Parser.T__55) | (1 << சீர்Parser.T__56) | (1 << சீர்Parser.T__57) | (1 << சீர்Parser.T__58) | (1 << சீர்Parser.T__59) | (1 << சீர்Parser.T__60) | (1 << சீர்Parser.T__61) | (1 << சீர்Parser.T__62))) != 0) or ((((_la - 64)) & ~0x3f) == 0 and ((1 << (_la - 64)) & ((1 << (சீர்Parser.T__63 - 64)) | (1 << (சீர்Parser.T__64 - 64)) | (1 << (சீர்Parser.T__65 - 64)) | (1 << (சீர்Parser.T__66 - 64)) | (1 << (சீர்Parser.T__67 - 64)) | (1 << (சீர்Parser.T__68 - 64)) | (1 << (சீர்Parser.T__69 - 64)) | (1 << (சீர்Parser.T__70 - 64)) | (1 << (சீர்Parser.T__71 - 64)) | (1 << (சீர்Parser.T__72 - 64)) | (1 << (சீர்Parser.T__73 - 64)) | (1 << (சீர்Parser.T__74 - 64)) | (1 << (சீர்Parser.T__75 - 64)) | (1 << (சீர்Parser.T__76 - 64)) | (1 << (சீர்Parser.T__77 - 64)) | (1 << (சீர்Parser.T__78 - 64)) | (1 << (சீர்Parser.T__79 - 64)) | (1 << (சீர்Parser.T__80 - 64)) | (1 << (சீர்Parser.T__81 - 64)) | (1 << (சீர்Parser.T__82 - 64)) | (1 << (சீர்Parser.T__83 - 64)) | (1 << (சீர்Parser.T__84 - 64)) | (1 << (சீர்Parser.T__85 - 64)) | (1 << (சீர்Parser.T__86 - 64)) | (1 << (சீர்Parser.T__87 - 64)) | (1 << (சீர்Parser.T__88 - 64)) | (1 << (சீர்Parser.T__89 - 64)) | (1 << (சீர்Parser.T__90 - 64)) | (1 << (சீர்Parser.T__91 - 64)) | (1 << (சீர்Parser.T__92 - 64)) | (1 << (சீர்Parser.T__93 - 64)) | (1 << (சீர்Parser.T__94 - 64)) | (1 << (சீர்Parser.T__95 - 64)) | (1 << (சீர்Parser.T__96 - 64)) | (1 << (சீர்Parser.T__97 - 64)) | (1 << (சீர்Parser.T__98 - 64)) | (1 << (சீர்Parser.T__99 - 64)) | (1 << (சீர்Parser.T__100 - 64)) | (1 << (சீர்Parser.T__101 - 64)) | (1 << (சீர்Parser.T__102 - 64)) | (1 << (சீர்Parser.T__103 - 64)) | (1 << (சீர்Parser.T__104 - 64)) | (1 << (சீர்Parser.T__105 - 64)) | (1 << (சீர்Parser.T__106 - 64)) | (1 << (சீர்Parser.T__107 - 64)) | (1 << (சீர்Parser.T__108 - 64)) | (1 << (சீர்Parser.T__109 - 64)) | (1 << (சீர்Parser.T__110 - 64)) | (1 << (சீர்Parser.T__111 - 64)) | (1 << (சீர்Parser.T__112 - 64)))) != 0)):
                 self._errHandler.recoverInline(self)
@@ -2531,7 +2561,7 @@ class சீர்Parser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 216
+            self.state = 220
             _la = self._input.LA(1)
             if not(((((_la - 114)) & ~0x3f) == 0 and ((1 << (_la - 114)) & ((1 << (சீர்Parser.T__113 - 114)) | (1 << (சீர்Parser.T__114 - 114)) | (1 << (சீர்Parser.T__115 - 114)) | (1 << (சீர்Parser.T__116 - 114)) | (1 << (சீர்Parser.T__117 - 114)) | (1 << (சீர்Parser.T__118 - 114)) | (1 << (சீர்Parser.T__119 - 114)) | (1 << (சீர்Parser.T__120 - 114)) | (1 << (சீர்Parser.T__121 - 114)) | (1 << (சீர்Parser.T__122 - 114)) | (1 << (சீர்Parser.T__123 - 114)) | (1 << (சீர்Parser.T__124 - 114)) | (1 << (சீர்Parser.T__125 - 114)) | (1 << (சீர்Parser.T__126 - 114)) | (1 << (சீர்Parser.T__127 - 114)) | (1 << (சீர்Parser.T__128 - 114)) | (1 << (சீர்Parser.T__129 - 114)) | (1 << (சீர்Parser.T__130 - 114)) | (1 << (சீர்Parser.T__131 - 114)) | (1 << (சீர்Parser.T__132 - 114)) | (1 << (சீர்Parser.T__133 - 114)) | (1 << (சீர்Parser.T__134 - 114)) | (1 << (சீர்Parser.T__135 - 114)) | (1 << (சீர்Parser.T__136 - 114)) | (1 << (சீர்Parser.T__137 - 114)) | (1 << (சீர்Parser.T__138 - 114)) | (1 << (சீர்Parser.T__139 - 114)) | (1 << (சீர்Parser.T__140 - 114)) | (1 << (சீர்Parser.T__141 - 114)) | (1 << (சீர்Parser.T__142 - 114)) | (1 << (சீர்Parser.T__143 - 114)) | (1 << (சீர்Parser.T__144 - 114)) | (1 << (சீர்Parser.T__145 - 114)) | (1 << (சீர்Parser.T__146 - 114)) | (1 << (சீர்Parser.T__147 - 114)) | (1 << (சீர்Parser.T__148 - 114)) | (1 << (சீர்Parser.T__149 - 114)) | (1 << (சீர்Parser.T__150 - 114)) | (1 << (சீர்Parser.T__151 - 114)) | (1 << (சீர்Parser.T__152 - 114)) | (1 << (சீர்Parser.T__153 - 114)) | (1 << (சீர்Parser.T__154 - 114)) | (1 << (சீர்Parser.T__155 - 114)) | (1 << (சீர்Parser.T__156 - 114)) | (1 << (சீர்Parser.T__157 - 114)) | (1 << (சீர்Parser.T__158 - 114)) | (1 << (சீர்Parser.T__159 - 114)) | (1 << (சீர்Parser.T__160 - 114)) | (1 << (சீர்Parser.T__161 - 114)) | (1 << (சீர்Parser.T__162 - 114)) | (1 << (சீர்Parser.T__163 - 114)) | (1 << (சீர்Parser.T__164 - 114)) | (1 << (சீர்Parser.T__165 - 114)) | (1 << (சீர்Parser.T__166 - 114)) | (1 << (சீர்Parser.T__167 - 114)) | (1 << (சீர்Parser.T__168 - 114)) | (1 << (சீர்Parser.T__169 - 114)) | (1 << (சீர்Parser.T__170 - 114)) | (1 << (சீர்Parser.T__171 - 114)) | (1 << (சீர்Parser.T__172 - 114)) | (1 << (சீர்Parser.T__173 - 114)) | (1 << (சீர்Parser.T__174 - 114)) | (1 << (சீர்Parser.T__175 - 114)) | (1 << (சீர்Parser.T__176 - 114)))) != 0) or ((((_la - 178)) & ~0x3f) == 0 and ((1 << (_la - 178)) & ((1 << (சீர்Parser.T__177 - 178)) | (1 << (சீர்Parser.T__178 - 178)) | (1 << (சீர்Parser.T__179 - 178)) | (1 << (சீர்Parser.T__180 - 178)) | (1 << (சீர்Parser.T__181 - 178)) | (1 << (சீர்Parser.T__182 - 178)) | (1 << (சீர்Parser.T__183 - 178)) | (1 << (சீர்Parser.T__184 - 178)) | (1 << (சீர்Parser.T__185 - 178)) | (1 << (சீர்Parser.T__186 - 178)) | (1 << (சீர்Parser.T__187 - 178)) | (1 << (சீர்Parser.T__188 - 178)) | (1 << (சீர்Parser.T__189 - 178)) | (1 << (சீர்Parser.T__190 - 178)) | (1 << (சீர்Parser.T__191 - 178)) | (1 << (சீர்Parser.T__192 - 178)) | (1 << (சீர்Parser.T__193 - 178)) | (1 << (சீர்Parser.T__194 - 178)) | (1 << (சீர்Parser.T__195 - 178)) | (1 << (சீர்Parser.T__196 - 178)) | (1 << (சீர்Parser.T__197 - 178)) | (1 << (சீர்Parser.T__198 - 178)) | (1 << (சீர்Parser.T__199 - 178)) | (1 << (சீர்Parser.T__200 - 178)) | (1 << (சீர்Parser.T__201 - 178)) | (1 << (சீர்Parser.T__202 - 178)) | (1 << (சீர்Parser.T__203 - 178)) | (1 << (சீர்Parser.T__204 - 178)) | (1 << (சீர்Parser.T__205 - 178)) | (1 << (சீர்Parser.T__206 - 178)) | (1 << (சீர்Parser.T__207 - 178)) | (1 << (சீர்Parser.T__208 - 178)) | (1 << (சீர்Parser.T__209 - 178)) | (1 << (சீர்Parser.T__210 - 178)) | (1 << (சீர்Parser.T__211 - 178)) | (1 << (சீர்Parser.T__212 - 178)) | (1 << (சீர்Parser.T__213 - 178)) | (1 << (சீர்Parser.T__214 - 178)) | (1 << (சீர்Parser.T__215 - 178)) | (1 << (சீர்Parser.T__216 - 178)) | (1 << (சீர்Parser.T__217 - 178)) | (1 << (சீர்Parser.T__218 - 178)) | (1 << (சீர்Parser.T__219 - 178)) | (1 << (சீர்Parser.T__220 - 178)) | (1 << (சீர்Parser.T__221 - 178)) | (1 << (சீர்Parser.T__222 - 178)) | (1 << (சீர்Parser.T__223 - 178)) | (1 << (சீர்Parser.T__224 - 178)) | (1 << (சீர்Parser.T__225 - 178)) | (1 << (சீர்Parser.T__226 - 178)) | (1 << (சீர்Parser.T__227 - 178)) | (1 << (சீர்Parser.T__228 - 178)) | (1 << (சீர்Parser.T__229 - 178)) | (1 << (சீர்Parser.T__230 - 178)) | (1 << (சீர்Parser.T__231 - 178)) | (1 << (சீர்Parser.T__232 - 178)) | (1 << (சீர்Parser.T__233 - 178)) | (1 << (சீர்Parser.T__234 - 178)) | (1 << (சீர்Parser.T__235 - 178)) | (1 << (சீர்Parser.T__236 - 178)) | (1 << (சீர்Parser.T__237 - 178)) | (1 << (சீர்Parser.T__238 - 178)) | (1 << (சீர்Parser.T__239 - 178)) | (1 << (சீர்Parser.T__240 - 178)))) != 0) or ((((_la - 242)) & ~0x3f) == 0 and ((1 << (_la - 242)) & ((1 << (சீர்Parser.T__241 - 242)) | (1 << (சீர்Parser.T__242 - 242)) | (1 << (சீர்Parser.T__243 - 242)) | (1 << (சீர்Parser.T__244 - 242)) | (1 << (சீர்Parser.T__245 - 242)))) != 0)):
                 self._errHandler.recoverInline(self)
