@@ -386,5 +386,14 @@ class சீர்Listener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by சீர்Parser#ஆய்தம்.
+    def enterஆய்தம்(self, ctx:சீர்Parser.ஆய்தம்Context):
+        pass
+
+    # Exit a parse tree produced by சீர்Parser#ஆய்தம்.
+    def exitஆய்தம்(self, ctx:சீர்Parser.ஆய்தம்Context):
+        pass
+
+
 
 del சீர்Parser

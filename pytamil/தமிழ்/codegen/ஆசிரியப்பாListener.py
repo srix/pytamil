@@ -26,21 +26,48 @@ class ஆசிரியப்பாListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by ஆசிரியப்பாParser#ஈற்றயலடி.
-    def enterஈற்றயலடி(self, ctx:ஆசிரியப்பாParser.ஈற்றயலடிContext):
+    # Enter a parse tree produced by ஆசிரியப்பாParser#இணைக்குறள்_ஆசிரியப்பா.
+    def enterஇணைக்குறள்_ஆசிரியப்பா(self, ctx:ஆசிரியப்பாParser.இணைக்குறள்_ஆசிரியப்பாContext):
         pass
 
-    # Exit a parse tree produced by ஆசிரியப்பாParser#ஈற்றயலடி.
-    def exitஈற்றயலடி(self, ctx:ஆசிரியப்பாParser.ஈற்றயலடிContext):
+    # Exit a parse tree produced by ஆசிரியப்பாParser#இணைக்குறள்_ஆசிரியப்பா.
+    def exitஇணைக்குறள்_ஆசிரியப்பா(self, ctx:ஆசிரியப்பாParser.இணைக்குறள்_ஆசிரியப்பாContext):
         pass
 
 
-    # Enter a parse tree produced by ஆசிரியப்பாParser#அடி.
-    def enterஅடி(self, ctx:ஆசிரியப்பாParser.அடிContext):
+    # Enter a parse tree produced by ஆசிரியப்பாParser#நிலை_மண்டில_ஆசிரியப்பா.
+    def enterநிலை_மண்டில_ஆசிரியப்பா(self, ctx:ஆசிரியப்பாParser.நிலை_மண்டில_ஆசிரியப்பாContext):
         pass
 
-    # Exit a parse tree produced by ஆசிரியப்பாParser#அடி.
-    def exitஅடி(self, ctx:ஆசிரியப்பாParser.அடிContext):
+    # Exit a parse tree produced by ஆசிரியப்பாParser#நிலை_மண்டில_ஆசிரியப்பா.
+    def exitநிலை_மண்டில_ஆசிரியப்பா(self, ctx:ஆசிரியப்பாParser.நிலை_மண்டில_ஆசிரியப்பாContext):
+        pass
+
+
+    # Enter a parse tree produced by ஆசிரியப்பாParser#குறளடி.
+    def enterகுறளடி(self, ctx:ஆசிரியப்பாParser.குறளடிContext):
+        pass
+
+    # Exit a parse tree produced by ஆசிரியப்பாParser#குறளடி.
+    def exitகுறளடி(self, ctx:ஆசிரியப்பாParser.குறளடிContext):
+        pass
+
+
+    # Enter a parse tree produced by ஆசிரியப்பாParser#சிந்தடி.
+    def enterசிந்தடி(self, ctx:ஆசிரியப்பாParser.சிந்தடிContext):
+        pass
+
+    # Exit a parse tree produced by ஆசிரியப்பாParser#சிந்தடி.
+    def exitசிந்தடி(self, ctx:ஆசிரியப்பாParser.சிந்தடிContext):
+        pass
+
+
+    # Enter a parse tree produced by ஆசிரியப்பாParser#அளவடி.
+    def enterஅளவடி(self, ctx:ஆசிரியப்பாParser.அளவடிContext):
+        pass
+
+    # Exit a parse tree produced by ஆசிரியப்பாParser#அளவடி.
+    def exitஅளவடி(self, ctx:ஆசிரியப்பாParser.அளவடிContext):
         pass
 
 
@@ -437,6 +464,15 @@ class ஆசிரியப்பாListener(ParseTreeListener):
 
     # Exit a parse tree produced by ஆசிரியப்பாParser#நெடில்.
     def exitநெடில்(self, ctx:ஆசிரியப்பாParser.நெடில்Context):
+        pass
+
+
+    # Enter a parse tree produced by ஆசிரியப்பாParser#ஆய்தம்.
+    def enterஆய்தம்(self, ctx:ஆசிரியப்பாParser.ஆய்தம்Context):
+        pass
+
+    # Exit a parse tree produced by ஆசிரியப்பாParser#ஆய்தம்.
+    def exitஆய்தம்(self, ctx:ஆசிரியப்பாParser.ஆய்தம்Context):
         pass
 
 

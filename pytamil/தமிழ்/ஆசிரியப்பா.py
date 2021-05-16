@@ -20,7 +20,7 @@ def gettree(பாடல்):
     tree = parser.ஆசிரியப்பா()
     return tree, parser
 
-def சீர்_வாய்பாடு_கொடு(பாடல்):
+def சீர்_வாய்ப்பாடு_கொடு(பாடல்):
     
    
     tree, parser = gettree(பாடல்)
