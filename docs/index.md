@@ -71,3 +71,4 @@ If you have a feature in mind, Please add a feature request [here](https://githu
 # For Developers
 [Getting started](docs/setup.md)
 
+[test](docs/rai.md)
