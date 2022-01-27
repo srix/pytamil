@@ -251,6 +251,33 @@ class வெண்பாListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by வெண்பாParser#நாலசை.
+    def enterநாலசை(self, ctx:வெண்பாParser.நாலசைContext):
+        pass
+
+    # Exit a parse tree produced by வெண்பாParser#நாலசை.
+    def exitநாலசை(self, ctx:வெண்பாParser.நாலசைContext):
+        pass
+
+
+    # Enter a parse tree produced by வெண்பாParser#மூவசை.
+    def enterமூவசை(self, ctx:வெண்பாParser.மூவசைContext):
+        pass
+
+    # Exit a parse tree produced by வெண்பாParser#மூவசை.
+    def exitமூவசை(self, ctx:வெண்பாParser.மூவசைContext):
+        pass
+
+
+    # Enter a parse tree produced by வெண்பாParser#ஈரசை.
+    def enterஈரசை(self, ctx:வெண்பாParser.ஈரசைContext):
+        pass
+
+    # Exit a parse tree produced by வெண்பாParser#ஈரசை.
+    def exitஈரசை(self, ctx:வெண்பாParser.ஈரசைContext):
+        pass
+
+
     # Enter a parse tree produced by வெண்பாParser#தேமாந்தண்பூ.
     def enterதேமாந்தண்பூ(self, ctx:வெண்பாParser.தேமாந்தண்பூContext):
         pass
@@ -473,6 +500,15 @@ class வெண்பாListener(ParseTreeListener):
 
     # Exit a parse tree produced by வெண்பாParser#நெடில்.
     def exitநெடில்(self, ctx:வெண்பாParser.நெடில்Context):
+        pass
+
+
+    # Enter a parse tree produced by வெண்பாParser#ஆய்தம்.
+    def enterஆய்தம்(self, ctx:வெண்பாParser.ஆய்தம்Context):
+        pass
+
+    # Exit a parse tree produced by வெண்பாParser#ஆய்தம்.
+    def exitஆய்தம்(self, ctx:வெண்பாParser.ஆய்தம்Context):
         pass
 
 
