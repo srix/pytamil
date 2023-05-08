@@ -1,4 +1,4 @@
-# Generated from /home/srix/workspace/pytamil/pytamil/தமிழ்/resources/சீர்.g4 by ANTLR 4.9.2
+# Generated from /home/srix/workspace/pytamil-all/pytamil-3.10/pytamil/தமிழ்/resources/சீர்.g4 by ANTLR 4.12.0
 from antlr4 import *
 if __name__ is not None and "." in __name__:
     from .சீர்Parser import சீர்Parser

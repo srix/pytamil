@@ -10,73 +10,77 @@ else:
 
 def serializedATN():
     return [
-        4,1,42,197,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,
+        4,1,42,205,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,
         6,2,7,7,7,2,8,7,8,2,9,7,9,2,10,7,10,2,11,7,11,2,12,7,12,2,13,7,13,
         2,14,7,14,2,15,7,15,2,16,7,16,2,17,7,17,2,18,7,18,2,19,7,19,2,20,
         7,20,2,21,7,21,2,22,7,22,2,23,7,23,2,24,7,24,2,25,7,25,2,26,7,26,
         2,27,7,27,2,28,7,28,2,29,7,29,2,30,7,30,1,0,1,0,1,0,3,0,66,8,0,1,
         1,1,1,1,2,1,2,1,2,1,3,1,3,5,3,75,8,3,10,3,12,3,78,9,3,1,3,1,3,1,
-        4,1,4,1,4,1,4,3,4,86,8,4,1,5,1,5,3,5,90,8,5,1,6,1,6,1,7,1,7,1,7,
-        1,7,1,7,1,7,1,7,3,7,101,8,7,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,
-        1,8,3,8,113,8,8,1,9,1,9,1,9,1,9,1,9,1,9,1,9,1,9,3,9,123,8,9,1,10,
-        1,10,1,10,1,10,1,10,1,10,3,10,131,8,10,1,11,1,11,1,11,1,12,1,12,
-        1,12,1,13,1,13,1,13,1,14,1,14,1,15,1,15,1,15,1,16,1,16,1,16,1,16,
-        3,16,151,8,16,1,17,1,17,1,18,1,18,1,19,1,19,1,19,1,19,1,19,1,19,
-        1,19,1,19,1,19,1,19,3,19,167,8,19,1,20,1,20,1,20,1,20,3,20,173,8,
-        20,1,21,1,21,1,22,1,22,1,22,1,23,1,23,1,23,1,24,1,24,1,25,1,25,1,
-        26,1,26,1,27,1,27,1,28,1,28,1,29,1,29,1,30,1,30,1,30,1,76,0,31,0,
-        2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,
-        48,50,52,54,56,58,60,0,7,1,0,4,5,3,0,1,1,7,7,13,15,2,0,2,3,16,20,
-        2,0,8,11,22,35,1,0,22,27,1,0,36,42,5,0,8,11,21,21,28,30,32,33,35,
-        35,198,0,65,1,0,0,0,2,67,1,0,0,0,4,69,1,0,0,0,6,72,1,0,0,0,8,85,
-        1,0,0,0,10,89,1,0,0,0,12,91,1,0,0,0,14,100,1,0,0,0,16,112,1,0,0,
-        0,18,122,1,0,0,0,20,130,1,0,0,0,22,132,1,0,0,0,24,135,1,0,0,0,26,
-        138,1,0,0,0,28,141,1,0,0,0,30,143,1,0,0,0,32,150,1,0,0,0,34,152,
-        1,0,0,0,36,154,1,0,0,0,38,166,1,0,0,0,40,172,1,0,0,0,42,174,1,0,
-        0,0,44,176,1,0,0,0,46,179,1,0,0,0,48,182,1,0,0,0,50,184,1,0,0,0,
-        52,186,1,0,0,0,54,188,1,0,0,0,56,190,1,0,0,0,58,192,1,0,0,0,60,194,
-        1,0,0,0,62,66,3,2,1,0,63,66,3,4,2,0,64,66,3,6,3,0,65,62,1,0,0,0,
-        65,63,1,0,0,0,65,64,1,0,0,0,66,1,1,0,0,0,67,68,3,8,4,0,68,3,1,0,
-        0,0,69,70,3,10,5,0,70,71,3,12,6,0,71,5,1,0,0,0,72,76,3,14,7,0,73,
-        75,3,16,8,0,74,73,1,0,0,0,75,78,1,0,0,0,76,77,1,0,0,0,76,74,1,0,
-        0,0,77,79,1,0,0,0,78,76,1,0,0,0,79,80,3,18,9,0,80,7,1,0,0,0,81,86,
-        3,44,22,0,82,86,3,46,23,0,83,86,3,48,24,0,84,86,3,50,25,0,85,81,
-        1,0,0,0,85,82,1,0,0,0,85,83,1,0,0,0,85,84,1,0,0,0,86,9,1,0,0,0,87,
-        90,3,44,22,0,88,90,3,48,24,0,89,87,1,0,0,0,89,88,1,0,0,0,90,11,1,
-        0,0,0,91,92,3,44,22,0,92,13,1,0,0,0,93,101,3,32,16,0,94,101,3,28,
-        14,0,95,101,3,22,11,0,96,101,3,44,22,0,97,101,3,46,23,0,98,101,3,
-        48,24,0,99,101,3,50,25,0,100,93,1,0,0,0,100,94,1,0,0,0,100,95,1,
-        0,0,0,100,96,1,0,0,0,100,97,1,0,0,0,100,98,1,0,0,0,100,99,1,0,0,
-        0,101,15,1,0,0,0,102,113,3,34,17,0,103,113,3,38,19,0,104,113,3,30,
-        15,0,105,113,3,42,21,0,106,113,3,22,11,0,107,113,3,24,12,0,108,113,
-        3,44,22,0,109,113,3,46,23,0,110,113,3,54,27,0,111,113,3,52,26,0,
-        112,102,1,0,0,0,112,103,1,0,0,0,112,104,1,0,0,0,112,105,1,0,0,0,
-        112,106,1,0,0,0,112,107,1,0,0,0,112,108,1,0,0,0,112,109,1,0,0,0,
-        112,110,1,0,0,0,112,111,1,0,0,0,113,17,1,0,0,0,114,123,3,22,11,0,
-        115,123,3,36,18,0,116,123,3,40,20,0,117,123,3,30,15,0,118,123,3,
-        26,13,0,119,123,3,46,23,0,120,123,3,44,22,0,121,123,3,54,27,0,122,
-        114,1,0,0,0,122,115,1,0,0,0,122,116,1,0,0,0,122,117,1,0,0,0,122,
-        118,1,0,0,0,122,119,1,0,0,0,122,120,1,0,0,0,122,121,1,0,0,0,123,
-        19,1,0,0,0,124,125,3,48,24,0,125,126,3,44,22,0,126,131,1,0,0,0,127,
-        128,3,44,22,0,128,129,3,44,22,0,129,131,1,0,0,0,130,124,1,0,0,0,
-        130,127,1,0,0,0,131,21,1,0,0,0,132,133,3,54,27,0,133,134,3,58,29,
-        0,134,23,1,0,0,0,135,136,3,60,30,0,136,137,3,60,30,0,137,25,1,0,
-        0,0,138,139,3,56,28,0,139,140,5,1,0,0,140,27,1,0,0,0,141,142,5,2,
-        0,0,142,29,1,0,0,0,143,144,3,54,27,0,144,145,5,2,0,0,145,31,1,0,
-        0,0,146,151,5,3,0,0,147,148,3,54,27,0,148,149,5,3,0,0,149,151,1,
-        0,0,0,150,146,1,0,0,0,150,147,1,0,0,0,151,33,1,0,0,0,152,153,7,0,
-        0,0,153,35,1,0,0,0,154,155,5,6,0,0,155,37,1,0,0,0,156,157,3,56,28,
-        0,157,158,5,7,0,0,158,159,5,8,0,0,159,160,3,48,24,0,160,167,1,0,
-        0,0,161,162,3,56,28,0,162,163,5,7,0,0,163,164,5,8,0,0,164,165,3,
-        50,25,0,165,167,1,0,0,0,166,156,1,0,0,0,166,161,1,0,0,0,167,39,1,
-        0,0,0,168,169,5,9,0,0,169,173,5,10,0,0,170,171,5,11,0,0,171,173,
-        5,10,0,0,172,168,1,0,0,0,172,170,1,0,0,0,173,41,1,0,0,0,174,175,
-        5,12,0,0,175,43,1,0,0,0,176,177,3,54,27,0,177,178,3,48,24,0,178,
-        45,1,0,0,0,179,180,3,54,27,0,180,181,3,50,25,0,181,47,1,0,0,0,182,
-        183,7,1,0,0,183,49,1,0,0,0,184,185,7,2,0,0,185,51,1,0,0,0,186,187,
-        5,21,0,0,187,53,1,0,0,0,188,189,7,3,0,0,189,55,1,0,0,0,190,191,7,
-        4,0,0,191,57,1,0,0,0,192,193,7,5,0,0,193,59,1,0,0,0,194,195,7,6,
-        0,0,195,61,1,0,0,0,11,65,76,85,89,100,112,122,130,150,166,172
+        4,1,4,1,4,1,4,1,4,3,4,87,8,4,1,5,1,5,1,5,3,5,92,8,5,1,6,1,6,3,6,
+        96,8,6,1,7,1,7,1,7,1,7,1,7,1,7,1,7,1,7,3,7,106,8,7,1,8,1,8,1,8,1,
+        8,1,8,1,8,1,8,1,8,1,8,1,8,3,8,118,8,8,1,9,1,9,1,9,1,9,1,9,1,9,1,
+        9,1,9,3,9,128,8,9,1,10,1,10,1,10,1,10,1,10,1,10,3,10,136,8,10,1,
+        11,1,11,1,11,1,11,3,11,142,8,11,1,12,1,12,1,12,1,13,1,13,1,13,1,
+        14,1,14,1,15,1,15,1,15,1,16,1,16,1,16,1,16,3,16,159,8,16,1,17,1,
+        17,1,18,1,18,1,19,1,19,1,19,1,19,1,19,1,19,1,19,1,19,1,19,1,19,3,
+        19,175,8,19,1,20,1,20,1,20,1,20,3,20,181,8,20,1,21,1,21,1,22,1,22,
+        1,22,1,23,1,23,1,23,1,24,1,24,1,25,1,25,1,26,1,26,1,27,1,27,1,28,
+        1,28,1,29,1,29,1,30,1,30,1,30,1,76,0,31,0,2,4,6,8,10,12,14,16,18,
+        20,22,24,26,28,30,32,34,36,38,40,42,44,46,48,50,52,54,56,58,60,0,
+        7,1,0,4,5,3,0,1,1,7,7,13,15,2,0,2,3,16,20,2,0,8,11,22,35,1,0,22,
+        27,1,0,36,42,5,0,8,11,21,21,28,30,32,33,35,35,211,0,65,1,0,0,0,2,
+        67,1,0,0,0,4,69,1,0,0,0,6,72,1,0,0,0,8,86,1,0,0,0,10,91,1,0,0,0,
+        12,95,1,0,0,0,14,105,1,0,0,0,16,117,1,0,0,0,18,127,1,0,0,0,20,135,
+        1,0,0,0,22,141,1,0,0,0,24,143,1,0,0,0,26,146,1,0,0,0,28,149,1,0,
+        0,0,30,151,1,0,0,0,32,158,1,0,0,0,34,160,1,0,0,0,36,162,1,0,0,0,
+        38,174,1,0,0,0,40,180,1,0,0,0,42,182,1,0,0,0,44,184,1,0,0,0,46,187,
+        1,0,0,0,48,190,1,0,0,0,50,192,1,0,0,0,52,194,1,0,0,0,54,196,1,0,
+        0,0,56,198,1,0,0,0,58,200,1,0,0,0,60,202,1,0,0,0,62,66,3,2,1,0,63,
+        66,3,4,2,0,64,66,3,6,3,0,65,62,1,0,0,0,65,63,1,0,0,0,65,64,1,0,0,
+        0,66,1,1,0,0,0,67,68,3,8,4,0,68,3,1,0,0,0,69,70,3,10,5,0,70,71,3,
+        12,6,0,71,5,1,0,0,0,72,76,3,14,7,0,73,75,3,16,8,0,74,73,1,0,0,0,
+        75,78,1,0,0,0,76,77,1,0,0,0,76,74,1,0,0,0,77,79,1,0,0,0,78,76,1,
+        0,0,0,79,80,3,18,9,0,80,7,1,0,0,0,81,87,3,22,11,0,82,87,3,44,22,
+        0,83,87,3,46,23,0,84,87,3,48,24,0,85,87,3,50,25,0,86,81,1,0,0,0,
+        86,82,1,0,0,0,86,83,1,0,0,0,86,84,1,0,0,0,86,85,1,0,0,0,87,9,1,0,
+        0,0,88,92,3,22,11,0,89,92,3,44,22,0,90,92,3,48,24,0,91,88,1,0,0,
+        0,91,89,1,0,0,0,91,90,1,0,0,0,92,11,1,0,0,0,93,96,3,22,11,0,94,96,
+        3,44,22,0,95,93,1,0,0,0,95,94,1,0,0,0,96,13,1,0,0,0,97,106,3,32,
+        16,0,98,106,3,28,14,0,99,106,3,22,11,0,100,106,3,44,22,0,101,106,
+        3,46,23,0,102,106,3,48,24,0,103,106,3,50,25,0,104,106,3,54,27,0,
+        105,97,1,0,0,0,105,98,1,0,0,0,105,99,1,0,0,0,105,100,1,0,0,0,105,
+        101,1,0,0,0,105,102,1,0,0,0,105,103,1,0,0,0,105,104,1,0,0,0,106,
+        15,1,0,0,0,107,118,3,34,17,0,108,118,3,38,19,0,109,118,3,30,15,0,
+        110,118,3,42,21,0,111,118,3,22,11,0,112,118,3,24,12,0,113,118,3,
+        44,22,0,114,118,3,46,23,0,115,118,3,54,27,0,116,118,3,52,26,0,117,
+        107,1,0,0,0,117,108,1,0,0,0,117,109,1,0,0,0,117,110,1,0,0,0,117,
+        111,1,0,0,0,117,112,1,0,0,0,117,113,1,0,0,0,117,114,1,0,0,0,117,
+        115,1,0,0,0,117,116,1,0,0,0,118,17,1,0,0,0,119,128,3,22,11,0,120,
+        128,3,36,18,0,121,128,3,40,20,0,122,128,3,30,15,0,123,128,3,26,13,
+        0,124,128,3,46,23,0,125,128,3,44,22,0,126,128,3,54,27,0,127,119,
+        1,0,0,0,127,120,1,0,0,0,127,121,1,0,0,0,127,122,1,0,0,0,127,123,
+        1,0,0,0,127,124,1,0,0,0,127,125,1,0,0,0,127,126,1,0,0,0,128,19,1,
+        0,0,0,129,130,3,48,24,0,130,131,3,44,22,0,131,136,1,0,0,0,132,133,
+        3,44,22,0,133,134,3,44,22,0,134,136,1,0,0,0,135,129,1,0,0,0,135,
+        132,1,0,0,0,136,21,1,0,0,0,137,138,3,54,27,0,138,139,3,58,29,0,139,
+        142,1,0,0,0,140,142,3,58,29,0,141,137,1,0,0,0,141,140,1,0,0,0,142,
+        23,1,0,0,0,143,144,3,60,30,0,144,145,3,60,30,0,145,25,1,0,0,0,146,
+        147,3,56,28,0,147,148,5,1,0,0,148,27,1,0,0,0,149,150,5,2,0,0,150,
+        29,1,0,0,0,151,152,3,54,27,0,152,153,5,2,0,0,153,31,1,0,0,0,154,
+        159,5,3,0,0,155,156,3,54,27,0,156,157,5,3,0,0,157,159,1,0,0,0,158,
+        154,1,0,0,0,158,155,1,0,0,0,159,33,1,0,0,0,160,161,7,0,0,0,161,35,
+        1,0,0,0,162,163,5,6,0,0,163,37,1,0,0,0,164,165,3,56,28,0,165,166,
+        5,7,0,0,166,167,5,8,0,0,167,168,3,48,24,0,168,175,1,0,0,0,169,170,
+        3,56,28,0,170,171,5,7,0,0,171,172,5,8,0,0,172,173,3,50,25,0,173,
+        175,1,0,0,0,174,164,1,0,0,0,174,169,1,0,0,0,175,39,1,0,0,0,176,177,
+        5,9,0,0,177,181,5,10,0,0,178,179,5,11,0,0,179,181,5,10,0,0,180,176,
+        1,0,0,0,180,178,1,0,0,0,181,41,1,0,0,0,182,183,5,12,0,0,183,43,1,
+        0,0,0,184,185,3,54,27,0,185,186,3,48,24,0,186,45,1,0,0,0,187,188,
+        3,54,27,0,188,189,3,50,25,0,189,47,1,0,0,0,190,191,7,1,0,0,191,49,
+        1,0,0,0,192,193,7,2,0,0,193,51,1,0,0,0,194,195,5,21,0,0,195,53,1,
+        0,0,0,196,197,7,3,0,0,197,55,1,0,0,0,198,199,7,4,0,0,199,57,1,0,
+        0,0,200,201,7,5,0,0,201,59,1,0,0,0,202,203,7,6,0,0,203,61,1,0,0,
+        0,13,65,76,86,91,95,105,117,127,135,141,158,174,180
     ]
 
 class மாத்திரைParser ( Parser ):
@@ -434,6 +438,10 @@ class மாத்திரைParser ( Parser ):
             super().__init__(parent, invokingState)
             self.parser = parser
 
+        def உயிரளபெடை(self):
+            return self.getTypedRuleContext(மாத்திரைParser.உயிரளபெடைContext,0)
+
+
         def உயிர்மெய்க்குறில்(self):
             return self.getTypedRuleContext(மாத்திரைParser.உயிர்மெய்க்குறில்Context,0)
 
@@ -469,30 +477,36 @@ class மாத்திரைParser ( Parser ):
         localctx = மாத்திரைParser.ஒரெழுத்துContext(self, self._ctx, self.state)
         self.enterRule(localctx, 8, self.RULE_ஒரெழுத்து)
         try:
-            self.state = 85
+            self.state = 86
             self._errHandler.sync(self)
             la_ = self._interp.adaptivePredict(self._input,2,self._ctx)
             if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
                 self.state = 81
-                self.உயிர்மெய்க்குறில்()
+                self.உயிரளபெடை()
                 pass
 
             elif la_ == 2:
                 self.enterOuterAlt(localctx, 2)
                 self.state = 82
-                self.உயிர்மெய்நெடில்()
+                self.உயிர்மெய்க்குறில்()
                 pass
 
             elif la_ == 3:
                 self.enterOuterAlt(localctx, 3)
                 self.state = 83
-                self.உயிர்க்குறில்()
+                self.உயிர்மெய்நெடில்()
                 pass
 
             elif la_ == 4:
                 self.enterOuterAlt(localctx, 4)
                 self.state = 84
+                self.உயிர்க்குறில்()
+                pass
+
+            elif la_ == 5:
+                self.enterOuterAlt(localctx, 5)
+                self.state = 85
                 self.உயிர்நெடில்()
                 pass
 
@@ -512,6 +526,10 @@ class மாத்திரைParser ( Parser ):
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
+
+        def உயிரளபெடை(self):
+            return self.getTypedRuleContext(மாத்திரைParser.உயிரளபெடைContext,0)
+
 
         def உயிர்மெய்க்குறில்(self):
             return self.getTypedRuleContext(மாத்திரைParser.உயிர்மெய்க்குறில்Context,0)
@@ -540,21 +558,27 @@ class மாத்திரைParser ( Parser ):
         localctx = மாத்திரைParser.ஈர்_மொழிமுதல்Context(self, self._ctx, self.state)
         self.enterRule(localctx, 10, self.RULE_ஈர்_மொழிமுதல்)
         try:
-            self.state = 89
+            self.state = 91
             self._errHandler.sync(self)
-            token = self._input.LA(1)
-            if token in [8, 9, 10, 11, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35]:
+            la_ = self._interp.adaptivePredict(self._input,3,self._ctx)
+            if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 87
+                self.state = 88
+                self.உயிரளபெடை()
+                pass
+
+            elif la_ == 2:
+                self.enterOuterAlt(localctx, 2)
+                self.state = 89
                 self.உயிர்மெய்க்குறில்()
                 pass
-            elif token in [1, 7, 13, 14, 15]:
-                self.enterOuterAlt(localctx, 2)
-                self.state = 88
+
+            elif la_ == 3:
+                self.enterOuterAlt(localctx, 3)
+                self.state = 90
                 self.உயிர்க்குறில்()
                 pass
-            else:
-                raise NoViableAltException(self)
+
 
         except RecognitionException as re:
             localctx.exception = re
@@ -571,6 +595,10 @@ class மாத்திரைParser ( Parser ):
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
+
+        def உயிரளபெடை(self):
+            return self.getTypedRuleContext(மாத்திரைParser.உயிரளபெடைContext,0)
+
 
         def உயிர்மெய்க்குறில்(self):
             return self.getTypedRuleContext(மாத்திரைParser.உயிர்மெய்க்குறில்Context,0)
@@ -595,9 +623,22 @@ class மாத்திரைParser ( Parser ):
         localctx = மாத்திரைParser.ஈர்_மொழியிறுதிContext(self, self._ctx, self.state)
         self.enterRule(localctx, 12, self.RULE_ஈர்_மொழியிறுதி)
         try:
-            self.enterOuterAlt(localctx, 1)
-            self.state = 91
-            self.உயிர்மெய்க்குறில்()
+            self.state = 95
+            self._errHandler.sync(self)
+            la_ = self._interp.adaptivePredict(self._input,4,self._ctx)
+            if la_ == 1:
+                self.enterOuterAlt(localctx, 1)
+                self.state = 93
+                self.உயிரளபெடை()
+                pass
+
+            elif la_ == 2:
+                self.enterOuterAlt(localctx, 2)
+                self.state = 94
+                self.உயிர்மெய்க்குறில்()
+                pass
+
+
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -642,6 +683,10 @@ class மாத்திரைParser ( Parser ):
             return self.getTypedRuleContext(மாத்திரைParser.உயிர்நெடில்Context,0)
 
 
+        def மெய்(self):
+            return self.getTypedRuleContext(மாத்திரைParser.மெய்Context,0)
+
+
         def getRuleIndex(self):
             return மாத்திரைParser.RULE_மொழிமுதல்
 
@@ -661,49 +706,55 @@ class மாத்திரைParser ( Parser ):
         localctx = மாத்திரைParser.மொழிமுதல்Context(self, self._ctx, self.state)
         self.enterRule(localctx, 14, self.RULE_மொழிமுதல்)
         try:
-            self.state = 100
+            self.state = 105
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input,4,self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,5,self._ctx)
             if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 93
+                self.state = 97
                 self.ஔகாரக்குறுக்கம்()
                 pass
 
             elif la_ == 2:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 94
+                self.state = 98
                 self.ஐகாரக்குறுக்கம்_முதல்()
                 pass
 
             elif la_ == 3:
                 self.enterOuterAlt(localctx, 3)
-                self.state = 95
+                self.state = 99
                 self.உயிரளபெடை()
                 pass
 
             elif la_ == 4:
                 self.enterOuterAlt(localctx, 4)
-                self.state = 96
+                self.state = 100
                 self.உயிர்மெய்க்குறில்()
                 pass
 
             elif la_ == 5:
                 self.enterOuterAlt(localctx, 5)
-                self.state = 97
+                self.state = 101
                 self.உயிர்மெய்நெடில்()
                 pass
 
             elif la_ == 6:
                 self.enterOuterAlt(localctx, 6)
-                self.state = 98
+                self.state = 102
                 self.உயிர்க்குறில்()
                 pass
 
             elif la_ == 7:
                 self.enterOuterAlt(localctx, 7)
-                self.state = 99
+                self.state = 103
                 self.உயிர்நெடில்()
+                pass
+
+            elif la_ == 8:
+                self.enterOuterAlt(localctx, 8)
+                self.state = 104
+                self.மெய்()
                 pass
 
 
@@ -782,66 +833,66 @@ class மாத்திரைParser ( Parser ):
         localctx = மாத்திரைParser.மொழியிடைContext(self, self._ctx, self.state)
         self.enterRule(localctx, 16, self.RULE_மொழியிடை)
         try:
-            self.state = 112
+            self.state = 117
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input,5,self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,6,self._ctx)
             if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 102
+                self.state = 107
                 self.ஆய்தக்குறுக்கம்()
                 pass
 
             elif la_ == 2:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 103
+                self.state = 108
                 self.குற்றியலிகரம்_புணர்மொழி()
                 pass
 
             elif la_ == 3:
                 self.enterOuterAlt(localctx, 3)
-                self.state = 104
+                self.state = 109
                 self.ஐகாரக்குறுக்கம்_இடைகடை()
                 pass
 
             elif la_ == 4:
                 self.enterOuterAlt(localctx, 4)
-                self.state = 105
+                self.state = 110
                 self.மகரக்குறுக்கம்_புணர்மொழி()
                 pass
 
             elif la_ == 5:
                 self.enterOuterAlt(localctx, 5)
-                self.state = 106
+                self.state = 111
                 self.உயிரளபெடை()
                 pass
 
             elif la_ == 6:
                 self.enterOuterAlt(localctx, 6)
-                self.state = 107
+                self.state = 112
                 self.ஒற்றளபெடை()
                 pass
 
             elif la_ == 7:
                 self.enterOuterAlt(localctx, 7)
-                self.state = 108
+                self.state = 113
                 self.உயிர்மெய்க்குறில்()
                 pass
 
             elif la_ == 8:
                 self.enterOuterAlt(localctx, 8)
-                self.state = 109
+                self.state = 114
                 self.உயிர்மெய்நெடில்()
                 pass
 
             elif la_ == 9:
                 self.enterOuterAlt(localctx, 9)
-                self.state = 110
+                self.state = 115
                 self.மெய்()
                 pass
 
             elif la_ == 10:
                 self.enterOuterAlt(localctx, 10)
-                self.state = 111
+                self.state = 116
                 self.ஆய்தம்()
                 pass
 
@@ -913,54 +964,54 @@ class மாத்திரைParser ( Parser ):
         localctx = மாத்திரைParser.மொழியிறுதிContext(self, self._ctx, self.state)
         self.enterRule(localctx, 18, self.RULE_மொழியிறுதி)
         try:
-            self.state = 122
+            self.state = 127
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input,6,self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,7,self._ctx)
             if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 114
+                self.state = 119
                 self.உயிரளபெடை()
                 pass
 
             elif la_ == 2:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 115
+                self.state = 120
                 self.குற்றியலிகரம்_தனிமொழி()
                 pass
 
             elif la_ == 3:
                 self.enterOuterAlt(localctx, 3)
-                self.state = 116
+                self.state = 121
                 self.மகரக்குறுக்கம்_தனிமொழி()
                 pass
 
             elif la_ == 4:
                 self.enterOuterAlt(localctx, 4)
-                self.state = 117
+                self.state = 122
                 self.ஐகாரக்குறுக்கம்_இடைகடை()
                 pass
 
             elif la_ == 5:
                 self.enterOuterAlt(localctx, 5)
-                self.state = 118
+                self.state = 123
                 self.குற்றியலுகரம்()
                 pass
 
             elif la_ == 6:
                 self.enterOuterAlt(localctx, 6)
-                self.state = 119
+                self.state = 124
                 self.உயிர்மெய்நெடில்()
                 pass
 
             elif la_ == 7:
                 self.enterOuterAlt(localctx, 7)
-                self.state = 120
+                self.state = 125
                 self.உயிர்மெய்க்குறில்()
                 pass
 
             elif la_ == 8:
                 self.enterOuterAlt(localctx, 8)
-                self.state = 121
+                self.state = 126
                 self.மெய்()
                 pass
 
@@ -1011,21 +1062,21 @@ class மாத்திரைParser ( Parser ):
         localctx = மாத்திரைParser.குறிலிணைContext(self, self._ctx, self.state)
         self.enterRule(localctx, 20, self.RULE_குறிலிணை)
         try:
-            self.state = 130
+            self.state = 135
             self._errHandler.sync(self)
             token = self._input.LA(1)
             if token in [1, 7, 13, 14, 15]:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 124
+                self.state = 129
                 self.உயிர்க்குறில்()
-                self.state = 125
+                self.state = 130
                 self.உயிர்மெய்க்குறில்()
                 pass
             elif token in [8, 9, 10, 11, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35]:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 127
+                self.state = 132
                 self.உயிர்மெய்க்குறில்()
-                self.state = 128
+                self.state = 133
                 self.உயிர்மெய்க்குறில்()
                 pass
             else:
@@ -1074,11 +1125,24 @@ class மாத்திரைParser ( Parser ):
         localctx = மாத்திரைParser.உயிரளபெடைContext(self, self._ctx, self.state)
         self.enterRule(localctx, 22, self.RULE_உயிரளபெடை)
         try:
-            self.enterOuterAlt(localctx, 1)
-            self.state = 132
-            self.மெய்()
-            self.state = 133
-            self.உயிரளபெடை_எழுத்து()
+            self.state = 141
+            self._errHandler.sync(self)
+            token = self._input.LA(1)
+            if token in [8, 9, 10, 11, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35]:
+                self.enterOuterAlt(localctx, 1)
+                self.state = 137
+                self.மெய்()
+                self.state = 138
+                self.உயிரளபெடை_எழுத்து()
+                pass
+            elif token in [36, 37, 38, 39, 40, 41, 42]:
+                self.enterOuterAlt(localctx, 2)
+                self.state = 140
+                self.உயிரளபெடை_எழுத்து()
+                pass
+            else:
+                raise NoViableAltException(self)
+
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -1122,9 +1186,9 @@ class மாத்திரைParser ( Parser ):
         self.enterRule(localctx, 24, self.RULE_ஒற்றளபெடை)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 135
+            self.state = 143
             self.ஒற்றளபெடை_எழுத்து()
-            self.state = 136
+            self.state = 144
             self.ஒற்றளபெடை_எழுத்து()
         except RecognitionException as re:
             localctx.exception = re
@@ -1166,9 +1230,9 @@ class மாத்திரைParser ( Parser ):
         self.enterRule(localctx, 26, self.RULE_குற்றியலுகரம்)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 138
+            self.state = 146
             self.வல்லினம்()
-            self.state = 139
+            self.state = 147
             self.match(மாத்திரைParser.T__0)
         except RecognitionException as re:
             localctx.exception = re
@@ -1207,7 +1271,7 @@ class மாத்திரைParser ( Parser ):
         self.enterRule(localctx, 28, self.RULE_ஐகாரக்குறுக்கம்_முதல்)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 141
+            self.state = 149
             self.match(மாத்திரைParser.T__1)
         except RecognitionException as re:
             localctx.exception = re
@@ -1249,9 +1313,9 @@ class மாத்திரைParser ( Parser ):
         self.enterRule(localctx, 30, self.RULE_ஐகாரக்குறுக்கம்_இடைகடை)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 143
+            self.state = 151
             self.மெய்()
-            self.state = 144
+            self.state = 152
             self.match(மாத்திரைParser.T__1)
         except RecognitionException as re:
             localctx.exception = re
@@ -1292,19 +1356,19 @@ class மாத்திரைParser ( Parser ):
         localctx = மாத்திரைParser.ஔகாரக்குறுக்கம்Context(self, self._ctx, self.state)
         self.enterRule(localctx, 32, self.RULE_ஔகாரக்குறுக்கம்)
         try:
-            self.state = 150
+            self.state = 158
             self._errHandler.sync(self)
             token = self._input.LA(1)
             if token in [3]:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 146
+                self.state = 154
                 self.match(மாத்திரைParser.T__2)
                 pass
             elif token in [8, 9, 10, 11, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35]:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 147
+                self.state = 155
                 self.மெய்()
-                self.state = 148
+                self.state = 156
                 self.match(மாத்திரைParser.T__2)
                 pass
             else:
@@ -1348,7 +1412,7 @@ class மாத்திரைParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 152
+            self.state = 160
             _la = self._input.LA(1)
             if not(_la==4 or _la==5):
                 self._errHandler.recoverInline(self)
@@ -1392,7 +1456,7 @@ class மாத்திரைParser ( Parser ):
         self.enterRule(localctx, 36, self.RULE_குற்றியலிகரம்_தனிமொழி)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 154
+            self.state = 162
             self.match(மாத்திரைParser.T__5)
         except RecognitionException as re:
             localctx.exception = re
@@ -1441,30 +1505,30 @@ class மாத்திரைParser ( Parser ):
         localctx = மாத்திரைParser.குற்றியலிகரம்_புணர்மொழிContext(self, self._ctx, self.state)
         self.enterRule(localctx, 38, self.RULE_குற்றியலிகரம்_புணர்மொழி)
         try:
-            self.state = 166
+            self.state = 174
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input,9,self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,11,self._ctx)
             if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 156
+                self.state = 164
                 self.வல்லினம்()
-                self.state = 157
+                self.state = 165
                 self.match(மாத்திரைParser.T__6)
-                self.state = 158
+                self.state = 166
                 self.match(மாத்திரைParser.T__7)
-                self.state = 159
+                self.state = 167
                 self.உயிர்க்குறில்()
                 pass
 
             elif la_ == 2:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 161
+                self.state = 169
                 self.வல்லினம்()
-                self.state = 162
+                self.state = 170
                 self.match(மாத்திரைParser.T__6)
-                self.state = 163
+                self.state = 171
                 self.match(மாத்திரைParser.T__7)
-                self.state = 164
+                self.state = 172
                 self.உயிர்நெடில்()
                 pass
 
@@ -1505,21 +1569,21 @@ class மாத்திரைParser ( Parser ):
         localctx = மாத்திரைParser.மகரக்குறுக்கம்_தனிமொழிContext(self, self._ctx, self.state)
         self.enterRule(localctx, 40, self.RULE_மகரக்குறுக்கம்_தனிமொழி)
         try:
-            self.state = 172
+            self.state = 180
             self._errHandler.sync(self)
             token = self._input.LA(1)
             if token in [9]:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 168
+                self.state = 176
                 self.match(மாத்திரைParser.T__8)
-                self.state = 169
+                self.state = 177
                 self.match(மாத்திரைParser.T__9)
                 pass
             elif token in [11]:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 170
+                self.state = 178
                 self.match(மாத்திரைParser.T__10)
-                self.state = 171
+                self.state = 179
                 self.match(மாத்திரைParser.T__9)
                 pass
             else:
@@ -1562,7 +1626,7 @@ class மாத்திரைParser ( Parser ):
         self.enterRule(localctx, 42, self.RULE_மகரக்குறுக்கம்_புணர்மொழி)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 174
+            self.state = 182
             self.match(மாத்திரைParser.T__11)
         except RecognitionException as re:
             localctx.exception = re
@@ -1608,9 +1672,9 @@ class மாத்திரைParser ( Parser ):
         self.enterRule(localctx, 44, self.RULE_உயிர்மெய்க்குறில்)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 176
+            self.state = 184
             self.மெய்()
-            self.state = 177
+            self.state = 185
             self.உயிர்க்குறில்()
         except RecognitionException as re:
             localctx.exception = re
@@ -1656,9 +1720,9 @@ class மாத்திரைParser ( Parser ):
         self.enterRule(localctx, 46, self.RULE_உயிர்மெய்நெடில்)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 179
+            self.state = 187
             self.மெய்()
-            self.state = 180
+            self.state = 188
             self.உயிர்நெடில்()
         except RecognitionException as re:
             localctx.exception = re
@@ -1698,7 +1762,7 @@ class மாத்திரைParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 182
+            self.state = 190
             _la = self._input.LA(1)
             if not((((_la) & ~0x3f) == 0 and ((1 << _la) & 57474) != 0)):
                 self._errHandler.recoverInline(self)
@@ -1743,7 +1807,7 @@ class மாத்திரைParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 184
+            self.state = 192
             _la = self._input.LA(1)
             if not((((_la) & ~0x3f) == 0 and ((1 << _la) & 2031628) != 0)):
                 self._errHandler.recoverInline(self)
@@ -1787,7 +1851,7 @@ class மாத்திரைParser ( Parser ):
         self.enterRule(localctx, 52, self.RULE_ஆய்தம்)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 186
+            self.state = 194
             self.match(மாத்திரைParser.T__20)
         except RecognitionException as re:
             localctx.exception = re
@@ -1827,7 +1891,7 @@ class மாத்திரைParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 188
+            self.state = 196
             _la = self._input.LA(1)
             if not((((_la) & ~0x3f) == 0 and ((1 << _la) & 68715286272) != 0)):
                 self._errHandler.recoverInline(self)
@@ -1872,7 +1936,7 @@ class மாத்திரைParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 190
+            self.state = 198
             _la = self._input.LA(1)
             if not((((_la) & ~0x3f) == 0 and ((1 << _la) & 264241152) != 0)):
                 self._errHandler.recoverInline(self)
@@ -1917,7 +1981,7 @@ class மாத்திரைParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 192
+            self.state = 200
             _la = self._input.LA(1)
             if not((((_la) & ~0x3f) == 0 and ((1 << _la) & 8727373545472) != 0)):
                 self._errHandler.recoverInline(self)
@@ -1962,7 +2026,7 @@ class மாத்திரைParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 194
+            self.state = 202
             _la = self._input.LA(1)
             if not((((_la) & ~0x3f) == 0 and ((1 << _la) & 49125789440) != 0)):
                 self._errHandler.recoverInline(self)
