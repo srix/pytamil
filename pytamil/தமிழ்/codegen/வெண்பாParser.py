@@ -1,4 +1,4 @@
-# Generated from /home/srix/workspace/pytamil/pytamil/தமிழ்/resources/வெண்பா.g4 by ANTLR 4.8
+# Generated from /home/srix/workspace/pytamil-all/pytamil-3.10/pytamil/தமிழ்/resources/வெண்பா.g4 by ANTLR 4.12.0
 # encoding: utf-8
 from antlr4 import *
 from io import StringIO
@@ -8,126 +8,100 @@ if sys.version_info[1] > 5:
 else:
 	from typing.io import TextIO
 
-
 def serializedATN():
-    with StringIO() as buf:
-        buf.write("\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\u00fa")
-        buf.write("\u0116\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7")
-        buf.write("\4\b\t\b\4\t\t\t\4\n\t\n\4\13\t\13\4\f\t\f\4\r\t\r\4\16")
-        buf.write("\t\16\4\17\t\17\4\20\t\20\4\21\t\21\4\22\t\22\4\23\t\23")
-        buf.write("\4\24\t\24\4\25\t\25\4\26\t\26\4\27\t\27\4\30\t\30\4\31")
-        buf.write("\t\31\4\32\t\32\4\33\t\33\4\34\t\34\4\35\t\35\4\36\t\36")
-        buf.write("\3\2\3\2\3\2\3\2\5\2A\n\2\3\3\3\3\3\3\3\4\3\4\3\4\3\4")
-        buf.write("\3\5\3\5\3\5\3\5\3\5\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3")
-        buf.write("\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6")
-        buf.write("\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3")
-        buf.write("\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6")
-        buf.write("\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3")
-        buf.write("\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6")
-        buf.write("\5\6\u009b\n\6\3\7\3\7\3\7\3\7\3\7\3\7\3\7\3\7\3\7\3\7")
-        buf.write("\3\7\3\7\6\7\u00a9\n\7\r\7\16\7\u00aa\3\7\3\7\3\b\3\b")
-        buf.write("\3\b\3\b\3\b\3\b\3\b\3\b\3\b\3\t\3\t\3\t\3\t\3\t\3\t\3")
-        buf.write("\n\3\n\5\n\u00c0\n\n\3\13\3\13\3\13\3\13\5\13\u00c6\n")
-        buf.write("\13\3\f\3\f\3\f\3\f\5\f\u00cc\n\f\3\r\3\r\3\r\3\r\5\r")
-        buf.write("\u00d2\n\r\3\16\3\16\3\16\3\17\3\17\3\17\3\20\3\20\3\20")
-        buf.write("\3\21\3\21\3\21\3\22\3\22\3\22\3\23\3\23\3\23\3\24\3\24")
-        buf.write("\3\24\3\25\3\25\3\25\3\26\3\26\3\27\3\27\3\30\3\30\3\30")
-        buf.write("\3\31\3\31\3\31\3\32\3\32\3\32\3\32\3\32\3\32\3\32\3\32")
-        buf.write("\5\32\u00fe\n\32\3\33\3\33\3\33\3\33\3\33\3\33\3\33\3")
-        buf.write("\33\3\33\3\33\3\33\3\33\3\33\3\33\5\33\u010e\n\33\3\34")
-        buf.write("\3\34\3\35\3\35\3\36\3\36\3\36\2\2\37\2\4\6\b\n\f\16\20")
-        buf.write("\22\24\26\30\32\34\36 \"$&(*,.\60\62\64\668:\2\5\3\2\4")
-        buf.write("\25\3\2\26t\3\2u\u00f9\2\u0113\2@\3\2\2\2\4B\3\2\2\2\6")
-        buf.write("E\3\2\2\2\bI\3\2\2\2\n\u009a\3\2\2\2\f\u009c\3\2\2\2\16")
-        buf.write("\u00ae\3\2\2\2\20\u00b7\3\2\2\2\22\u00bf\3\2\2\2\24\u00c5")
-        buf.write("\3\2\2\2\26\u00cb\3\2\2\2\30\u00d1\3\2\2\2\32\u00d3\3")
-        buf.write("\2\2\2\34\u00d6\3\2\2\2\36\u00d9\3\2\2\2 \u00dc\3\2\2")
-        buf.write("\2\"\u00df\3\2\2\2$\u00e2\3\2\2\2&\u00e5\3\2\2\2(\u00e8")
-        buf.write("\3\2\2\2*\u00eb\3\2\2\2,\u00ed\3\2\2\2.\u00ef\3\2\2\2")
-        buf.write("\60\u00f2\3\2\2\2\62\u00fd\3\2\2\2\64\u010d\3\2\2\2\66")
-        buf.write("\u010f\3\2\2\28\u0111\3\2\2\2:\u0113\3\2\2\2<A\5\4\3\2")
-        buf.write("=A\5\b\5\2>A\5\n\6\2?A\5\f\7\2@<\3\2\2\2@=\3\2\2\2@>\3")
-        buf.write("\2\2\2@?\3\2\2\2A\3\3\2\2\2BC\5\16\b\2CD\5\20\t\2D\5\3")
-        buf.write("\2\2\2EF\5\16\b\2FG\5\16\b\2GH\5\20\t\2H\7\3\2\2\2IJ\5")
-        buf.write("\16\b\2JK\5\16\b\2KL\5\16\b\2LM\5\20\t\2M\t\3\2\2\2NO")
-        buf.write("\5\16\b\2OP\5\16\b\2PQ\5\16\b\2QR\5\16\b\2RS\5\20\t\2")
-        buf.write("S\u009b\3\2\2\2TU\5\16\b\2UV\5\16\b\2VW\5\16\b\2WX\5\16")
-        buf.write("\b\2XY\5\16\b\2YZ\5\20\t\2Z\u009b\3\2\2\2[\\\5\16\b\2")
-        buf.write("\\]\5\16\b\2]^\5\16\b\2^_\5\16\b\2_`\5\16\b\2`a\5\16\b")
-        buf.write("\2ab\5\20\t\2b\u009b\3\2\2\2cd\5\16\b\2de\5\16\b\2ef\5")
-        buf.write("\16\b\2fg\5\16\b\2gh\5\16\b\2hi\5\16\b\2ij\5\16\b\2jk")
-        buf.write("\5\20\t\2k\u009b\3\2\2\2lm\5\16\b\2mn\5\16\b\2no\5\16")
-        buf.write("\b\2op\5\16\b\2pq\5\16\b\2qr\5\16\b\2rs\5\16\b\2st\5\16")
-        buf.write("\b\2tu\5\20\t\2u\u009b\3\2\2\2vw\5\16\b\2wx\5\16\b\2x")
-        buf.write("y\5\16\b\2yz\5\16\b\2z{\5\16\b\2{|\5\16\b\2|}\5\16\b\2")
-        buf.write("}~\5\16\b\2~\177\5\16\b\2\177\u0080\5\20\t\2\u0080\u009b")
-        buf.write("\3\2\2\2\u0081\u0082\5\16\b\2\u0082\u0083\5\16\b\2\u0083")
-        buf.write("\u0084\5\16\b\2\u0084\u0085\5\16\b\2\u0085\u0086\5\16")
-        buf.write("\b\2\u0086\u0087\5\16\b\2\u0087\u0088\5\16\b\2\u0088\u0089")
-        buf.write("\5\16\b\2\u0089\u008a\5\16\b\2\u008a\u008b\5\16\b\2\u008b")
-        buf.write("\u008c\5\20\t\2\u008c\u009b\3\2\2\2\u008d\u008e\5\16\b")
-        buf.write("\2\u008e\u008f\5\16\b\2\u008f\u0090\5\16\b\2\u0090\u0091")
-        buf.write("\5\16\b\2\u0091\u0092\5\16\b\2\u0092\u0093\5\16\b\2\u0093")
-        buf.write("\u0094\5\16\b\2\u0094\u0095\5\16\b\2\u0095\u0096\5\16")
-        buf.write("\b\2\u0096\u0097\5\16\b\2\u0097\u0098\5\16\b\2\u0098\u0099")
-        buf.write("\5\20\t\2\u0099\u009b\3\2\2\2\u009aN\3\2\2\2\u009aT\3")
-        buf.write("\2\2\2\u009a[\3\2\2\2\u009ac\3\2\2\2\u009al\3\2\2\2\u009a")
-        buf.write("v\3\2\2\2\u009a\u0081\3\2\2\2\u009a\u008d\3\2\2\2\u009b")
-        buf.write("\13\3\2\2\2\u009c\u009d\5\16\b\2\u009d\u009e\5\16\b\2")
-        buf.write("\u009e\u009f\5\16\b\2\u009f\u00a0\5\16\b\2\u00a0\u00a1")
-        buf.write("\5\16\b\2\u00a1\u00a2\5\16\b\2\u00a2\u00a3\5\16\b\2\u00a3")
-        buf.write("\u00a4\5\16\b\2\u00a4\u00a5\5\16\b\2\u00a5\u00a6\5\16")
-        buf.write("\b\2\u00a6\u00a8\5\16\b\2\u00a7\u00a9\5\16\b\2\u00a8\u00a7")
-        buf.write("\3\2\2\2\u00a9\u00aa\3\2\2\2\u00aa\u00a8\3\2\2\2\u00aa")
-        buf.write("\u00ab\3\2\2\2\u00ab\u00ac\3\2\2\2\u00ac\u00ad\5\20\t")
-        buf.write("\2\u00ad\r\3\2\2\2\u00ae\u00af\5\22\n\2\u00af\u00b0\7")
-        buf.write("\u00fa\2\2\u00b0\u00b1\5\22\n\2\u00b1\u00b2\7\u00fa\2")
-        buf.write("\2\u00b2\u00b3\5\22\n\2\u00b3\u00b4\7\u00fa\2\2\u00b4")
-        buf.write("\u00b5\5\22\n\2\u00b5\u00b6\7\3\2\2\u00b6\17\3\2\2\2\u00b7")
-        buf.write("\u00b8\5\22\n\2\u00b8\u00b9\7\u00fa\2\2\u00b9\u00ba\5")
-        buf.write("\22\n\2\u00ba\u00bb\7\u00fa\2\2\u00bb\u00bc\5\24\13\2")
-        buf.write("\u00bc\21\3\2\2\2\u00bd\u00c0\5\26\f\2\u00be\u00c0\5\30")
-        buf.write("\r\2\u00bf\u00bd\3\2\2\2\u00bf\u00be\3\2\2\2\u00c0\23")
-        buf.write("\3\2\2\2\u00c1\u00c6\5*\26\2\u00c2\u00c6\5,\27\2\u00c3")
-        buf.write("\u00c6\5.\30\2\u00c4\u00c6\5\60\31\2\u00c5\u00c1\3\2\2")
-        buf.write("\2\u00c5\u00c2\3\2\2\2\u00c5\u00c3\3\2\2\2\u00c5\u00c4")
-        buf.write("\3\2\2\2\u00c6\25\3\2\2\2\u00c7\u00cc\5\32\16\2\u00c8")
-        buf.write("\u00cc\5\34\17\2\u00c9\u00cc\5\36\20\2\u00ca\u00cc\5 ")
-        buf.write("\21\2\u00cb\u00c7\3\2\2\2\u00cb\u00c8\3\2\2\2\u00cb\u00c9")
-        buf.write("\3\2\2\2\u00cb\u00ca\3\2\2\2\u00cc\27\3\2\2\2\u00cd\u00d2")
-        buf.write("\5\"\22\2\u00ce\u00d2\5$\23\2\u00cf\u00d2\5&\24\2\u00d0")
-        buf.write("\u00d2\5(\25\2\u00d1\u00cd\3\2\2\2\u00d1\u00ce\3\2\2\2")
-        buf.write("\u00d1\u00cf\3\2\2\2\u00d1\u00d0\3\2\2\2\u00d2\31\3\2")
-        buf.write("\2\2\u00d3\u00d4\5\62\32\2\u00d4\u00d5\5\62\32\2\u00d5")
-        buf.write("\33\3\2\2\2\u00d6\u00d7\5\64\33\2\u00d7\u00d8\5\62\32")
-        buf.write("\2\u00d8\35\3\2\2\2\u00d9\u00da\5\64\33\2\u00da\u00db")
-        buf.write("\5\64\33\2\u00db\37\3\2\2\2\u00dc\u00dd\5\62\32\2\u00dd")
-        buf.write("\u00de\5\64\33\2\u00de!\3\2\2\2\u00df\u00e0\5\32\16\2")
-        buf.write("\u00e0\u00e1\5\62\32\2\u00e1#\3\2\2\2\u00e2\u00e3\5\34")
-        buf.write("\17\2\u00e3\u00e4\5\62\32\2\u00e4%\3\2\2\2\u00e5\u00e6")
-        buf.write("\5\36\20\2\u00e6\u00e7\5\62\32\2\u00e7\'\3\2\2\2\u00e8")
-        buf.write("\u00e9\5 \21\2\u00e9\u00ea\5\62\32\2\u00ea)\3\2\2\2\u00eb")
-        buf.write("\u00ec\5\62\32\2\u00ec+\3\2\2\2\u00ed\u00ee\5\64\33\2")
-        buf.write("\u00ee-\3\2\2\2\u00ef\u00f0\5\62\32\2\u00f0\u00f1\5\62")
-        buf.write("\32\2\u00f1/\3\2\2\2\u00f2\u00f3\5\64\33\2\u00f3\u00f4")
-        buf.write("\5\62\32\2\u00f4\61\3\2\2\2\u00f5\u00fe\58\35\2\u00f6")
-        buf.write("\u00fe\5:\36\2\u00f7\u00f8\58\35\2\u00f8\u00f9\5\66\34")
-        buf.write("\2\u00f9\u00fe\3\2\2\2\u00fa\u00fb\5:\36\2\u00fb\u00fc")
-        buf.write("\5\66\34\2\u00fc\u00fe\3\2\2\2\u00fd\u00f5\3\2\2\2\u00fd")
-        buf.write("\u00f6\3\2\2\2\u00fd\u00f7\3\2\2\2\u00fd\u00fa\3\2\2\2")
-        buf.write("\u00fe\63\3\2\2\2\u00ff\u0100\58\35\2\u0100\u0101\58\35")
-        buf.write("\2\u0101\u010e\3\2\2\2\u0102\u0103\58\35\2\u0103\u0104")
-        buf.write("\5:\36\2\u0104\u010e\3\2\2\2\u0105\u0106\58\35\2\u0106")
-        buf.write("\u0107\58\35\2\u0107\u0108\5\66\34\2\u0108\u010e\3\2\2")
-        buf.write("\2\u0109\u010a\58\35\2\u010a\u010b\5:\36\2\u010b\u010c")
-        buf.write("\5\66\34\2\u010c\u010e\3\2\2\2\u010d\u00ff\3\2\2\2\u010d")
-        buf.write("\u0102\3\2\2\2\u010d\u0105\3\2\2\2\u010d\u0109\3\2\2\2")
-        buf.write("\u010e\65\3\2\2\2\u010f\u0110\t\2\2\2\u0110\67\3\2\2\2")
-        buf.write("\u0111\u0112\t\3\2\2\u01129\3\2\2\2\u0113\u0114\t\4\2")
-        buf.write("\2\u0114;\3\2\2\2\13@\u009a\u00aa\u00bf\u00c5\u00cb\u00d1")
-        buf.write("\u00fd\u010d")
-        return buf.getvalue()
-
+    return [
+        4,1,248,276,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,
+        7,6,2,7,7,7,2,8,7,8,2,9,7,9,2,10,7,10,2,11,7,11,2,12,7,12,2,13,7,
+        13,2,14,7,14,2,15,7,15,2,16,7,16,2,17,7,17,2,18,7,18,2,19,7,19,2,
+        20,7,20,2,21,7,21,2,22,7,22,2,23,7,23,2,24,7,24,2,25,7,25,2,26,7,
+        26,2,27,7,27,2,28,7,28,1,0,1,0,1,0,1,0,3,0,63,8,0,1,1,1,1,1,1,1,
+        2,1,2,1,2,1,2,1,3,1,3,1,3,1,3,1,3,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,
+        4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,
+        4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,
+        4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,
+        4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,
+        4,1,4,1,4,1,4,1,4,3,4,153,8,4,1,5,1,5,1,5,1,5,1,5,1,5,1,5,1,5,1,
+        5,1,5,1,5,1,5,4,5,167,8,5,11,5,12,5,168,1,5,1,5,1,6,1,6,1,6,1,6,
+        1,6,1,6,1,6,1,6,1,6,1,7,1,7,1,7,1,7,1,7,1,7,1,8,1,8,3,8,190,8,8,
+        1,9,1,9,1,9,1,9,3,9,196,8,9,1,10,1,10,1,10,1,10,3,10,202,8,10,1,
+        11,1,11,1,11,1,11,3,11,208,8,11,1,12,1,12,1,12,1,13,1,13,1,13,1,
+        14,1,14,1,14,1,15,1,15,1,15,1,16,1,16,1,16,1,17,1,17,1,17,1,18,1,
+        18,1,18,1,19,1,19,1,19,1,20,1,20,1,21,1,21,1,22,1,22,1,22,1,23,1,
+        23,1,23,1,24,1,24,1,24,1,24,1,24,1,24,1,24,1,24,3,24,252,8,24,1,
+        25,1,25,1,25,1,25,1,25,1,25,1,25,1,25,1,25,1,25,1,25,1,25,1,25,1,
+        25,3,25,268,8,25,1,26,1,26,1,27,1,27,1,28,1,28,1,28,0,0,29,0,2,4,
+        6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48,
+        50,52,54,56,0,3,1,0,2,19,1,0,20,114,1,0,115,247,273,0,62,1,0,0,0,
+        2,64,1,0,0,0,4,67,1,0,0,0,6,71,1,0,0,0,8,152,1,0,0,0,10,154,1,0,
+        0,0,12,172,1,0,0,0,14,181,1,0,0,0,16,189,1,0,0,0,18,195,1,0,0,0,
+        20,201,1,0,0,0,22,207,1,0,0,0,24,209,1,0,0,0,26,212,1,0,0,0,28,215,
+        1,0,0,0,30,218,1,0,0,0,32,221,1,0,0,0,34,224,1,0,0,0,36,227,1,0,
+        0,0,38,230,1,0,0,0,40,233,1,0,0,0,42,235,1,0,0,0,44,237,1,0,0,0,
+        46,240,1,0,0,0,48,251,1,0,0,0,50,267,1,0,0,0,52,269,1,0,0,0,54,271,
+        1,0,0,0,56,273,1,0,0,0,58,63,3,2,1,0,59,63,3,6,3,0,60,63,3,8,4,0,
+        61,63,3,10,5,0,62,58,1,0,0,0,62,59,1,0,0,0,62,60,1,0,0,0,62,61,1,
+        0,0,0,63,1,1,0,0,0,64,65,3,12,6,0,65,66,3,14,7,0,66,3,1,0,0,0,67,
+        68,3,12,6,0,68,69,3,12,6,0,69,70,3,14,7,0,70,5,1,0,0,0,71,72,3,12,
+        6,0,72,73,3,12,6,0,73,74,3,12,6,0,74,75,3,14,7,0,75,7,1,0,0,0,76,
+        77,3,12,6,0,77,78,3,12,6,0,78,79,3,12,6,0,79,80,3,12,6,0,80,81,3,
+        14,7,0,81,153,1,0,0,0,82,83,3,12,6,0,83,84,3,12,6,0,84,85,3,12,6,
+        0,85,86,3,12,6,0,86,87,3,12,6,0,87,88,3,14,7,0,88,153,1,0,0,0,89,
+        90,3,12,6,0,90,91,3,12,6,0,91,92,3,12,6,0,92,93,3,12,6,0,93,94,3,
+        12,6,0,94,95,3,12,6,0,95,96,3,14,7,0,96,153,1,0,0,0,97,98,3,12,6,
+        0,98,99,3,12,6,0,99,100,3,12,6,0,100,101,3,12,6,0,101,102,3,12,6,
+        0,102,103,3,12,6,0,103,104,3,12,6,0,104,105,3,14,7,0,105,153,1,0,
+        0,0,106,107,3,12,6,0,107,108,3,12,6,0,108,109,3,12,6,0,109,110,3,
+        12,6,0,110,111,3,12,6,0,111,112,3,12,6,0,112,113,3,12,6,0,113,114,
+        3,12,6,0,114,115,3,14,7,0,115,153,1,0,0,0,116,117,3,12,6,0,117,118,
+        3,12,6,0,118,119,3,12,6,0,119,120,3,12,6,0,120,121,3,12,6,0,121,
+        122,3,12,6,0,122,123,3,12,6,0,123,124,3,12,6,0,124,125,3,12,6,0,
+        125,126,3,14,7,0,126,153,1,0,0,0,127,128,3,12,6,0,128,129,3,12,6,
+        0,129,130,3,12,6,0,130,131,3,12,6,0,131,132,3,12,6,0,132,133,3,12,
+        6,0,133,134,3,12,6,0,134,135,3,12,6,0,135,136,3,12,6,0,136,137,3,
+        12,6,0,137,138,3,14,7,0,138,153,1,0,0,0,139,140,3,12,6,0,140,141,
+        3,12,6,0,141,142,3,12,6,0,142,143,3,12,6,0,143,144,3,12,6,0,144,
+        145,3,12,6,0,145,146,3,12,6,0,146,147,3,12,6,0,147,148,3,12,6,0,
+        148,149,3,12,6,0,149,150,3,12,6,0,150,151,3,14,7,0,151,153,1,0,0,
+        0,152,76,1,0,0,0,152,82,1,0,0,0,152,89,1,0,0,0,152,97,1,0,0,0,152,
+        106,1,0,0,0,152,116,1,0,0,0,152,127,1,0,0,0,152,139,1,0,0,0,153,
+        9,1,0,0,0,154,155,3,12,6,0,155,156,3,12,6,0,156,157,3,12,6,0,157,
+        158,3,12,6,0,158,159,3,12,6,0,159,160,3,12,6,0,160,161,3,12,6,0,
+        161,162,3,12,6,0,162,163,3,12,6,0,163,164,3,12,6,0,164,166,3,12,
+        6,0,165,167,3,12,6,0,166,165,1,0,0,0,167,168,1,0,0,0,168,166,1,0,
+        0,0,168,169,1,0,0,0,169,170,1,0,0,0,170,171,3,14,7,0,171,11,1,0,
+        0,0,172,173,3,16,8,0,173,174,5,248,0,0,174,175,3,16,8,0,175,176,
+        5,248,0,0,176,177,3,16,8,0,177,178,5,248,0,0,178,179,3,16,8,0,179,
+        180,5,1,0,0,180,13,1,0,0,0,181,182,3,16,8,0,182,183,5,248,0,0,183,
+        184,3,16,8,0,184,185,5,248,0,0,185,186,3,18,9,0,186,15,1,0,0,0,187,
+        190,3,20,10,0,188,190,3,22,11,0,189,187,1,0,0,0,189,188,1,0,0,0,
+        190,17,1,0,0,0,191,196,3,40,20,0,192,196,3,42,21,0,193,196,3,44,
+        22,0,194,196,3,46,23,0,195,191,1,0,0,0,195,192,1,0,0,0,195,193,1,
+        0,0,0,195,194,1,0,0,0,196,19,1,0,0,0,197,202,3,24,12,0,198,202,3,
+        26,13,0,199,202,3,28,14,0,200,202,3,30,15,0,201,197,1,0,0,0,201,
+        198,1,0,0,0,201,199,1,0,0,0,201,200,1,0,0,0,202,21,1,0,0,0,203,208,
+        3,32,16,0,204,208,3,34,17,0,205,208,3,36,18,0,206,208,3,38,19,0,
+        207,203,1,0,0,0,207,204,1,0,0,0,207,205,1,0,0,0,207,206,1,0,0,0,
+        208,23,1,0,0,0,209,210,3,48,24,0,210,211,3,48,24,0,211,25,1,0,0,
+        0,212,213,3,50,25,0,213,214,3,48,24,0,214,27,1,0,0,0,215,216,3,50,
+        25,0,216,217,3,50,25,0,217,29,1,0,0,0,218,219,3,48,24,0,219,220,
+        3,50,25,0,220,31,1,0,0,0,221,222,3,24,12,0,222,223,3,48,24,0,223,
+        33,1,0,0,0,224,225,3,26,13,0,225,226,3,48,24,0,226,35,1,0,0,0,227,
+        228,3,28,14,0,228,229,3,48,24,0,229,37,1,0,0,0,230,231,3,30,15,0,
+        231,232,3,48,24,0,232,39,1,0,0,0,233,234,3,48,24,0,234,41,1,0,0,
+        0,235,236,3,50,25,0,236,43,1,0,0,0,237,238,3,48,24,0,238,239,3,48,
+        24,0,239,45,1,0,0,0,240,241,3,50,25,0,241,242,3,48,24,0,242,47,1,
+        0,0,0,243,252,3,54,27,0,244,252,3,56,28,0,245,246,3,54,27,0,246,
+        247,3,52,26,0,247,252,1,0,0,0,248,249,3,56,28,0,249,250,3,52,26,
+        0,250,252,1,0,0,0,251,243,1,0,0,0,251,244,1,0,0,0,251,245,1,0,0,
+        0,251,248,1,0,0,0,252,49,1,0,0,0,253,254,3,54,27,0,254,255,3,54,
+        27,0,255,268,1,0,0,0,256,257,3,54,27,0,257,258,3,56,28,0,258,268,
+        1,0,0,0,259,260,3,54,27,0,260,261,3,54,27,0,261,262,3,52,26,0,262,
+        268,1,0,0,0,263,264,3,54,27,0,264,265,3,56,28,0,265,266,3,52,26,
+        0,266,268,1,0,0,0,267,253,1,0,0,0,267,256,1,0,0,0,267,259,1,0,0,
+        0,267,263,1,0,0,0,268,51,1,0,0,0,269,270,7,0,0,0,270,53,1,0,0,0,
+        271,272,7,1,0,0,272,55,1,0,0,0,273,274,7,2,0,0,274,57,1,0,0,0,9,
+        62,152,168,189,195,201,207,251,267
+    ]
 
 class வெண்பாParser ( Parser ):
 
@@ -139,81 +113,87 @@ class வெண்பாParser ( Parser ):
 
     sharedContextCache = PredictionContextCache()
 
-    literalNames = [ "<INVALID>", "'\n'", "'\u0B95\u0BCD'", "'\u0B9A\u0BCD'", 
-                     "'\u0B9F\u0BCD'", "'\u0BA4\u0BCD'", "'\u0BAA\u0BCD'", 
-                     "'\u0BB1\u0BCD'", "'\u0B9E\u0BCD'", "'\u0B99\u0BCD'", 
-                     "'\u0BA3\u0BCD'", "'\u0BA8\u0BCD'", "'\u0BAE\u0BCD'", 
-                     "'\u0BA9\u0BCD'", "'\u0BAF\u0BCD'", "'\u0BB0\u0BCD'", 
-                     "'\u0BB2\u0BCD'", "'\u0BB5\u0BCD'", "'\u0BB4\u0BCD'", 
-                     "'\u0BB3\u0BCD'", "'\u0B85'", "'\u0B87'", "'\u0B89'", 
-                     "'\u0B8E'", "'\u0B92'", "'\u0B95'", "'\u0B95\u0BBF'", 
-                     "'\u0B95\u0BC1'", "'\u0B95\u0BC6'", "'\u0B95\u0BCA'", 
-                     "'\u0B99'", "'\u0B99\u0BBF'", "'\u0B99\u0BC1'", "'\u0B99\u0BC6'", 
-                     "'\u0B99\u0BCA'", "'\u0B9A'", "'\u0B9A\u0BBF'", "'\u0B9A\u0BC1'", 
-                     "'\u0B9A\u0BC6'", "'\u0B9A\u0BCA'", "'\u0B9E'", "'\u0B9E\u0BBF'", 
-                     "'\u0B9E\u0BC1'", "'\u0B9E\u0BC6'", "'\u0B9E\u0BCA'", 
-                     "'\u0B9F'", "'\u0B9F\u0BBF'", "'\u0B9F\u0BC1'", "'\u0B9F\u0BC6'", 
-                     "'\u0B9F\u0BCA'", "'\u0BA3'", "'\u0BA3\u0BBF'", "'\u0BA3\u0BC1'", 
-                     "'\u0BA3\u0BC6'", "'\u0BA3\u0BCA'", "'\u0BA4'", "'\u0BA4\u0BBF'", 
-                     "'\u0BA4\u0BC1'", "'\u0BA4\u0BC6'", "'\u0BA4\u0BCA'", 
-                     "'\u0BA8'", "'\u0BA8\u0BBF'", "'\u0BA8\u0BC1'", "'\u0BA8\u0BC6'", 
-                     "'\u0BA8\u0BCA'", "'\u0BAA'", "'\u0BAA\u0BBF'", "'\u0BAA\u0BC1'", 
-                     "'\u0BAA\u0BC6'", "'\u0BAA\u0BCA'", "'\u0BAE'", "'\u0BAE\u0BBF'", 
-                     "'\u0BAE\u0BC1'", "'\u0BAE\u0BC6'", "'\u0BAE\u0BCA'", 
-                     "'\u0BAF'", "'\u0BAF\u0BBF'", "'\u0BAF\u0BC1'", "'\u0BAF\u0BC6'", 
-                     "'\u0BAF\u0BCA'", "'\u0BB0'", "'\u0BB0\u0BBF'", "'\u0BB0\u0BC1'", 
-                     "'\u0BB0\u0BC6'", "'\u0BB0\u0BCA'", "'\u0BB2'", "'\u0BB2\u0BBF'", 
-                     "'\u0BB2\u0BC1'", "'\u0BB2\u0BC6'", "'\u0BB2\u0BCA'", 
-                     "'\u0BB5'", "'\u0BB5\u0BBF'", "'\u0BB5\u0BC1'", "'\u0BB5\u0BC6'", 
-                     "'\u0BB5\u0BCA'", "'\u0BB4'", "'\u0BB4\u0BBF'", "'\u0BB4\u0BC1'", 
-                     "'\u0BB4\u0BC6'", "'\u0BB4\u0BCA'", "'\u0BB3'", "'\u0BB3\u0BBF'", 
-                     "'\u0BB3\u0BC1'", "'\u0BB3\u0BC6'", "'\u0BB3\u0BCA'", 
-                     "'\u0BB1'", "'\u0BB1\u0BBF'", "'\u0BB1\u0BC1'", "'\u0BB1\u0BC6'", 
-                     "'\u0BB1\u0BCA'", "'\u0BA9'", "'\u0BA9\u0BBF'", "'\u0BA9\u0BC1'", 
-                     "'\u0BA9\u0BC6'", "'\u0BA9\u0BCA'", "'\u0B86'", "'\u0B88'", 
-                     "'\u0B8A'", "'\u0B8F'", "'\u0B90'", "'\u0B93'", "'\u0B92\u0BB3'", 
-                     "'\u0B95\u0BBE'", "'\u0B95\u0BC0'", "'\u0B95\u0BC2'", 
-                     "'\u0B95\u0BC7'", "'\u0B95\u0BC8'", "'\u0B95\u0BCB'", 
-                     "'\u0B95\u0BCC'", "'\u0B99\u0BBE'", "'\u0B99\u0BC0'", 
-                     "'\u0B99\u0BC2'", "'\u0B99\u0BC7'", "'\u0B99\u0BC8'", 
-                     "'\u0B99\u0BCB'", "'\u0B99\u0BCC'", "'\u0B9A\u0BBE'", 
-                     "'\u0B9A\u0BC0'", "'\u0B9A\u0BC2'", "'\u0B9A\u0BC7'", 
-                     "'\u0B9A\u0BC8'", "'\u0B9A\u0BCB'", "'\u0B9A\u0BCC'", 
-                     "'\u0B9E\u0BBE'", "'\u0B9E\u0BC0'", "'\u0B9E\u0BC2'", 
-                     "'\u0B9E\u0BC7'", "'\u0B9E\u0BC8'", "'\u0B9E\u0BCB'", 
-                     "'\u0B9E\u0BCC'", "'\u0B9F\u0BBE'", "'\u0B9F\u0BC0'", 
-                     "'\u0B9F\u0BC2'", "'\u0B9F\u0BC7'", "'\u0B9F\u0BC8'", 
-                     "'\u0B9F\u0BCB'", "'\u0B9F\u0BCC'", "'\u0BA3\u0BBE'", 
-                     "'\u0BA3\u0BC0'", "'\u0BA3\u0BC2'", "'\u0BA3\u0BC7'", 
-                     "'\u0BA3\u0BC8'", "'\u0BA3\u0BCB'", "'\u0BA3\u0BCC'", 
-                     "'\u0BA4\u0BBE'", "'\u0BA4\u0BC0'", "'\u0BA4\u0BC2'", 
-                     "'\u0BA4\u0BC7'", "'\u0BA4\u0BC8'", "'\u0BA4\u0BCB'", 
-                     "'\u0BA4\u0BCC'", "'\u0BA8\u0BBE'", "'\u0BA8\u0BC0'", 
-                     "'\u0BA8\u0BC2'", "'\u0BA8\u0BC7'", "'\u0BA8\u0BC8'", 
-                     "'\u0BA8\u0BCB'", "'\u0BA8\u0BCC'", "'\u0BAA\u0BBE'", 
-                     "'\u0BAA\u0BC0'", "'\u0BAA\u0BC2'", "'\u0BAA\u0BC7'", 
-                     "'\u0BAA\u0BC8'", "'\u0BAA\u0BCB'", "'\u0BAA\u0BCC'", 
-                     "'\u0BAE\u0BBE'", "'\u0BAE\u0BC0'", "'\u0BAE\u0BC2'", 
-                     "'\u0BAE\u0BC7'", "'\u0BAE\u0BC8'", "'\u0BAE\u0BCB'", 
-                     "'\u0BAE\u0BCC'", "'\u0BAF\u0BBE'", "'\u0BAF\u0BC0'", 
-                     "'\u0BAF\u0BC2'", "'\u0BAF\u0BC7'", "'\u0BAF\u0BC8'", 
-                     "'\u0BAF\u0BCB'", "'\u0BAF\u0BCC'", "'\u0BB0\u0BBE'", 
-                     "'\u0BB0\u0BC0'", "'\u0BB0\u0BC2'", "'\u0BB0\u0BC7'", 
-                     "'\u0BB0\u0BC8'", "'\u0BB0\u0BCB'", "'\u0BB0\u0BCC'", 
-                     "'\u0BB2\u0BBE'", "'\u0BB2\u0BC0'", "'\u0BB2\u0BC2'", 
-                     "'\u0BB2\u0BC7'", "'\u0BB2\u0BC8'", "'\u0BB2\u0BCB'", 
-                     "'\u0BB2\u0BCC'", "'\u0BB5\u0BBE'", "'\u0BB5\u0BC0'", 
-                     "'\u0BB5\u0BC2'", "'\u0BB5\u0BC7'", "'\u0BB5\u0BC8'", 
-                     "'\u0BB5\u0BCB'", "'\u0BB5\u0BCC'", "'\u0BB4\u0BBE'", 
-                     "'\u0BB4\u0BC0'", "'\u0BB4\u0BC2'", "'\u0BB4\u0BC7'", 
-                     "'\u0BB4\u0BC8'", "'\u0BB4\u0BCB'", "'\u0BB4\u0BCC'", 
-                     "'\u0BB3\u0BBE'", "'\u0BB3\u0BC0'", "'\u0BB3\u0BC2'", 
-                     "'\u0BB3\u0BC7'", "'\u0BB3\u0BC8'", "'\u0BB3\u0BCB'", 
-                     "'\u0BB3\u0BCC'", "'\u0BB1\u0BBE'", "'\u0BB1\u0BC0'", 
-                     "'\u0BB1\u0BC2'", "'\u0BB1\u0BC7'", "'\u0BB1\u0BC8'", 
-                     "'\u0BB1\u0BCB'", "'\u0BB1\u0BCC'", "'\u0BA9\u0BBE'", 
-                     "'\u0BA9\u0BC0'", "'\u0BA9\u0BC2'", "'\u0BA9\u0BC7'", 
-                     "'\u0BA9\u0BC8'", "'\u0BA9\u0BCB'", "'\u0BA9\u0BCC'", 
+    literalNames = [ "<INVALID>", "'\\n'", "'\\u0B95\\u0BCD'", "'\\u0B9A\\u0BCD'", 
+                     "'\\u0B9F\\u0BCD'", "'\\u0BA4\\u0BCD'", "'\\u0BAA\\u0BCD'", 
+                     "'\\u0BB1\\u0BCD'", "'\\u0B9E\\u0BCD'", "'\\u0B99\\u0BCD'", 
+                     "'\\u0BA3\\u0BCD'", "'\\u0BA8\\u0BCD'", "'\\u0BAE\\u0BCD'", 
+                     "'\\u0BA9\\u0BCD'", "'\\u0BAF\\u0BCD'", "'\\u0BB0\\u0BCD'", 
+                     "'\\u0BB2\\u0BCD'", "'\\u0BB5\\u0BCD'", "'\\u0BB4\\u0BCD'", 
+                     "'\\u0BB3\\u0BCD'", "'\\u0B85'", "'\\u0B87'", "'\\u0B89'", 
+                     "'\\u0B8E'", "'\\u0B92'", "'\\u0B95'", "'\\u0B95\\u0BBF'", 
+                     "'\\u0B95\\u0BC1'", "'\\u0B95\\u0BC6'", "'\\u0B95\\u0BCA'", 
+                     "'\\u0B99'", "'\\u0B99\\u0BBF'", "'\\u0B99\\u0BC1'", 
+                     "'\\u0B99\\u0BC6'", "'\\u0B99\\u0BCA'", "'\\u0B9A'", 
+                     "'\\u0B9A\\u0BBF'", "'\\u0B9A\\u0BC1'", "'\\u0B9A\\u0BC6'", 
+                     "'\\u0B9A\\u0BCA'", "'\\u0B9E'", "'\\u0B9E\\u0BBF'", 
+                     "'\\u0B9E\\u0BC1'", "'\\u0B9E\\u0BC6'", "'\\u0B9E\\u0BCA'", 
+                     "'\\u0B9F'", "'\\u0B9F\\u0BBF'", "'\\u0B9F\\u0BC1'", 
+                     "'\\u0B9F\\u0BC6'", "'\\u0B9F\\u0BCA'", "'\\u0BA3'", 
+                     "'\\u0BA3\\u0BBF'", "'\\u0BA3\\u0BC1'", "'\\u0BA3\\u0BC6'", 
+                     "'\\u0BA3\\u0BCA'", "'\\u0BA4'", "'\\u0BA4\\u0BBF'", 
+                     "'\\u0BA4\\u0BC1'", "'\\u0BA4\\u0BC6'", "'\\u0BA4\\u0BCA'", 
+                     "'\\u0BA8'", "'\\u0BA8\\u0BBF'", "'\\u0BA8\\u0BC1'", 
+                     "'\\u0BA8\\u0BC6'", "'\\u0BA8\\u0BCA'", "'\\u0BAA'", 
+                     "'\\u0BAA\\u0BBF'", "'\\u0BAA\\u0BC1'", "'\\u0BAA\\u0BC6'", 
+                     "'\\u0BAA\\u0BCA'", "'\\u0BAE'", "'\\u0BAE\\u0BBF'", 
+                     "'\\u0BAE\\u0BC1'", "'\\u0BAE\\u0BC6'", "'\\u0BAE\\u0BCA'", 
+                     "'\\u0BAF'", "'\\u0BAF\\u0BBF'", "'\\u0BAF\\u0BC1'", 
+                     "'\\u0BAF\\u0BC6'", "'\\u0BAF\\u0BCA'", "'\\u0BB0'", 
+                     "'\\u0BB0\\u0BBF'", "'\\u0BB0\\u0BC1'", "'\\u0BB0\\u0BC6'", 
+                     "'\\u0BB0\\u0BCA'", "'\\u0BB2'", "'\\u0BB2\\u0BBF'", 
+                     "'\\u0BB2\\u0BC1'", "'\\u0BB2\\u0BC6'", "'\\u0BB2\\u0BCA'", 
+                     "'\\u0BB5'", "'\\u0BB5\\u0BBF'", "'\\u0BB5\\u0BC1'", 
+                     "'\\u0BB5\\u0BC6'", "'\\u0BB5\\u0BCA'", "'\\u0BB4'", 
+                     "'\\u0BB4\\u0BBF'", "'\\u0BB4\\u0BC1'", "'\\u0BB4\\u0BC6'", 
+                     "'\\u0BB4\\u0BCA'", "'\\u0BB3'", "'\\u0BB3\\u0BBF'", 
+                     "'\\u0BB3\\u0BC1'", "'\\u0BB3\\u0BC6'", "'\\u0BB3\\u0BCA'", 
+                     "'\\u0BB1'", "'\\u0BB1\\u0BBF'", "'\\u0BB1\\u0BC1'", 
+                     "'\\u0BB1\\u0BC6'", "'\\u0BB1\\u0BCA'", "'\\u0BA9'", 
+                     "'\\u0BA9\\u0BBF'", "'\\u0BA9\\u0BC1'", "'\\u0BA9\\u0BC6'", 
+                     "'\\u0BA9\\u0BCA'", "'\\u0B86'", "'\\u0B88'", "'\\u0B8A'", 
+                     "'\\u0B8F'", "'\\u0B90'", "'\\u0B93'", "'\\u0B92\\u0BB3'", 
+                     "'\\u0B95\\u0BBE'", "'\\u0B95\\u0BC0'", "'\\u0B95\\u0BC2'", 
+                     "'\\u0B95\\u0BC7'", "'\\u0B95\\u0BC8'", "'\\u0B95\\u0BCB'", 
+                     "'\\u0B95\\u0BCC'", "'\\u0B99\\u0BBE'", "'\\u0B99\\u0BC0'", 
+                     "'\\u0B99\\u0BC2'", "'\\u0B99\\u0BC7'", "'\\u0B99\\u0BC8'", 
+                     "'\\u0B99\\u0BCB'", "'\\u0B99\\u0BCC'", "'\\u0B9A\\u0BBE'", 
+                     "'\\u0B9A\\u0BC0'", "'\\u0B9A\\u0BC2'", "'\\u0B9A\\u0BC7'", 
+                     "'\\u0B9A\\u0BC8'", "'\\u0B9A\\u0BCB'", "'\\u0B9A\\u0BCC'", 
+                     "'\\u0B9E\\u0BBE'", "'\\u0B9E\\u0BC0'", "'\\u0B9E\\u0BC2'", 
+                     "'\\u0B9E\\u0BC7'", "'\\u0B9E\\u0BC8'", "'\\u0B9E\\u0BCB'", 
+                     "'\\u0B9E\\u0BCC'", "'\\u0B9F\\u0BBE'", "'\\u0B9F\\u0BC0'", 
+                     "'\\u0B9F\\u0BC2'", "'\\u0B9F\\u0BC7'", "'\\u0B9F\\u0BC8'", 
+                     "'\\u0B9F\\u0BCB'", "'\\u0B9F\\u0BCC'", "'\\u0BA3\\u0BBE'", 
+                     "'\\u0BA3\\u0BC0'", "'\\u0BA3\\u0BC2'", "'\\u0BA3\\u0BC7'", 
+                     "'\\u0BA3\\u0BC8'", "'\\u0BA3\\u0BCB'", "'\\u0BA3\\u0BCC'", 
+                     "'\\u0BA4\\u0BBE'", "'\\u0BA4\\u0BC0'", "'\\u0BA4\\u0BC2'", 
+                     "'\\u0BA4\\u0BC7'", "'\\u0BA4\\u0BC8'", "'\\u0BA4\\u0BCB'", 
+                     "'\\u0BA4\\u0BCC'", "'\\u0BA8\\u0BBE'", "'\\u0BA8\\u0BC0'", 
+                     "'\\u0BA8\\u0BC2'", "'\\u0BA8\\u0BC7'", "'\\u0BA8\\u0BC8'", 
+                     "'\\u0BA8\\u0BCB'", "'\\u0BA8\\u0BCC'", "'\\u0BAA\\u0BBE'", 
+                     "'\\u0BAA\\u0BC0'", "'\\u0BAA\\u0BC2'", "'\\u0BAA\\u0BC7'", 
+                     "'\\u0BAA\\u0BC8'", "'\\u0BAA\\u0BCB'", "'\\u0BAA\\u0BCC'", 
+                     "'\\u0BAE\\u0BBE'", "'\\u0BAE\\u0BC0'", "'\\u0BAE\\u0BC2'", 
+                     "'\\u0BAE\\u0BC7'", "'\\u0BAE\\u0BC8'", "'\\u0BAE\\u0BCB'", 
+                     "'\\u0BAE\\u0BCC'", "'\\u0BAF\\u0BBE'", "'\\u0BAF\\u0BC0'", 
+                     "'\\u0BAF\\u0BC2'", "'\\u0BAF\\u0BC7'", "'\\u0BAF\\u0BC8'", 
+                     "'\\u0BAF\\u0BCB'", "'\\u0BAF\\u0BCC'", "'\\u0BB0\\u0BBE'", 
+                     "'\\u0BB0\\u0BC0'", "'\\u0BB0\\u0BC2'", "'\\u0BB0\\u0BC7'", 
+                     "'\\u0BB0\\u0BC8'", "'\\u0BB0\\u0BCB'", "'\\u0BB0\\u0BCC'", 
+                     "'\\u0BB2\\u0BBE'", "'\\u0BB2\\u0BC0'", "'\\u0BB2\\u0BC2'", 
+                     "'\\u0BB2\\u0BC7'", "'\\u0BB2\\u0BC8'", "'\\u0BB2\\u0BCB'", 
+                     "'\\u0BB2\\u0BCC'", "'\\u0BB5\\u0BBE'", "'\\u0BB5\\u0BC0'", 
+                     "'\\u0BB5\\u0BC2'", "'\\u0BB5\\u0BC7'", "'\\u0BB5\\u0BC8'", 
+                     "'\\u0BB5\\u0BCB'", "'\\u0BB5\\u0BCC'", "'\\u0BB4\\u0BBE'", 
+                     "'\\u0BB4\\u0BC0'", "'\\u0BB4\\u0BC2'", "'\\u0BB4\\u0BC7'", 
+                     "'\\u0BB4\\u0BC8'", "'\\u0BB4\\u0BCB'", "'\\u0BB4\\u0BCC'", 
+                     "'\\u0BB3\\u0BBE'", "'\\u0BB3\\u0BC0'", "'\\u0BB3\\u0BC2'", 
+                     "'\\u0BB3\\u0BC7'", "'\\u0BB3\\u0BC8'", "'\\u0BB3\\u0BCB'", 
+                     "'\\u0BB3\\u0BCC'", "'\\u0BB1\\u0BBE'", "'\\u0BB1\\u0BC0'", 
+                     "'\\u0BB1\\u0BC2'", "'\\u0BB1\\u0BC7'", "'\\u0BB1\\u0BC8'", 
+                     "'\\u0BB1\\u0BCB'", "'\\u0BB1\\u0BCC'", "'\\u0BA9\\u0BBE'", 
+                     "'\\u0BA9\\u0BC0'", "'\\u0BA9\\u0BC2'", "'\\u0BA9\\u0BC7'", 
+                     "'\\u0BA9\\u0BC8'", "'\\u0BA9\\u0BCB'", "'\\u0BA9\\u0BCC'", 
                      "' '" ]
 
     symbolicNames = [ "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
@@ -569,7 +549,7 @@ class வெண்பாParser ( Parser ):
 
     def __init__(self, input:TokenStream, output:TextIO = sys.stdout):
         super().__init__(input, output)
-        self.checkVersion("4.8")
+        self.checkVersion("4.12.0")
         self._interp = ParserATNSimulator(self, self.atn, self.decisionsToDFA, self.sharedContextCache)
         self._predicates = None
 
@@ -577,6 +557,7 @@ class வெண்பாParser ( Parser ):
 
 
     class வெண்பாContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -655,6 +636,7 @@ class வெண்பாParser ( Parser ):
 
 
     class குறள்_வெண்பாContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -702,6 +684,7 @@ class வெண்பாParser ( Parser ):
 
 
     class சிந்தியல்_வெண்பாContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -754,6 +737,7 @@ class வெண்பாParser ( Parser ):
 
 
     class நேரிசை_வெண்பாContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -808,6 +792,7 @@ class வெண்பாParser ( Parser ):
 
 
     class பஃறொடை_வெண்பாContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -1025,6 +1010,7 @@ class வெண்பாParser ( Parser ):
 
 
     class கலி_வெண்பாContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -1109,6 +1095,7 @@ class வெண்பாParser ( Parser ):
 
 
     class அடிContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -1173,6 +1160,7 @@ class வெண்பாParser ( Parser ):
 
 
     class ஈற்றடிContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -1235,6 +1223,7 @@ class வெண்பாParser ( Parser ):
 
 
     class சீர்Context(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -1293,6 +1282,7 @@ class வெண்பாParser ( Parser ):
 
 
     class ஈற்றுச்சீர்Context(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -1371,6 +1361,7 @@ class வெண்பாParser ( Parser ):
 
 
     class ஈரசைContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -1449,6 +1440,7 @@ class வெண்பாParser ( Parser ):
 
 
     class மூவசைContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -1527,6 +1519,7 @@ class வெண்பாParser ( Parser ):
 
 
     class தேமாContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -1573,6 +1566,7 @@ class வெண்பாParser ( Parser ):
 
 
     class புளிமாContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -1620,6 +1614,7 @@ class வெண்பாParser ( Parser ):
 
 
     class கருவிளம்Context(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -1666,6 +1661,7 @@ class வெண்பாParser ( Parser ):
 
 
     class கூவிளம்Context(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -1713,6 +1709,7 @@ class வெண்பாParser ( Parser ):
 
 
     class தேமாங்காய்Context(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -1760,6 +1757,7 @@ class வெண்பாParser ( Parser ):
 
 
     class புளிமாங்காய்Context(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -1807,6 +1805,7 @@ class வெண்பாParser ( Parser ):
 
 
     class கருவிளங்காய்Context(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -1854,6 +1853,7 @@ class வெண்பாParser ( Parser ):
 
 
     class கூவிளங்காய்Context(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -1901,6 +1901,7 @@ class வெண்பாParser ( Parser ):
 
 
     class நாள்Context(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -1942,6 +1943,7 @@ class வெண்பாParser ( Parser ):
 
 
     class மலர்Context(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -1983,6 +1985,7 @@ class வெண்பாParser ( Parser ):
 
 
     class காசுContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -2029,6 +2032,7 @@ class வெண்பாParser ( Parser ):
 
 
     class பிறப்புContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -2076,6 +2080,7 @@ class வெண்பாParser ( Parser ):
 
 
     class நேர்Context(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -2154,6 +2159,7 @@ class வெண்பாParser ( Parser ):
 
 
     class நிரைContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -2243,6 +2249,7 @@ class வெண்பாParser ( Parser ):
 
 
     class ஒற்றுContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -2272,7 +2279,7 @@ class வெண்பாParser ( Parser ):
             self.enterOuterAlt(localctx, 1)
             self.state = 269
             _la = self._input.LA(1)
-            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << வெண்பாParser.T__1) | (1 << வெண்பாParser.T__2) | (1 << வெண்பாParser.T__3) | (1 << வெண்பாParser.T__4) | (1 << வெண்பாParser.T__5) | (1 << வெண்பாParser.T__6) | (1 << வெண்பாParser.T__7) | (1 << வெண்பாParser.T__8) | (1 << வெண்பாParser.T__9) | (1 << வெண்பாParser.T__10) | (1 << வெண்பாParser.T__11) | (1 << வெண்பாParser.T__12) | (1 << வெண்பாParser.T__13) | (1 << வெண்பாParser.T__14) | (1 << வெண்பாParser.T__15) | (1 << வெண்பாParser.T__16) | (1 << வெண்பாParser.T__17) | (1 << வெண்பாParser.T__18))) != 0)):
+            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & 1048572) != 0)):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
@@ -2287,6 +2294,7 @@ class வெண்பாParser ( Parser ):
 
 
     class குறில்Context(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -2316,7 +2324,7 @@ class வெண்பாParser ( Parser ):
             self.enterOuterAlt(localctx, 1)
             self.state = 271
             _la = self._input.LA(1)
-            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << வெண்பாParser.T__19) | (1 << வெண்பாParser.T__20) | (1 << வெண்பாParser.T__21) | (1 << வெண்பாParser.T__22) | (1 << வெண்பாParser.T__23) | (1 << வெண்பாParser.T__24) | (1 << வெண்பாParser.T__25) | (1 << வெண்பாParser.T__26) | (1 << வெண்பாParser.T__27) | (1 << வெண்பாParser.T__28) | (1 << வெண்பாParser.T__29) | (1 << வெண்பாParser.T__30) | (1 << வெண்பாParser.T__31) | (1 << வெண்பாParser.T__32) | (1 << வெண்பாParser.T__33) | (1 << வெண்பாParser.T__34) | (1 << வெண்பாParser.T__35) | (1 << வெண்பாParser.T__36) | (1 << வெண்பாParser.T__37) | (1 << வெண்பாParser.T__38) | (1 << வெண்பாParser.T__39) | (1 << வெண்பாParser.T__40) | (1 << வெண்பாParser.T__41) | (1 << வெண்பாParser.T__42) | (1 << வெண்பாParser.T__43) | (1 << வெண்பாParser.T__44) | (1 << வெண்பாParser.T__45) | (1 << வெண்பாParser.T__46) | (1 << வெண்பாParser.T__47) | (1 << வெண்பாParser.T__48) | (1 << வெண்பாParser.T__49) | (1 << வெண்பாParser.T__50) | (1 << வெண்பாParser.T__51) | (1 << வெண்பாParser.T__52) | (1 << வெண்பாParser.T__53) | (1 << வெண்பாParser.T__54) | (1 << வெண்பாParser.T__55) | (1 << வெண்பாParser.T__56) | (1 << வெண்பாParser.T__57) | (1 << வெண்பாParser.T__58) | (1 << வெண்பாParser.T__59) | (1 << வெண்பாParser.T__60) | (1 << வெண்பாParser.T__61) | (1 << வெண்பாParser.T__62))) != 0) or ((((_la - 64)) & ~0x3f) == 0 and ((1 << (_la - 64)) & ((1 << (வெண்பாParser.T__63 - 64)) | (1 << (வெண்பாParser.T__64 - 64)) | (1 << (வெண்பாParser.T__65 - 64)) | (1 << (வெண்பாParser.T__66 - 64)) | (1 << (வெண்பாParser.T__67 - 64)) | (1 << (வெண்பாParser.T__68 - 64)) | (1 << (வெண்பாParser.T__69 - 64)) | (1 << (வெண்பாParser.T__70 - 64)) | (1 << (வெண்பாParser.T__71 - 64)) | (1 << (வெண்பாParser.T__72 - 64)) | (1 << (வெண்பாParser.T__73 - 64)) | (1 << (வெண்பாParser.T__74 - 64)) | (1 << (வெண்பாParser.T__75 - 64)) | (1 << (வெண்பாParser.T__76 - 64)) | (1 << (வெண்பாParser.T__77 - 64)) | (1 << (வெண்பாParser.T__78 - 64)) | (1 << (வெண்பாParser.T__79 - 64)) | (1 << (வெண்பாParser.T__80 - 64)) | (1 << (வெண்பாParser.T__81 - 64)) | (1 << (வெண்பாParser.T__82 - 64)) | (1 << (வெண்பாParser.T__83 - 64)) | (1 << (வெண்பாParser.T__84 - 64)) | (1 << (வெண்பாParser.T__85 - 64)) | (1 << (வெண்பாParser.T__86 - 64)) | (1 << (வெண்பாParser.T__87 - 64)) | (1 << (வெண்பாParser.T__88 - 64)) | (1 << (வெண்பாParser.T__89 - 64)) | (1 << (வெண்பாParser.T__90 - 64)) | (1 << (வெண்பாParser.T__91 - 64)) | (1 << (வெண்பாParser.T__92 - 64)) | (1 << (வெண்பாParser.T__93 - 64)) | (1 << (வெண்பாParser.T__94 - 64)) | (1 << (வெண்பாParser.T__95 - 64)) | (1 << (வெண்பாParser.T__96 - 64)) | (1 << (வெண்பாParser.T__97 - 64)) | (1 << (வெண்பாParser.T__98 - 64)) | (1 << (வெண்பாParser.T__99 - 64)) | (1 << (வெண்பாParser.T__100 - 64)) | (1 << (வெண்பாParser.T__101 - 64)) | (1 << (வெண்பாParser.T__102 - 64)) | (1 << (வெண்பாParser.T__103 - 64)) | (1 << (வெண்பாParser.T__104 - 64)) | (1 << (வெண்பாParser.T__105 - 64)) | (1 << (வெண்பாParser.T__106 - 64)) | (1 << (வெண்பாParser.T__107 - 64)) | (1 << (வெண்பாParser.T__108 - 64)) | (1 << (வெண்பாParser.T__109 - 64)) | (1 << (வெண்பாParser.T__110 - 64)) | (1 << (வெண்பாParser.T__111 - 64)) | (1 << (வெண்பாParser.T__112 - 64)) | (1 << (வெண்பாParser.T__113 - 64)))) != 0)):
+            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & -1048576) != 0) or ((((_la - 64)) & ~0x3f) == 0 and ((1 << (_la - 64)) & 2251799813685247) != 0)):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
@@ -2331,6 +2339,7 @@ class வெண்பாParser ( Parser ):
 
 
     class நெடில்Context(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -2360,7 +2369,7 @@ class வெண்பாParser ( Parser ):
             self.enterOuterAlt(localctx, 1)
             self.state = 273
             _la = self._input.LA(1)
-            if not(((((_la - 115)) & ~0x3f) == 0 and ((1 << (_la - 115)) & ((1 << (வெண்பாParser.T__114 - 115)) | (1 << (வெண்பாParser.T__115 - 115)) | (1 << (வெண்பாParser.T__116 - 115)) | (1 << (வெண்பாParser.T__117 - 115)) | (1 << (வெண்பாParser.T__118 - 115)) | (1 << (வெண்பாParser.T__119 - 115)) | (1 << (வெண்பாParser.T__120 - 115)) | (1 << (வெண்பாParser.T__121 - 115)) | (1 << (வெண்பாParser.T__122 - 115)) | (1 << (வெண்பாParser.T__123 - 115)) | (1 << (வெண்பாParser.T__124 - 115)) | (1 << (வெண்பாParser.T__125 - 115)) | (1 << (வெண்பாParser.T__126 - 115)) | (1 << (வெண்பாParser.T__127 - 115)) | (1 << (வெண்பாParser.T__128 - 115)) | (1 << (வெண்பாParser.T__129 - 115)) | (1 << (வெண்பாParser.T__130 - 115)) | (1 << (வெண்பாParser.T__131 - 115)) | (1 << (வெண்பாParser.T__132 - 115)) | (1 << (வெண்பாParser.T__133 - 115)) | (1 << (வெண்பாParser.T__134 - 115)) | (1 << (வெண்பாParser.T__135 - 115)) | (1 << (வெண்பாParser.T__136 - 115)) | (1 << (வெண்பாParser.T__137 - 115)) | (1 << (வெண்பாParser.T__138 - 115)) | (1 << (வெண்பாParser.T__139 - 115)) | (1 << (வெண்பாParser.T__140 - 115)) | (1 << (வெண்பாParser.T__141 - 115)) | (1 << (வெண்பாParser.T__142 - 115)) | (1 << (வெண்பாParser.T__143 - 115)) | (1 << (வெண்பாParser.T__144 - 115)) | (1 << (வெண்பாParser.T__145 - 115)) | (1 << (வெண்பாParser.T__146 - 115)) | (1 << (வெண்பாParser.T__147 - 115)) | (1 << (வெண்பாParser.T__148 - 115)) | (1 << (வெண்பாParser.T__149 - 115)) | (1 << (வெண்பாParser.T__150 - 115)) | (1 << (வெண்பாParser.T__151 - 115)) | (1 << (வெண்பாParser.T__152 - 115)) | (1 << (வெண்பாParser.T__153 - 115)) | (1 << (வெண்பாParser.T__154 - 115)) | (1 << (வெண்பாParser.T__155 - 115)) | (1 << (வெண்பாParser.T__156 - 115)) | (1 << (வெண்பாParser.T__157 - 115)) | (1 << (வெண்பாParser.T__158 - 115)) | (1 << (வெண்பாParser.T__159 - 115)) | (1 << (வெண்பாParser.T__160 - 115)) | (1 << (வெண்பாParser.T__161 - 115)) | (1 << (வெண்பாParser.T__162 - 115)) | (1 << (வெண்பாParser.T__163 - 115)) | (1 << (வெண்பாParser.T__164 - 115)) | (1 << (வெண்பாParser.T__165 - 115)) | (1 << (வெண்பாParser.T__166 - 115)) | (1 << (வெண்பாParser.T__167 - 115)) | (1 << (வெண்பாParser.T__168 - 115)) | (1 << (வெண்பாParser.T__169 - 115)) | (1 << (வெண்பாParser.T__170 - 115)) | (1 << (வெண்பாParser.T__171 - 115)) | (1 << (வெண்பாParser.T__172 - 115)) | (1 << (வெண்பாParser.T__173 - 115)) | (1 << (வெண்பாParser.T__174 - 115)) | (1 << (வெண்பாParser.T__175 - 115)) | (1 << (வெண்பாParser.T__176 - 115)) | (1 << (வெண்பாParser.T__177 - 115)))) != 0) or ((((_la - 179)) & ~0x3f) == 0 and ((1 << (_la - 179)) & ((1 << (வெண்பாParser.T__178 - 179)) | (1 << (வெண்பாParser.T__179 - 179)) | (1 << (வெண்பாParser.T__180 - 179)) | (1 << (வெண்பாParser.T__181 - 179)) | (1 << (வெண்பாParser.T__182 - 179)) | (1 << (வெண்பாParser.T__183 - 179)) | (1 << (வெண்பாParser.T__184 - 179)) | (1 << (வெண்பாParser.T__185 - 179)) | (1 << (வெண்பாParser.T__186 - 179)) | (1 << (வெண்பாParser.T__187 - 179)) | (1 << (வெண்பாParser.T__188 - 179)) | (1 << (வெண்பாParser.T__189 - 179)) | (1 << (வெண்பாParser.T__190 - 179)) | (1 << (வெண்பாParser.T__191 - 179)) | (1 << (வெண்பாParser.T__192 - 179)) | (1 << (வெண்பாParser.T__193 - 179)) | (1 << (வெண்பாParser.T__194 - 179)) | (1 << (வெண்பாParser.T__195 - 179)) | (1 << (வெண்பாParser.T__196 - 179)) | (1 << (வெண்பாParser.T__197 - 179)) | (1 << (வெண்பாParser.T__198 - 179)) | (1 << (வெண்பாParser.T__199 - 179)) | (1 << (வெண்பாParser.T__200 - 179)) | (1 << (வெண்பாParser.T__201 - 179)) | (1 << (வெண்பாParser.T__202 - 179)) | (1 << (வெண்பாParser.T__203 - 179)) | (1 << (வெண்பாParser.T__204 - 179)) | (1 << (வெண்பாParser.T__205 - 179)) | (1 << (வெண்பாParser.T__206 - 179)) | (1 << (வெண்பாParser.T__207 - 179)) | (1 << (வெண்பாParser.T__208 - 179)) | (1 << (வெண்பாParser.T__209 - 179)) | (1 << (வெண்பாParser.T__210 - 179)) | (1 << (வெண்பாParser.T__211 - 179)) | (1 << (வெண்பாParser.T__212 - 179)) | (1 << (வெண்பாParser.T__213 - 179)) | (1 << (வெண்பாParser.T__214 - 179)) | (1 << (வெண்பாParser.T__215 - 179)) | (1 << (வெண்பாParser.T__216 - 179)) | (1 << (வெண்பாParser.T__217 - 179)) | (1 << (வெண்பாParser.T__218 - 179)) | (1 << (வெண்பாParser.T__219 - 179)) | (1 << (வெண்பாParser.T__220 - 179)) | (1 << (வெண்பாParser.T__221 - 179)) | (1 << (வெண்பாParser.T__222 - 179)) | (1 << (வெண்பாParser.T__223 - 179)) | (1 << (வெண்பாParser.T__224 - 179)) | (1 << (வெண்பாParser.T__225 - 179)) | (1 << (வெண்பாParser.T__226 - 179)) | (1 << (வெண்பாParser.T__227 - 179)) | (1 << (வெண்பாParser.T__228 - 179)) | (1 << (வெண்பாParser.T__229 - 179)) | (1 << (வெண்பாParser.T__230 - 179)) | (1 << (வெண்பாParser.T__231 - 179)) | (1 << (வெண்பாParser.T__232 - 179)) | (1 << (வெண்பாParser.T__233 - 179)) | (1 << (வெண்பாParser.T__234 - 179)) | (1 << (வெண்பாParser.T__235 - 179)) | (1 << (வெண்பாParser.T__236 - 179)) | (1 << (வெண்பாParser.T__237 - 179)) | (1 << (வெண்பாParser.T__238 - 179)) | (1 << (வெண்பாParser.T__239 - 179)) | (1 << (வெண்பாParser.T__240 - 179)) | (1 << (வெண்பாParser.T__241 - 179)))) != 0) or ((((_la - 243)) & ~0x3f) == 0 and ((1 << (_la - 243)) & ((1 << (வெண்பாParser.T__242 - 243)) | (1 << (வெண்பாParser.T__243 - 243)) | (1 << (வெண்பாParser.T__244 - 243)) | (1 << (வெண்பாParser.T__245 - 243)) | (1 << (வெண்பாParser.T__246 - 243)))) != 0)):
+            if not(((((_la - 115)) & ~0x3f) == 0 and ((1 << (_la - 115)) & -1) != 0) or ((((_la - 179)) & ~0x3f) == 0 and ((1 << (_la - 179)) & -1) != 0) or ((((_la - 243)) & ~0x3f) == 0 and ((1 << (_la - 243)) & 31) != 0)):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
