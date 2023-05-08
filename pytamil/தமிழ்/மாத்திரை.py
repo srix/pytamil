@@ -1,23 +1,21 @@
 # -*- coding: utf-8 -*-
+from codecs import open
 import os
-from tamil import utf8 as tamilutf8
-import yaml
-from yaml import Loader, Dumper
-
-CURRDIR = os.path.dirname(os.path.realpath(__file__))
+import sys
 
 import regex
-from pytamil.தமிழ் import எழுத்து
+import yaml
+from tamil import utf8 as tamilutf8
+from yaml import Loader, Dumper
 
-
-import sys
 import antlr4
 from antlr4 import *
 from antlr4.tree.Trees import Trees
 from antlr4.error.ErrorListener import ErrorListener
+from nltk import Tree as nltkTree
+from nltk.treeprettyprinter import TreePrettyPrinter
 
-import os
-
+from pytamil.தமிழ் import எழுத்து as எழுத்து
 # from codegen import codegen
 from pytamil.தமிழ்.codegen.மாத்திரைLexer import மாத்திரைLexer
 from pytamil.தமிழ்.codegen.மாத்திரைParser import மாத்திரைParser
@@ -25,9 +23,11 @@ from pytamil.தமிழ்.codegen.மாத்திரைListener import ம
 # from pytamil.தமிழ்.codegen.மாத்திரைVisitor import மாத்திரைVisitor
 
 
-from codecs import open
-from nltk import Tree as nltkTree
-from nltk.treeprettyprinter import TreePrettyPrinter
+CURRDIR = os.path.dirname(os.path.realpath(__file__))
+
+
+
+
 
 class சான்று:
      def __init__(self, txt):
@@ -35,7 +35,7 @@ class சான்று:
         self.பதம் = val[0][0].strip()
         self.மாத்திரைவரிசை = val[0][1].strip()
       
-
+# pylint: disable=invalid-name
 class விவரம்:
     def __init__(self, எழுத்து, மாத்திரைவகை, மாத்திரைஎண், புணர்மொழி=False):
         self.எழுத்து = எழுத்து
@@ -276,8 +276,8 @@ def formatsimple(மாத்திரைவரிசை):
 
 def load(filename):
     fo = open(filename, "r")
-    மாத்திரைyaml = yaml.load_all(fo,Loader=Loader)
-    docs = list(மாத்திரைyaml)
+    மாத்திரை_yaml = yaml.load_all(fo,Loader=Loader)
+    docs = list(மாத்திரை_yaml)
     entries = docs[0]
 
     entries2 = docs[1]

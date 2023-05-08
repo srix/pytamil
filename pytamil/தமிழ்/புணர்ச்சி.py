@@ -66,7 +66,7 @@ class PunarchiSemantics(object):
                 func = filter
                 params = '\'' + பதம் + '\''  # default paramater
 
-            பதம் =  eval(func+'(' + params + ')')
+            பதம் =  eval(func+ ('(') + params + (')'))
 
         return பதம்
 

@@ -8,7 +8,7 @@ import sys
 import pytamil
 from pytamil import தமிழ்
 # from tamil1 import இலக்கணம் as இல
-from pytamil.தமிழ் import புணர்ச்சி
+# from pytamil.தமிழ் import புணர்ச்சி
 from pytamil.தமிழ் import எழுத்து
 from pytamil.தமிழ்  import மாத்திரை
 import os
@@ -70,6 +70,7 @@ import os
 # print(மாத்திரை.மாத்திரைவரிசை_கொடு("நாடியாது"))
 print( எழுத்து.உயிர்மெய்விரி("முதற்றே"))
 print(மாத்திரை.மாத்திரைவரிசை_கொடு("முதற்றே"))
+print( எழுத்து.உயிர்மெய்விரி("முதற்றே"))
 
 # print(மாத்திரை.மாத்திரைவரிசை_கொடு("பகைவர்"))
 
