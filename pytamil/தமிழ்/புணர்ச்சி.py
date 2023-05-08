@@ -41,7 +41,7 @@ class PunarchiSemantics(object):
         filters = ast[1]
         for i in range(len(filters)):
             filter = filters[i]
-            if type(filter) is list:
+            if type(filter) is tuple:
                 func = filter[0]
                 params = '\'' + பதம் + '\''  # default paramater
                 params = params + ',' + '\'' + filter[1] + '\'' # additional parameter from rules

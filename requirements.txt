@@ -1,9 +1,15 @@
-## Pip
-antlr4-python3-runtime==4.9.2
-nltk==3.5
-Open-Tamil==0.9
-pylint==2.3.1
-PyYAML>=5.4
-pytest==5.0.1
-regex==2019.8.19
-TatSu==4.4.0
+antlr4-python3-runtime==4.12.0
+click==8.1.3
+exceptiongroup==1.1.1
+iniconfig==2.0.0
+joblib==1.2.0
+nltk==3.8.1
+Open-Tamil==1.1
+packaging==23.1
+pluggy==1.0.0
+pytest==7.3.1
+PyYAML==6.0
+regex==2023.5.5
+TatSu==5.8.3
+tomli==2.0.1
+tqdm==4.65.0

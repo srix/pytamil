@@ -1,4 +1,4 @@
-# Generated from /home/srix/workspace/pytamil-all/pytamil-22.10/pytamil/தமிழ்/resources/மாத்திரை.g4 by ANTLR 4.9.2
+# Generated from /home/srix/workspace/pytamil-all/pytamil-3.10/pytamil/தமிழ்/resources/மாத்திரை.g4 by ANTLR 4.12.0
 from antlr4 import *
 if __name__ is not None and "." in __name__:
     from .மாத்திரைParser import மாத்திரைParser
