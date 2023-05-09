@@ -1,42 +1,36 @@
-grammar புணர்ச்சி;
+grammar புணர்ச்சிவிதிகள்;
 
-புணர்ச்சி: விதி (',' விதி)* ;
+புணர்ச்சிவிதிகள்: விதி (',' விதி)* ;
 
-விதி: நிலைமொழி_மாற்றம் கூட்டல் வருமொழி_மாற்றம் ;
+விதி: நிலைமொழி_மாற்றம்  கூட்டல்  வருமொழி_மாற்றம் ;
 
-நிலைமொழி_மாற்றம்: நிலைமொழி மாற்றல் ;
+நிலைமொழி_மாற்றம்: 'நிலைமொழி' filters*;
 
-// nilaimozhiexpression = nilaimozhi {filters} ;
-
-// (* # any character except '|' or '+' *)
-நிலைமொழி: [^|+]* ;
-    
-
-வருமொழி_மாற்றம்: {filters}* வருமொழி ;
-
-// (* # any character except '|' *)
-வருமொழி: [^,]* ;  
+வருமொழி_மாற்றம்: filters* 'வருமொழி' ;
     
     
-filters: 
-    | '|' @:filter
-    | @:filter '|'
-    ;
+filters
+        :  '|' fil 
+        | fil  '|' ;
 
 
-filter: filtername param | filtername ;
+fil: filtername param  ;
 
-param: '(' @:value ')' ;
+param: '(' value ')' ;
 
 filtername: 'உடம்படுமெய்' | 'இரட்டுதல்' | 'திரிதல்' | 'சும்மா' ;
 
 // (* # any character except ')' *)
-value: [^)]*; 
+// VALUE: '~')'+'; 
+// VALUE: 'வ்'+; 
+value:( 'வ்' | 'ய்')+; 
+// value: .+?; 
 
-கூட்டல்: '+இயல்பு+' | '+' ;
+
+கூட்டல் :  '+' ;
 
 
 // get right tamil word
 // writes the grammar
-// write listener
+// write listener`
 // replace புணர்ச்சிசெய்
