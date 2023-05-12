@@ -20,4 +20,6 @@ antlr4 -Dlanguage=Python3 $RESOURCE_PATH/மாத்திரை.g4 -o $CODEGEN
 antlr4 -Dlanguage=Python3 $RESOURCE_PATH/வெண்பா.g4 -o $CODEGEN_PATH
 antlr4 -Dlanguage=Python3 $RESOURCE_PATH/ஆசிரியப்பா.g4 -o $CODEGEN_PATH
 antlr4 -Dlanguage=Python3 $RESOURCE_PATH/சீர்.g4 -o $CODEGEN_PATH
+antlr4 -Dlanguage=Python3 $RESOURCE_PATH/புணர்ச்சிவிதிகள்.g4 -o $CODEGEN_PATH
+
 # antlr4 -Dlanguage=Python3 $RESOURCE_PATH/கலிப்பா.g4 -o $CODEGEN_PATH

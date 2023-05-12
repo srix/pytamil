@@ -3,19 +3,21 @@
     "python.jediEnabled": false,
     "terminal.integrated.scrollback": 5000,
 
-    "[antlr]": {},
-    "antlr4.generation": {
-        "mode": "external",
-        "language": "Python3",
-        "listeners": true,
-        "visitors": false,
-        "outputDir": "/home/srix/workspace/pytamil/pytamil/தமிழ்/codegen/",
-        "alternativeJar": "/home/srix/workspace/pytamil/tools/antlr-4.9.2-complete.jar"
-    },
-    "antlr4.debug" : {
-        "visualParseTreeHorizontal" : false,
-        "visualParseTreeClustered" : false
-    },
+    // "[antlr]": {},
+    // "antlr4.generation": {
+    //     "mode": "external",
+    //     "language": "Python3",
+    //     "listeners": true,
+    //     "visitors": false,
+    //     "outputDir": ".antlr/",
+    //     // "outputDir": "/home/srix/workspace/pytamil/pytamil/தமிழ்/codegen/",
+    //     // "alternativeJar": "/home/srix/workspace/pytamil/tools/antlr-4.9.2-complete.jar"
+    // },
+    // "antlr4.debug" : {
+    //     "visualParseTreeHorizontal" : false,
+    //     "visualParseTreeClustered" : false
+    // },
+    
     // "python.languageServer": "Microsoft",
     "python.languageServer": "Pylance",
     "python.testing.pytestArgs": [
@@ -24,8 +26,6 @@
     "python.testing.unittestEnabled": false,
     "python.testing.nosetestsEnabled": false,
     "python.testing.pytestEnabled": true,
-    "python.linting.pylintEnabled": true,
-    "python.linting.enabled": true,
-    "python.linting.pylintArgs": ["--disable=C2401"],
-    // disable c2401 in pylint
+    "python.linting.pylintEnabled": false,
+    "python.linting.enabled": false
 }
