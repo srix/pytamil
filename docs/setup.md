@@ -121,11 +121,11 @@ On VSCODE
 
 
 ## unit tests
-cd in to top lelvel folder and run pytest.
+cd in to top level folder and run pytest.
 ```bash
-# runn all tests
+# run all tests
 pytest
-# or run speific tests
+# or run specific tests
 pytest test_எழுத்து.py  
 pytest test_சான்று.py
 pytest test_புணர்ச்சி.py
