@@ -1,4 +1,4 @@
-# Generated from /home/srix/workspace/pytamil-all/pytamil-3.10/pytamil/தமிழ்/resources/புணர்ச்சிவிதிகள்.g4 by ANTLR 4.12.0
+# Generated from /home/srix/Documents/tamil-research/pytamil/pytamil/தமிழ்/resources/புணர்ச்சிவிதிகள்.g4 by ANTLR 4.9.2
 from antlr4 import *
 if __name__ is not None and "." in __name__:
     from .புணர்ச்சிவிதிகள்Parser import புணர்ச்சிவிதிகள்Parser

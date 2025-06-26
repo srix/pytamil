@@ -16,10 +16,12 @@ RESOURCE_PATH="$DIR_PATH/pytamil/தமிழ்/resources"
 CODEGEN_PATH="$DIR_PATH/pytamil/தமிழ்/codegen"
 
 # cd ./pytamil/தமிழ்/resources/
-antlr4 -Dlanguage=Python3 $RESOURCE_PATH/மாத்திரை.g4 -o $CODEGEN_PATH
-antlr4 -Dlanguage=Python3 $RESOURCE_PATH/வெண்பா.g4 -o $CODEGEN_PATH
-antlr4 -Dlanguage=Python3 $RESOURCE_PATH/ஆசிரியப்பா.g4 -o $CODEGEN_PATH
-antlr4 -Dlanguage=Python3 $RESOURCE_PATH/சீர்.g4 -o $CODEGEN_PATH
-antlr4 -Dlanguage=Python3 $RESOURCE_PATH/புணர்ச்சிவிதிகள்.g4 -o $CODEGEN_PATH
+java -jar tools/antlr-4.9.2-complete.jar -Dlanguage=Python3 $RESOURCE_PATH/மாத்திரை.g4 -o $CODEGEN_PATH
+java -jar tools/antlr-4.9.2-complete.jar -Dlanguage=Python3 $RESOURCE_PATH/வெண்பா.g4 -o $CODEGEN_PATH
+java -jar tools/antlr-4.9.2-complete.jar -Dlanguage=Python3 $RESOURCE_PATH/ஆசிரியப்பா.g4 -o $CODEGEN_PATH
+java -jar tools/antlr-4.9.2-complete.jar -Dlanguage=Python3 $RESOURCE_PATH/சீர்.g4 -o $CODEGEN_PATH
+java -jar tools/antlr-4.9.2-complete.jar -Dlanguage=Python3 $RESOURCE_PATH/புணர்ச்சிவிதிகள்.g4 -o $CODEGEN_PATH
+java -jar tools/antlr-4.9.2-complete.jar -Dlanguage=Python3 $RESOURCE_PATH/சொல்.g4 -o $CODEGEN_PATH
+
 
 # antlr4 -Dlanguage=Python3 $RESOURCE_PATH/கலிப்பா.g4 -o $CODEGEN_PATH
