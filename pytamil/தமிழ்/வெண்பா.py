@@ -54,7 +54,7 @@ def saveas_txttree(tree, parser, outfilename):
     return a
 
 def saveas_pngtree(tree, parser, outfilename):
-    # Image output of the parse tree is not implemented yet; see docs/ROADMAP.md (Phase 2, மரம்காட்டு).
+    # Image output of the parse tree is not implemented yet; see specs/2026-09-20-revival-and-roadmap.md (Phase 2d, மரம்காட்டு).
     raise NotImplementedError("PNG/SVG tree output is not implemented; use saveas_txttree")
 
 
