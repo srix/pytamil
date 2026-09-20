@@ -1,4 +1,4 @@
-# Generated from /home/srix/Documents/tamil-research/pytamil/pytamil/தமிழ்/resources/புணர்ச்சிவிதிகள்.g4 by ANTLR 4.9.2
+# Generated from புணர்ச்சிவிதிகள்.g4 by ANTLR 4.13.2
 # encoding: utf-8
 from antlr4 import *
 from io import StringIO
@@ -8,34 +8,30 @@ if sys.version_info[1] > 5:
 else:
 	from typing.io import TextIO
 
-
 def serializedATN():
-    with StringIO() as buf:
-        buf.write("\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\17")
-        buf.write("I\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7\4\b")
-        buf.write("\t\b\4\t\t\t\4\n\t\n\4\13\t\13\3\2\3\2\3\2\7\2\32\n\2")
-        buf.write("\f\2\16\2\35\13\2\3\3\3\3\3\3\3\3\3\4\3\4\7\4%\n\4\f\4")
-        buf.write("\16\4(\13\4\3\5\7\5+\n\5\f\5\16\5.\13\5\3\5\3\5\3\6\3")
-        buf.write("\6\3\6\3\6\3\6\5\6\67\n\6\3\7\3\7\3\7\3\b\3\b\3\b\3\b")
-        buf.write("\3\t\3\t\3\n\6\nC\n\n\r\n\16\nD\3\13\3\13\3\13\2\2\f\2")
-        buf.write("\4\6\b\n\f\16\20\22\24\2\4\3\2\t\f\3\2\r\16\2C\2\26\3")
-        buf.write("\2\2\2\4\36\3\2\2\2\6\"\3\2\2\2\b,\3\2\2\2\n\66\3\2\2")
-        buf.write("\2\f8\3\2\2\2\16;\3\2\2\2\20?\3\2\2\2\22B\3\2\2\2\24F")
-        buf.write("\3\2\2\2\26\33\5\4\3\2\27\30\7\3\2\2\30\32\5\4\3\2\31")
-        buf.write("\27\3\2\2\2\32\35\3\2\2\2\33\31\3\2\2\2\33\34\3\2\2\2")
-        buf.write("\34\3\3\2\2\2\35\33\3\2\2\2\36\37\5\6\4\2\37 \5\24\13")
-        buf.write("\2 !\5\b\5\2!\5\3\2\2\2\"&\7\4\2\2#%\5\n\6\2$#\3\2\2\2")
-        buf.write("%(\3\2\2\2&$\3\2\2\2&\'\3\2\2\2\'\7\3\2\2\2(&\3\2\2\2")
-        buf.write(")+\5\n\6\2*)\3\2\2\2+.\3\2\2\2,*\3\2\2\2,-\3\2\2\2-/\3")
-        buf.write("\2\2\2.,\3\2\2\2/\60\7\5\2\2\60\t\3\2\2\2\61\62\7\6\2")
-        buf.write("\2\62\67\5\f\7\2\63\64\5\f\7\2\64\65\7\6\2\2\65\67\3\2")
-        buf.write("\2\2\66\61\3\2\2\2\66\63\3\2\2\2\67\13\3\2\2\289\5\20")
-        buf.write("\t\29:\5\16\b\2:\r\3\2\2\2;<\7\7\2\2<=\5\22\n\2=>\7\b")
-        buf.write("\2\2>\17\3\2\2\2?@\t\2\2\2@\21\3\2\2\2AC\t\3\2\2BA\3\2")
-        buf.write("\2\2CD\3\2\2\2DB\3\2\2\2DE\3\2\2\2E\23\3\2\2\2FG\7\17")
-        buf.write("\2\2G\25\3\2\2\2\7\33&,\66D")
-        return buf.getvalue()
-
+    return [
+        4,1,13,71,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,
+        6,2,7,7,7,2,8,7,8,2,9,7,9,1,0,1,0,1,0,5,0,24,8,0,10,0,12,0,27,9,
+        0,1,1,1,1,1,1,1,1,1,2,1,2,5,2,35,8,2,10,2,12,2,38,9,2,1,3,5,3,41,
+        8,3,10,3,12,3,44,9,3,1,3,1,3,1,4,1,4,1,4,1,4,1,4,3,4,53,8,4,1,5,
+        1,5,1,5,1,6,1,6,1,6,1,6,1,7,1,7,1,8,4,8,65,8,8,11,8,12,8,66,1,9,
+        1,9,1,9,0,0,10,0,2,4,6,8,10,12,14,16,18,0,2,1,0,7,10,1,0,11,12,65,
+        0,20,1,0,0,0,2,28,1,0,0,0,4,32,1,0,0,0,6,42,1,0,0,0,8,52,1,0,0,0,
+        10,54,1,0,0,0,12,57,1,0,0,0,14,61,1,0,0,0,16,64,1,0,0,0,18,68,1,
+        0,0,0,20,25,3,2,1,0,21,22,5,1,0,0,22,24,3,2,1,0,23,21,1,0,0,0,24,
+        27,1,0,0,0,25,23,1,0,0,0,25,26,1,0,0,0,26,1,1,0,0,0,27,25,1,0,0,
+        0,28,29,3,4,2,0,29,30,3,18,9,0,30,31,3,6,3,0,31,3,1,0,0,0,32,36,
+        5,2,0,0,33,35,3,8,4,0,34,33,1,0,0,0,35,38,1,0,0,0,36,34,1,0,0,0,
+        36,37,1,0,0,0,37,5,1,0,0,0,38,36,1,0,0,0,39,41,3,8,4,0,40,39,1,0,
+        0,0,41,44,1,0,0,0,42,40,1,0,0,0,42,43,1,0,0,0,43,45,1,0,0,0,44,42,
+        1,0,0,0,45,46,5,3,0,0,46,7,1,0,0,0,47,48,5,4,0,0,48,53,3,10,5,0,
+        49,50,3,10,5,0,50,51,5,4,0,0,51,53,1,0,0,0,52,47,1,0,0,0,52,49,1,
+        0,0,0,53,9,1,0,0,0,54,55,3,14,7,0,55,56,3,12,6,0,56,11,1,0,0,0,57,
+        58,5,5,0,0,58,59,3,16,8,0,59,60,5,6,0,0,60,13,1,0,0,0,61,62,7,0,
+        0,0,62,15,1,0,0,0,63,65,7,1,0,0,64,63,1,0,0,0,65,66,1,0,0,0,66,64,
+        1,0,0,0,66,67,1,0,0,0,67,17,1,0,0,0,68,69,5,13,0,0,69,19,1,0,0,0,
+        5,25,36,42,52,66
+    ]
 
 class புணர்ச்சிவிதிகள்Parser ( Parser ):
 
@@ -47,12 +43,13 @@ class புணர்ச்சிவிதிகள்Parser ( Parser ):
 
     sharedContextCache = PredictionContextCache()
 
-    literalNames = [ "<INVALID>", "','", "'\u0BA8\u0BBF\u0BB2\u0BC8\u0BAE\u0BCA\u0BB4\u0BBF'", 
-                     "'\u0BB5\u0BB0\u0BC1\u0BAE\u0BCA\u0BB4\u0BBF'", "'|'", 
-                     "'('", "')'", "'\u0B89\u0B9F\u0BAE\u0BCD\u0BAA\u0B9F\u0BC1\u0BAE\u0BC6\u0BAF\u0BCD'", 
-                     "'\u0B87\u0BB0\u0B9F\u0BCD\u0B9F\u0BC1\u0BA4\u0BB2\u0BCD'", 
-                     "'\u0BA4\u0BBF\u0BB0\u0BBF\u0BA4\u0BB2\u0BCD'", "'\u0B9A\u0BC1\u0BAE\u0BCD\u0BAE\u0BBE'", 
-                     "'\u0BB5\u0BCD'", "'\u0BAF\u0BCD'", "'+'" ]
+    literalNames = [ "<INVALID>", "','", "'\\u0BA8\\u0BBF\\u0BB2\\u0BC8\\u0BAE\\u0BCA\\u0BB4\\u0BBF'", 
+                     "'\\u0BB5\\u0BB0\\u0BC1\\u0BAE\\u0BCA\\u0BB4\\u0BBF'", 
+                     "'|'", "'('", "')'", "'\\u0B89\\u0B9F\\u0BAE\\u0BCD\\u0BAA\\u0B9F\\u0BC1\\u0BAE\\u0BC6\\u0BAF\\u0BCD'", 
+                     "'\\u0B87\\u0BB0\\u0B9F\\u0BCD\\u0B9F\\u0BC1\\u0BA4\\u0BB2\\u0BCD'", 
+                     "'\\u0BA4\\u0BBF\\u0BB0\\u0BBF\\u0BA4\\u0BB2\\u0BCD'", 
+                     "'\\u0B9A\\u0BC1\\u0BAE\\u0BCD\\u0BAE\\u0BBE'", "'\\u0BB5\\u0BCD'", 
+                     "'\\u0BAF\\u0BCD'", "'+'" ]
 
     symbolicNames = [  ]
 
@@ -87,7 +84,7 @@ class புணர்ச்சிவிதிகள்Parser ( Parser ):
 
     def __init__(self, input:TokenStream, output:TextIO = sys.stdout):
         super().__init__(input, output)
-        self.checkVersion("4.9.2")
+        self.checkVersion("4.13.2")
         self._interp = ParserATNSimulator(self, self.atn, self.decisionsToDFA, self.sharedContextCache)
         self._predicates = None
 
@@ -134,7 +131,7 @@ class புணர்ச்சிவிதிகள்Parser ( Parser ):
             self.state = 25
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while _la==புணர்ச்சிவிதிகள்Parser.T__0:
+            while _la==1:
                 self.state = 21
                 self.match(புணர்ச்சிவிதிகள்Parser.T__0)
                 self.state = 22
@@ -246,7 +243,7 @@ class புணர்ச்சிவிதிகள்Parser ( Parser ):
             self.state = 36
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << புணர்ச்சிவிதிகள்Parser.T__3) | (1 << புணர்ச்சிவிதிகள்Parser.T__6) | (1 << புணர்ச்சிவிதிகள்Parser.T__7) | (1 << புணர்ச்சிவிதிகள்Parser.T__8) | (1 << புணர்ச்சிவிதிகள்Parser.T__9))) != 0):
+            while (((_la) & ~0x3f) == 0 and ((1 << _la) & 1936) != 0):
                 self.state = 33
                 self.filters()
                 self.state = 38
@@ -300,7 +297,7 @@ class புணர்ச்சிவிதிகள்Parser ( Parser ):
             self.state = 42
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << புணர்ச்சிவிதிகள்Parser.T__3) | (1 << புணர்ச்சிவிதிகள்Parser.T__6) | (1 << புணர்ச்சிவிதிகள்Parser.T__7) | (1 << புணர்ச்சிவிதிகள்Parser.T__8) | (1 << புணர்ச்சிவிதிகள்Parser.T__9))) != 0):
+            while (((_la) & ~0x3f) == 0 and ((1 << _la) & 1936) != 0):
                 self.state = 39
                 self.filters()
                 self.state = 44
@@ -351,14 +348,14 @@ class புணர்ச்சிவிதிகள்Parser ( Parser ):
             self.state = 52
             self._errHandler.sync(self)
             token = self._input.LA(1)
-            if token in [புணர்ச்சிவிதிகள்Parser.T__3]:
+            if token in [4]:
                 self.enterOuterAlt(localctx, 1)
                 self.state = 47
                 self.match(புணர்ச்சிவிதிகள்Parser.T__3)
                 self.state = 48
                 self.fil()
                 pass
-            elif token in [புணர்ச்சிவிதிகள்Parser.T__6, புணர்ச்சிவிதிகள்Parser.T__7, புணர்ச்சிவிதிகள்Parser.T__8, புணர்ச்சிவிதிகள்Parser.T__9]:
+            elif token in [7, 8, 9, 10]:
                 self.enterOuterAlt(localctx, 2)
                 self.state = 49
                 self.fil()
@@ -502,7 +499,7 @@ class புணர்ச்சிவிதிகள்Parser ( Parser ):
             self.enterOuterAlt(localctx, 1)
             self.state = 61
             _la = self._input.LA(1)
-            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << புணர்ச்சிவிதிகள்Parser.T__6) | (1 << புணர்ச்சிவிதிகள்Parser.T__7) | (1 << புணர்ச்சிவிதிகள்Parser.T__8) | (1 << புணர்ச்சிவிதிகள்Parser.T__9))) != 0)):
+            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & 1920) != 0)):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
@@ -551,7 +548,7 @@ class புணர்ச்சிவிதிகள்Parser ( Parser ):
             while True:
                 self.state = 63
                 _la = self._input.LA(1)
-                if not(_la==புணர்ச்சிவிதிகள்Parser.T__10 or _la==புணர்ச்சிவிதிகள்Parser.T__11):
+                if not(_la==11 or _la==12):
                     self._errHandler.recoverInline(self)
                 else:
                     self._errHandler.reportMatch(self)
@@ -559,7 +556,7 @@ class புணர்ச்சிவிதிகள்Parser ( Parser ):
                 self.state = 66 
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                if not (_la==புணர்ச்சிவிதிகள்Parser.T__10 or _la==புணர்ச்சிவிதிகள்Parser.T__11):
+                if not (_la==11 or _la==12):
                     break
 
         except RecognitionException as re:
