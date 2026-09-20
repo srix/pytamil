@@ -431,6 +431,15 @@ class ஆசிரியப்பாListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by ஆசிரியப்பாParser#முதல்நிரை.
+    def enterமுதல்நிரை(self, ctx:ஆசிரியப்பாParser.முதல்நிரைContext):
+        pass
+
+    # Exit a parse tree produced by ஆசிரியப்பாParser#முதல்நிரை.
+    def exitமுதல்நிரை(self, ctx:ஆசிரியப்பாParser.முதல்நிரைContext):
+        pass
+
+
     # Enter a parse tree produced by ஆசிரியப்பாParser#நிரை.
     def enterநிரை(self, ctx:ஆசிரியப்பாParser.நிரைContext):
         pass
@@ -449,6 +458,24 @@ class ஆசிரியப்பாListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by ஆசிரியப்பாParser#ஆய்தம்.
+    def enterஆய்தம்(self, ctx:ஆசிரியப்பாParser.ஆய்தம்Context):
+        pass
+
+    # Exit a parse tree produced by ஆசிரியப்பாParser#ஆய்தம்.
+    def exitஆய்தம்(self, ctx:ஆசிரியப்பாParser.ஆய்தம்Context):
+        pass
+
+
+    # Enter a parse tree produced by ஆசிரியப்பாParser#ஐகாரக்குறுக்கம்.
+    def enterஐகாரக்குறுக்கம்(self, ctx:ஆசிரியப்பாParser.ஐகாரக்குறுக்கம்Context):
+        pass
+
+    # Exit a parse tree produced by ஆசிரியப்பாParser#ஐகாரக்குறுக்கம்.
+    def exitஐகாரக்குறுக்கம்(self, ctx:ஆசிரியப்பாParser.ஐகாரக்குறுக்கம்Context):
+        pass
+
+
     # Enter a parse tree produced by ஆசிரியப்பாParser#குறில்.
     def enterகுறில்(self, ctx:ஆசிரியப்பாParser.குறில்Context):
         pass
@@ -464,15 +491,6 @@ class ஆசிரியப்பாListener(ParseTreeListener):
 
     # Exit a parse tree produced by ஆசிரியப்பாParser#நெடில்.
     def exitநெடில்(self, ctx:ஆசிரியப்பாParser.நெடில்Context):
-        pass
-
-
-    # Enter a parse tree produced by ஆசிரியப்பாParser#ஆய்தம்.
-    def enterஆய்தம்(self, ctx:ஆசிரியப்பாParser.ஆய்தம்Context):
-        pass
-
-    # Exit a parse tree produced by ஆசிரியப்பாParser#ஆய்தம்.
-    def exitஆய்தம்(self, ctx:ஆசிரியப்பாParser.ஆய்தம்Context):
         pass
 
 

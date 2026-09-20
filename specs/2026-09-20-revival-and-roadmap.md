@@ -3,6 +3,11 @@ Status (2026-09-20): approved plan for reviving pytamil. Part 1 is being execute
 branch `srix`; review baseline is the git tag `before-revival-2026-09-20`
 (`git diff before-revival-2026-09-20..srix`). Parts 2+ are the roadmap.
 Plans and design notes live in specs/; docs/ is for end users.
+
+Progress: Part 1 merged to master 2026-09-20. Phase 1c = PR #9 (phase1/antlr-4.13),
+Phase 1b = PR #10 (phase1/parser-helper, stacked on #9), Phase 1a = phase1/seer-grammar
+(stacked on #10). Execution order was 1c -> 1b -> 1a because the toolchain upgrade
+regenerates all parsers and 1a needs the helper for its error tests.
 -->
 
 # pytamil (பைந்தமிழ்): merge `srix` → `master`, then roadmap

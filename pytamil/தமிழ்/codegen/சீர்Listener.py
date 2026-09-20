@@ -350,6 +350,15 @@ class சீர்Listener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by சீர்Parser#முதல்நிரை.
+    def enterமுதல்நிரை(self, ctx:சீர்Parser.முதல்நிரைContext):
+        pass
+
+    # Exit a parse tree produced by சீர்Parser#முதல்நிரை.
+    def exitமுதல்நிரை(self, ctx:சீர்Parser.முதல்நிரைContext):
+        pass
+
+
     # Enter a parse tree produced by சீர்Parser#நிரை.
     def enterநிரை(self, ctx:சீர்Parser.நிரைContext):
         pass
@@ -368,6 +377,24 @@ class சீர்Listener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by சீர்Parser#ஆய்தம்.
+    def enterஆய்தம்(self, ctx:சீர்Parser.ஆய்தம்Context):
+        pass
+
+    # Exit a parse tree produced by சீர்Parser#ஆய்தம்.
+    def exitஆய்தம்(self, ctx:சீர்Parser.ஆய்தம்Context):
+        pass
+
+
+    # Enter a parse tree produced by சீர்Parser#ஐகாரக்குறுக்கம்.
+    def enterஐகாரக்குறுக்கம்(self, ctx:சீர்Parser.ஐகாரக்குறுக்கம்Context):
+        pass
+
+    # Exit a parse tree produced by சீர்Parser#ஐகாரக்குறுக்கம்.
+    def exitஐகாரக்குறுக்கம்(self, ctx:சீர்Parser.ஐகாரக்குறுக்கம்Context):
+        pass
+
+
     # Enter a parse tree produced by சீர்Parser#குறில்.
     def enterகுறில்(self, ctx:சீர்Parser.குறில்Context):
         pass
@@ -383,15 +410,6 @@ class சீர்Listener(ParseTreeListener):
 
     # Exit a parse tree produced by சீர்Parser#நெடில்.
     def exitநெடில்(self, ctx:சீர்Parser.நெடில்Context):
-        pass
-
-
-    # Enter a parse tree produced by சீர்Parser#ஆய்தம்.
-    def enterஆய்தம்(self, ctx:சீர்Parser.ஆய்தம்Context):
-        pass
-
-    # Exit a parse tree produced by சீர்Parser#ஆய்தம்.
-    def exitஆய்தம்(self, ctx:சீர்Parser.ஆய்தம்Context):
         pass
 
 
