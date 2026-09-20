@@ -55,3 +55,17 @@ def test_சான்று_மாத்திரைவரிசை_கொடு
     textstr=மாத்திரை.formatsimple(வரிசை)
 
     assert textstr.strip() == மாத்திரைவரிசை
+
+@pytest.mark.parametrize("தொடர், மொத்தம்", [
+    ('ஊக்கம்', 4.0),      # 2 + 0.5 + 1 + 0.5
+    ('அஃது', 2.0),        # 1 + 0.5 + 0.5
+    ('ஐ', 2.0),
+    ('முஃடீது', 3.75),   # 1 + 0.25 + 2 + 0.5
+])
+def test_மொத்தமாத்திரை(தொடர், மொத்தம்):
+    assert மாத்திரை.மொத்தமாத்திரை(தொடர்) == மொத்தம்
+
+
+def test_printtree_returns_text():
+    text = மாத்திரை.printtree("ஊக்கம்")
+    assert "மாத்திரை" in text and "ஊ" in text

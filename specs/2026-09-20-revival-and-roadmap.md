@@ -112,7 +112,7 @@ Ordered by the user's priorities. Phase 1 is a prerequisite for the venba valida
 - Replace the seven copies in `சீர்.py:15`, `வெண்பா.py:35`, `ஆசிரியப்பா.py:15`, `மாத்திரை.py:197,223`, `சொல்.py:30`, `புணர்ச்சிantlr.py:28`. Behaviour unchanged; suite stays green.
 - `மாத்திரை.py`: fix `மொத்தமாத்திரை` to call `மாத்திரைவரிசை_கொடு` and sum `.மாத்திரைஎண்`; add a test.
 
-**1c. ANTLR 4.13.2** (tool jar + runtime pinned identically; drops the `typing.io` shim, still maintained for the Python target)
+**1c. ANTLR 4.13.2** (tool jar + runtime pinned identically; still maintained for the Python target. Note: 4.13.2 generated code still contains the `typing.io` compatibility branch, but it is dead code on Python 3.6+)
 - Replace `tools/antlr-4.9.2-complete.jar`; update `codegen.sh`, `tools/showtree.sh`, `docs/setup.md`; pin `antlr4-python3-runtime==4.13.2`. Regenerate all six grammars from inside `resources/` with relative paths so headers stop embedding the author's home directory. One commit.
 
 **1d. CI** — `.github/workflows/test.yml`: matrix Python 3.10 and 3.12, `pip install -r requirements.txt`, `pytest`. Add a `codegen-check` job that regenerates and `git diff --exit-code`s the codegen directory, so grammar and generated code can't drift.

@@ -9,17 +9,13 @@ import os
 # from codegen import codegen
 from pytamil.தமிழ்.codegen.சீர்Lexer import சீர்Lexer
 from pytamil.தமிழ்.codegen.சீர்Parser import சீர்Parser
+from pytamil.தமிழ் import பாகுபடுத்தி
 from codecs import open
 
 
 def gettree(பதம்):
-    input_stream = antlr4.InputStream(பதம்)
-    lexer = சீர்Lexer(input_stream)
-    stream = CommonTokenStream(lexer)
-    parser = சீர்Parser(stream)
-    tree = parser.சீர்()
-
-    return tree, parser
+    பா = பாகுபடுத்தி.மரம்_கொடு(சீர்Lexer, சீர்Parser, 'சீர்', பதம்)
+    return பா.மரம், பா.parser
 
 def சீர்_வாய்பாடு_கொடு(பதம்):
     tree, parser = gettree(பதம்)

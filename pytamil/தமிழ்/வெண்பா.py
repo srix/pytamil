@@ -9,6 +9,7 @@ import os
 # from codegen import codegen
 from pytamil.தமிழ்.codegen.வெண்பாLexer import வெண்பாLexer
 from pytamil.தமிழ்.codegen.வெண்பாParser import வெண்பாParser
+from pytamil.தமிழ் import பாகுபடுத்தி
 from codecs import open
 
 # nltk is imported lazily inside the tree-drawing helpers below, so that
@@ -16,12 +17,8 @@ from codecs import open
 
 
 def gettree(பாடல்):
-    input_stream = antlr4.InputStream(பாடல்)
-    lexer = வெண்பாLexer(input_stream)
-    stream = CommonTokenStream(lexer)
-    parser = வெண்பாParser(stream)
-    tree = parser.வெண்பா()
-    return tree, parser
+    பா = பாகுபடுத்தி.மரம்_கொடு(வெண்பாLexer, வெண்பாParser, 'வெண்பா', பாடல்)
+    return பா.மரம், பா.parser
 
 def சீர்கொடு(பாடல்):
     
@@ -43,7 +40,10 @@ def சீர்கொடு(பாடல்):
 
 def saveas_txttree(tree, parser, outfilename):
     from nltk import Tree as nltkTree
-    from nltk.treeprettyprinter import TreePrettyPrinter
+    try:
+        from nltk.tree import TreePrettyPrinter
+    except ImportError:  # nltk < 3.8
+        from nltk.treeprettyprinter import TreePrettyPrinter
 
     strtree = Trees.toStringTree(tree, None, parser)
     t = nltkTree.fromstring(strtree)
