@@ -50,6 +50,7 @@ class பாகுபாடு:
 
     @property
     def சரியா(self) -> bool:
+        """True when the input parsed with no errors."""
         return not self.பிழைகள்
 
 
@@ -61,11 +62,14 @@ class பிழைசேகரிப்பான்(ErrorListener):
         self.நிலை = நிலை
         self.பிழைகள் = பிழைகள்
 
+    # Signature is fixed by ANTLR's ErrorListener interface; it cannot be changed.
+    # pylint: disable-next=too-many-arguments,too-many-positional-arguments
     def syntaxError(self, recognizer, offendingSymbol, line, column, msg, e):
         self.பிழைகள்.append(பாகுபாட்டுப்பிழை(line, column, msg, self.நிலை))
 
 
-def மரம்_கொடு(LexerCls, ParserCls, தொடக்கவிதி: str, உரை: str, *, கண்டிப்பு: bool = False) -> பாகுபாடு:
+def மரம்_கொடு(LexerCls, ParserCls, தொடக்கவிதி: str, உரை: str, *,
+               கண்டிப்பு: bool = False) -> பாகுபாடு:
     """
     Parse `உரை` with the given generated Lexer/Parser classes, starting at rule `தொடக்கவிதி`.
 

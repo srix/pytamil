@@ -8,6 +8,8 @@ from antlr4.tree.Trees import Trees
 
 def உரைமரம்(மரம், parser) -> str:
     """பாகுபாட்டு மரத்தை nltk-இன் TreePrettyPrinter வழி வரைந்த உரை."""
+    # nltk is optional; importing it here keeps the analysis modules independent of it.
+    # pylint: disable=import-outside-toplevel
     from nltk import Tree as nltkTree
     try:
         from nltk.tree import TreePrettyPrinter

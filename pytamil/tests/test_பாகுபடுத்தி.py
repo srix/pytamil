@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+"""பாகுபடுத்தி tests: syntax errors are collected as data instead of printed."""
 import pytest
 from pytamil.தமிழ் import பாகுபடுத்தி
 from pytamil.தமிழ்.codegen.சீர்Lexer import சீர்Lexer

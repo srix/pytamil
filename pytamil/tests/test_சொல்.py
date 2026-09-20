@@ -14,7 +14,7 @@ GRAMMAR_GAP = "சொல்.g4 gap, see specs/2026-09-20-revival-and-roadmap.md 
 
 
 def _பிழைகள்(சொல்_உரை):
-    tree, parser = சொல்.get_soll_tree(சொல்_உரை)
+    _, parser = சொல்.get_soll_tree(சொல்_உரை)
     return parser.getNumberOfSyntaxErrors()
 
 
@@ -30,7 +30,8 @@ def _பிழைகள்(சொல்_உரை):
     pytest.param("மரம்",    marks=pytest.mark.xfail(reason=GRAMMAR_GAP, strict=True)),
     pytest.param("கண்",     marks=pytest.mark.xfail(reason=GRAMMAR_GAP, strict=True)),
     pytest.param("மீன்",    marks=pytest.mark.xfail(reason=GRAMMAR_GAP, strict=True)),
-    pytest.param("ஆஅ",      marks=pytest.mark.xfail(reason=GRAMMAR_GAP + " (உயிரளபெடை)", strict=True)),
+    pytest.param("ஆஅ",      marks=pytest.mark.xfail(reason=GRAMMAR_GAP + " (உயிரளபெடை)",
+                                                     strict=True)),
 ])
 def test_சரியான_சொல்(சொல்_உரை):
     assert _பிழைகள்(சொல்_உரை) == 0
@@ -52,4 +53,5 @@ def test_தவறான_சொல்(சொல்_உரை):
 
 def test_print_soll_tree_shape():
     tree, parser = சொல்.get_soll_tree("அம்மா")
-    assert tree.toStringTree(recog=parser).startswith("(சொல் (பொதுமொழி (மொழிமுதல் (உயிர்க்குறில் அ))")
+    assert tree.toStringTree(recog=parser).startswith(
+        "(சொல் (பொதுமொழி (மொழிமுதல் (உயிர்க்குறில் அ))")
