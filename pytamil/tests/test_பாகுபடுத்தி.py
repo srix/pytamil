@@ -9,7 +9,7 @@ def test_சரியான_உள்ளீடு_பிழையில்லை
     பா = பாகுபடுத்தி.மரம்_கொடு(சீர்Lexer, சீர்Parser, 'சீர்', 'வானினும்')
     assert பா.பிழைகள் == []
     assert பா.parser.ruleNames[பா.மரம்.getRuleIndex()] == 'சீர்'
-    assert பா.மரம்.getText() == 'வானினும்'
+    assert பா.மரம்.getText() == 'வானினும்<EOF>'   # start rule ends with EOF
 
 
 def test_தவறான_உள்ளீடு_பிழைகள்_சேகரிக்கப்படும்(capsys):

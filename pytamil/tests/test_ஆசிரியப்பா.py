@@ -58,9 +58,7 @@ def test_நேரிசை_ஆசிரியப்பா(பத்தி):
 
 @pytest.mark.parametrize("பத்தி", \
     [
-        # Known failure: தண்மையும் / வெம்மையும் scan as தேமாங்காய் because சீர்.g4 treats
-        # word-medial ஐ as நெடில் (should be ஐகாரக்குறுக்கம் = குறில்). See specs/2026-09-20-revival-and-roadmap.md, Phase 1a.
-        pytest.param('''நீரின் தண்மையும் தீயின் வெம்மையும்
+        ('''நீரின் தண்மையும் தீயின் வெம்மையும்
             = தேமா கூவிளம் தேமா கூவிளம்
             சாரச் சார்ந்து
             = தேமா தேமா
@@ -71,9 +69,7 @@ def test_நேரிசை_ஆசிரியப்பா(பத்தி):
             சாரச் சாரச் சார்ந்து
             = தேமா தேமா தேமா
             தீரத் தீரத் தீர்பொல் லாதே
-            = தேமா தேமா தேமா தேமா''',
-            marks=pytest.mark.xfail(
-                reason="ஐகாரக்குறுக்கம் scanned as நெடில் in சீர்.g4 (specs/2026-09-20-revival-and-roadmap.md, Phase 1a)", strict=True)),
+            = தேமா தேமா தேமா தேமா'''),
     ])
 def test_இணைக்குறள்_ஆசிரியப்பா(பத்தி):
     
