@@ -5,7 +5,7 @@ graphviz>=0.20          # optional: சொல்.display_soll_tree_graph
 iniconfig==2.0.0
 ipython>=8              # optional: சொல்.display_soll_tree_graph (notebook display)
 joblib==1.2.0
-nltk==3.8.1
+nltk==3.10.3                # tree pretty-printing only; 3.8.1 had 20 open Dependabot advisories
 Open-Tamil==1.1
 packaging==23.1
 pluggy==1.0.0
