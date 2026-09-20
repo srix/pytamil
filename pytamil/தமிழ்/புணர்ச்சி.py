@@ -195,7 +195,7 @@ def getmatchingவிதிகள்(நிலைமொழி, வருமொ�
 
 def புணர்ச்சிசெய்(entry):
     """Parse the right-hand side of a விதி with the ebnf; returns the தொடர்மொழி forms."""
-    return _பாகுபடுத்தி.parse(entry, semantics=PunarchiSemantics())
+    return _parser.parse(entry, semantics=PunarchiSemantics())
 
 
 def load_parser(filename):
@@ -265,4 +265,4 @@ def _get_regex_chars(charslist):
 _பதிவுகள் = load(os.path.join(CURRDIR, "resources/புணர்ச்சிவிதிகள்.yaml"))
 விதிகள் = getவிதிகள்(_பதிவுகள், விதிகள்)
 
-_பாகுபடுத்தி = load_parser(os.path.join(CURRDIR, 'resources/புணர்ச்சிவிதிகள்.ebnf'))
+_parser = load_parser(os.path.join(CURRDIR, 'resources/புணர்ச்சிவிதிகள்.ebnf'))

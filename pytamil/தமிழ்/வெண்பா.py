@@ -21,7 +21,7 @@ from typing import List, Optional
 
 from pytamil.தமிழ்.codegen.வெண்பாLexer import வெண்பாLexer
 from pytamil.தமிழ்.codegen.வெண்பாParser import வெண்பாParser
-from pytamil.தமிழ் import பாகுபடுத்தி
+from pytamil.தமிழ் import parsehelper
 from pytamil.தமிழ் import தளை as தளைக்கூறு
 
 
@@ -81,8 +81,8 @@ _அசைவிதிகள் = {'நேர்': 'நேர்', 'நிரை
 
 def gettree(பாடல்):
     """Parse a பாடல் with the வெண்பா grammar; returns (tree, parser)."""
-    பா = பாகுபடுத்தி.மரம்_கொடு(வெண்பாLexer, வெண்பாParser, 'வெண்பா', பாடல்)
-    return பா.மரம், பா.parser
+    result = parsehelper.parse(வெண்பாLexer, வெண்பாParser, 'வெண்பா', பாடல்)
+    return result.tree, result.parser
 
 
 def _விதிப்பெயர்(ctx, parser) -> Optional[str]:
@@ -201,13 +201,13 @@ def ஆய்வு(பாடல்: str) -> ஆய்வுமுடிவு:
 
     விதிவிலக்கு எழுப்பாது; எல்லா விதிமீறல்களும் முடிவு.பிழைகள் பட்டியலில் வரும்.
     """
-    பா = பாகுபடுத்தி.மரம்_கொடு(வெண்பாLexer, வெண்பாParser, 'வெண்பா', பாடல்)
-    அடிகள், ஈற்றுச்சீரா = _அடிகள்_சேகரி(பா.மரம், பா.parser)
+    result = parsehelper.parse(வெண்பாLexer, வெண்பாParser, 'வெண்பா', பாடல்)
+    அடிகள், ஈற்றுச்சீரா = _அடிகள்_சேகரி(result.tree, result.parser)
     முடிவு = ஆய்வுமுடிவு(வகை=_வகை(len(அடிகள்)), அடிகள்=அடிகள்)
     பிழைகள் = முடிவு.பிழைகள்
 
-    for ப in பா.பிழைகள்:
-        பிழைகள்.append(பிழை('பாகுபாட்டுப்பிழை', ப.வரி, None, str(ப)))
+    for e in result.errors:
+        பிழைகள்.append(பிழை('பாகுபாட்டுப்பிழை', e.line, None, str(e)))
 
     if len(அடிகள்) < 2:
         பிழைகள்.append(பிழை('அடி_எண்ணிக்கை', None, None,

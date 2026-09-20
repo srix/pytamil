@@ -19,8 +19,8 @@ from yaml import Loader
 from antlr4 import ParseTreeWalker
 
 from pytamil.தமிழ் import எழுத்து
-from pytamil.தமிழ் import பாகுபடுத்தி
-from pytamil.தமிழ் import மரம்காட்டு
+from pytamil.தமிழ் import parsehelper
+from pytamil.தமிழ் import treetext
 from pytamil.தமிழ் import விதிக்கோப்பு
 from pytamil.தமிழ்.codegen.மாத்திரைLexer import மாத்திரைLexer
 from pytamil.தமிழ்.codegen.மாத்திரைParser import மாத்திரைParser
@@ -176,18 +176,18 @@ class நம்மாத்திரைListener(மாத்திரைListener
 def printtree(தொடர்):
     """Return the parse tree of a word as drawn text (needs nltk)."""
     tree, parser = gettree(தொடர்)
-    return மரம்காட்டு.உரைமரம்(tree, parser)
+    return treetext.as_text(tree, parser)
 
 def printtree_tofile(தொடர், outfilename):
     """Write what printtree() returns to a file."""
     tree, parser = gettree(தொடர்)
-    மரம்காட்டு.உரைமரம்_சேமி(tree, parser, outfilename)
+    treetext.save_text(tree, parser, outfilename)
 
 def gettree(தொடர்):
     """Parse a word (in normal orthography) with the மாத்திரை grammar; returns (tree, parser)."""
     விரிதொடர் = எழுத்து.உயிர்மெய்விரி(தொடர்)
-    பா = பாகுபடுத்தி.மரம்_கொடு(மாத்திரைLexer, மாத்திரைParser, 'மாத்திரை', விரிதொடர்)
-    return பா.மரம், பா.parser
+    result = parsehelper.parse(மாத்திரைLexer, மாத்திரைParser, 'மாத்திரை', விரிதொடர்)
+    return result.tree, result.parser
 
 def மாத்திரைவரிசை_கொடு(தொடர்):
     """One விவரம்() per எழுத்து of the word, in order."""

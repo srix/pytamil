@@ -8,7 +8,7 @@
 """
 from antlr4 import ParseTreeWalker
 
-from pytamil.தமிழ் import பாகுபடுத்தி
+from pytamil.தமிழ் import parsehelper
 from pytamil.தமிழ்.codegen.புணர்ச்சிவிதிகள்Lexer import புணர்ச்சிவிதிகள்Lexer
 from pytamil.தமிழ்.codegen.புணர்ச்சிவிதிகள்Parser import புணர்ச்சிவிதிகள்Parser
 from pytamil.தமிழ்.codegen.புணர்ச்சிவிதிகள்Listener import புணர்ச்சிவிதிகள்Listener
@@ -28,9 +28,9 @@ class நம்புணர்ச்சிவிதிகள்Listener(பு�
 
 def தொடர்மொழி_ஆக்கு(விதி):
     """Parse one புணர்ச்சி விதி with ANTLR and walk it with the listener."""
-    பா = பாகுபடுத்தி.மரம்_கொடு(புணர்ச்சிவிதிகள்Lexer, புணர்ச்சிவிதிகள்Parser,
-                                'புணர்ச்சிவிதிகள்', விதி)
+    result = parsehelper.parse(புணர்ச்சிவிதிகள்Lexer, புணர்ச்சிவிதிகள்Parser,
+                               'புணர்ச்சிவிதிகள்', விதி)
 
     நம்listener = நம்புணர்ச்சிவிதிகள்Listener()
     walker = ParseTreeWalker()
-    walker.walk(நம்listener, பா.மரம்)
+    walker.walk(நம்listener, result.tree)

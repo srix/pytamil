@@ -11,7 +11,7 @@
 import itertools
 
 from pytamil.தமிழ் import எழுத்து
-from pytamil.தமிழ் import பாகுபடுத்தி
+from pytamil.தமிழ் import parsehelper
 from pytamil.தமிழ்.codegen.சொல்Lexer import சொல்Lexer
 from pytamil.தமிழ்.codegen.சொல்Parser import சொல்Parser
 
@@ -25,8 +25,8 @@ from pytamil.தமிழ்.codegen.சொல்Parser import சொல்Parse
 def get_soll_tree(text):
     """Expand the word and parse it with the சொல் grammar; returns (tree, parser)."""
     விரிதொடர் = எழுத்து.உயிர்மெய்விரி(text)
-    பா = பாகுபடுத்தி.மரம்_கொடு(சொல்Lexer, சொல்Parser, 'சொல்', விரிதொடர்)
-    return பா.மரம், பா.parser
+    result = parsehelper.parse(சொல்Lexer, சொல்Parser, 'சொல்', விரிதொடர்)
+    return result.tree, result.parser
 
 def print_soll_tree(text):
     """Print the parse tree of a word in one-line LISP form."""

@@ -111,9 +111,9 @@ Ordered by the user's priorities. Phase 1 is a prerequisite for the venba valida
 - New tests in `test_சீர்.py`: `வெம்மையும்`→கூவிளம்; `கையினை`→கூவிளம் (initial ஐ stays long, must not flip to புளிமா); `கேண்மை`, `கையும்`, `ஔவை`→தேமா; `தலைவன்`, `ஒளியும்`→புளிமா; `வழிபடுக`→கருவிளங்காய்; `தண்மையும்xx` → parse error.
 - **Domain decision for the user to confirm before implementing:** word-initial ஐ scans நெடில், non-initial ஐ scans குறில். This matches the 2021 commit note and `மாத்திரை.g4`. If the user wants both readings admitted (true ambiguity), the design changes to reporting multiple parses; flag it, don't assume.
 
-**1b. Shared parser helper** — new `pytamil/தமிழ்/பாகுபடுத்தி.py`
-- `மரம்_கொடு(LexerCls, ParserCls, தொடக்கவிதி, உரை, *, கண்டிப்பு=False) -> பாகுபாடு(மரம், parser, பிழைகள்)`.
-- `பிழைசேகரிப்பான்(ErrorListener)` attached to both lexer and parser, collecting `பாகுபாட்டுப்பிழை(வரி, நெடுக்கை, செய்தி, நிலை)`; `கண்டிப்பு=True` raises `பாகுபாட்டுவிதிவிலக்கு`.
+**1b. Shared parser helper** — new `pytamil/தமிழ்/parsehelper.py`
+- `parse(LexerCls, ParserCls, start_rule, text, *, strict=False) -> ParseResult(tree, parser, errors)`.
+- `ErrorCollector(ErrorListener)` attached to both lexer and parser, collecting `ParseError(line, column, message, stage)`; `strict=True` raises `ParseFailed`.
 - Replace the seven copies in `சீர்.py:15`, `வெண்பா.py:35`, `ஆசிரியப்பா.py:15`, `மாத்திரை.py:197,223`, `சொல்.py:30`, `புணர்ச்சிantlr.py:28`. Behaviour unchanged; suite stays green.
 - `மாத்திரை.py`: fix `மொத்தமாத்திரை` to call `மாத்திரைவரிசை_கொடு` and sum `.மாத்திரைஎண்`; add a test.
 
@@ -154,7 +154,7 @@ edition with சீர் spacing, and rejections must be read with this in mind
 
 **2e. Corpus harness** — rewrite `pytamil/திருக்குறள்.py` as a CLI (`python -m pytamil.திருக்குறள் input.csv out.csv`) that runs `ஆய்வு` on all 1330 kurals and writes வகை, feet, தளை counts and violations per kural. This is the first real answer to "what do the poets actually do": distributions of foot types, தளை usage, and which kurals the validator rejects (those are either grammar bugs or genuine scholarly cases, both valuable). Extend to Nalavenba later. Add a small committed sample CSV so a test can exercise the CLI.
 
-Move `saveas_txttree`/`saveas_pngtree` into `pytamil/தமிழ்/மரம்காட்டு.py` with lazy imports; `வெண்பா.py` becomes analysis-only.
+Move `saveas_txttree`/`saveas_pngtree` into `pytamil/தமிழ்/treetext.py` with lazy imports; `வெண்பா.py` becomes analysis-only.
 
 **2e baseline (done 2026-09-20, `python -m pytamil.திருக்குறள் வெண்பா`, source = Open-Tamil's `kural`
 package, word-spaced):** 971/1330 kurals (73.0%) are accepted as venba with no re-splitting.
