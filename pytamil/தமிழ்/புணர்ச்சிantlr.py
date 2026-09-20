@@ -7,6 +7,7 @@ from pytamil.தமிழ் import எழுத்து as எழுத்த�
 from pytamil.தமிழ்.codegen.புணர்ச்சிவிதிகள்Lexer import புணர்ச்சிவிதிகள்Lexer
 from pytamil.தமிழ்.codegen.புணர்ச்சிவிதிகள்Parser import புணர்ச்சிவிதிகள்Parser
 from pytamil.தமிழ்.codegen.புணர்ச்சிவிதிகள்Listener import புணர்ச்சிவிதிகள்Listener
+from pytamil.தமிழ் import பாகுபடுத்தி
 
 
 class நம்புணர்ச்சிவிதிகள்Listener(புணர்ச்சிவிதிகள்Listener):
@@ -25,12 +26,8 @@ def தொடர்மொழி_ஆக்கு(விதி):
     # தொமொ =  தொமொ.replace('நிலைமொழி',நிலைமொழி)
     # தொமொ = தொமொ.replace('வருமொழி',வருமொழி)
 
-    input_stream = antlr4.InputStream(தொமொ)
-    lexer = புணர்ச்சிவிதிகள்Lexer(input_stream)
-    stream = CommonTokenStream(lexer)
-    parser = புணர்ச்சிவிதிகள்Parser(stream)
-    # parser.addErrorListener( MyErrorListener() ) # custom exception class
-    tree = parser.புணர்ச்சிவிதிகள்()
+    பா = பாகுபடுத்தி.மரம்_கொடு(புணர்ச்சிவிதிகள்Lexer, புணர்ச்சிவிதிகள்Parser, 'புணர்ச்சிவிதிகள்', தொமொ)
+    tree = பா.மரம்
 
     நம்listener = நம்புணர்ச்சிவிதிகள்Listener()
     walker = ParseTreeWalker()

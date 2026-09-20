@@ -11,15 +11,13 @@ from yaml import Loader, Dumper
 import antlr4
 from antlr4 import *
 from antlr4.tree.Trees import Trees
-from antlr4.error.ErrorListener import ErrorListener
-from nltk import Tree as nltkTree
-from nltk.treeprettyprinter import TreePrettyPrinter
 
 from pytamil.தமிழ் import எழுத்து as எழுத்து
 # from codegen import codegen
 from pytamil.தமிழ்.codegen.மாத்திரைLexer import மாத்திரைLexer
 from pytamil.தமிழ்.codegen.மாத்திரைParser import மாத்திரைParser
 from pytamil.தமிழ்.codegen.மாத்திரைListener import மாத்திரைListener
+from pytamil.தமிழ் import பாகுபடுத்தி
 # from pytamil.தமிழ்.codegen.மாத்திரைVisitor import மாத்திரைVisitor
 
 
@@ -170,40 +168,15 @@ class நம்மாத்திரைListener(மாத்திரைListener
 #         return self.visitChildren(ctx)
  
 
-class MyErrorListener( ErrorListener ):
-
-    def __init__(self):
-        super(MyErrorListener, self).__init__()
-
-    def syntaxError(self, recognizer, offendingSymbol, line, column, msg, e):
-        raise Exception("Oh no!!")
-
-    # def reportAmbiguity(self, recognizer, dfa, startIndex, stopIndex, exact, ambigAlts, configs):
-    #     raise Exception("Oh no!!")
-
-    # def reportAttemptingFullContext(self, recognizer, dfa, startIndex, stopIndex, conflictingAlts, configs):
-    #     raise Exception("Oh no!!")
-
-    # def reportContextSensitivity(self, recognizer, dfa, startIndex, stopIndex, prediction, configs):
-    #     raise Exception("Oh no!!")
-
-
 def printtree(தொடர்):
-    # infilename = os.path.join(os.path.dirname(__file__),'யாப்பு/வெண்பாinput.txt')
-    # outfilename = os.path.join(os.path.dirname(__file__),'யாப்பு/வெண்பாoutput.txt')
-    # data = open(infilename).read()   
-    
-    விரிதொடர் = எழுத்து.உயிர்மெய்விரி(தொடர்)
-    input_stream = antlr4.InputStream(விரிதொடர்)
-    
-    lexer = மாத்திரைLexer(input_stream)
-    stream = CommonTokenStream(lexer)
-    parser = மாத்திரைParser(stream)
-    tree = parser.மாத்திரை()
+    from nltk import Tree as nltkTree
+    try:
+        from nltk.tree import TreePrettyPrinter
+    except ImportError:  # nltk < 3.8
+        from nltk.treeprettyprinter import TreePrettyPrinter
 
-    # print(tree.toStringTree())
+    tree, parser = gettree(தொடர்)
     strtree = Trees.toStringTree(tree, None, parser)
-    print(strtree)
     t = nltkTree.fromstring(strtree)
     # t.pretty_print()
     treestr = TreePrettyPrinter(t).text()
@@ -218,15 +191,14 @@ def printtree_tofile(தொடர், outfilename):
     with open(outfilename, 'w', encoding='utf8') as f:
         f.write( treestr)
 
-def மாத்திரைவரிசை_கொடு(தொடர்):
+def gettree(தொடர்):
+    """Parse a word (in normal orthography) with the மாத்திரை grammar; returns (tree, parser)."""
     விரிதொடர் = எழுத்து.உயிர்மெய்விரி(தொடர்)
-    input_stream = antlr4.InputStream(விரிதொடர்)
+    பா = பாகுபடுத்தி.மரம்_கொடு(மாத்திரைLexer, மாத்திரைParser, 'மாத்திரை', விரிதொடர்)
+    return பா.மரம், பா.parser
 
-    lexer = மாத்திரைLexer(input_stream)
-    stream = CommonTokenStream(lexer)
-    parser = மாத்திரைParser(stream)
-    # parser.addErrorListener( MyErrorListener() ) # custom exception class
-    tree = parser.மாத்திரை()
+def மாத்திரைவரிசை_கொடு(தொடர்):
+    tree, parser = gettree(தொடர்)
 
     நம்listener = நம்மாத்திரைListener(மாத்திரை_பட்டியல்)
     walker = ParseTreeWalker()
@@ -238,12 +210,8 @@ def மாத்திரைவரிசை_கொடு(தொடர்):
     return நம்listener.seq
 
 def மொத்தமாத்திரை(தொடர்):
-    மாத்திரைவரிசை = மாத்திரை_கொடு(தொடர்)
-    மாத்திரை=0
-    for மா in மாத்திரைவரிசை:
-        மாத்திரை = மாத்திரை + மா
-    
-    return மாத்திரை
+    """Total மாத்திரை of a word: sum of the per-letter values from மாத்திரைவரிசை_கொடு."""
+    return sum(விவரம்.மாத்திரைஎண் for விவரம் in மாத்திரைவரிசை_கொடு(தொடர்))
 
 def getசான்றுகள்(entries,சான்றுகள்):
     for key in entries:

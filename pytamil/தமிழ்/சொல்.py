@@ -6,6 +6,7 @@ from antlr4 import *
 from pytamil.தமிழ் import எழுத்து as எழுத்து
 from pytamil.தமிழ்.codegen.சொல்Lexer import சொல்Lexer
 from pytamil.தமிழ்.codegen.சொல்Parser import சொல்Parser
+from pytamil.தமிழ் import பாகுபடுத்தி
 
 வேற்றுமை_உருபுகள் = ['ஐ', 'ஆல்', 'கு',  'இன்', 'அது', 'கண்']
 நிறம் = []
@@ -25,12 +26,8 @@ from pytamil.தமிழ்.codegen.சொல்Parser import சொல்Parse
 
 def get_soll_tree(text):
     விரிதொடர் = எழுத்து.உயிர்மெய்விரி(text)
-    input_stream = antlr4.InputStream(விரிதொடர்)
-    lexer = சொல்Lexer(input_stream)
-    stream = CommonTokenStream(lexer)
-    parser = சொல்Parser(stream)
-    tree = parser.சொல்()
-    return tree, parser
+    பா = பாகுபடுத்தி.மரம்_கொடு(சொல்Lexer, சொல்Parser, 'சொல்', விரிதொடர்)
+    return பா.மரம், பா.parser
 
 def print_soll_tree(text):
     tree, parser = get_soll_tree(text)

@@ -9,16 +9,13 @@ import os
 # from codegen import codegen
 from pytamil.தமிழ்.codegen.ஆசிரியப்பாLexer import ஆசிரியப்பாLexer
 from pytamil.தமிழ்.codegen.ஆசிரியப்பாParser import ஆசிரியப்பாParser
+from pytamil.தமிழ் import பாகுபடுத்தி
 from codecs import open
 
 
 def gettree(பாடல்):
-    input_stream = antlr4.InputStream(பாடல்)
-    lexer = ஆசிரியப்பாLexer(input_stream)
-    stream = CommonTokenStream(lexer)
-    parser = ஆசிரியப்பாParser(stream)
-    tree = parser.ஆசிரியப்பா()
-    return tree, parser
+    பா = பாகுபடுத்தி.மரம்_கொடு(ஆசிரியப்பாLexer, ஆசிரியப்பாParser, 'ஆசிரியப்பா', பாடல்)
+    return பா.மரம், பா.parser
 
 def சீர்_வாய்ப்பாடு_கொடு(பாடல்):
     
