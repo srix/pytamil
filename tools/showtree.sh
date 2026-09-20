@@ -8,7 +8,7 @@ shopt -s expand_aliases
 
 WORKSPACE=$1
 CURRENT_FILE_BASENAME=$2
-ANTLR4_PATH="$WORKSPACE/tools/antlr-4.9.2-complete.jar" 
+ANTLR4_PATH="$WORKSPACE/tools/antlr-4.13.2-complete.jar" 
 GRAMMAR_LIB_FOLDER="$WORKSPACE/pytamil/தமிழ்/resources"
 GRAMMAR_FILE="$WORKSPACE/pytamil/தமிழ்/resources/$CURRENT_FILE_BASENAME"
 
