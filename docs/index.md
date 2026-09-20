@@ -69,6 +69,5 @@ If you have a feature in mind, Please add a feature request [here](https://githu
 * and many more
 
 # For Developers
-[Getting started](docs/setup.md)
+[Getting started](setup.md)
 
-[test](rai.md)

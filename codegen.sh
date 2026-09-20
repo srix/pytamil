@@ -1,27 +1,19 @@
-#! /bin/bash
+#!/usr/bin/env bash
+# Regenerate the ANTLR parsers under pytamil/தமிழ்/codegen/ from the grammars in
+# pytamil/தமிழ்/resources/. Requires Java. The jar version must match the
+# antlr4-python3-runtime pin in requirements.txt.
+set -euo pipefail
 
-echo “${BASH_SOURCE:-$0}”
-
-path=`readlink -f “${BASH_SOURCE:-$0}”`
-
-DIR_PATH=`dirname $path`
-
-echo ‘The absolute path is’ $path
-echo ‘---------------------------------------------’
-echo ‘The Directory Path is’ $DIR_PATH
-echo $DIR_PATH/தமிழ்/codegen/
-
-
+DIR_PATH="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+ANTLR_JAR="$DIR_PATH/tools/antlr-4.9.2-complete.jar"
 RESOURCE_PATH="$DIR_PATH/pytamil/தமிழ்/resources"
 CODEGEN_PATH="$DIR_PATH/pytamil/தமிழ்/codegen"
 
-# cd ./pytamil/தமிழ்/resources/
-java -jar tools/antlr-4.9.2-complete.jar -Dlanguage=Python3 $RESOURCE_PATH/மாத்திரை.g4 -o $CODEGEN_PATH
-java -jar tools/antlr-4.9.2-complete.jar -Dlanguage=Python3 $RESOURCE_PATH/வெண்பா.g4 -o $CODEGEN_PATH
-java -jar tools/antlr-4.9.2-complete.jar -Dlanguage=Python3 $RESOURCE_PATH/ஆசிரியப்பா.g4 -o $CODEGEN_PATH
-java -jar tools/antlr-4.9.2-complete.jar -Dlanguage=Python3 $RESOURCE_PATH/சீர்.g4 -o $CODEGEN_PATH
-java -jar tools/antlr-4.9.2-complete.jar -Dlanguage=Python3 $RESOURCE_PATH/புணர்ச்சிவிதிகள்.g4 -o $CODEGEN_PATH
-java -jar tools/antlr-4.9.2-complete.jar -Dlanguage=Python3 $RESOURCE_PATH/சொல்.g4 -o $CODEGEN_PATH
+# -lib lets `import சீர்;` in வெண்பா.g4 / ஆசிரியப்பா.g4 resolve regardless of cwd.
+for grammar in மாத்திரை வெண்பா ஆசிரியப்பா சீர் புணர்ச்சிவிதிகள் சொல்; do
+    echo "antlr4 -> $grammar"
+    java -jar "$ANTLR_JAR" -Dlanguage=Python3 -lib "$RESOURCE_PATH" \
+        "$RESOURCE_PATH/$grammar.g4" -o "$CODEGEN_PATH"
+done
 
-
-# antlr4 -Dlanguage=Python3 $RESOURCE_PATH/கலிப்பா.g4 -o $CODEGEN_PATH
+# கலிப்பா.g4 is a placeholder and does not compile yet; see specs/ roadmap.
