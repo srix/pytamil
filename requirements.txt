@@ -10,7 +10,7 @@ Open-Tamil==1.1
 packaging==23.1
 pluggy==1.0.0
 pytest==7.3.1
-PyYAML==6.0
+PyYAML==6.0.2               # 6.0 does not build on Python 3.12+
 regex==2023.5.5
 TatSu==5.8.3
 tomli==2.0.1
