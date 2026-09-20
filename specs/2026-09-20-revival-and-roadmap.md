@@ -156,6 +156,20 @@ edition with சீர் spacing, and rejections must be read with this in mind
 
 Move `saveas_txttree`/`saveas_pngtree` into `pytamil/தமிழ்/மரம்காட்டு.py` with lazy imports; `வெண்பா.py` becomes analysis-only.
 
+**2e baseline (done 2026-09-20, `python -m pytamil.திருக்குறள் வெண்பா`, source = Open-Tamil's `kural`
+package, word-spaced):** 971/1330 kurals (73.0%) are accepted as venba with no re-splitting.
+1321 parse fully; 8 do not and 16 more have partial parse errors, all of them corrupt text in the
+source package (unassigned code points such as U+0BA7 where றி should be, truncated words like
+க்கம் for ஊக்கம், stray line breaks), so a cleaner Thirukkural source is wanted. Violations:
+வெண்டளை_பிழை 324 (கலித்தளை 188, நிரையொன்றாசிரியத்தளை 65, நேரொன்றாசிரியத்தளை 36,
+ஒன்றாத_வஞ்சித்தளை 35), நாலசைச்சீர்_தடை 86, கனிச்சீர்_தடை 35, ஈற்றடி_சீர்_எண்ணிக்கை 10,
+ஈற்றுச்சீர்_பிழை 6. The dominant கலித்தளை (காய் followed by நிரை) is the signature of
+sandhi-based re-splitting, e.g. kural 467; how much of the remaining 27% is that, and how much is
+genuine metrical licence in the Kural, is the open research question this phase was built to ask.
+To make 4-அசை feet reportable instead of fatal, the structural grammar admits நாலசை and the
+validator emits `நாலசைச்சீர்_தடை`; தளை for 4-அசை feet is computed by treating ...பூ like காய்
+and ...நிழல் like கனி (assumption stated in `தளை.py`, to be confirmed).
+
 ### Phase 3 — Sandhi: finish the ANTLR port, then the rules, then decomposition (GitHub #7)
 
 **3a. Finish the port.** Replace `resources/புணர்ச்சிவிதிகள்.g4` with a grammar for the *whole rule line* (LHS pattern, sandhi-class operator, RHS transformations), parsed once at load time, not per call:

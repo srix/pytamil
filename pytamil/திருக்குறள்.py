@@ -1,14 +1,27 @@
 # -*- coding: utf-8 -*-
 
-import sys
-import pytamil
-from pytamil import தமிழ்
-from pytamil.தமிழ்  import மாத்திரை
+"""
+திருக்குறள் — 1330 குறள்களையும் pytamil வழி ஆய்வு செய்யும் கருவி (corpus harness).
+
+    python -m pytamil.திருக்குறள் வெண்பா --வெளியீடு குறள்-வெண்பா.csv [--எண்கள் 1-100]
+    python -m pytamil.திருக்குறள் மாத்திரை உள்ளீடு.csv
+
+குறள் உரை Open-Tamil-இன் `kural` தொகுப்பிலிருந்து (Muthiah Annamalai, libkural). அது சொற்பிரிப்பு
+வடிவம் (சீர்ப் பிரிப்பு அன்று); ஆகவே வெண்பா.ஆய்வு காட்டும் தளைப் பிழைகளில் ஒரு பகுதி சந்தி
+காரணமான பிரிப்புச் சிக்கலே (எ.கா. குறள் 467 'எண்ணுவம் என்பது இழுக்கு' vs 'எண்ணுவ மென்பதி ழுக்கு').
+சில குறள்களில் அத்தொகுப்பின் உரையே சிதைந்துள்ளது (எ.கா. 288, 434, 593); அவை 'பாகுபாட்டுப்பிழை'
+ஆக வரும். specs/2026-09-20-revival-and-roadmap.md (Phase 2e) காண்க.
+"""
+import argparse
 import csv
 import os
-import re
+import sys
+from collections import Counter
+from typing import Dict, Iterable, Iterator, List, Optional
 
-# TODO add pytest for திருக்குறள்
+from pytamil.தமிழ் import மாத்திரை
+from pytamil.தமிழ் import வெண்பா
+
 
 குறள் = ['''அகர முதல எழுத்தெல்லாம் ஆதி
            பகவன் முதற்றே உலகு.''',
@@ -103,7 +116,112 @@ def convert_திருக்குறள்(filepath):
 
 
 
-if __name__ == "__main__":
-    # Run from the repo root. The input CSV is not tracked (pytamil/debug is gitignored).
-    convert_திருக்குறள்("pytamil/தமிழ்/debug/திருக்குறள்-input.csv")
 
+
+# ---------------------------------------------------------------- குறள் உரை
+
+def குறள்_உரை(எண்: int) -> str:
+    """குறள் எண் -> இரண்டு அடிகள் (இறுதிப் புள்ளி நீக்கி, அடிகளின் ஓர இடைவெளி நீக்கி)."""
+    from kural import Thirukkural
+    உரை = Thirukkural().get_kural_no(எண்).ta
+    return "\n".join(அடி.strip() for அடி in உரை.rstrip('.').strip().splitlines())
+
+
+def குறள்கள்(எண்கள்: Optional[Iterable[int]] = None) -> Iterator[dict]:
+    """ஒவ்வொரு குறளுக்கும் {'எண்', 'பால்', 'அதிகாரம்', 'உரை'}."""
+    from kural import Thirukkural
+    த = Thirukkural()
+    for எண் in (எண்கள் if எண்கள் is not None else range(1, 1331)):
+        கு = த.get_kural_no(எண்)
+        yield {'எண்': எண், 'பால்': கு.pal, 'அதிகாரம்': கு.adhikaram,
+               'உரை': "\n".join(அடி.strip() for அடி in கு.ta.rstrip('.').strip().splitlines())}
+
+
+# ---------------------------------------------------------------- வெண்பா ஆய்வு
+
+வெண்பா_நெடுவரிசைகள் = ['எண்', 'பால்', 'அதிகாரம்', 'குறள்', 'வகை', 'சரியா', 'சீர்கள்', 'தளைகள்', 'பிழைகள்']
+
+
+def வெண்பா_ஆய்வு_வரிசை(எண்கள்: Optional[Iterable[int]] = None) -> Iterator[Dict[str, str]]:
+    """குறளுக்கு ஒரு வரி: வகை, சரியா, சீர் வாய்பாடுகள் (அடிகள் ' / ' ஆல்), தளைகள், பிழைகள்."""
+    for கு in குறள்கள்(எண்கள்):
+        மு = வெண்பா.ஆய்வு(கு['உரை'])
+        yield {
+            'எண்': கு['எண்'], 'பால்': கு['பால்'], 'அதிகாரம்': கு['அதிகாரம்'],
+            'குறள்': கு['உரை'].replace("\n", " / "),
+            'வகை': மு.வகை or '',
+            'சரியா': 'ஆம்' if மு.சரியா else 'இல்லை',
+            'சீர்கள்': " / ".join(" ".join(அடி) for அடி in மு.வாய்பாடுகள்()),
+            'தளைகள்': " ".join(த.தளை for த in மு.தளைகள்),
+            'பிழைகள்': "; ".join(f"{ப.விதி}[{ப.அடி or '-'}:{ப.சீர் or '-'}] {ப.விவரம்}" for ப in மு.பிழைகள்),
+        }
+
+
+def வெண்பா_ஆய்வு_csv(கோப்பு: str, எண்கள்: Optional[Iterable[int]] = None) -> Dict[str, object]:
+    """CSV எழுதி, தொகுப்பு எண்ணிக்கைகளைத் தரும்: மொத்தம், சரி, விதிவாரி, தளைவாரி, வகைவாரி."""
+    தொகுப்பு = {'மொத்தம்': 0, 'சரி': 0, 'விதி': Counter(), 'தளை': Counter(), 'வகை': Counter()}
+    with open(கோப்பு, 'w', encoding='utf8', newline='') as f:
+        எழுதி = csv.DictWriter(f, fieldnames=வெண்பா_நெடுவரிசைகள்)
+        எழுதி.writeheader()
+        for கு in குறள்கள்(எண்கள்):
+            மு = வெண்பா.ஆய்வு(கு['உரை'])
+            தொகுப்பு['மொத்தம்'] += 1
+            தொகுப்பு['சரி'] += மு.சரியா
+            தொகுப்பு['வகை'][மு.வகை or '(பாகுபடவில்லை)'] += 1
+            for ப in மு.பிழைகள்: தொகுப்பு['விதி'][ப.விதி] += 1
+            for த in மு.தளைகள்:
+                if not த.வெண்டளையா: தொகுப்பு['தளை'][த.தளை] += 1
+            எழுதி.writerow({
+                'எண்': கு['எண்'], 'பால்': கு['பால்'], 'அதிகாரம்': கு['அதிகாரம்'],
+                'குறள்': கு['உரை'].replace("\n", " / "), 'வகை': மு.வகை or '',
+                'சரியா': 'ஆம்' if மு.சரியா else 'இல்லை',
+                'சீர்கள்': " / ".join(" ".join(அடி) for அடி in மு.வாய்பாடுகள்()),
+                'தளைகள்': " ".join(த.தளை for த in மு.தளைகள்),
+                'பிழைகள்': "; ".join(f"{ப.விதி}[{ப.அடி or '-'}:{ப.சீர் or '-'}] {ப.விவரம்}" for ப in மு.பிழைகள்),
+            })
+    return தொகுப்பு
+
+
+def தொகுப்பு_உரை(தொகுப்பு: Dict[str, object]) -> str:
+    வரிகள் = [f"குறள்கள்: {தொகுப்பு['மொத்தம்']}   வெண்பாவாக ஏற்கப்பட்டவை: {தொகுப்பு['சரி']} "
+              f"({100 * தொகுப்பு['சரி'] / max(தொகுப்பு['மொத்தம்'], 1):.1f}%)",
+              "வகை: " + ", ".join(f"{க} {எ}" for க, எ in தொகுப்பு['வகை'].most_common()),
+              "விதிமீறல்கள்: " + ", ".join(f"{க} {எ}" for க, எ in தொகுப்பு['விதி'].most_common()),
+              "வெண்டளை அல்லாத தளைகள்: " + ", ".join(f"{க} {எ}" for க, எ in தொகுப்பு['தளை'].most_common())]
+    return "\n".join(வரிகள்)
+
+
+def _எண்கள்(உரை: Optional[str]) -> Optional[List[int]]:
+    """'1-10,467,1330' -> [1..10, 467, 1330]; None -> None (எல்லாம்)."""
+    if not உரை:
+        return None
+    எண்கள்: List[int] = []
+    for பகுதி in உரை.split(','):
+        if '-' in பகுதி:
+            அ, இ = பகுதி.split('-'); எண்கள்.extend(range(int(அ), int(இ) + 1))
+        else:
+            எண்கள்.append(int(பகுதி))
+    return எண்கள்
+
+
+def main(argv: Optional[List[str]] = None) -> int:
+    பகுப்பி = argparse.ArgumentParser(prog='python -m pytamil.திருக்குறள்', description=__doc__,
+                                     formatter_class=argparse.RawDescriptionHelpFormatter)
+    துணை = பகுப்பி.add_subparsers(dest='கட்டளை', required=True)
+    வெ = துணை.add_parser('வெண்பா', help='ஒவ்வொரு குறளையும் வெண்பா.ஆய்வு() வழி ஆய்ந்து CSV எழுது')
+    வெ.add_argument('--வெளியீடு', default='திருக்குறள்-வெண்பா.csv', help='CSV கோப்பு (இயல்பு: திருக்குறள்-வெண்பா.csv)')
+    வெ.add_argument('--எண்கள்', default=None, help="குறள் எண்கள், எ.கா. '1-100,467' (இயல்பு: 1-1330)")
+    மா = துணை.add_parser('மாத்திரை', help='பழைய மாத்திரை CSV மாற்றம் (உள்ளீடு CSV: எண்,...,குறள் 5-ஆம் நெடுவரிசை)')
+    மா.add_argument('உள்ளீடு')
+    வாதங்கள் = பகுப்பி.parse_args(argv)
+
+    if வாதங்கள்.கட்டளை == 'வெண்பா':
+        தொகுப்பு = வெண்பா_ஆய்வு_csv(வாதங்கள்.வெளியீடு, _எண்கள்(வாதங்கள்.எண்கள்))
+        print(தொகுப்பு_உரை(தொகுப்பு)); print(f"எழுதியது: {வாதங்கள்.வெளியீடு}")
+    else:
+        convert_திருக்குறள்(வாதங்கள்.உள்ளீடு)
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
