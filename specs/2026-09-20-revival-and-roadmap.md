@@ -142,6 +142,16 @@ Type (குறள்/சிந்தியல்/நேரிசை/பஃற�
 
 **2d. `pytamil/தமிழ்/தொடை.py`** (warnings, not errors): மோனை (first letter of சீர் 1 vs சீர் 3 per அடி, using எழுத்து classes for the permitted equivalences), எதுகை (second letter across lines' first feet with equal first-syllable weight). Behind `ஆய்வு(..., தொடை=True)`.
 
+**Input convention (found while building 2c, 2026-09-20):** the venba grammar takes text spaced
+*by சீர்* (யாப்பு வடிவம்), not by word. Kural 467's last line in word spacing, `எண்ணுவம் என்பது இழுக்கு`,
+scans கூவிளம் கூவிளம் பிறப்பு and the junction என்பது→இழுக்கு is விளமுன் நிரை, a தளை violation;
+in metrical spacing, `எண்ணுவ மென்பதி ழுக்கு`, it scans கூவிளம் கூவிளம் காசு and every junction is
+வெண்டளை. The நளவெண்பா test fixture was already in metrical spacing. Consequence for 2e: a
+word-spaced corpus (as most digital Thirukkural texts are) must be re-split into சீர்கள் first.
+That re-splitting is a சந்தி/புணர்ச்சி problem (எண்ணுவம்+என்பது → எண்ணுவ மென்பது), so it depends
+on Phase 3, or on a metrically spaced source text. Until then the corpus run should use an
+edition with சீர் spacing, and rejections must be read with this in mind.
+
 **2e. Corpus harness** — rewrite `pytamil/திருக்குறள்.py` as a CLI (`python -m pytamil.திருக்குறள் input.csv out.csv`) that runs `ஆய்வு` on all 1330 kurals and writes வகை, feet, தளை counts and violations per kural. This is the first real answer to "what do the poets actually do": distributions of foot types, தளை usage, and which kurals the validator rejects (those are either grammar bugs or genuine scholarly cases, both valuable). Extend to Nalavenba later. Add a small committed sample CSV so a test can exercise the CLI.
 
 Move `saveas_txttree`/`saveas_pngtree` into `pytamil/தமிழ்/மரம்காட்டு.py` with lazy imports; `வெண்பா.py` becomes analysis-only.
