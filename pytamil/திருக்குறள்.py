@@ -103,11 +103,7 @@ def convert_திருக்குறள்(filepath):
 
 
 
-# மாத்திரைவரிசைகள் = குறள்_மாத்திரைவரிசைகள்_கொடு(குறள்[8])
-# # # print(குறள்_மாத்திரைஎண்கள்_கொடு(மாத்திரைவரிசைகள்))
-# for மாத்திரைவரிசை in மாத்திரைவரிசைகள்:
-#     print(மாத்திரை.format(மாத்திரைவரிசை))
-
-
-convert_திருக்குறள்("pytamil/தமிழ்/debug/திருக்குறள்-input.csv")
+if __name__ == "__main__":
+    # Run from the repo root. The input CSV is not tracked (pytamil/debug is gitignored).
+    convert_திருக்குறள்("pytamil/தமிழ்/debug/திருக்குறள்-input.csv")
 

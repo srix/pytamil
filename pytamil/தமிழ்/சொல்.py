@@ -1,9 +1,8 @@
 # -*- coding: utf-8 -*-
 
+import itertools
 import antlr4
 from antlr4 import *
-from graphviz import Digraph
-from IPython.display import display
 from pytamil.தமிழ் import எழுத்து as எழுத்து
 from pytamil.தமிழ்.codegen.சொல்Lexer import சொல்Lexer
 from pytamil.தமிழ்.codegen.சொல்Parser import சொல்Parser
@@ -26,7 +25,6 @@ from pytamil.தமிழ்.codegen.சொல்Parser import சொல்Parse
 
 def get_soll_tree(text):
     விரிதொடர் = எழுத்து.உயிர்மெய்விரி(text)
-    print (f"விரிதொடர்: {விரிதொடர்}")
     input_stream = antlr4.InputStream(விரிதொடர்)
     lexer = சொல்Lexer(input_stream)
     stream = CommonTokenStream(lexer)
@@ -38,21 +36,27 @@ def print_soll_tree(text):
     tree, parser = get_soll_tree(text)
     print(tree.toStringTree(recog=parser))
 
-def ast_to_graphviz(tree, parser, graph=None, parent=None, node_id=[0]):
+def ast_to_graphviz(tree, parser, graph=None, parent=None, node_id=None):
+    # graphviz is optional; import here so that plain parsing works without it.
+    from graphviz import Digraph
+
     if graph is None:
         graph = Digraph()
+    if node_id is None:
+        node_id = itertools.count()   # fresh counter per top-level call (was a shared mutable default)
     label = parser.ruleNames[tree.getRuleIndex()] if hasattr(tree, 'getRuleIndex') else str(tree)
-    my_id = str(node_id[0])
+    my_id = str(next(node_id))
     graph.node(my_id, label)
     if parent is not None:
         graph.edge(parent, my_id)
-    node_id[0] += 1
     for i in range(tree.getChildCount()):
         child = tree.getChild(i)
         ast_to_graphviz(child, parser, graph, my_id, node_id)
     return graph
 
 def display_soll_tree_graph(text):
+    from IPython.display import display
+
     tree, parser = get_soll_tree(text)
     graph = ast_to_graphviz(tree, parser)
     display(graph)

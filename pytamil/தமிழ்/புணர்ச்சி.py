@@ -101,7 +101,6 @@ class PunarchiSemantics(object):
     #     print (ast.left,ast.right)
 
 def சும்மா(பதம்): # dummy filter for testing
-    print ('சும்மா')
     return பதம்
 
 def இரட்டுதல்(பதம்):
@@ -176,9 +175,6 @@ def புணர்ச்சிசெய்(entry):
     global parser
     # ast = parser.parse(entry, trace = True, colorize =True, semantics = PunarchiSemantics())
     ast = parser.parse(entry, semantics = PunarchiSemantics())
-
-    print('# FACTORED SEMANTICS RESULT')
-    # pprint(ast, width=20, indent=4)
 
     return ast
 

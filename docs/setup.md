@@ -71,17 +71,9 @@ launch.json for Vscode
             "type": "python",
             "request": "launch",
             "program": "${file}",
-            "console": "integratedTerminal"
-        },
-        {
-            "name": "Python: Tamil19.py",
-            "type": "python",
-            "request": "launch",
             "cwd": "${workspaceFolder}",
-            "program": "${workspaceFolder}/pytamil/tamil19.py",
             "console": "integratedTerminal",
-            "env": {"PYTHONPATH": "${workspaceFolder}"},
-
+            "env": {"PYTHONPATH": "${workspaceFolder}"}
         }
     ]
 }
