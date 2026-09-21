@@ -46,4 +46,6 @@ CI அவை இலக்கணத்தோடு ஒத்திருப்ப
 - **மொழிக் கருத்துகள் தமிழில், நிரலாக்க நுட்பம் ஆங்கிலத்தில்.** Tamil for language concepts (எழுத்து, சீர்,
   தளை, விதி, ஆய்வு), English for programming mechanics (parser, tree, listener, config).
 - `pytest -q` பச்சை; `pylint pytamil` 10/10.
+- ஒரு function/class-இன் **முதல் statement ஒரே வரியில்** இருக்க வேண்டும் (பல வரிகளில் பரந்தால்
+  pylint செயலிழக்கும் — தமிழ்ப் பெயர்களோடு astroid-இல் உள்ள பிழை; விளக்கம் `.pylintrc`-இல்).
 - Pull requests are merged with merge commits (no squash) so the history stays traceable.

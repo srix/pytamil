@@ -205,9 +205,8 @@ def மொத்தமாத்திரை(தொடர்):
 
 def getசான்றுகள்(entries, சான்றுகள்):
     """Build a சான்று from every சான்று in the YAML; appends to and returns `சான்றுகள்`."""
-    சான்றுகள்.extend(சான்று(txt)
-                     for texts in விதிக்கோப்பு.items(entries, "சான்று")
-                     for txt in texts)
+    வரிகள் = விதிக்கோப்பு.items(entries, "சான்று")
+    சான்றுகள்.extend(சான்று(txt) for texts in வரிகள் for txt in texts)
     return சான்றுகள்
 
 # Shadows the `format` builtin, but மாத்திரை.format() is the existing public interface;

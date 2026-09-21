@@ -39,6 +39,20 @@ jobs:
           git status --porcelain -- pytamil/தமிழ்/codegen
           git diff --exit-code --stat -- pytamil/தமிழ்/codegen
 
+  lint:
+    # The hand-written code is kept at pylint 10/10; .pylintrc records which checks this
+    # project deliberately does not apply to Tamil identifiers and file names.
+    name: pylint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: python -m pip install -r requirements.txt pylint
+      - run: python -m pylint pytamil pytamil/tests/*.py
+
   install:
     # The package must install from pyproject.toml into a clean environment, with its declared
     # dependencies, and import from outside the repo (no reliance on the checkout's cwd).

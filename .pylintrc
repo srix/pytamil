@@ -28,6 +28,29 @@ disable=C0103,C2401,C2403,W2402
 # C2403:non-ascii-module-import
 # W2402:non-ascii-file-name — module file names are Tamil too (e.g. வெண்பா.py)
 
+# Upstream landmine (pylint 4.0.8 / astroid 4.0.4, 2026-09-21): pylint crashes with
+# astroid-error on any function or class whose FIRST statement spans several lines, when the
+# function has a Tamil name. astroid slices the header from `def` to the first statement's
+# line and tokenizes it, breaking out of the loop when it sees a NAME token equal to the
+# function name; a Tamil name from the AST is NFKC-normalized and never matches the raw
+# source token, so the loop runs to EOF inside the unclosed bracket and raises TokenError.
+# Minimal reproducer (the ASCII equivalent lints fine):
+#
+#     def தமிழ்(அ, ஆ):
+#         இ = [1, 2,
+#              3]
+#
+# Workaround, applied throughout: keep the first statement of a definition on one line
+# (assign to a local or lift a constant to module level first).
+
+[FORMAT]
+
+# 100 assumes ASCII identifiers. One Tamil name routinely costs 13-22 code points
+# (புணர்ச்சிவிதி, ஐகாரக்குறுக்கம்_இடைகடை, நிரையொன்றாசிரியத்தளை), and the புணர்ச்சி rule strings in the
+# tests are quoted verbatim from புணர்ச்சிவிதிகள்.yaml, where breaking them would hide what is
+# being tested. 120 keeps lines within a normal editor width even with wide Tamil glyphs.
+max-line-length=120
+
 [BASIC]
 
 # No docstring required for private helpers or for tests: a test's name
@@ -45,3 +68,7 @@ generated-members=ruleNames,RULE_.*
 # Small value objects (சான்று, விவரம், புணர்ச்சிவிதி) are normal here; requiring two
 # public methods of them is meaningless.
 min-public-methods=0
+
+# புணர்ச்சிவிதி is a record of what one rule line says: its text, both sides as written and as
+# regex, its புணர்ச்சிவகை, its மாற்றங்கள் and its சிறப்பு. Eight fields, no behaviour.
+max-attributes=10
