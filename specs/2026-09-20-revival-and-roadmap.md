@@ -206,6 +206,16 @@ typo in three lists, fixed here.
 
 **3c. Decomposition `புணர்ச்சி.தனிமொழி_ஆக்கு(தொடர்மொழி) -> list[(நிலைமொழி, வருமொழி)]`** (README's top TODO). Approach: for each split point and each rule whose RHS *could* have produced the observed junction, invert the transformation (undo இரட்டுதல்/உடம்படுமெய்/திரிதல்), then confirm by re-running `தொடர்மொழி_ஆக்கு` forward. Returns candidates ranked by number of rules applied; no dictionary needed for correctness, but an optional word list (Open-Tamil ships one) can rank candidates. Tests: every சான்று in the YAML must round-trip.
 
+**3c status (done 2026-09-21, branch phase3/punarchi-split):** `புணர்ச்சி.தனிமொழி_ஆக்கு(தொடர்மொழி)`
+returns `பிரிப்பு(நிலைமொழி, வருமொழி, வகை, மாற்றங்கள்)` candidates. Method: at every split of the letter
+sequence (including splitting one உயிர்மெய் into மெய் + உயிர், which is how இயல்பு joins fuse), apply
+the inverse of each filter to the two parts (drop ய்/வ், undo doubling, ட்→ண் / ற்→ன் / ங்,ஞ்,ந்→ம், restore ம்,
+restore உ), discard parts that cannot be Tamil words by the மொழிமுதல்/மொழியிறுதி letter rules (now in
+`எழுத்து.yaml`), and keep a pair only if the forward `தொடர்மொழி_ஆக்கு` reproduces the word. Every
+சான்று round-trips (55 tests). Limitation, as predicted: without a lexicon several rule-consistent
+splits survive (சேயடி → சேய்+அடி and சே+அடி), ordered by fewest inverted changes. Ranking by a
+word list is backlog.
+
 ### Phase 4 — Packaging and public release
 
 - `pyproject.toml` (setuptools backend), delete `setup.py`; package data = `தமிழ்/resources/*.{yaml,g4}` and `தமிழ்/codegen/*.py`; direct dependencies only (`antlr4-python3-runtime`, `PyYAML`, `Open-Tamil`, `regex`; `nltk`/`graphviz`/`IPython` as a `[viz]` extra). Python `>=3.10`. Verify with `pip install .` in a fresh venv and `python -c "from pytamil.தமிழ் import வெண்பா"`.
