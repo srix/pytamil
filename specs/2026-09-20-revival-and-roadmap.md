@@ -235,7 +235,11 @@ table, the metrical-spacing note and the naming rule. `docs/index.md` is a point
 rewritten for uv / 3.10+ / ANTLR 4.13.2; `CONTRIBUTING.md` (Tamil and English) for non-programmers.
 `இலக்கணம்.py` deleted (its ideas are in the backlog below). CI gained an `install` job: `pip install .`
 into a clean 3.10 and 3.12 environment and import from another directory. Verified locally the same
-way. **Not done: the PyPI publish itself and the v0.1.0 tag** — both are Srix's to do after review
+way, plus a `lint` job: the hand-written code is kept at pylint 10/10. Landmine found while doing
+that: pylint 4.0.8 / astroid 4.0.4 crash on any Tamil-named function whose first statement spans
+several lines (NFKC normalization of the name defeats astroid's header tokenizer); the workaround —
+keep that first statement on one line — is documented in `.pylintrc` and `CONTRIBUTING.md`.
+**Not done: the PyPI publish itself and the v0.1.0 tag** — both are Srix's to do after review
 (the name `pytamil` may already be taken on PyPI; check before publishing).
 
 ### Backlog (after the four phases)
