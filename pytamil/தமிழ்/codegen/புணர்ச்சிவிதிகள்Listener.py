@@ -8,21 +8,102 @@ else:
 # This class defines a complete listener for a parse tree produced by புணர்ச்சிவிதிகள்Parser.
 class புணர்ச்சிவிதிகள்Listener(ParseTreeListener):
 
-    # Enter a parse tree produced by புணர்ச்சிவிதிகள்Parser#புணர்ச்சிவிதிகள்.
-    def enterபுணர்ச்சிவிதிகள்(self, ctx:புணர்ச்சிவிதிகள்Parser.புணர்ச்சிவிதிகள்Context):
-        pass
-
-    # Exit a parse tree produced by புணர்ச்சிவிதிகள்Parser#புணர்ச்சிவிதிகள்.
-    def exitபுணர்ச்சிவிதிகள்(self, ctx:புணர்ச்சிவிதிகள்Parser.புணர்ச்சிவிதிகள்Context):
-        pass
-
-
     # Enter a parse tree produced by புணர்ச்சிவிதிகள்Parser#விதி.
     def enterவிதி(self, ctx:புணர்ச்சிவிதிகள்Parser.விதிContext):
         pass
 
     # Exit a parse tree produced by புணர்ச்சிவிதிகள்Parser#விதி.
     def exitவிதி(self, ctx:புணர்ச்சிவிதிகள்Parser.விதிContext):
+        pass
+
+
+    # Enter a parse tree produced by புணர்ச்சிவிதிகள்Parser#வடிவம்.
+    def enterவடிவம்(self, ctx:புணர்ச்சிவிதிகள்Parser.வடிவம்Context):
+        pass
+
+    # Exit a parse tree produced by புணர்ச்சிவிதிகள்Parser#வடிவம்.
+    def exitவடிவம்(self, ctx:புணர்ச்சிவிதிகள்Parser.வடிவம்Context):
+        pass
+
+
+    # Enter a parse tree produced by புணர்ச்சிவிதிகள்Parser#நிலைமொழி_வடிவம்.
+    def enterநிலைமொழி_வடிவம்(self, ctx:புணர்ச்சிவிதிகள்Parser.நிலைமொழி_வடிவம்Context):
+        pass
+
+    # Exit a parse tree produced by புணர்ச்சிவிதிகள்Parser#நிலைமொழி_வடிவம்.
+    def exitநிலைமொழி_வடிவம்(self, ctx:புணர்ச்சிவிதிகள்Parser.நிலைமொழி_வடிவம்Context):
+        pass
+
+
+    # Enter a parse tree produced by புணர்ச்சிவிதிகள்Parser#வருமொழி_வடிவம்.
+    def enterவருமொழி_வடிவம்(self, ctx:புணர்ச்சிவிதிகள்Parser.வருமொழி_வடிவம்Context):
+        pass
+
+    # Exit a parse tree produced by புணர்ச்சிவிதிகள்Parser#வருமொழி_வடிவம்.
+    def exitவருமொழி_வடிவம்(self, ctx:புணர்ச்சிவிதிகள்Parser.வருமொழி_வடிவம்Context):
+        pass
+
+
+    # Enter a parse tree produced by புணர்ச்சிவிதிகள்Parser#குழு.
+    def enterகுழு(self, ctx:புணர்ச்சிவிதிகள்Parser.குழுContext):
+        pass
+
+    # Exit a parse tree produced by புணர்ச்சிவிதிகள்Parser#குழு.
+    def exitகுழு(self, ctx:புணர்ச்சிவிதிகள்Parser.குழுContext):
+        pass
+
+
+    # Enter a parse tree produced by புணர்ச்சிவிதிகள்Parser#எதுவும்.
+    def enterஎதுவும்(self, ctx:புணர்ச்சிவிதிகள்Parser.எதுவும்Context):
+        pass
+
+    # Exit a parse tree produced by புணர்ச்சிவிதிகள்Parser#எதுவும்.
+    def exitஎதுவும்(self, ctx:புணர்ச்சிவிதிகள்Parser.எதுவும்Context):
+        pass
+
+
+    # Enter a parse tree produced by புணர்ச்சிவிதிகள்Parser#எழுத்துப்பட்டியல்.
+    def enterஎழுத்துப்பட்டியல்(self, ctx:புணர்ச்சிவிதிகள்Parser.எழுத்துப்பட்டியல்Context):
+        pass
+
+    # Exit a parse tree produced by புணர்ச்சிவிதிகள்Parser#எழுத்துப்பட்டியல்.
+    def exitஎழுத்துப்பட்டியல்(self, ctx:புணர்ச்சிவிதிகள்Parser.எழுத்துப்பட்டியல்Context):
+        pass
+
+
+    # Enter a parse tree produced by புணர்ச்சிவிதிகள்Parser#உறுப்பு.
+    def enterஉறுப்பு(self, ctx:புணர்ச்சிவிதிகள்Parser.உறுப்புContext):
+        pass
+
+    # Exit a parse tree produced by புணர்ச்சிவிதிகள்Parser#உறுப்பு.
+    def exitஉறுப்பு(self, ctx:புணர்ச்சிவிதிகள்Parser.உறுப்புContext):
+        pass
+
+
+    # Enter a parse tree produced by புணர்ச்சிவிதிகள்Parser#புணர்ச்சிவகை.
+    def enterபுணர்ச்சிவகை(self, ctx:புணர்ச்சிவிதிகள்Parser.புணர்ச்சிவகைContext):
+        pass
+
+    # Exit a parse tree produced by புணர்ச்சிவிதிகள்Parser#புணர்ச்சிவகை.
+    def exitபுணர்ச்சிவகை(self, ctx:புணர்ச்சிவிதிகள்Parser.புணர்ச்சிவகைContext):
+        pass
+
+
+    # Enter a parse tree produced by புணர்ச்சிவிதிகள்Parser#மாற்றங்கள்.
+    def enterமாற்றங்கள்(self, ctx:புணர்ச்சிவிதிகள்Parser.மாற்றங்கள்Context):
+        pass
+
+    # Exit a parse tree produced by புணர்ச்சிவிதிகள்Parser#மாற்றங்கள்.
+    def exitமாற்றங்கள்(self, ctx:புணர்ச்சிவிதிகள்Parser.மாற்றங்கள்Context):
+        pass
+
+
+    # Enter a parse tree produced by புணர்ச்சிவிதிகள்Parser#மாற்றம்.
+    def enterமாற்றம்(self, ctx:புணர்ச்சிவிதிகள்Parser.மாற்றம்Context):
+        pass
+
+    # Exit a parse tree produced by புணர்ச்சிவிதிகள்Parser#மாற்றம்.
+    def exitமாற்றம்(self, ctx:புணர்ச்சிவிதிகள்Parser.மாற்றம்Context):
         pass
 
 
@@ -44,57 +125,30 @@ class புணர்ச்சிவிதிகள்Listener(ParseTreeListener
         pass
 
 
-    # Enter a parse tree produced by புணர்ச்சிவிதிகள்Parser#filters.
-    def enterFilters(self, ctx:புணர்ச்சிவிதிகள்Parser.FiltersContext):
+    # Enter a parse tree produced by புணர்ச்சிவிதிகள்Parser#இணைப்பு.
+    def enterஇணைப்பு(self, ctx:புணர்ச்சிவிதிகள்Parser.இணைப்புContext):
         pass
 
-    # Exit a parse tree produced by புணர்ச்சிவிதிகள்Parser#filters.
-    def exitFilters(self, ctx:புணர்ச்சிவிதிகள்Parser.FiltersContext):
-        pass
-
-
-    # Enter a parse tree produced by புணர்ச்சிவிதிகள்Parser#fil.
-    def enterFil(self, ctx:புணர்ச்சிவிதிகள்Parser.FilContext):
-        pass
-
-    # Exit a parse tree produced by புணர்ச்சிவிதிகள்Parser#fil.
-    def exitFil(self, ctx:புணர்ச்சிவிதிகள்Parser.FilContext):
+    # Exit a parse tree produced by புணர்ச்சிவிதிகள்Parser#இணைப்பு.
+    def exitஇணைப்பு(self, ctx:புணர்ச்சிவிதிகள்Parser.இணைப்புContext):
         pass
 
 
-    # Enter a parse tree produced by புணர்ச்சிவிதிகள்Parser#param.
-    def enterParam(self, ctx:புணர்ச்சிவிதிகள்Parser.ParamContext):
+    # Enter a parse tree produced by புணர்ச்சிவிதிகள்Parser#வடிகட்டி.
+    def enterவடிகட்டி(self, ctx:புணர்ச்சிவிதிகள்Parser.வடிகட்டிContext):
         pass
 
-    # Exit a parse tree produced by புணர்ச்சிவிதிகள்Parser#param.
-    def exitParam(self, ctx:புணர்ச்சிவிதிகள்Parser.ParamContext):
-        pass
-
-
-    # Enter a parse tree produced by புணர்ச்சிவிதிகள்Parser#filtername.
-    def enterFiltername(self, ctx:புணர்ச்சிவிதிகள்Parser.FilternameContext):
-        pass
-
-    # Exit a parse tree produced by புணர்ச்சிவிதிகள்Parser#filtername.
-    def exitFiltername(self, ctx:புணர்ச்சிவிதிகள்Parser.FilternameContext):
+    # Exit a parse tree produced by புணர்ச்சிவிதிகள்Parser#வடிகட்டி.
+    def exitவடிகட்டி(self, ctx:புணர்ச்சிவிதிகள்Parser.வடிகட்டிContext):
         pass
 
 
-    # Enter a parse tree produced by புணர்ச்சிவிதிகள்Parser#value.
-    def enterValue(self, ctx:புணர்ச்சிவிதிகள்Parser.ValueContext):
+    # Enter a parse tree produced by புணர்ச்சிவிதிகள்Parser#வடிகட்டிப்பெயர்.
+    def enterவடிகட்டிப்பெயர்(self, ctx:புணர்ச்சிவிதிகள்Parser.வடிகட்டிப்பெயர்Context):
         pass
 
-    # Exit a parse tree produced by புணர்ச்சிவிதிகள்Parser#value.
-    def exitValue(self, ctx:புணர்ச்சிவிதிகள்Parser.ValueContext):
-        pass
-
-
-    # Enter a parse tree produced by புணர்ச்சிவிதிகள்Parser#கூட்டல்.
-    def enterகூட்டல்(self, ctx:புணர்ச்சிவிதிகள்Parser.கூட்டல்Context):
-        pass
-
-    # Exit a parse tree produced by புணர்ச்சிவிதிகள்Parser#கூட்டல்.
-    def exitகூட்டல்(self, ctx:புணர்ச்சிவிதிகள்Parser.கூட்டல்Context):
+    # Exit a parse tree produced by புணர்ச்சிவிதிகள்Parser#வடிகட்டிப்பெயர்.
+    def exitவடிகட்டிப்பெயர்(self, ctx:புணர்ச்சிவிதிகள்Parser.வடிகட்டிப்பெயர்Context):
         pass
 
 
