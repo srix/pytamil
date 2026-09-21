@@ -10,7 +10,7 @@ else:
 
 def serializedATN():
     return [
-        4,1,20,117,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,
+        4,1,23,117,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,
         6,2,7,7,7,2,8,7,8,2,9,7,9,2,10,7,10,2,11,7,11,2,12,7,12,2,13,7,13,
         2,14,7,14,2,15,7,15,1,0,1,0,1,0,1,0,1,0,1,1,1,1,1,1,1,1,1,2,4,2,
         43,8,2,11,2,12,2,44,1,3,4,3,48,8,3,11,3,12,3,49,1,4,1,4,1,4,1,4,
@@ -19,8 +19,8 @@ def serializedATN():
         1,10,1,10,1,10,1,10,1,11,1,11,1,11,5,11,91,8,11,10,11,12,11,94,9,
         11,1,12,1,12,1,12,5,12,99,8,12,10,12,12,12,102,9,12,1,12,1,12,1,
         13,1,13,1,14,1,14,1,14,1,14,1,14,3,14,113,8,14,1,15,1,15,1,15,0,
-        0,16,0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,0,4,1,0,18,19,1,
-        0,6,8,2,0,6,6,12,13,1,0,14,17,108,0,32,1,0,0,0,2,37,1,0,0,0,4,42,
+        0,16,0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,0,4,1,0,21,22,1,
+        0,6,8,2,0,6,6,12,13,1,0,14,20,108,0,32,1,0,0,0,2,37,1,0,0,0,4,42,
         1,0,0,0,6,47,1,0,0,0,8,59,1,0,0,0,10,61,1,0,0,0,12,63,1,0,0,0,14,
         71,1,0,0,0,16,73,1,0,0,0,18,75,1,0,0,0,20,83,1,0,0,0,22,87,1,0,0,
         0,24,100,1,0,0,0,26,105,1,0,0,0,28,107,1,0,0,0,30,114,1,0,0,0,32,
@@ -66,13 +66,17 @@ class புணர்ச்சிவிதிகள்Parser ( Parser ):
                      "'\\u0B89\\u0B9F\\u0BAE\\u0BCD\\u0BAA\\u0B9F\\u0BC1\\u0BAE\\u0BC6\\u0BAF\\u0BCD'", 
                      "'\\u0B87\\u0BB0\\u0B9F\\u0BCD\\u0B9F\\u0BC1\\u0BA4\\u0BB2\\u0BCD'", 
                      "'\\u0BA4\\u0BBF\\u0BB0\\u0BBF\\u0BA4\\u0BB2\\u0BCD'", 
+                     "'\\u0B88\\u0BB1\\u0BC1\\u0B95\\u0BC6\\u0B9F\\u0BB2\\u0BCD'", 
+                     "'\\u0B89\\u0BAF\\u0BBF\\u0BB0\\u0BCD\\u0B95\\u0BC6\\u0B9F\\u0BB2\\u0BCD'", 
+                     "'\\u0BAE\\u0BC1\\u0BA4\\u0BB2\\u0BBF\\u0BB0\\u0B9F\\u0BCD\\u0B9F\\u0BC1\\u0BA4\\u0BB2\\u0BCD'", 
                      "'\\u0B9A\\u0BC1\\u0BAE\\u0BCD\\u0BAE\\u0BBE'" ]
 
     symbolicNames = [ "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
                       "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
                       "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
                       "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
-                      "<INVALID>", "<INVALID>", "QUOTED", "TAMIL", "WS" ]
+                      "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
+                      "<INVALID>", "QUOTED", "TAMIL", "WS" ]
 
     RULE_விதி = 0
     RULE_வடிவம் = 1
@@ -114,9 +118,12 @@ class புணர்ச்சிவிதிகள்Parser ( Parser ):
     T__14=15
     T__15=16
     T__16=17
-    QUOTED=18
-    TAMIL=19
-    WS=20
+    T__17=18
+    T__18=19
+    T__19=20
+    QUOTED=21
+    TAMIL=22
+    WS=23
 
     def __init__(self, input:TokenStream, output:TextIO = sys.stdout):
         super().__init__(input, output)
@@ -548,7 +555,7 @@ class புணர்ச்சிவிதிகள்Parser ( Parser ):
             self.enterOuterAlt(localctx, 1)
             self.state = 71
             _la = self._input.LA(1)
-            if not(_la==18 or _la==19):
+            if not(_la==21 or _la==22):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
@@ -815,7 +822,7 @@ class புணர்ச்சிவிதிகள்Parser ( Parser ):
             self.state = 100
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while (((_la) & ~0x3f) == 0 and ((1 << _la) & 245760) != 0):
+            while (((_la) & ~0x3f) == 0 and ((1 << _la) & 2080768) != 0):
                 self.state = 95
                 self.வடிகட்டி()
                 self.state = 96
@@ -970,7 +977,7 @@ class புணர்ச்சிவிதிகள்Parser ( Parser ):
             self.enterOuterAlt(localctx, 1)
             self.state = 114
             _la = self._input.LA(1)
-            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & 245760) != 0)):
+            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & 2080768) != 0)):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)

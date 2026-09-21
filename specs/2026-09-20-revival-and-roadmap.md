@@ -190,6 +190,20 @@ The env-flag step was unnecessary. Behaviour is unchanged, including the known g
 
 **3b. Rule families.** Re-enable the commented rules in `resources/புணர்ச்சிவிதிகள்.yaml` one family at a time, each with சான்று lines (they auto-become tests): தனிக்குறில் முன் மெய் இரட்டுதல்; ணகர/னகர ஈற்று (ட்/ற் திரிதல், needs the வேற்றுமை/அல்வழி distinction, so `தொடர்மொழி_ஆக்கு` gains a `வகை` argument and `சான்று` parsing widens to `மண் +வேற்றுமை+ குடம் = மட்குடம்`); மகர ஈற்று; the named exceptions (மீன், தேன், தன்/என்/நின்). Target: all ~15 families in the file, each citing its நன்னூல் நூற்பா as today.
 
+**3b status (done 2026-09-21, branch phase3/punarchi-rules):** 21 rules live (was 4), all with சான்று
+that run as tests: உயிர்+உயிர் (3, unchanged), குற்றியலுகரம் (நெடிற்றொடர், ஒற்றுத்தொடர்; விருந்தோம்பல்
+now works), மெய்+உயிர் இயல்பு and the தனிக்குறில் doubling சிறப்புவிதி, ண்/ன் வேற்றுமை (ட்/ற் திரிதல்,
+மெல்/இடை இயல்பு) and அல்வழி இயல்பு, மீன்/தேன்/தன்-என்-நின் exceptions, மகர ஈறு (வேற்றுமை வல்லினம்
+மிகல், மெல்/இடை ஈறுகெடல், அல்வழி இயல்பு), நும்/தம்/எம்/நம் இனமாத் திரிதல். Mechanics added: class
+names inside lists `(மெல்லினம்,இடையினம்)`, whole-word literals `('மீன்')`, filters ஈறுகெடல் / உயிர்கெடல் /
+முதலிரட்டுதல், சான்று lines carry `+வேற்றுமை+`/`+அல்வழி+`, and **precedence: when several rules match,
+the most specific wins** (more constrained groups, then more literal letters), which is how a
+சிறப்புவிதி overrides a பொதுவிதி in the grammars. Still TODO in the YAML, marked as such: சில ணகர
+ஈற்றுப் பெயர்கள், னகர ஈற்றுச் சாதிப்பெயர், அகம், உயிர்த்தொடர்க் குற்றியலுகரம் (அரசு), மகர ஈறு + உயிர்
+(மரம்+அடி), and the ஒற்று-doubling வேற்றுமை cases beyond ம். The examples for the newly written
+families are textbook ones; Srix should check them. `எழுத்து.yaml` also had the two-code-point ஒள
+typo in three lists, fixed here.
+
 **3c. Decomposition `புணர்ச்சி.தனிமொழி_ஆக்கு(தொடர்மொழி) -> list[(நிலைமொழி, வருமொழி)]`** (README's top TODO). Approach: for each split point and each rule whose RHS *could* have produced the observed junction, invert the transformation (undo இரட்டுதல்/உடம்படுமெய்/திரிதல்), then confirm by re-running `தொடர்மொழி_ஆக்கு` forward. Returns candidates ranked by number of rules applied; no dictionary needed for correctness, but an optional word list (Open-Tamil ships one) can rank candidates. Tests: every சான்று in the YAML must round-trip.
 
 ### Phase 4 — Packaging and public release
