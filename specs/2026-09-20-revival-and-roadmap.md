@@ -179,6 +179,15 @@ and ...நிழல் like கனி (assumption stated in `தளை.py`, to b
 - Listener `விதிகட்டுநர்` builds `புணர்ச்சிவிதி(நிலைமொழி_regex, வருமொழி_regex, வகை, மாற்றங்கள்)`; `_convert_to_regex` moves in verbatim. Application uses a dict dispatch `{'உடம்படுமெய்': உடம்படுமெய், 'இரட்டுதல்': இரட்டுதல், 'திரிதல்': திரிதல், 'சும்மா': சும்மா}`, which **removes the `eval()` on YAML text** in `PunarchiSemantics`.
 - Switch safely: (1) build the new engine alongside with a differential test over every சான்று in the YAML; (2) `PYTAMIL_PUNARCHI_ENGINE` env flag, run the suite under both, flip default; (3) delete TatSu, the `.ebnf`, `PunarchiSemantics`, `load_parser`, and the `TatSu` pin. `test_புணர்ச்சி.py` never changes.
 
+**3a status (done 2026-09-21, branch phase3/punarchi-antlr):** the whole-rule grammar is in
+`resources/புணர்ச்சிவிதிகள்.g4`; `புணர்ச்சி.விதி_ஆக்கு` builds `புணர்ச்சிவிதி(நிலைமொழி_regex, வருமொழி_regex, வகை,
+மாற்றங்கள்)` once at load; `செயற்படுத்து` applies filters through a dict; `தொடர்மொழி_ஆக்கு(..., வகை=None)`
+matches பொது rules always and வேற்றுமை/அல்வழி rules when asked. TatSu, the `.ebnf`, `PunarchiSemantics`,
+`புணர்ச்சிantlr.py` and the pin are gone. The differential test (every rule's regexes and every சான்று
+identical between engines) passed before the switch and was then replaced by fixed-expectation tests.
+The env-flag step was unnecessary. Behaviour is unchanged, including the known gap that
+விருந்து + ஓம்பல் gives விருந்துவோம்பல் (no குற்றியலுகரம் rule yet, see 3b).
+
 **3b. Rule families.** Re-enable the commented rules in `resources/புணர்ச்சிவிதிகள்.yaml` one family at a time, each with சான்று lines (they auto-become tests): தனிக்குறில் முன் மெய் இரட்டுதல்; ணகர/னகர ஈற்று (ட்/ற் திரிதல், needs the வேற்றுமை/அல்வழி distinction, so `தொடர்மொழி_ஆக்கு` gains a `வகை` argument and `சான்று` parsing widens to `மண் +வேற்றுமை+ குடம் = மட்குடம்`); மகர ஈற்று; the named exceptions (மீன், தேன், தன்/என்/நின்). Target: all ~15 families in the file, each citing its நன்னூல் நூற்பா as today.
 
 **3c. Decomposition `புணர்ச்சி.தனிமொழி_ஆக்கு(தொடர்மொழி) -> list[(நிலைமொழி, வருமொழி)]`** (README's top TODO). Approach: for each split point and each rule whose RHS *could* have produced the observed junction, invert the transformation (undo இரட்டுதல்/உடம்படுமெய்/திரிதல்), then confirm by re-running `தொடர்மொழி_ஆக்கு` forward. Returns candidates ranked by number of rules applied; no dictionary needed for correctness, but an optional word list (Open-Tamil ships one) can rank candidates. Tests: every சான்று in the YAML must round-trip.
