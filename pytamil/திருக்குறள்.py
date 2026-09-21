@@ -49,11 +49,13 @@ def _புதிய_மாத்திரைவகைகள்() -> Dict[str, i
 
     Dicts keep insertion order in python 3.7+, which is what fixes the CSV column order.
     """
-    return {"உயிர்க்குறில்": 0, "உயிர்நெடில்": 0, "ஆய்தம்": 0, "மெய்": 0,
-            "உயிர்மெய்க்குறில்": 0, "உயிர்மெய்நெடில்": 0, "உயிரளபெடை": 0,
-            "ஒற்றளபெடை": 0, "ஐகாரக்குறுக்கம்_முதல்": 0, "ஐகாரக்குறுக்கம்_இடைகடை": 0,
-            "ஒளகாரக்குறுக்கம்": 0, "குற்றியலுகரம்": 0, "குற்றியலிகரம்": 0,
-            "மகரக்குறுக்கம்": 0, "ஆய்தக்குறுக்கம்": 0}
+    return dict.fromkeys(_மாத்திரைவகைப்_பெயர்கள், 0)
+
+
+_மாத்திரைவகைப்_பெயர்கள் = ("உயிர்க்குறில்", "உயிர்நெடில்", "ஆய்தம்", "மெய்", "உயிர்மெய்க்குறில்",
+                          "உயிர்மெய்நெடில்", "உயிரளபெடை", "ஒற்றளபெடை", "ஐகாரக்குறுக்கம்_முதல்",
+                          "ஐகாரக்குறுக்கம்_இடைகடை", "ஒளகாரக்குறுக்கம்", "குற்றியலுகரம்", "குற்றியலிகரம்",
+                          "மகரக்குறுக்கம்", "ஆய்தக்குறுக்கம்")
 
 
 def குறள்_மாத்திரைவரிசைகள்_கொடு(குறள்_அடி):
@@ -171,8 +173,8 @@ def வெண்பா_ஆய்வு_வரிசை(எண்கள்: Optio
 def வெண்பா_ஆய்வு_csv(கோப்பு: str,
                       எண்கள்: Optional[Iterable[int]] = None) -> Dict[str, object]:
     """CSV எழுதி, தொகுப்பு எண்ணிக்கைகளைத் தரும்: மொத்தம், சரி, விதிவாரி, தளைவாரி, வகைவாரி."""
-    தொகுப்பு = {'மொத்தம்': 0, 'சரி': 0, 'விதி': Counter(), 'தளை': Counter(),
-                'வகை': Counter()}
+    தொகுப்பு: Dict[str, object] = {'மொத்தம்': 0, 'சரி': 0}
+    தொகுப்பு.update(விதி=Counter(), தளை=Counter(), வகை=Counter())
     with open(கோப்பு, 'w', encoding='utf8', newline='') as f:
         எழுதி = csv.DictWriter(f, fieldnames=வெண்பா_நெடுவரிசைகள்)
         எழுதி.writeheader()
@@ -220,9 +222,9 @@ def _எண்கள்(உரை: Optional[str]) -> Optional[List[int]]:
 
 def main(argv: Optional[List[str]] = None) -> int:
     """Command-line entry point: the 'வெண்பா' or 'மாத்திரை' subcommand."""
-    பகுப்பி = argparse.ArgumentParser(
-        prog='python -m pytamil.திருக்குறள்', description=__doc__,
-        formatter_class=argparse.RawDescriptionHelpFormatter)
+    வடிவம் = argparse.RawDescriptionHelpFormatter
+    பகுப்பி = argparse.ArgumentParser(prog='python -m pytamil.திருக்குறள்', description=__doc__,
+                                     formatter_class=வடிவம்)
     துணை = பகுப்பி.add_subparsers(dest='கட்டளை', required=True)
     வெ = துணை.add_parser(
         'வெண்பா', help='ஒவ்வொரு குறளையும் வெண்பா.ஆய்வு() வழி ஆய்ந்து CSV எழுது')
