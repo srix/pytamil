@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pytamil"
+version = "0.1.0"
+description = "பைந்தமிழ் — classical Tamil prosody (யாப்பு) and sandhi (புணர்ச்சி) as data: ANTLR grammars and YAML rule files, driven from Python"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Sriramkumar VH", email = "codeporukki@gmail.com" }]
+keywords = ["tamil", "prosody", "venba", "sandhi", "yaappu", "punarchi", "antlr", "linguistics"]
+classifiers = [
+  "Natural Language :: Tamil",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "License :: OSI Approved :: MIT License",
+  "Topic :: Text Processing :: Linguistic",
+  "Intended Audience :: Science/Research",
+]
+dependencies = [
+  "antlr4-python3-runtime==4.13.2",   # must equal the ANTLR jar version used by codegen.sh
+  "PyYAML>=6.0.2",
+  "Open-Tamil>=1.1",
+  "regex>=2023.5.5",
+]
+
+[project.optional-dependencies]
+viz = ["nltk>=3.10.3", "graphviz>=0.20", "ipython>=8"]   # parse-tree drawing only
+dev = ["pytest>=7.3"]
+
+[project.urls]
+Homepage = "https://github.com/srix/pytamil"
+Source = "https://github.com/srix/pytamil"
+Issues = "https://github.com/srix/pytamil/issues"
+
+[tool.setuptools]
+packages = ["pytamil", "pytamil.தமிழ்", "pytamil.தமிழ்.codegen"]
+
+[tool.setuptools.package-data]
+"pytamil.தமிழ்" = ["resources/*.yaml", "resources/*.g4", "codegen/*.interp", "codegen/*.tokens"]

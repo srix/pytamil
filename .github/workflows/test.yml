@@ -38,3 +38,24 @@ jobs:
         run: |
           git status --porcelain -- pytamil/தமிழ்/codegen
           git diff --exit-code --stat -- pytamil/தமிழ்/codegen
+
+  install:
+    # The package must install from pyproject.toml into a clean environment, with its declared
+    # dependencies, and import from outside the repo (no reliance on the checkout's cwd).
+    name: pip install . (py${{ matrix.python }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ["3.10", "3.12"]
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -m pip install .
+      - name: import and smoke-run from another directory
+        working-directory: /tmp
+        run: |
+          python -c "from pytamil.தமிழ் import எழுத்து, மாத்திரை, புணர்ச்சி, சீர், தளை, வெண்பா, ஆசிரியப்பா, சொல்; import pytamil; print(pytamil.__version__)"
+          python -c "from pytamil.தமிழ் import புணர்ச்சி, வெண்பா; assert புணர்ச்சி.தொடர்மொழி_ஆக்கு('விருந்து','ஓம்பல்') == ['விருந்தோம்பல்']; assert வெண்பா.ஆய்வு('எண்ணித் துணிகக் கருமம் துணிந்தபின்\nஎண்ணுவ மென்பதி ழுக்கு').சரியா"

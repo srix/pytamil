@@ -1,124 +1,92 @@
-# Getting started
+# Getting started (developers)
 
-## Create Virtual Environment (venv)
+## Environment
+
+Python 3.10 or newer. With [uv](https://docs.astral.sh/uv/):
+
 ```bash
-python3.7 -m venv .venv
-pip3 install --no-cache-dir -r requirements.txt
+uv venv --python 3.12 .venv
+uv pip install --python .venv/bin/python -e ".[dev,viz]"
 ```
 
-## Special care to be taken for handling unicode tamil characters
+or with plain venv/pip:
+
+```bash
+python3 -m venv .venv && source .venv/bin/activate
+pip install -e ".[dev,viz]"
+```
+
+`requirements.txt` is the pinned set CI uses; `pyproject.toml` declares the library's real dependencies.
+
+## Tests
+
+From the repo root (some tests open `pytamil/தமிழ்/resources/*.yaml` by relative path):
+
+```bash
+pytest -q
+```
+
+## Regenerating the parsers
+
+The grammars live in `pytamil/தமிழ்/resources/*.g4`; the generated Python under `pytamil/தமிழ்/codegen/`
+is committed. After editing a grammar:
+
+```bash
+bash codegen.sh        # needs Java; uses tools/antlr-4.13.2-complete.jar
+pytest -q
+```
+
+The jar version must equal the `antlr4-python3-runtime` pin. CI regenerates and fails on any drift.
+To see a parse tree in ANTLR's GUI: `bash tools/showtree.sh <repo> வெண்பா.g4 வெண்பா` (needs `javac` and an
+input file at `pytamil/debug/வெண்பா-input.txt`).
+
+## Naming rule
+
+Tamil for language concepts (எழுத்து, சீர், தளை, விதி, ஆய்வு ...), English for programming mechanics
+(`parsehelper`, `treetext`, config). `.pylintrc` records this: `pylint pytamil` should stay at 10/10.
+
+## Working with Tamil identifiers and file names
+
 ### git
-By default, git will print non-ASCII file names in quoted octal notation, i.e. "\nnn\nnn...". This can be disabled with:
+Git prints non-ASCII file names as octal escapes unless you set:
 
 ```bash
 git config --global core.quotepath off
 ```
 
-### Terminal
-* on ubuntu 18.04 KDE konsole works well with tamil characters.
-* on ubuntu 19.04 Tilix works well when cell space set to 2.0 . Konsole renders bad
-
-### vscode
-The library was built using vscode. VScode Jedi didn't display tamil function names in outline window and intellisense. To fix this switch to language server instead of Jedi (set "python.jediEnabled": false in your settings.json). I have raised a bug with Vscode  
-
- [Function names with unicode (indic characters) are not displayed in Outline window #6454](https://github.com/microsoft/vscode-python/issues/6454)
-
-### python package installation
-To install this package use the pip application command as follows
-[இந்த நிரல் தொகுப்பை நிறுவவதற்கு இப்படி pip செயலியில் கட்டளை இடவேண்டும்.]
-$ python3 -m pip install setup.py  --user
+### Terminal and editor
+Use a terminal font with Tamil coverage (Noto Sans Tamil). In VS Code, Pylance shows Tamil symbols in
+the outline; the older Jedi backend did not
+([microsoft/vscode-python#6454](https://github.com/microsoft/vscode-python/issues/6454)).
+If Tamil renders as boxes in a Chromium-based app on Linux, check which font fontconfig picks for
+Tamil (`fc-match 'sans-serif:lang=ta'`); a font that claims a few Tamil code points (e.g. a Grantha
+font) can shadow the real Tamil fonts.
 
 ### pytest
-pytest escapes unicode strings while printing on stdout. I guess, Vscode uses the same output so the UI listing of test cases also has excaped unicode strings.
+pytest escapes non-ASCII in test ids. `pytest.ini` sets
+`disable_test_id_escaping_and_forfeit_all_rights_to_community_support = True` so ids like
+`test_தொடர்மொழி_ஆக்கு[சே-அடி]` print readably (the flag's name is pytest's own warning).
 
-> tests/test_1.py::test_தொடர்மொழி_ஆக்கு[\u0b9a\u0bc7-\u0b85\u0b9f\u0bbf-தொடர்மொழி0] PASSED                 [100%]
+## Debugging grammars in VS Code
 
-![pytest unicode escaped vscode](https://user-images.githubusercontent.com/5801636/64475939-b2706f00-d1a6-11e9-8c74-e3834b2bcbd6.png)
+With the ANTLR4 extension, a launch config like this opens a visual parse tree:
 
-To fix this create set `disable_test_id_escaping_and_forfeit_all_rights_to_community_support = True` in `pytest.ini`. pytest authors warn this may [break](https://github.com/pytest-dev/pytest/issues/5286) something unexpected. But works fine for me. This also fixes the vscode UI escaping unicode characters in pytest extension.
-
->tests/test_1.py::test_தொடர்மொழி_ஆக்கு[சே-அடி-தொடர்மொழி0] PASSED                                          [100%]
-
-![pytest unicode vscode](https://user-images.githubusercontent.com/5801636/64476031-b2bd3a00-d1a7-11e9-89e5-3623709bee51.png)
-
-
-launch.json for Vscode
-```
+```json
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "name": "Debug மாத்திரை Grammar",
-            "type": "antlr-debug",
-            "request": "launch",
-            "grammar": "${workspaceFolder}/pytamil/தமிழ்/resources/மாத்திரை.g4",
-            "input": "${workspaceFolder}/pytamil/தமிழ்/resources/மாத்திரை-input.txt",
-            "visualParseTree": true
-        },
-        {
-            "name": "Debug வெண்பா Grammar",
-            "type": "antlr-debug",
-            "request": "launch",
-            "grammar": "${workspaceFolder}/pytamil/தமிழ்/resources/வெண்பா.g4",
-            "input": "${workspaceFolder}/pytamil/தமிழ்/resources/வெண்பா-input.txt",
-            "visualParseTree": true
-        },
-        {
-            "name": "Python: Current File",
-            "type": "python",
-            "request": "launch",
-            "program": "${file}",
-            "cwd": "${workspaceFolder}",
-            "console": "integratedTerminal",
-            "env": {"PYTHONPATH": "${workspaceFolder}"}
-        }
-    ]
+  "name": "Debug வெண்பா Grammar",
+  "type": "antlr-debug",
+  "request": "launch",
+  "grammar": "${workspaceFolder}/pytamil/தமிழ்/resources/வெண்பா.g4",
+  "input": "${workspaceFolder}/pytamil/debug/வெண்பா-input.txt",
+  "visualParseTree": true
 }
 ```
 
-settings.json
-```
-{
-    "python.pythonPath": ".venv/bin/python",
-    "python.jediEnabled": false,
+`மாத்திரை.g4` and `சொல்.g4` expect the input in விரி form (`த்அவ்அள்ஐ` for தவளை); the சீர்/வெண்பா/ஆசிரியப்பா
+grammars take normal text, spaced by சீர்.
 
-    "[antlr]": {},
-    "antlr4.generation": {
-        "mode": "external",
-        "language": "Python3",
-        "listeners": true,
-        "visitors": false,
-        "outputDir": "/home/srix/workspace/pytamil/pytamil/தமிழ்/codegen/"
-    },
-}
+## Command line
 
-```
-
-# How to use
-
-## Howto Debug Grammars
-
-On VSCODE
-
-* make sure antlr extension is installed. The launch and settings files have entries like above. 
-* Create the following files
-    {workspaceFolder}/pytamil/தமிழ்/resources/வெண்பா-input.txt
-    {workspaceFolder}/pytamil/தமிழ்/resources/மாத்திரை-input.txt
-
-* Select the config from debug list and run. Antlr extension should be able to generate parse tree graph.
-* Make sure the entry in மாத்திரை-input.txt is in விரி form . That is to debug தவளை enter த்அவ்அள்ஐ
-
-
-## unit tests
-cd in to top level folder and run pytest.
 ```bash
-# run all tests
-pytest
-# or run specific tests
-pytest test_எழுத்து.py  
-pytest test_சான்று.py
-pytest test_புணர்ச்சி.py
+python -m pytamil.திருக்குறள் வெண்பா --வெளியீடு குறள்-வெண்பா.csv --எண்கள் 1-100
 ```
