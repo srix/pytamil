@@ -1,71 +1,229 @@
 # -*- coding: utf-8 -*-
+"""
+வெண்பா — ஒரு பாடல் வெண்பா இலக்கணத்திற்கு அமைகிறதா என ஆய்ந்து, விதிமீறல்களைத் தனித்தனியே
+அறிவிக்கும் கூறு.
 
-import sys
-import antlr4
-from antlr4 import *
-from antlr4.tree.Trees import Trees
-import os
+    முடிவு = ஆய்வு(பாடல்)
+    முடிவு.வகை        # 'குறள்_வெண்பா' | 'சிந்தியல்_வெண்பா' | 'நேரிசை_வெண்பா'
+                     #   | 'பஃறொடை_வெண்பா' | 'கலி_வெண்பா' | None
+    முடிவு.அடிகள்     # அடிக்கு ஒரு பட்டியல்; சீருக்கும் சீர்விவரம்(பதம், வாய்பாடு, அசைகள்)
+    முடிவு.தளைகள்     # சீர் இணைப்புக்கு ஒரு தளைவிவரம் (அடி இணைப்பும் உட்பட)
+    முடிவு.பிழைகள்    # விதி மீறல்கள்: பிழை(விதி, அடி, சீர், விவரம்)
+    முடிவு.சரியா      # பிழைகள் இல்லையா?
 
-# from codegen import codegen
+விதிகள்: பாகுபாட்டுப்பிழை, அடி_எண்ணிக்கை, அடி_சீர்_எண்ணிக்கை, ஈற்றடி_சீர்_எண்ணிக்கை,
+ஈற்றுச்சீர்_பிழை, கனிச்சீர்_தடை, நாலசைச்சீர்_தடை, வெண்டளை_பிழை.
+
+வெண்பா.g4 அமைப்பை மட்டும் பாகுபடுத்தும்; விதிகள் இங்கே. பழைய சீர்கொடு(பாடல்) அப்படியே உள்ளது.
+"""
+from dataclasses import dataclass, field
+from typing import List, Optional
+
 from pytamil.தமிழ்.codegen.வெண்பாLexer import வெண்பாLexer
 from pytamil.தமிழ்.codegen.வெண்பாParser import வெண்பாParser
-from pytamil.தமிழ் import பாகுபடுத்தி
-from codecs import open
+from pytamil.தமிழ் import parsehelper
+from pytamil.தமிழ் import தளை as தளைக்கூறு
 
-# nltk is imported lazily inside the tree-drawing helpers below, so that
-# importing this module for analysis does not require the visualisation stack.
+
+@dataclass
+class சீர்விவரம்:
+    """ஒரு சீர்: பாடலில் உள்ள சொல், அதன் வாய்பாடு, அதன் அசைகள்."""
+
+    பதம்: str                 # பாடலில் உள்ள சொல்
+    வாய்பாடு: str             # தேமா, புளிமாங்காய், நாள் ...
+    அசைகள்: List[str]         # ['நேர்', 'நிரை', ...]
+
+
+@dataclass
+class தளைவிவரம்:
+    """இரு சீர்கள் இணையும் இடத்தின் தளை, அது வெண்டளையா என்பதுடன்."""
+
+    அடி: int                  # முன்சீர் உள்ள அடி (1 முதல்)
+    சீர்: int                 # முன்சீரின் இடம் அடியில் (1 முதல்)
+    முன்சீர்: str
+    பின்சீர்: str
+    தளை: str
+    வெண்டளையா: bool
+
+
+@dataclass
+class பிழை:
+    """ஒரு விதிமீறல்: எந்த விதி, எந்த அடி/சீர், என்ன விவரம்."""
+
+    விதி: str                 # 'வெண்டளை_பிழை', 'ஈற்றுச்சீர்_பிழை', ...
+    அடி: Optional[int]
+    சீர்: Optional[int]
+    விவரம்: str
+    நிலை: str = 'பிழை'        # 'பிழை' | 'எச்சரிக்கை'
+
+
+@dataclass
+class ஆய்வுமுடிவு:
+    """ஆய்வு() தரும் முடிவு: வகை, அடிகள், தளைகள், பிழைகள்."""
+
+    வகை: Optional[str]
+    அடிகள்: List[List[சீர்விவரம்]] = field(default_factory=list)
+    தளைகள்: List[தளைவிவரம்] = field(default_factory=list)
+    பிழைகள்: List[பிழை] = field(default_factory=list)
+
+    @property
+    def சரியா(self) -> bool:
+        """பிழை நிலையிலுள்ள விதிமீறல் ஏதுமில்லையா?"""
+        return not any(ப.நிலை == 'பிழை' for ப in self.பிழைகள்)
+
+    def வாய்பாடுகள்(self) -> List[List[str]]:
+        """அடிக்கு ஒரு பட்டியலாகச் சீர் வாய்பாட்டுப் பெயர்கள்."""
+        return [[ச.வாய்பாடு for ச in அடி] for அடி in self.அடிகள்]
+
+
+_அசைவிதிகள் = {'நேர்': 'நேர்', 'நிரை': 'நிரை', 'முதல்நிரை': 'நிரை'}
 
 
 def gettree(பாடல்):
-    பா = பாகுபடுத்தி.மரம்_கொடு(வெண்பாLexer, வெண்பாParser, 'வெண்பா', பாடல்)
-    return பா.மரம், பா.parser
-
-def சீர்கொடு(பாடல்):
-    
-   
-    tree, parser = gettree(பாடல்)
-    
-    அடிவரிசை =[]
-    அடிகள் = tree.children[0].children
-    for அடி in அடிகள்:
-        சீர்கள் = அடி.children
-        சீர்வரிசை = [parser.ruleNames[சீர்.children[0].getRuleIndex()] for சீர் in சீர்கள் if சீர்.getChildCount() != 0]
-        அடிவரிசை.append(சீர்வரிசை)
-
-    return அடிவரிசை
-
-    
-    
+    """Parse a பாடல் with the வெண்பா grammar; returns (tree, parser)."""
+    result = parsehelper.parse(வெண்பாLexer, வெண்பாParser, 'வெண்பா', பாடல்)
+    return result.tree, result.parser
 
 
-def saveas_txttree(tree, parser, outfilename):
-    from nltk import Tree as nltkTree
-    try:
-        from nltk.tree import TreePrettyPrinter
-    except ImportError:  # nltk < 3.8
-        from nltk.treeprettyprinter import TreePrettyPrinter
-
-    strtree = Trees.toStringTree(tree, None, parser)
-    t = nltkTree.fromstring(strtree)
-    a = TreePrettyPrinter(t).text()
-
-    with open(outfilename + ".txt", 'w', encoding='utf8') as f:
-        f.write( a)
-    return a
-
-def saveas_pngtree(tree, parser, outfilename):
-    # Image output of the parse tree is not implemented yet; see specs/2026-09-20-revival-and-roadmap.md (Phase 2d, மரம்காட்டு).
-    raise NotImplementedError("PNG/SVG tree output is not implemented; use saveas_txttree")
+def _விதிப்பெயர்(ctx, parser) -> Optional[str]:
+    return parser.ruleNames[ctx.getRuleIndex()] if hasattr(ctx, 'getRuleIndex') else None
 
 
-def main():
-    infilename = os.path.join(os.path.dirname(__file__),'../debug/வெண்பா-input.txt')
-    outfilename = os.path.join(os.path.dirname(__file__),'../debug/வெண்பா-output')
-    பாடல் = open(infilename).read()   
-    tree , parser = gettree(பாடல்)
-    saveas_txttree(tree,parser,outfilename)
-    #saveas_pngtree(tree,parser,outfilename)
-    சீர்கொடு(பாடல்)
+def _அசைகள்(ctx, parser, வெளியீடு: List[str]) -> List[str]:
+    """Collect the அசை rules (நேர் / நிரை / முதல்நிரை) under a சீர் node, in order."""
+    பெயர் = _விதிப்பெயர்(ctx, parser)
+    if பெயர் in _அசைவிதிகள்:
+        வெளியீடு.append(_அசைவிதிகள்[பெயர்])
+        return வெளியீடு
+    for குழந்தை in (getattr(ctx, 'children', None) or []):
+        _அசைகள்(குழந்தை, parser, வெளியீடு)
+    return வெளியீடு
 
-if __name__ == '__main__':
-    main()
+
+def _சீர்விவரம்(சீர்ctx, parser) -> Optional[சீர்விவரம்]:
+    """சீர்Context or ஈற்றுச்சீர்Context -> சீர்விவரம்; None for an error node."""
+    குழந்தைகள் = getattr(சீர்ctx, 'children', None) or []
+    if not குழந்தைகள் or not hasattr(குழந்தைகள்[0], 'getRuleIndex'):
+        return None
+    சீர்முடிச்சு = குழந்தைகள்[0]
+    # நாலசை -> உள்ளே உண்மைச் சீர் (தேமாந்தண்பூ ...)
+    if _விதிப்பெயர்(சீர்முடிச்சு, parser) == 'நாலசை':
+        சீர்முடிச்சு = சீர்முடிச்சு.children[0]
+    வாய்பாடு = _விதிப்பெயர்(சீர்முடிச்சு, parser)
+    return சீர்விவரம்(சீர்ctx.getText(), வாய்பாடு, _அசைகள்(சீர்முடிச்சு, parser, []))
+
+
+def _அடிகள்_சேகரி(மரம், parser):
+    """Collect the அடிகள் from the parse tree as lists of சீர்விவரம்.
+
+    Also reports whether the last சீர் of the ஈற்றடி was an ஈற்றுச்சீர்.
+    """
+    அடிகள்: List[List[சீர்விவரம்]] = []
+    ஈற்றுச்சீரா = False
+    for அடிctx in (getattr(மரம், 'children', None) or []):
+        if not isinstance(அடிctx, (வெண்பாParser.அடிContext, வெண்பாParser.ஈற்றடிContext)):
+            continue
+        சீர்கள் = []
+        for குழந்தை in (அடிctx.children or []):
+            if isinstance(குழந்தை, (வெண்பாParser.சீர்Context, வெண்பாParser.ஈற்றுச்சீர்Context)):
+                விவரம் = _சீர்விவரம்(குழந்தை, parser)
+                if விவரம் is not None:
+                    சீர்கள்.append(விவரம்)
+                if isinstance(அடிctx, வெண்பாParser.ஈற்றடிContext):
+                    ஈற்றுச்சீரா = isinstance(குழந்தை, வெண்பாParser.ஈற்றுச்சீர்Context)
+        அடிகள்.append(சீர்கள்)
+    return அடிகள், ஈற்றுச்சீரா
+
+
+def _வகை(அடி_எண்ணிக்கை: int) -> Optional[str]:
+    # நான்கடி வெண்பாவில் நேரிசை/இன்னிசை வேறுபாடு (தனிச்சொல்) இன்னும் பார்க்கப்படவில்லை.
+    if அடி_எண்ணிக்கை == 2:
+        return 'குறள்_வெண்பா'
+    if அடி_எண்ணிக்கை == 3:
+        return 'சிந்தியல்_வெண்பா'
+    if அடி_எண்ணிக்கை == 4:
+        return 'நேரிசை_வெண்பா'
+    if 5 <= அடி_எண்ணிக்கை <= 12:
+        return 'பஃறொடை_வெண்பா'
+    if அடி_எண்ணிக்கை >= 13:
+        return 'கலி_வெண்பா'
+    return None
+
+
+def _அடி_பிழைகள்(எண்: int, அடி: List[சீர்விவரம்], ஈற்றடியா: bool,
+                 ஈற்றுச்சீரா: bool) -> List[பிழை]:
+    """ஓர் அடியின் சீர் எண்ணிக்கை, ஈற்றுச்சீர், தடைசெய்த சீர் வகைகள் — இவற்றின் விதிமீறல்கள்."""
+    பிழைகள்: List[பிழை] = []
+    if ஈற்றடியா:
+        if len(அடி) != 3:
+            பிழைகள்.append(பிழை('ஈற்றடி_சீர்_எண்ணிக்கை', எண், None,
+                                 f"ஈற்றடிக்கு மூன்று சீர் வேண்டும்; உள்ளது {len(அடி)}"))
+        if அடி and not ஈற்றுச்சீரா:
+            பிழைகள்.append(பிழை('ஈற்றுச்சீர்_பிழை', எண், len(அடி),
+                                 "ஈற்றுச்சீர் நாள்/மலர்/காசு/பிறப்பு ஆக இருக்க வேண்டும்; "
+                                 f"உள்ளது {அடி[-1].வாய்பாடு} ({அடி[-1].பதம்})"))
+    elif len(அடி) != 4:
+        பிழைகள்.append(பிழை('அடி_சீர்_எண்ணிக்கை', எண், None,
+                             f"அடிக்கு நான்கு சீர் வேண்டும்; உள்ளது {len(அடி)}"))
+
+    for இடம், சீர் in enumerate(அடி, start=1):
+        if சீர்.வாய்பாடு in தளைக்கூறு.கனிச்சீர்:
+            பிழைகள்.append(பிழை('கனிச்சீர்_தடை', எண், இடம்,
+                                 f"கனிச்சீர் வெண்பாவில் வராது: {சீர்.வாய்பாடு} ({சீர்.பதம்})"))
+        elif சீர்.வாய்பாடு in தளைக்கூறு.நாலசைச்சீர்:
+            பிழைகள்.append(பிழை('நாலசைச்சீர்_தடை', எண், இடம்,
+                                 f"நாலசைச்சீர் வெண்பாவில் வராது: {சீர்.வாய்பாடு} ({சீர்.பதம்})"))
+    return பிழைகள்
+
+
+def _தளைகள்_சோதி(அடிகள்: List[List[சீர்விவரம்]], முடிவு: ஆய்வுமுடிவு) -> None:
+    """அடிக்குள்ளும் அடி இணைப்பிலும் உள்ள தளைகளைக் கணித்து, முடிவில் சேர்."""
+    # முன் அடியின் ஈற்றுச் சீர் -> அடுத்த அடியின் முதற்சீர் என்பதும் ஓர் இணைப்பே
+    வரிசை = [(எண், இடம், சீர்)
+              for எண், அடி in enumerate(அடிகள், start=1)
+              for இடம், சீர் in enumerate(அடி, start=1)]
+    for (எண், இடம், முன்), (_, _, பின்) in zip(வரிசை, வரிசை[1:]):
+        try:
+            பெயர் = தளைக்கூறு.தளை_கொடு(முன்.வாய்பாடு, பின்.வாய்பாடு)
+        except ValueError:
+            continue   # ஈற்றுச்சீர் முன்சீராகவோ, பிழை முடிச்சோ — தளை பொருந்தாது
+        வெண்டளையா = தளைக்கூறு.வெண்டளையா(பெயர்)
+        முடிவு.தளைகள்.append(தளைவிவரம்(எண், இடம், முன்.வாய்பாடு, பின்.வாய்பாடு,
+                                        பெயர், வெண்டளையா))
+        if not வெண்டளையா:
+            முடிவு.பிழைகள்.append(பிழை('வெண்டளை_பிழை', எண், இடம்,
+                                        f"{முன்.வாய்பாடு} ({முன்.பதம்}) -> "
+                                        f"{பின்.வாய்பாடு} ({பின்.பதம்}): {பெயர்}"))
+
+
+def ஆய்வு(பாடல்: str) -> ஆய்வுமுடிவு:
+    """பாடலை வெண்பா இலக்கணப்படி ஆய்ந்து ஆய்வுமுடிவு தரும்.
+
+    விதிவிலக்கு எழுப்பாது; எல்லா விதிமீறல்களும் முடிவு.பிழைகள் பட்டியலில் வரும்.
+    """
+    result = parsehelper.parse(வெண்பாLexer, வெண்பாParser, 'வெண்பா', பாடல்)
+    அடிகள், ஈற்றுச்சீரா = _அடிகள்_சேகரி(result.tree, result.parser)
+    முடிவு = ஆய்வுமுடிவு(வகை=_வகை(len(அடிகள்)), அடிகள்=அடிகள்)
+    பிழைகள் = முடிவு.பிழைகள்
+
+    for e in result.errors:
+        பிழைகள்.append(பிழை('பாகுபாட்டுப்பிழை', e.line, None, str(e)))
+
+    if len(அடிகள்) < 2:
+        பிழைகள்.append(பிழை('அடி_எண்ணிக்கை', None, None,
+                             f"வெண்பாவுக்கு இரண்டு அடிகளாவது வேண்டும்; உள்ளது {len(அடிகள்)}"))
+
+    for எண், அடி in enumerate(அடிகள், start=1):
+        பிழைகள்.extend(_அடி_பிழைகள்(எண், அடி, எண் == len(அடிகள்), ஈற்றுச்சீரா))
+
+    _தளைகள்_சோதி(அடிகள், முடிவு)
+
+    return முடிவு
+
+
+def சீர்கொடு(பாடல்: str) -> List[List[str]]:
+    """அடிக்கு ஒரு பட்டியலாக சீர் வாய்பாடுகள் (பழைய இடைமுகம்).
+
+    விதிமீறல்களும் வேண்டுமெனில் ஆய்வு() பயன்படுத்துக.
+    """
+    return ஆய்வு(பாடல்).வாய்பாடுகள்()

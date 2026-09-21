@@ -111,9 +111,9 @@ Ordered by the user's priorities. Phase 1 is a prerequisite for the venba valida
 - New tests in `test_சீர்.py`: `வெம்மையும்`→கூவிளம்; `கையினை`→கூவிளம் (initial ஐ stays long, must not flip to புளிமா); `கேண்மை`, `கையும்`, `ஔவை`→தேமா; `தலைவன்`, `ஒளியும்`→புளிமா; `வழிபடுக`→கருவிளங்காய்; `தண்மையும்xx` → parse error.
 - **Domain decision for the user to confirm before implementing:** word-initial ஐ scans நெடில், non-initial ஐ scans குறில். This matches the 2021 commit note and `மாத்திரை.g4`. If the user wants both readings admitted (true ambiguity), the design changes to reporting multiple parses; flag it, don't assume.
 
-**1b. Shared parser helper** — new `pytamil/தமிழ்/பாகுபடுத்தி.py`
-- `மரம்_கொடு(LexerCls, ParserCls, தொடக்கவிதி, உரை, *, கண்டிப்பு=False) -> பாகுபாடு(மரம், parser, பிழைகள்)`.
-- `பிழைசேகரிப்பான்(ErrorListener)` attached to both lexer and parser, collecting `பாகுபாட்டுப்பிழை(வரி, நெடுக்கை, செய்தி, நிலை)`; `கண்டிப்பு=True` raises `பாகுபாட்டுவிதிவிலக்கு`.
+**1b. Shared parser helper** — new `pytamil/தமிழ்/parsehelper.py`
+- `parse(LexerCls, ParserCls, start_rule, text, *, strict=False) -> ParseResult(tree, parser, errors)`.
+- `ErrorCollector(ErrorListener)` attached to both lexer and parser, collecting `ParseError(line, column, message, stage)`; `strict=True` raises `ParseFailed`.
 - Replace the seven copies in `சீர்.py:15`, `வெண்பா.py:35`, `ஆசிரியப்பா.py:15`, `மாத்திரை.py:197,223`, `சொல்.py:30`, `புணர்ச்சிantlr.py:28`. Behaviour unchanged; suite stays green.
 - `மாத்திரை.py`: fix `மொத்தமாத்திரை` to call `மாத்திரைவரிசை_கொடு` and sum `.மாத்திரைஎண்`; add a test.
 
@@ -142,9 +142,33 @@ Type (குறள்/சிந்தியல்/நேரிசை/பஃற�
 
 **2d. `pytamil/தமிழ்/தொடை.py`** (warnings, not errors): மோனை (first letter of சீர் 1 vs சீர் 3 per அடி, using எழுத்து classes for the permitted equivalences), எதுகை (second letter across lines' first feet with equal first-syllable weight). Behind `ஆய்வு(..., தொடை=True)`.
 
+**Input convention (found while building 2c, 2026-09-20):** the venba grammar takes text spaced
+*by சீர்* (யாப்பு வடிவம்), not by word. Kural 467's last line in word spacing, `எண்ணுவம் என்பது இழுக்கு`,
+scans கூவிளம் கூவிளம் பிறப்பு and the junction என்பது→இழுக்கு is விளமுன் நிரை, a தளை violation;
+in metrical spacing, `எண்ணுவ மென்பதி ழுக்கு`, it scans கூவிளம் கூவிளம் காசு and every junction is
+வெண்டளை. The நளவெண்பா test fixture was already in metrical spacing. Consequence for 2e: a
+word-spaced corpus (as most digital Thirukkural texts are) must be re-split into சீர்கள் first.
+That re-splitting is a சந்தி/புணர்ச்சி problem (எண்ணுவம்+என்பது → எண்ணுவ மென்பது), so it depends
+on Phase 3, or on a metrically spaced source text. Until then the corpus run should use an
+edition with சீர் spacing, and rejections must be read with this in mind.
+
 **2e. Corpus harness** — rewrite `pytamil/திருக்குறள்.py` as a CLI (`python -m pytamil.திருக்குறள் input.csv out.csv`) that runs `ஆய்வு` on all 1330 kurals and writes வகை, feet, தளை counts and violations per kural. This is the first real answer to "what do the poets actually do": distributions of foot types, தளை usage, and which kurals the validator rejects (those are either grammar bugs or genuine scholarly cases, both valuable). Extend to Nalavenba later. Add a small committed sample CSV so a test can exercise the CLI.
 
-Move `saveas_txttree`/`saveas_pngtree` into `pytamil/தமிழ்/மரம்காட்டு.py` with lazy imports; `வெண்பா.py` becomes analysis-only.
+Move `saveas_txttree`/`saveas_pngtree` into `pytamil/தமிழ்/treetext.py` with lazy imports; `வெண்பா.py` becomes analysis-only.
+
+**2e baseline (done 2026-09-20, `python -m pytamil.திருக்குறள் வெண்பா`, source = Open-Tamil's `kural`
+package, word-spaced):** 971/1330 kurals (73.0%) are accepted as venba with no re-splitting.
+1321 parse fully; 8 do not and 16 more have partial parse errors, all of them corrupt text in the
+source package (unassigned code points such as U+0BA7 where றி should be, truncated words like
+க்கம் for ஊக்கம், stray line breaks), so a cleaner Thirukkural source is wanted. Violations:
+வெண்டளை_பிழை 324 (கலித்தளை 188, நிரையொன்றாசிரியத்தளை 65, நேரொன்றாசிரியத்தளை 36,
+ஒன்றாத_வஞ்சித்தளை 35), நாலசைச்சீர்_தடை 86, கனிச்சீர்_தடை 35, ஈற்றடி_சீர்_எண்ணிக்கை 10,
+ஈற்றுச்சீர்_பிழை 6. The dominant கலித்தளை (காய் followed by நிரை) is the signature of
+sandhi-based re-splitting, e.g. kural 467; how much of the remaining 27% is that, and how much is
+genuine metrical licence in the Kural, is the open research question this phase was built to ask.
+To make 4-அசை feet reportable instead of fatal, the structural grammar admits நாலசை and the
+validator emits `நாலசைச்சீர்_தடை`; தளை for 4-அசை feet is computed by treating ...பூ like காய்
+and ...நிழல் like கனி (assumption stated in `தளை.py`, to be confirmed).
 
 ### Phase 3 — Sandhi: finish the ANTLR port, then the rules, then decomposition (GitHub #7)
 
